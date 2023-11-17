@@ -44,8 +44,8 @@
                 Completed="CounterEntry_Completed"
                 SemanticProperties.Description="Displays the number of times you clicked the button" />
 
-            <PresentationControls:TextboxField LabelText="String Field" BindingContext="{Binding StringField}"></PresentationControls:TextboxField>
-            <PresentationControls:TextboxField LabelText="Int Field" BindingContext="{Binding IntField}"></PresentationControls:TextboxField>
+            <PresentationControls:TextboxField LabelText="String Field" BindingContext="{Binding StringField}" IsVisible="true"></PresentationControls:TextboxField>
+            <PresentationControls:TextboxField LabelText="Int Field" BindingContext="{Binding IntField}" IsVisible="true"></PresentationControls:TextboxField>
 
             <Button Text="Debug" Clicked="Button_Clicked"></Button>
         </VerticalStackLayout>

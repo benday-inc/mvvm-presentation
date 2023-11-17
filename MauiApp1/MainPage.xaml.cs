@@ -1,4 +1,5 @@
 ﻿using MauiApp1.ViewModels;
+using System.Text;
 
 namespace MauiApp1;
 
@@ -40,17 +41,21 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void Button_Clicked(object sender, EventArgs e)
+    private async void Button_Clicked(object sender, EventArgs e)
     {
+        var builder = new StringBuilder();
+
         var vm = ViewModel;
 
-        Console.WriteLine("Button clicked.");
-        Console.Write("String Field: ");
-        Console.WriteLine(vm.StringField.Value);
+        builder.AppendLine("Button clicked.");
+        builder.Append("String Field: ");
+        builder.AppendLine(vm.StringField.Value);
 
-        Console.Write("Int Field: ");
-        Console.WriteLine(vm.IntField.Value);
-        Console.WriteLine();
+        builder.Append("Int Field: ");
+        builder.AppendLine(vm.IntField.Value.ToString());
+        builder.AppendLine();
+
+        await DisplayAlert("Button Clicked", builder.ToString(), "OK");
     }
 }
 
