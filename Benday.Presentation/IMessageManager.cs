@@ -4,7 +4,8 @@ using System.Linq;
 namespace Benday.Presentation;
 public interface IMessageManager
 {
-    void ShowMessage(Exception ex);
+    Task ShowMessage(Exception ex);
+    Task ShowMessage(string message, string title);
 }
 
 

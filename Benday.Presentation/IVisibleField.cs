@@ -7,5 +7,3 @@ public interface IVisibleField
 {
     bool IsVisible { get; set; }
 }
-
-
