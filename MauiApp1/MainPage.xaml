@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:PresentationControls="clr-namespace:Benday.Presentation.Controls;assembly=Benday.Presentation"
+             xmlns:ViewModels="clr-namespace:MauiApp1.ViewModels"
              x:Class="MauiApp1.MainPage">
+    <ContentPage.BindingContext>
+        <ViewModels:Test123ViewModel></ViewModels:Test123ViewModel>
+    </ContentPage.BindingContext>
 
     <ScrollView>
         <VerticalStackLayout
@@ -38,8 +43,11 @@
                 HorizontalOptions="Fill"
                 Completed="CounterEntry_Completed"
                 SemanticProperties.Description="Displays the number of times you clicked the button" />
-            
-            
+
+            <PresentationControls:TextboxField LabelText="String Field" BindingContext="{Binding StringField}"></PresentationControls:TextboxField>
+            <PresentationControls:TextboxField LabelText="Int Field" BindingContext="{Binding IntField}"></PresentationControls:TextboxField>
+
+            <Button Text="Debug" Clicked="Button_Clicked"></Button>
         </VerticalStackLayout>
     </ScrollView>
 
