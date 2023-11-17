@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MauiApp1.Controls;
+namespace Benday.Presentation.Controls;
 public interface ILabeledField
 {
     void SetLabelText(string value);

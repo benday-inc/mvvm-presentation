@@ -66,10 +66,4 @@
 	  <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <MauiXaml Update="Controls\TextboxField.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	</ItemGroup>
-
 </Project>

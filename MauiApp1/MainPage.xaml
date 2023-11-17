@@ -30,6 +30,14 @@
                 SemanticProperties.Hint="Counts the number of times you click"
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
+
+            <Entry
+                x:Name="CounterEntry"
+                Text="{Binding Counter}"
+                IsReadOnly="True"
+                HorizontalOptions="Fill"
+                Completed="CounterEntry_Completed"
+                SemanticProperties.Description="Displays the number of times you clicked the button" />
         </VerticalStackLayout>
     </ScrollView>
 

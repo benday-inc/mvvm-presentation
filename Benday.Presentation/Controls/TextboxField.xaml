@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             IsVisible="{Binding Path=IsVisible, Converter={StaticResource VisibilityValueConverterInstance}}"
+             xmlns:ValueConverters="clr-namespace:Benday.Presentation.ValueConverters;assembly=Benday.Presentation"
+             x:Class="Benday.Presentation.Controls.TextboxField">
+    <ContentView.Resources>
+        <ValueConverters:SmartValueConverter x:Key="SmartValueConverter"/>
+    </ContentView.Resources>
+    <!--<VerticalStackLayout>
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+    </VerticalStackLayout>-->
+  
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+
+        <Label 
+        Grid.Row="0" 
+        x:Name="_Label" 
+        Text="LABEL TEXT" 
+        IsEnabled="{Binding IsEnabled}"
+        Style="{StaticResource FieldLabelStyle}"/>
+
+        <Label 
+        Grid.Row="1" 
+        Text="{Binding ValidationMessage}" 
+        Style="{StaticResource FieldErrorStyle}" 
+        IsVisible="{Binding IsValid, Converter={StaticResource NotVisibilityValueConverterInstance}}" 
+        Margin="4"/>
+
+        <Entry x:Name="_Textbox" 
+		Grid.Row="2"			 
+		Text="{Binding Value, Converter={StaticResource SmartValueConverter}, Mode=TwoWay}" 
+        IsEnabled="{Binding IsEnabled}"
+		Style="{StaticResource FieldTextboxStyle}"
+               
+		Completed="Entry_Completed">
+
+        </Entry>
+
+    </Grid>
+</ContentView>
+
+    
+    
