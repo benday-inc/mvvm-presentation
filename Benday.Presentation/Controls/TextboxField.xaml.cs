@@ -1,6 +1,6 @@
 namespace Benday.Presentation.Controls;
 
-public partial class TextboxField : ContentView
+public partial class TextboxField : ContentView, ILabeledField
 {
     public TextboxField()
     {
@@ -39,6 +39,12 @@ public partial class TextboxField : ContentView
     }
 
     public static readonly BindableProperty LabelTextProperty =
-        BindableProperty.Create(nameof(LabelText), typeof(string), typeof(TextboxField), string.Empty, BindingMode.TwoWay, propertyChanged: DependencyPropertyUtility.LabelTextPropertyChanged);
+        BindableProperty.Create(
+            propertyName: nameof(LabelText),
+            returnType: typeof(string),
+            declaringType: typeof(TextboxField),
+            defaultValue: string.Empty,
+            defaultBindingMode: BindingMode.TwoWay, 
+            propertyChanged: DependencyPropertyUtility.LabelTextPropertyChanged);
 
 }
