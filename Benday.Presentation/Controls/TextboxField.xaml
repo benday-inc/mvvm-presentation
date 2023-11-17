@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             IsVisible="{Binding Path=IsVisible, Converter={StaticResource VisibilityValueConverterInstance}}"
+             IsVisible="{Binding IsVisible}"             
              xmlns:ValueConverters="clr-namespace:Benday.Presentation.ValueConverters;assembly=Benday.Presentation"
              x:Class="Benday.Presentation.Controls.TextboxField">
     <ContentView.Resources>
-        <ValueConverters:SmartValueConverter x:Key="SmartValueConverter"/>
+        <ValueConverters:SmartValueConverter x:Key="SmartValueConverter"/>        
     </ContentView.Resources>
     <!--<VerticalStackLayout>
         <Label 

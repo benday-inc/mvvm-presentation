@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 
 namespace Benday.Presentation.ValueConverters;
@@ -15,7 +16,12 @@ public class VisibilityValueConverter : BendayValueConverterBase
         }
         else if (value != null)
         {
-            bool.TryParse(value.ToString(), out valueAsBoolean);
+            var result = bool.TryParse(value.ToString(), out valueAsBoolean);
+
+            if (result == false)
+            {
+                Trace.TraceWarning("Unable to convert '{0}' to boolean.", value);
+            }
         }
 
         if (valueAsBoolean == true)

@@ -12,18 +12,6 @@ public partial class MainPage : ContentPage
         InitializeComponent();
     }
 
-    private void OnCounterClicked(object sender, EventArgs e)
-    {
-        _Count++;
-
-        if (_Count == 1)
-            CounterBtn.Text = $"Clicked {_Count} time";
-        else
-            CounterBtn.Text = $"Clicked {_Count} times";
-
-        SemanticScreenReader.Announce(CounterBtn.Text);
-    }
-
     private void CounterEntry_Completed(object sender, EventArgs e)
     {
 
@@ -50,12 +38,26 @@ public partial class MainPage : ContentPage
         builder.AppendLine("Button clicked.");
         builder.Append("String Field: ");
         builder.AppendLine(vm.StringField.Value);
+        builder.Append("Visible: "); 
+        builder.AppendLine(vm.StringField.IsVisible.ToString());
 
         builder.Append("Int Field: ");
         builder.AppendLine(vm.IntField.Value.ToString());
+        builder.Append("Visible: ");
+        builder.AppendLine(vm.IntField.IsVisible.ToString());
+
+
         builder.AppendLine();
 
         await DisplayAlert("Button Clicked", builder.ToString(), "OK");
+    }
+
+    private void ToggleVisibility_Clicked(object sender, EventArgs e)
+    {
+        var vm = ViewModel;
+
+        vm.StringField.IsVisible = !vm.StringField.IsVisible;
+        vm.IntField.IsVisible = !vm.IntField.IsVisible;
     }
 }
 

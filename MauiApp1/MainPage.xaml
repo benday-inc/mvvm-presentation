@@ -29,25 +29,30 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+            <Rectangle
+                Fill="DeepSkyBlue"
+                HeightRequest="2"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End" />
 
-            <Entry
-                x:Name="CounterEntry"
-                Text="{Binding Counter}"
-                IsReadOnly="True"
-                HorizontalOptions="Fill"
-                Completed="CounterEntry_Completed"
-                SemanticProperties.Description="Displays the number of times you clicked the button" />
+            <PresentationControls:TextboxField 
+                LabelText="String Field" 
+                BindingContext="{Binding StringField}" 
+                ></PresentationControls:TextboxField>
 
-            <PresentationControls:TextboxField LabelText="String Field" BindingContext="{Binding StringField}" IsVisible="true"></PresentationControls:TextboxField>
-            <PresentationControls:TextboxField LabelText="Int Field" BindingContext="{Binding IntField}" IsVisible="true"></PresentationControls:TextboxField>
+            <Rectangle
+                Fill="DeepSkyBlue"
+                HeightRequest="2"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="End" />
+
+            <PresentationControls:TextboxField 
+                LabelText="Int Field" 
+                BindingContext="{Binding IntField}">
+            </PresentationControls:TextboxField>
 
             <Button Text="Debug" Clicked="Button_Clicked"></Button>
+            <Button Text="Toggle Visibility" Clicked="ToggleVisibility_Clicked"></Button>
         </VerticalStackLayout>
     </ScrollView>
 
