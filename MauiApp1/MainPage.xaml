@@ -51,6 +51,12 @@
                 BindingContext="{Binding IntField}">
             </PresentationControls:TextboxField>
 
+            <PresentationControls:ComboBoxField LabelText="Combo Field / Single Select"
+                                                BindingContext="{Binding SingleSelectField}"
+                                                >
+                
+            </PresentationControls:ComboBoxField>
+
             <Button Text="Debug" Clicked="Button_Clicked"></Button>
             <Button Text="Toggle Visibility" Clicked="ToggleVisibility_Clicked"></Button>
         </VerticalStackLayout>

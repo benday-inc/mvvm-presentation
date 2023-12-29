@@ -9,11 +9,6 @@ xmlns:ValueConverters="clr-namespace:Benday.Presentation.ValueConverters;assembl
     x:DataType="clr-namespace:Benday.Presentation.SingleSelectListViewModel;assembly=Benday.Presentation"
              
     -->
-    <ContentView.Resources>
-        <ValueConverters:SmartValueConverter x:Key="SmartValueConverter"/>
-        
-        
-    </ContentView.Resources>
     
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
@@ -40,12 +35,24 @@ xmlns:ValueConverters="clr-namespace:Benday.Presentation.ValueConverters;assembl
         
         <Picker x:Name="_Textbox" 
 	Grid.Row="2"			
-                SelectedItem="{Binding SelectedItem}"
+                SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
 	IsEnabled="{Binding IsEnabled}"
-	Style="{StaticResource FieldPickerStyle}"
+                ItemsSource="{Binding Items}"
            >
 
         </Picker>
+        
+        <!-- 
+        
+	Style="{StaticResource FieldPickerStyle}"
+        
+        <ComboBox
+        ItemsSource="{Binding Items}"
+        Style="{StaticResource FieldComboBoxStyle}" 
+        SelectedItem="{Binding SelectedItem, Mode=TwoWay}" 
+        />
+        
+        -->
 
     </Grid>
 </ContentView>
