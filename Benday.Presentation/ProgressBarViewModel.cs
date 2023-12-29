@@ -8,7 +8,7 @@ public class ProgressBarViewModel : ViewModelBase, IProgressBarViewModel
 {
     public ProgressBarViewModel()
     {
-
+        _ProgressBarMessage = string.Empty;
     }
 
     private const string IsProgressBarVisiblePropertyName = "IsProgressBarVisible";
@@ -59,7 +59,7 @@ public class ProgressBarViewModel : ViewModelBase, IProgressBarViewModel
         }
     }
 
-    private ICommand _CancelOperationCommand;
+    private ICommand? _CancelOperationCommand;
 
     public ICommand CancelOperationCommand
     {
@@ -75,7 +75,7 @@ public class ProgressBarViewModel : ViewModelBase, IProgressBarViewModel
     }
 
 
-    public event EventHandler OnCancelRequested;
+    public event EventHandler? OnCancelRequested;
 
     private void CancelOperation()
     {

@@ -25,6 +25,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Controls\ComboBoxField.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Controls\TextboxField.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

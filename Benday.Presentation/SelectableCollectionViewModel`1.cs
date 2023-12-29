@@ -120,6 +120,11 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     {
         get
         {
+            if (_Items == null)
+            {
+                _Items = new ObservableCollection<T>();
+            }
+
             return _Items;
         }
         protected set

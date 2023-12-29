@@ -35,7 +35,7 @@ public class ToUpperCaseValueConverter : BendayValueConverterBase
         }
         else
         {
-            return value.ToString().ToUpper();
+            return value.ToString()!.ToUpper();
         }
     }
 

@@ -27,10 +27,36 @@ public class ViewModelField<T> : ViewModelBase, INotifyPropertyChanged, IVisible
         _Value = initialValue;
     }
 
-    private T _Value;
+    private T? _Value;
     public T Value
     {
-        get { return _Value; }
+        get
+        {
+            if (_Value is null)
+            {
+                if (typeof(T) == typeof(string))
+                {
+                    T temp = (T)(object)string.Empty;
+
+                    return temp;
+                }
+                else
+                {
+                    var temp = default(T);
+
+                    if (temp == null)
+                    {
+                        throw new InvalidOperationException(
+                                                       "Cannot return null for type " + typeof(T).FullName);
+                    }
+                    else
+                    {
+                        return temp;
+                    }
+                }
+            }
+            return _Value;
+        }
         set
         {
             if (EqualityComparer<T>.Default.Equals(
@@ -43,10 +69,10 @@ public class ViewModelField<T> : ViewModelBase, INotifyPropertyChanged, IVisible
         }
     }
 
-    public event EventHandler OnValueChanged;
+    public event EventHandler? OnValueChanged;
     public virtual void RaiseOnValueChanged()
     {
-        EventHandler handler = OnValueChanged;
+        var handler = OnValueChanged;
 
         if (handler != null)
         {
@@ -104,7 +130,7 @@ public class ViewModelField<T> : ViewModelBase, INotifyPropertyChanged, IVisible
 
     private const string ValidationMessagePropertyName = "ValidationMessage";
 
-    private string _ValidationMessage;
+    private string _ValidationMessage = string.Empty;
     public string ValidationMessage
     {
         get
@@ -126,7 +152,8 @@ public class ViewModelField<T> : ViewModelBase, INotifyPropertyChanged, IVisible
         }
         else
         {
-            return Value.ToString();
+            return Value.ToString() ?? 
+                throw new InvalidOperationException("ViewModelField.Value got a null return value from ToString().");
         }
     }
 }

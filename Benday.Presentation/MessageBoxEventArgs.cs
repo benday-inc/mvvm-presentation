@@ -41,7 +41,7 @@ public class MessageBoxEventArgs : EventArgs
 
     public string Message { get; private set; }
     public bool IsUnexpectedException { get; private set; }
-    public Exception Exception { get; private set; }
+    public Exception? Exception { get; private set; }
 }
 
 

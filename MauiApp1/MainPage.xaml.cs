@@ -5,8 +5,7 @@ namespace MauiApp1;
 
 public partial class MainPage : ContentPage
 {
-    int _Count = 0;
-
+    
     public MainPage()
     {
         InitializeComponent();

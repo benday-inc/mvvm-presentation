@@ -48,7 +48,7 @@ public class SmartValueConverter : BendayValueConverterBase
             }
             else
             {
-                string valueAsString = value.ToString();
+                var valueAsString = value.ToString();
 
                 if (String.IsNullOrEmpty(valueAsString) == true)
                 {
@@ -66,7 +66,7 @@ public class SmartValueConverter : BendayValueConverterBase
         }
     }
 
-    private object ConvertBackForDateTime(object value)
+    private object ConvertBackForDateTime(object? value)
     {
         try
         {
@@ -76,7 +76,7 @@ public class SmartValueConverter : BendayValueConverterBase
             }
             else
             {
-                string valueAsString = value.ToString();
+                var valueAsString = value.ToString();
 
                 if (String.IsNullOrEmpty(valueAsString) == true)
                 {

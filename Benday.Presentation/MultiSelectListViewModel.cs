@@ -17,7 +17,7 @@ public class MultiSelectListViewModel : SingleSelectListViewModel
     }
 
     private const string SelectedItemsPropertyName = "SelectedItems";
-    private IList<ISelectableItem> _SelectedItems;
+    private IList<ISelectableItem>? _SelectedItems;
     public IList<ISelectableItem> SelectedItems
     {
         get

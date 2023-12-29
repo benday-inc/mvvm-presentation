@@ -15,7 +15,7 @@ public class StringOrInt32ValueConverter : BendayValueConverterBase
         }
         else
         {
-            string valueAsString = value.ToString();
+            var valueAsString = value.ToString();
 
             if (string.IsNullOrEmpty(valueAsString) == true)
             {

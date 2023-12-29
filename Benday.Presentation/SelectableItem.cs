@@ -64,7 +64,7 @@ public class SelectableItem : ViewModelBase, ISelectableItem
 
     private const string TextPropertyName = "Text";
 
-    private string _Text;
+    private string _Text = string.Empty;
     public string Text
     {
         get
@@ -80,7 +80,7 @@ public class SelectableItem : ViewModelBase, ISelectableItem
 
     private const string ValuePropertyName = "Value";
 
-    private string _Value;
+    private string _Value = string.Empty;
     public string Value
     {
         get
@@ -117,7 +117,7 @@ public class SelectableItem : ViewModelBase, ISelectableItem
 
     private const string TooltipTextPropertyName = "TooltipText";
 
-    private string _TooltipText;
+    private string _TooltipText = string.Empty;
     public string TooltipText
     {
         get

@@ -56,7 +56,7 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
         SelectedItem = GetByText(Items, text);
     }
 
-    private ISelectableItem GetByText(ObservableCollection<ISelectableItem> values, string text)
+    private ISelectableItem? GetByText(ObservableCollection<ISelectableItem> values, string text)
     {
         var selected = (from temp in values
                         where temp.Text == text
@@ -65,7 +65,7 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
         return selected;
     }
 
-    protected ISelectableItem GetByValue(ObservableCollection<ISelectableItem> values, string value)
+    protected ISelectableItem? GetByValue(ObservableCollection<ISelectableItem> values, string value)
     {
         var selected = (from temp in values
                         where temp.Value == value
@@ -102,7 +102,7 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
 
     private const string ValidationMessagePropertyName = "ValidationMessage";
 
-    private string _ValidationMessage;
+    private string _ValidationMessage = string.Empty;
     public string ValidationMessage
     {
         get
