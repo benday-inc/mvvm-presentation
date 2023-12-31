@@ -4,13 +4,25 @@
              xmlns:PresentationControls="clr-namespace:Benday.Presentation.Controls;assembly=Benday.Presentation"
              xmlns:ViewModels="clr-namespace:MauiApp1.ViewModels"
              x:Class="MauiApp1.MainPage">
-    
+
     <!--<ContentPage.BindingContext>
         <ViewModels:Test123ViewModel></ViewModels:Test123ViewModel>
     </ContentPage.BindingContext>-->
 
-    <ScrollView>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <VerticalStackLayout Grid.Column="0" Padding="30,0" Spacing="25">
+            <Button Text="Debug" Clicked="Button_Clicked"></Button>
+            <Button Text="Toggle Visibility" Clicked="ToggleVisibility_Clicked"></Button>
+            <Button Text="Toggle Enabled" Clicked="ToggleEnabled_Clicked"></Button>
+            <Button Text="Change Selection" Clicked="ChangeSelelection_Clicked"></Button>
+        </VerticalStackLayout>
+
         <VerticalStackLayout
+            Grid.Column="1" 
             Padding="30,0"
             Spacing="25">
             <Rectangle
@@ -39,14 +51,13 @@
                 LabelText="Combo Field / Single Select"
                 BindingContext="{Binding SingleSelectField}"
                 >
-                
+
             </PresentationControls:ComboBoxField>
 
-            <Button Text="Debug" Clicked="Button_Clicked"></Button>
-            <Button Text="Toggle Visibility" Clicked="ToggleVisibility_Clicked"></Button>
-            <Button Text="Toggle Enabled" Clicked="ToggleEnabled_Clicked"></Button>
-            <Button Text="Change Selection" Clicked="ChangeSelelection_Clicked"></Button>
+
         </VerticalStackLayout>
-    </ScrollView>
+
+    </Grid>
+
 
 </ContentPage>
