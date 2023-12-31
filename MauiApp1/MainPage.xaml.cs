@@ -9,6 +9,8 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+
+        this.BindingContext = new Test123ViewModel();
     }
 
     private void CounterEntry_Completed(object sender, EventArgs e)
@@ -45,6 +47,18 @@ public partial class MainPage : ContentPage
         builder.Append("Visible: ");
         builder.AppendLine(vm.IntField.IsVisible.ToString());
 
+        builder.Append("Single Select Field: ");
+        if (vm.SingleSelectField.SelectedItem == null)
+        {
+            builder.AppendLine("(value is null)");
+        }
+        else
+        {
+            builder.AppendLine(vm.SingleSelectField.SelectedItem.Text);
+        }
+        builder.Append("Visible: ");
+        builder.AppendLine(vm.IntField.IsVisible.ToString());
+
 
         builder.AppendLine();
 
@@ -57,6 +71,32 @@ public partial class MainPage : ContentPage
 
         vm.StringField.IsVisible = !vm.StringField.IsVisible;
         vm.IntField.IsVisible = !vm.IntField.IsVisible;
+    }
+
+    private void ChangeSelelection_Clicked(object sender, EventArgs e)
+    {
+        var vm = ViewModel;
+        var field = vm.SingleSelectField;
+
+        var itemCount = field.Items.Count;
+
+        if (field.SelectedItem == null)
+        {
+            field.Items[0].IsSelected = true;
+        }
+        else
+        {
+            var indexOf = field.Items.IndexOf(field.SelectedItem);
+
+            var newIndex = indexOf + 1;
+
+            if (newIndex >= itemCount)
+            {
+                newIndex = 0;
+            }
+
+            field.Items[newIndex].IsSelected = true;
+        }
     }
 }
 

@@ -9,7 +9,7 @@ xmlns:ValueConverters="clr-namespace:Benday.Presentation.ValueConverters;assembl
     x:DataType="clr-namespace:Benday.Presentation.SingleSelectListViewModel;assembly=Benday.Presentation"
              
     -->
-    
+
     <Grid x:Name="LayoutRoot">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
@@ -32,16 +32,29 @@ xmlns:ValueConverters="clr-namespace:Benday.Presentation.ValueConverters;assembl
     IsVisible="{Binding IsValid, Converter={StaticResource NotVisibilityValueConverterInstance}}" 
     Margin="4"/>
 
+
+        <!--
+        THIS IS A BUG...SETTING THE SELECTED ITEM PROP BEFORE ITEMSSOURCE 
+        RESULTS IN AN EXTRA CALL THAT SETS SELECTION TO NULL
         
-        <Picker x:Name="_Textbox" 
-	Grid.Row="2"			
-                SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
-	IsEnabled="{Binding IsEnabled}"
-                ItemsSource="{Binding Items}"
+        <Picker
+	        Grid.Row="2"			
+            SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+	        IsEnabled="{Binding IsEnabled}"
+            ItemsSource="{Binding Items}"
+           >
+
+        </Picker>-->
+
+        <Picker
+	        Grid.Row="2"			
+            IsEnabled="{Binding IsEnabled}"
+            ItemsSource="{Binding Items}"
+            SelectedItem="{Binding SelectedItem, Mode=TwoWay}"	        
            >
 
         </Picker>
-        
+
         <!-- 
         
 	Style="{StaticResource FieldPickerStyle}"

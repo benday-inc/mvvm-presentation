@@ -8,10 +8,18 @@ using System.Threading.Tasks;
 namespace MauiApp1.ViewModels;
 public class Test123ViewModel : ViewModelBase
 {
-    public ViewModelField<string> StringField { get; private set; } = new ViewModelField<string>(String.Empty);
-    public ViewModelField<int> IntField { get; private set; } = new ViewModelField<int>(123);
+    public Test123ViewModel()
+    {
+        StringField = new ViewModelField<string>(String.Empty);
+        IntField = new ViewModelField<int>(123);
+        SingleSelectField = new SingleSelectListViewModel(GetSampleItems());
+        Console.WriteLine("ctor exiting");
+    }
 
-    public SingleSelectListViewModel SingleSelectField { get; private set; } = new SingleSelectListViewModel(GetSampleItems());
+    public ViewModelField<string> StringField { get; private set; }
+    public ViewModelField<int> IntField { get; private set; } 
+    public SingleSelectListViewModel SingleSelectField { get; private set; }
+
     private static IEnumerable<ISelectableItem> GetSampleItems()
     {
         var items = new List<ISelectableItem>();

@@ -66,7 +66,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         RefreshSelectedItem();
     }
 
-    protected void RefreshSelectedItem()
+    protected void RefreshSelectedItem(bool directAssign = false)
     {
         if (Items == null)
         {
@@ -233,8 +233,40 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
         set
         {
-            if (_SelectedItem != value)
+            if (_SelectedItem == null && value == null)
             {
+                Console.WriteLine("SelectedItem is already null.");
+            }
+            else if (_SelectedItem == null && value != null)
+            {
+                Console.WriteLine("SelectedItem is null, setting to {0}.", value.ToString());
+
+                value.IsSelected = true;
+                _SelectedItem = value;
+
+                RaiseOnItemSelected();
+
+                RaisePropertyChanged(SelectedItemPropertyName);
+            }
+            else if (_SelectedItem != null && value == null)
+            {
+                Console.WriteLine("SelectedItem is {0}, setting to null.", _SelectedItem.ToString());
+
+                if (AllowMultipleSelections == false)
+                {
+                    DeselectCurrentItem();
+                }
+
+                _SelectedItem = value;
+
+                RaiseOnItemSelected();
+
+                RaisePropertyChanged(SelectedItemPropertyName);
+            }
+            else if (_SelectedItem != null && _SelectedItem != value)
+            {
+                Console.WriteLine("SelectedItem is {0}, setting to {1}.", _SelectedItem.ToString(), value.ToString());
+
                 if (AllowMultipleSelections == false)
                 {
                     DeselectCurrentItem();
@@ -246,11 +278,15 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
                 {
                     _SelectedItem.IsSelected = true;
                 }
+
+                RaiseOnItemSelected();
+
+                RaisePropertyChanged(SelectedItemPropertyName);
             }
-
-            RaiseOnItemSelected();
-
-            RaisePropertyChanged(SelectedItemPropertyName);
+            else
+            {
+                Console.WriteLine("SelectedItem is already {0}.", value?.ToString());
+            }
         }
     }
 
