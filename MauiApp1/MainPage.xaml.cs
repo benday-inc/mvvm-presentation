@@ -71,6 +71,7 @@ public partial class MainPage : ContentPage
 
         vm.StringField.IsVisible = !vm.StringField.IsVisible;
         vm.IntField.IsVisible = !vm.IntField.IsVisible;
+        vm.SingleSelectField.IsVisible = !vm.SingleSelectField.IsVisible;
     }
 
     private void ChangeSelelection_Clicked(object sender, EventArgs e)
