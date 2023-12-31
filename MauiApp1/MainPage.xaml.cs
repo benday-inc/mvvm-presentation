@@ -41,11 +41,15 @@ public partial class MainPage : ContentPage
         builder.AppendLine(vm.StringField.Value);
         builder.Append("Visible: "); 
         builder.AppendLine(vm.StringField.IsVisible.ToString());
+        builder.Append("Valid: ");
+        builder.AppendLine(vm.StringField.IsValid.ToString());
 
         builder.Append("Int Field: ");
         builder.AppendLine(vm.IntField.Value.ToString());
         builder.Append("Visible: ");
         builder.AppendLine(vm.IntField.IsVisible.ToString());
+        builder.Append("Valid: ");
+        builder.AppendLine(vm.IntField.IsValid.ToString());
 
         builder.Append("Single Select Field: ");
         if (vm.SingleSelectField.SelectedItem == null)
@@ -57,8 +61,9 @@ public partial class MainPage : ContentPage
             builder.AppendLine(vm.SingleSelectField.SelectedItem.Text);
         }
         builder.Append("Visible: ");
-        builder.AppendLine(vm.IntField.IsVisible.ToString());
-
+        builder.AppendLine(vm.SingleSelectField.ToString());
+        builder.Append("Valid: ");
+        builder.AppendLine(vm.SingleSelectField.IsValid.ToString());
 
         builder.AppendLine();
 

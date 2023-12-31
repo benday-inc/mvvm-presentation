@@ -326,7 +326,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
     private const string IsValidPropertyName = "IsValid";
 
-    private bool _IsValid;
+    private bool _IsValid = true;
     public bool IsValid
     {
         get

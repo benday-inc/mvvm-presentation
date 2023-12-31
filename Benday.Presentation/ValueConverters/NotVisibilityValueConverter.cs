@@ -17,11 +17,11 @@ public class NotVisibilityValueConverter : BendayValueConverterBase
 
         if (valueAsBoolean == false)
         {
-            return Visibility.Visible;
+            return true;
         }
         else
         {
-            return Visibility.Collapsed;
+            return false;
         }
     }
 
@@ -32,15 +32,15 @@ public class NotVisibilityValueConverter : BendayValueConverterBase
             return false;
         }
 
-        var valueAsVisibility = (Visibility)value;
-
-        if (valueAsVisibility == Visibility.Visible)
+        if (value is bool)
         {
-            return false;
+            var valueAsBoolean = (bool)value;
+
+            return !valueAsBoolean;
         }
         else
         {
-            return true;
+            return false;
         }
     }
 }
