@@ -74,6 +74,15 @@ public partial class MainPage : ContentPage
         vm.SingleSelectField.IsVisible = !vm.SingleSelectField.IsVisible;
     }
 
+    private void ToggleEnabled_Clicked(object sender, EventArgs e)
+    {
+        var vm = ViewModel;
+        
+        vm.StringField.IsEnabled = !vm.StringField.IsEnabled;
+        vm.IntField.IsEnabled = !vm.IntField.IsEnabled;
+        vm.SingleSelectField.IsEnabled = !vm.SingleSelectField.IsEnabled;
+    }
+
     private void ChangeSelelection_Clicked(object sender, EventArgs e)
     {
         var vm = ViewModel;

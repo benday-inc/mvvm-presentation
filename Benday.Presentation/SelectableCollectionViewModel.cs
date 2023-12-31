@@ -165,7 +165,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
                     if (temp != null)
                     {
                         SubscribeToINotifyPropertyChanged(temp);
-                    }                    
+                    }
                 }
             }
         }
@@ -337,6 +337,22 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         {
             _IsValid = value;
             RaisePropertyChanged(IsValidPropertyName);
+        }
+    }
+
+    private const string IsEnabledPropertyName = "IsEnabled";
+
+    private bool _IsEnabled = true;
+    public bool IsEnabled
+    {
+        get
+        {
+            return _IsEnabled;
+        }
+        set
+        {
+            _IsEnabled = value;
+            RaisePropertyChanged(IsEnabledPropertyName);
         }
     }
 }
