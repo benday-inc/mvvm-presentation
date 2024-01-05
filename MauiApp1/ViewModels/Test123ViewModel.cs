@@ -13,7 +13,8 @@ public class Test123ViewModel : ViewModelBase
         StringField = new ViewModelField<string>(String.Empty);
         IntField = new ViewModelField<int>(123);
         SingleSelectField = new SingleSelectListViewModel(GetSampleItems("Combobox"));
-        ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Listbox"));
+        ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Single Select Listbox"));
+        ListboxMultiSelectField = new MultiSelectListViewModel(GetSampleItems("Multi Select Listbox"));
         LabelField = new ViewModelField<string>(String.Empty);        
     }
 
@@ -22,8 +23,9 @@ public class Test123ViewModel : ViewModelBase
     public ViewModelField<int> IntField { get; private set; } 
     public SingleSelectListViewModel SingleSelectField { get; private set; }
     public SingleSelectListViewModel ListboxSingleSelectField { get; private set; }
+    public MultiSelectListViewModel ListboxMultiSelectField { get; private set; }
 
-    private static IEnumerable<ISelectableItem> GetSampleItems(
+    private static IList<ISelectableItem> GetSampleItems(
         string controlName)
     {
         var items = new List<ISelectableItem>();
@@ -31,6 +33,10 @@ public class Test123ViewModel : ViewModelBase
         items.Add(new SelectableItem(false, $"{controlName}: Item 1"));
         items.Add(new SelectableItem(true, $"{controlName}: Item 2"));
         items.Add(new SelectableItem(false, $"{controlName}: Item 3"));
+        items.Add(new SelectableItem(false, $"{controlName}: Item 4"));
+        items.Add(new SelectableItem(false, $"{controlName}: Item 5"));
+        items.Add(new SelectableItem(false, $"{controlName}: Item 6"));
+        items.Add(new SelectableItem(false, $"{controlName}: Item 7"));
 
         return items;
     }
