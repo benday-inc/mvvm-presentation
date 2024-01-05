@@ -54,6 +54,13 @@
 
             </PresentationControls:ComboBoxField>
 
+            <PresentationControls:ListboxField 
+                LabelText="Listbox Field / Single Select"
+                BindingContext="{Binding ListboxSingleSelectField}"
+                >
+
+            </PresentationControls:ListboxField>
+
 
         </VerticalStackLayout>
 
