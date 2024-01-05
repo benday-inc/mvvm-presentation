@@ -18,7 +18,8 @@
             <Button Text="Debug" Clicked="Button_Clicked"></Button>
             <Button Text="Toggle Visibility" Clicked="ToggleVisibility_Clicked"></Button>
             <Button Text="Toggle Enabled" Clicked="ToggleEnabled_Clicked"></Button>
-            <Button Text="Change Selection" Clicked="ChangeSelelection_Clicked"></Button>
+            <Button Text="Change Combobox Selection" Clicked="ChangeComboboxSelection_Clicked"></Button>
+            <Button Text="Change Listbox Selection" Clicked="ChangeListboxSelection_Clicked"></Button>
         </VerticalStackLayout>
 
         <VerticalStackLayout

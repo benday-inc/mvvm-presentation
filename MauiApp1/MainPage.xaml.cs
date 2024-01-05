@@ -1,4 +1,5 @@
-﻿using MauiApp1.ViewModels;
+﻿using Benday.Presentation;
+using MauiApp1.ViewModels;
 using System.Text;
 
 namespace MauiApp1;
@@ -39,7 +40,7 @@ public partial class MainPage : ContentPage
         builder.AppendLine("Button clicked.");
         builder.Append("String Field: ");
         builder.AppendLine(vm.StringField.Value);
-        builder.Append("Visible: "); 
+        builder.Append("Visible: ");
         builder.AppendLine(vm.StringField.IsVisible.ToString());
         builder.Append("Valid: ");
         builder.AppendLine(vm.StringField.IsValid.ToString());
@@ -51,23 +52,38 @@ public partial class MainPage : ContentPage
         builder.Append("Valid: ");
         builder.AppendLine(vm.IntField.IsValid.ToString());
 
-        builder.Append("Single Select Field: ");
-        if (vm.SingleSelectField.SelectedItem == null)
+        SummarizeSingleSelect(builder, 
+            vm.SingleSelectField, 
+            "Combobox Single Select Field");
+
+        SummarizeSingleSelect(builder,
+            vm.ListboxSingleSelectField,
+            "Listbox Single Select Field");
+
+        await DisplayAlert("Button Clicked", builder.ToString(), "OK");
+    }
+
+    private static void SummarizeSingleSelect(
+        StringBuilder builder, SingleSelectListViewModel viewModel, 
+        string description)
+    {
+        builder.AppendLine("***");
+        builder.Append($"{description}: ");
+        if (viewModel.SelectedItem == null)
         {
             builder.AppendLine("(value is null)");
         }
         else
         {
-            builder.AppendLine(vm.SingleSelectField.SelectedItem.Text);
+            builder.AppendLine(viewModel.SelectedItem.Text);
         }
+
         builder.Append("Visible: ");
-        builder.AppendLine(vm.SingleSelectField.ToString());
+        builder.AppendLine(viewModel.ToString());
         builder.Append("Valid: ");
-        builder.AppendLine(vm.SingleSelectField.IsValid.ToString());
+        builder.AppendLine(viewModel.IsValid.ToString());
 
         builder.AppendLine();
-
-        await DisplayAlert("Button Clicked", builder.ToString(), "OK");
     }
 
     private void ToggleVisibility_Clicked(object sender, EventArgs e)
@@ -77,6 +93,7 @@ public partial class MainPage : ContentPage
         vm.StringField.IsVisible = !vm.StringField.IsVisible;
         vm.IntField.IsVisible = !vm.IntField.IsVisible;
         vm.SingleSelectField.IsVisible = !vm.SingleSelectField.IsVisible;
+        vm.ListboxSingleSelectField.IsVisible = !vm.ListboxSingleSelectField.IsVisible;
     }
 
     private void ToggleEnabled_Clicked(object sender, EventArgs e)
@@ -86,13 +103,25 @@ public partial class MainPage : ContentPage
         vm.StringField.IsEnabled = !vm.StringField.IsEnabled;
         vm.IntField.IsEnabled = !vm.IntField.IsEnabled;
         vm.SingleSelectField.IsEnabled = !vm.SingleSelectField.IsEnabled;
+        vm.ListboxSingleSelectField.IsEnabled = !vm.ListboxSingleSelectField.IsEnabled;
     }
 
-    private void ChangeSelelection_Clicked(object sender, EventArgs e)
+    private void ChangeComboboxSelection_Clicked(object sender, EventArgs e)
     {
         var vm = ViewModel;
-        var field = vm.SingleSelectField;
 
+        ChangeFieldSelection(vm.SingleSelectField);
+    }
+
+    private void ChangeListboxSelection_Clicked(object sender, EventArgs e)
+    {
+        var vm = ViewModel;
+
+        ChangeFieldSelection(vm.ListboxSingleSelectField);
+    }
+
+    private static void ChangeFieldSelection(SingleSelectListViewModel field)
+    {
         var itemCount = field.Items.Count;
 
         if (field.SelectedItem == null)
