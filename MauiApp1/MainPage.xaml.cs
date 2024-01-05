@@ -91,6 +91,7 @@ public partial class MainPage : ContentPage
         var vm = ViewModel;
 
         vm.StringField.IsVisible = !vm.StringField.IsVisible;
+        vm.LabelField.IsVisible = !vm.LabelField.IsVisible;
         vm.IntField.IsVisible = !vm.IntField.IsVisible;
         vm.SingleSelectField.IsVisible = !vm.SingleSelectField.IsVisible;
         vm.ListboxSingleSelectField.IsVisible = !vm.ListboxSingleSelectField.IsVisible;
@@ -101,10 +102,46 @@ public partial class MainPage : ContentPage
         var vm = ViewModel;
         
         vm.StringField.IsEnabled = !vm.StringField.IsEnabled;
+        vm.LabelField.IsEnabled = !vm.LabelField.IsEnabled;
         vm.IntField.IsEnabled = !vm.IntField.IsEnabled;
         vm.SingleSelectField.IsEnabled = !vm.SingleSelectField.IsEnabled;
         vm.ListboxSingleSelectField.IsEnabled = !vm.ListboxSingleSelectField.IsEnabled;
     }
+
+    private void UpdateLabelField_Clicked(object sender, EventArgs e)
+    {
+        var vm = ViewModel;
+
+        vm.LabelField.Value = $"Label: {DateTime.Now}";
+    }
+
+    private bool _IsValidationErrorsVisible = false;
+
+    private void ToggleValidationErrors_Clicked(object sender, EventArgs e)
+    {
+        var vm = ViewModel;
+
+        _IsValidationErrorsVisible = !_IsValidationErrorsVisible;
+
+        var message = _IsValidationErrorsVisible ?
+            "Validation errors are now visible." :
+            "Validation errors are now hidden.";
+
+        vm.SingleSelectField.IsValid = !_IsValidationErrorsVisible;
+        vm.SingleSelectField.ValidationMessage = message;
+
+        vm.ListboxSingleSelectField.IsValid = !_IsValidationErrorsVisible;
+        vm.ListboxSingleSelectField.ValidationMessage = message;
+
+        vm.StringField.IsValid = !_IsValidationErrorsVisible;
+        vm.StringField.ValidationMessage = message;
+
+        vm.IntField.IsValid = !_IsValidationErrorsVisible;
+        vm.IntField.ValidationMessage = message;
+
+        vm.LabelField.IsValid = !_IsValidationErrorsVisible;
+        vm.LabelField.ValidationMessage = message;
+    }    
 
     private void ChangeComboboxSelection_Clicked(object sender, EventArgs e)
     {

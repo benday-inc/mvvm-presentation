@@ -14,10 +14,11 @@ public class Test123ViewModel : ViewModelBase
         IntField = new ViewModelField<int>(123);
         SingleSelectField = new SingleSelectListViewModel(GetSampleItems("Combobox"));
         ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Listbox"));
-        Console.WriteLine("ctor exiting");
+        LabelField = new ViewModelField<string>(String.Empty);        
     }
 
     public ViewModelField<string> StringField { get; private set; }
+    public ViewModelField<string> LabelField { get; private set; }
     public ViewModelField<int> IntField { get; private set; } 
     public SingleSelectListViewModel SingleSelectField { get; private set; }
     public SingleSelectListViewModel ListboxSingleSelectField { get; private set; }
