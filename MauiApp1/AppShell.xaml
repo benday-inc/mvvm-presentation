@@ -5,10 +5,10 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiApp1"
     Shell.FlyoutBehavior="Disabled"
-    Title="MauiApp1">
+    Title="Maui Controls &amp; ViewModel Sample">
 
     <ShellContent
-        Title="Home"
+        Title="Maui Controls &amp; ViewModel Sample"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
 

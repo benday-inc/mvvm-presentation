@@ -15,15 +15,15 @@ public class Test123ViewModel : MessagingViewModelBase
         IntField = new ViewModelField<int>(123);
         SingleSelectField = new SingleSelectListViewModel(GetSampleItems("Combobox"));
         ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Single Select Listbox"));
-        LabelField = new ViewModelField<string>(String.Empty);        
+        LabelField = new ViewModelField<string>(String.Empty);
     }
 
     public ViewModelField<string> StringField { get; private set; }
     public ViewModelField<string> LabelField { get; private set; }
-    public ViewModelField<int> IntField { get; private set; } 
+    public ViewModelField<int> IntField { get; private set; }
     public SingleSelectListViewModel SingleSelectField { get; private set; }
     public SingleSelectListViewModel ListboxSingleSelectField { get; private set; }
-    
+
     private static IList<ISelectableItem> GetSampleItems(
         string controlName)
     {
@@ -48,12 +48,12 @@ public class Test123ViewModel : MessagingViewModelBase
         {
             if (_ShowMessageCommand == null)
             {
-                _ShowMessageCommand = 
+                _ShowMessageCommand =
                     new ExceptionHandlingRelayCommand(
                         Messages, () =>
                         {
                             Messages.ShowMessage(
-                                $"Hi. It's {DateTime.Now}.", 
+                                $"Hi. It's {DateTime.Now}.",
                                 "Current Time");
                         });
             }
@@ -110,74 +110,195 @@ public class Test123ViewModel : MessagingViewModelBase
         }
     }
 
-    private void ShowSummary()
+    private ICommand? _ChangeComboboxSelectionCommand;
+    public ICommand ChangeComboboxSelectionCommand
     {
-        var builder = new StringBuilder();
-
-        builder.AppendLine("Button clicked.");
-        builder.Append("String Field: ");
-        builder.AppendLine(StringField.Value);
-        builder.Append("Visible: ");
-        builder.AppendLine(StringField.IsVisible.ToString());
-        builder.Append("Valid: ");
-        builder.AppendLine(StringField.IsValid.ToString());
-
-        builder.Append("Int Field: ");
-        builder.AppendLine(IntField.Value.ToString());
-        builder.Append("Visible: ");
-        builder.AppendLine(IntField.IsVisible.ToString());
-        builder.Append("Valid: ");
-        builder.AppendLine(IntField.IsValid.ToString());
-
-        SummarizeSingleSelect(builder,
-                       SingleSelectField,
-                                  "Combobox Single Select Field");
-
-        SummarizeSingleSelect(builder,
-                       ListboxSingleSelectField,
-                                  "Listbox Single Select Field");
-
-        Messages.ShowMessage(builder.ToString(), "Summary");
-    }
-
-    private static void SummarizeSingleSelect(
-        StringBuilder builder, SingleSelectListViewModel viewModel,
-        string description)
-    {
-        builder.AppendLine("***");
-        builder.Append($"{description}: ");
-        if (viewModel.SelectedItem == null)
+        get
         {
-            builder.AppendLine("(value is null)");
+            if (_ChangeComboboxSelectionCommand == null)
+            {
+                _ChangeComboboxSelectionCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages,
+                        () => ChangeFieldSelection(SingleSelectField));
+            }
+
+            return _ChangeComboboxSelectionCommand;
         }
-        else
+    }
+
+    private ICommand? _ChangeListboxSelectionCommand;
+    public ICommand ChangeListboxSelectionCommand
+    {
+        get
         {
-            builder.AppendLine(viewModel.SelectedItem.Text);
+            if (_ChangeListboxSelectionCommand == null)
+            {
+                _ChangeListboxSelectionCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages,
+                        () => ChangeFieldSelection(ListboxSingleSelectField));
+            }
+
+            return _ChangeListboxSelectionCommand;
+        }
+    }
+
+    private ICommand? _ToggleIsValidCommand;
+    public ICommand ToggleIsValidCommand
+    {
+        get
+        {
+            if (_ToggleIsValidCommand == null)
+            {
+                _ToggleIsValidCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages,
+                    () => ToggleIsValid());
+            }
+
+            return _ToggleIsValidCommand;
+        }
+    }
+
+    private ICommand? _UpdateLabelFieldCommand;
+    public ICommand UpdateLabelFieldCommand
+    {
+        get
+        {
+            if (_UpdateLabelFieldCommand == null)
+            {
+                _UpdateLabelFieldCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages,
+                    () => {
+                        LabelField.Value = $"Label: {DateTime.Now}";
+                    });
+            }
+
+            return _UpdateLabelFieldCommand;
+        }
+    }
+
+
+    private bool _IsValidationErrorsVisible = false;
+
+    private void ToggleIsValid()
+    {
+        _IsValidationErrorsVisible = !_IsValidationErrorsVisible;
+
+        var message = _IsValidationErrorsVisible ?
+            "Validation errors are now visible." :
+            "Validation errors are now hidden.";
+
+        SingleSelectField.IsValid = !_IsValidationErrorsVisible;
+        SingleSelectField.ValidationMessage = message;
+
+        ListboxSingleSelectField.IsValid = !_IsValidationErrorsVisible;
+        ListboxSingleSelectField.ValidationMessage = message;
+
+        StringField.IsValid = !_IsValidationErrorsVisible;
+        StringField.ValidationMessage = message;
+
+        IntField.IsValid = !_IsValidationErrorsVisible;
+        IntField.ValidationMessage = message;
+
+        LabelField.IsValid = !_IsValidationErrorsVisible;
+        LabelField.ValidationMessage = message;
+    }
+
+    private static void ChangeFieldSelection(SingleSelectListViewModel field)
+{
+    var itemCount = field.Items.Count;
+
+    if (field.SelectedItem == null)
+    {
+        field.Items[0].IsSelected = true;
+    }
+    else
+    {
+        var indexOf = field.Items.IndexOf(field.SelectedItem);
+
+        var newIndex = indexOf + 1;
+
+        if (newIndex >= itemCount)
+        {
+            newIndex = 0;
         }
 
-        builder.Append("Visible: ");
-        builder.AppendLine(viewModel.ToString());
-        builder.Append("Valid: ");
-        builder.AppendLine(viewModel.IsValid.ToString());
-
-        builder.AppendLine();
+        field.Items[newIndex].IsSelected = true;
     }
+}
 
-    public void ToggleVisibility()
+
+private void ShowSummary()
+{
+    var builder = new StringBuilder();
+
+    builder.AppendLine("Button clicked.");
+    builder.Append("String Field: ");
+    builder.AppendLine(StringField.Value);
+    builder.Append("Visible: ");
+    builder.AppendLine(StringField.IsVisible.ToString());
+    builder.Append("Valid: ");
+    builder.AppendLine(StringField.IsValid.ToString());
+
+    builder.Append("Int Field: ");
+    builder.AppendLine(IntField.Value.ToString());
+    builder.Append("Visible: ");
+    builder.AppendLine(IntField.IsVisible.ToString());
+    builder.Append("Valid: ");
+    builder.AppendLine(IntField.IsValid.ToString());
+
+    SummarizeSingleSelect(builder,
+                   SingleSelectField,
+                              "Combobox Single Select Field");
+
+    SummarizeSingleSelect(builder,
+                   ListboxSingleSelectField,
+                              "Listbox Single Select Field");
+
+    Messages.ShowMessage(builder.ToString(), "Summary");
+}
+
+private static void SummarizeSingleSelect(
+    StringBuilder builder, SingleSelectListViewModel viewModel,
+    string description)
+{
+    builder.AppendLine("***");
+    builder.Append($"{description}: ");
+    if (viewModel.SelectedItem == null)
     {
-        StringField.IsVisible = !StringField.IsVisible;
-        LabelField.IsVisible = !LabelField.IsVisible;
-        IntField.IsVisible = !IntField.IsVisible;
-        SingleSelectField.IsVisible = !SingleSelectField.IsVisible;
-        ListboxSingleSelectField.IsVisible = !ListboxSingleSelectField.IsVisible;
+        builder.AppendLine("(value is null)");
+    }
+    else
+    {
+        builder.AppendLine(viewModel.SelectedItem.Text);
     }
 
-    public void ToggleEnabled()
-    {
-        StringField.IsEnabled = !StringField.IsEnabled;
-        LabelField.IsEnabled = !LabelField.IsEnabled;
-        IntField.IsEnabled = !IntField.IsEnabled;
-        SingleSelectField.IsEnabled = !SingleSelectField.IsEnabled;
-        ListboxSingleSelectField.IsEnabled = !ListboxSingleSelectField.IsEnabled;
-    }
+    builder.Append("Visible: ");
+    builder.AppendLine(viewModel.ToString());
+    builder.Append("Valid: ");
+    builder.AppendLine(viewModel.IsValid.ToString());
+
+    builder.AppendLine();
+}
+
+public void ToggleVisibility()
+{
+    StringField.IsVisible = !StringField.IsVisible;
+    LabelField.IsVisible = !LabelField.IsVisible;
+    IntField.IsVisible = !IntField.IsVisible;
+    SingleSelectField.IsVisible = !SingleSelectField.IsVisible;
+    ListboxSingleSelectField.IsVisible = !ListboxSingleSelectField.IsVisible;
+}
+
+public void ToggleEnabled()
+{
+    StringField.IsEnabled = !StringField.IsEnabled;
+    LabelField.IsEnabled = !LabelField.IsEnabled;
+    IntField.IsEnabled = !IntField.IsEnabled;
+    SingleSelectField.IsEnabled = !SingleSelectField.IsEnabled;
+    ListboxSingleSelectField.IsEnabled = !ListboxSingleSelectField.IsEnabled;
+}
 }

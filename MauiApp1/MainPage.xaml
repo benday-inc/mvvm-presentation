@@ -6,10 +6,6 @@
     xmlns:ViewModels="clr-namespace:MauiApp1.ViewModels"
     x:Class="MauiApp1.MainPage">
 
-    <!--<ContentPage.BindingContext>
-        <ViewModels:Test123ViewModel></ViewModels:Test123ViewModel>
-    </ContentPage.BindingContext>-->
-
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition
@@ -32,16 +28,16 @@
                 Command="{Binding ToggleEnabledCommand}"></Button>
             <Button
                 Text="Change Combobox Selection"
-                Clicked="ChangeComboboxSelection_Clicked"></Button>
+                Command="{Binding ChangeComboboxSelectionCommand}"></Button>
             <Button
                 Text="Change Listbox Selection"
-                Clicked="ChangeListboxSelection_Clicked"></Button>
+                Command="{Binding ChangeListboxSelectionCommand}"></Button>
             <Button
                 Text="Update Label Field"
-                Clicked="UpdateLabelField_Clicked"></Button>
+                Command="{Binding UpdateLabelFieldCommand}"></Button>
             <Button
                 Text="Toggle Validation Errors"
-                Clicked="ToggleValidationErrors_Clicked"></Button>
+                Command="{Binding ToggleIsValidCommand}"></Button>
             <Button
                 Text="Show Message"
                 Command="{Binding ShowMessageCommand}"></Button>
