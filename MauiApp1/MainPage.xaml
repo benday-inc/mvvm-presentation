@@ -53,11 +53,6 @@
 
             </PresentationControls:ListboxField>
 
-            <PresentationControls:ListboxField 
-                LabelText="Listbox Field / Multi Select"
-                BindingContext="{Binding ListboxMultiSelectField}"                
-                ></PresentationControls:ListboxField>
-
             <PresentationControls:LabelField 
                 LabelText="Label Field"
                 BindingContext="{Binding LabelField}">
