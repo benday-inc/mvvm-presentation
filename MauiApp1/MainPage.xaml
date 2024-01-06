@@ -29,7 +29,7 @@
                 Command="{Binding ToggleVisibilityCommand}"></Button>
             <Button
                 Text="Toggle Enabled"
-                Clicked="ToggleEnabled_Clicked"></Button>
+                Command="{Binding ToggleEnabledCommand}"></Button>
             <Button
                 Text="Change Combobox Selection"
                 Clicked="ChangeComboboxSelection_Clicked"></Button>

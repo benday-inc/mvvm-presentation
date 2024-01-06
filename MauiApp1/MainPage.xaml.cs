@@ -31,18 +31,7 @@ public partial class MainPage : ContentPage
             this.BindingContext = value;
         }
     }
-
-    private void ToggleEnabled_Clicked(object sender, EventArgs e)
-    {
-        var vm = ViewModel;
-        
-        vm.StringField.IsEnabled = !vm.StringField.IsEnabled;
-        vm.LabelField.IsEnabled = !vm.LabelField.IsEnabled;
-        vm.IntField.IsEnabled = !vm.IntField.IsEnabled;
-        vm.SingleSelectField.IsEnabled = !vm.SingleSelectField.IsEnabled;
-        vm.ListboxSingleSelectField.IsEnabled = !vm.ListboxSingleSelectField.IsEnabled;
-    }
-
+    
     private void UpdateLabelField_Clicked(object sender, EventArgs e)
     {
         var vm = ViewModel;

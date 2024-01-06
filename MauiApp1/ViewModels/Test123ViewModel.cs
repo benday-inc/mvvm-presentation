@@ -94,6 +94,22 @@ public class Test123ViewModel : MessagingViewModelBase
         }
     }
 
+    private ICommand? _ToggleEnabledCommand;
+    public ICommand ToggleEnabledCommand
+    {
+        get
+        {
+            if (_ToggleEnabledCommand == null)
+            {
+                _ToggleEnabledCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages, ToggleEnabled);
+            }
+
+            return _ToggleEnabledCommand;
+        }
+    }
+
     private void ShowSummary()
     {
         var builder = new StringBuilder();
@@ -154,5 +170,14 @@ public class Test123ViewModel : MessagingViewModelBase
         IntField.IsVisible = !IntField.IsVisible;
         SingleSelectField.IsVisible = !SingleSelectField.IsVisible;
         ListboxSingleSelectField.IsVisible = !ListboxSingleSelectField.IsVisible;
+    }
+
+    public void ToggleEnabled()
+    {
+        StringField.IsEnabled = !StringField.IsEnabled;
+        LabelField.IsEnabled = !LabelField.IsEnabled;
+        IntField.IsEnabled = !IntField.IsEnabled;
+        SingleSelectField.IsEnabled = !SingleSelectField.IsEnabled;
+        ListboxSingleSelectField.IsEnabled = !ListboxSingleSelectField.IsEnabled;
     }
 }
