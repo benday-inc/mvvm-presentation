@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:PresentationControls="clr-namespace:Benday.Presentation.Controls;assembly=Benday.Presentation"
-             xmlns:ViewModels="clr-namespace:MauiApp1.ViewModels"
-             x:Class="MauiApp1.MainPage">
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:PresentationControls="clr-namespace:Benday.Presentation.Controls;assembly=Benday.Presentation"
+    xmlns:ViewModels="clr-namespace:MauiApp1.ViewModels"
+    x:Class="MauiApp1.MainPage">
 
     <!--<ContentPage.BindingContext>
         <ViewModels:Test123ViewModel></ViewModels:Test123ViewModel>
@@ -11,52 +12,68 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition
+                Width="Auto"></ColumnDefinition>
+            <ColumnDefinition
+                Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <VerticalStackLayout Grid.Column="0" Padding="30,0" Spacing="25">
-            <Button Text="Debug" Clicked="Button_Clicked"></Button>
-            <Button Text="Toggle Visibility" Clicked="ToggleVisibility_Clicked"></Button>
-            <Button Text="Toggle Enabled" Clicked="ToggleEnabled_Clicked"></Button>
-            <Button Text="Change Combobox Selection" Clicked="ChangeComboboxSelection_Clicked"></Button>
-            <Button Text="Change Listbox Selection" Clicked="ChangeListboxSelection_Clicked"></Button>
-            <Button Text="Update Label Field" Clicked="UpdateLabelField_Clicked"></Button>
-            <Button Text="Toggle Validation Errors" Clicked="ToggleValidationErrors_Clicked"></Button>
+        <VerticalStackLayout
+            Grid.Column="0"
+            Padding="30,0"
+            Spacing="25">
+            <Button
+                Text="Debug"
+                Clicked="Button_Clicked"></Button>
+            <Button
+                Text="Toggle Visibility"
+                Clicked="ToggleVisibility_Clicked"></Button>
+            <Button
+                Text="Toggle Enabled"
+                Clicked="ToggleEnabled_Clicked"></Button>
+            <Button
+                Text="Change Combobox Selection"
+                Clicked="ChangeComboboxSelection_Clicked"></Button>
+            <Button
+                Text="Change Listbox Selection"
+                Clicked="ChangeListboxSelection_Clicked"></Button>
+            <Button
+                Text="Update Label Field"
+                Clicked="UpdateLabelField_Clicked"></Button>
+            <Button
+                Text="Toggle Validation Errors"
+                Clicked="ToggleValidationErrors_Clicked"></Button>
         </VerticalStackLayout>
 
         <VerticalStackLayout
-            Grid.Column="1" 
+            Grid.Column="1"
             Padding="30,0"
             Spacing="25">
-            
-            <PresentationControls:TextboxField 
-                LabelText="String Field" 
-                BindingContext="{Binding StringField}" 
-                ></PresentationControls:TextboxField>
 
-            <PresentationControls:TextboxField 
-                LabelText="Int Field" 
+            <PresentationControls:TextboxField
+                LabelText="String Field"
+                BindingContext="{Binding StringField}"></PresentationControls:TextboxField>
+
+            <PresentationControls:TextboxField
+                LabelText="Int Field"
                 BindingContext="{Binding IntField}">
             </PresentationControls:TextboxField>
 
-            <PresentationControls:ComboBoxField 
+            <PresentationControls:ComboBoxField
                 LabelText="Combo Field / Single Select"
-                BindingContext="{Binding SingleSelectField}"
-                >
+                BindingContext="{Binding SingleSelectField}">
 
             </PresentationControls:ComboBoxField>
 
-            <PresentationControls:ListboxField 
+            <PresentationControls:ListboxField
                 LabelText="Listbox Field / Single Select"
-                BindingContext="{Binding ListboxSingleSelectField}"
-                >
+                BindingContext="{Binding ListboxSingleSelectField}">
 
             </PresentationControls:ListboxField>
 
-            <PresentationControls:LabelField 
+            <PresentationControls:LabelField
                 LabelText="Label Field"
                 BindingContext="{Binding LabelField}">
-                
+
             </PresentationControls:LabelField>
         </VerticalStackLayout>
 
