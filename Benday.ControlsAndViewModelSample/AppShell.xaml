@@ -7,9 +7,24 @@
     Shell.FlyoutBehavior="Disabled"
     Title="Maui Controls &amp; ViewModel Sample">
 
-    <ShellContent
-        Title="Maui Controls &amp; ViewModel Sample"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+    <TabBar>
+        <Tab
+            Title="Controls Demo"
+            Icon="controls.svg"
+            
+            >
+            <ShellContent
+                Title="Maui Controls &amp; ViewModel Sample"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab
+            Title="About"
+            Icon="about.svg">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </TabBar>
 
 </Shell>
