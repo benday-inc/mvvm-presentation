@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace MauiApp1;
+namespace Benday.ControlsAndViewModelSample.Platforms.iOS;
 public class Program
 {
     // This is the main entry point of the application.

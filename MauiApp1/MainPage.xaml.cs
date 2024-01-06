@@ -1,8 +1,8 @@
-﻿using Benday.Presentation;
-using MauiApp1.ViewModels;
+﻿using Benday.ControlsAndViewModelSample.ViewModels;
+using Benday.Presentation;
 using System.Text;
 
-namespace MauiApp1;
+namespace Benday.ControlsAndViewModelSample;
 
 public partial class MainPage : ContentPage
 {

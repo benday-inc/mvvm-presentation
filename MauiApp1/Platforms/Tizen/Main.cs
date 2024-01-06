@@ -2,7 +2,7 @@ using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 using System;
 
-namespace MauiApp1;
+namespace Benday.ControlsAndViewModelSample;
 
 internal class Program : MauiApplication
 {

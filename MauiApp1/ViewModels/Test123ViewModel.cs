@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MauiApp1.ViewModels;
+namespace Benday.ControlsAndViewModelSample.ViewModels;
 public class Test123ViewModel : MessagingViewModelBase
 {
     public Test123ViewModel(IMessageManager messageManager) : base(messageManager)

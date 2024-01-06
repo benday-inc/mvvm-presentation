@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace MauiApp1;
+namespace Benday.ControlsAndViewModelSample.Platforms.MacCatalyst;
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate
 {

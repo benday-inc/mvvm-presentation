@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace MauiApp1;
+namespace Benday.ControlsAndViewModelSample;
 public static class MauiProgram
 {
     public static MauiApp CreateMauiApp()

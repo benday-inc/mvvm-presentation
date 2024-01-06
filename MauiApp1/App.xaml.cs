@@ -1,4 +1,4 @@
-﻿namespace MauiApp1;
+﻿namespace Benday.ControlsAndViewModelSample;
 
 public partial class App : Application
 {

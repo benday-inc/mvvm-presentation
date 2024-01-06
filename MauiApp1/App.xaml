@@ -2,10 +2,10 @@
 <Application
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:MauiApp1"
+    xmlns:local="clr-namespace:Benday.ControlsAndViewModelSample"
     xmlns:valconvs="clr-namespace:Benday.Presentation.ValueConverters;assembly=Benday.Presentation"
     xmlns:pres="clr-namespace:Benday.Presentation;assembly=Benday.Presentation"
-    x:Class="MauiApp1.App">
+    x:Class="Benday.ControlsAndViewModelSample.App">
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
