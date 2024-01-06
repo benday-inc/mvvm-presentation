@@ -2,11 +2,73 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benday.ControlsAndViewModelSample.AboutPage"
-             Title="AboutPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="About">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition
+                Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+
+        </Grid.RowDefinitions>
+        <VerticalStackLayout
+            Padding="40,0,0,0">
+            <Label
+                Padding="4"
+                Text="Controls &amp; ViewModel Sample"
+                FontSize="36"
+                />
+            <Label
+                Padding="4"
+                Text="Benday.Presentation"
+                FontSize="24"
+                />
+            <Label
+                Padding="4"
+                Text="by"
+                FontSize="16" />
+        </VerticalStackLayout>
+
+        <VerticalStackLayout
+            Grid.Row="1"
+            Padding="40,0,0,0">
+            <Image
+                HorizontalOptions="Start"
+                VerticalOptions="Start"
+                WidthRequest="600"
+                Margin="10"
+                Source="bdc_logo_960x180.png" />
+
+        </VerticalStackLayout>
+        
+        <VerticalStackLayout
+            Grid.Row="2"
+            Padding="40,0,0,0">
+
+            <Label
+                Text="https://www.benday.com"
+                TextColor="Blue"
+                TextDecorations="Underline"
+                >
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped" 
+                        CommandParameter="https://www.benday.com" />
+                </Label.GestureRecognizers>
+            </Label>
+
+            <Label
+                Text="info@benday.com"
+                TextColor="Blue"
+                TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"
+                        CommandParameter="mailto:info@benday.com" />
+                </Label.GestureRecognizers>
+            </Label>
+        </VerticalStackLayout>
+        
+    </Grid>
 </ContentPage>

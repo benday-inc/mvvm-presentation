@@ -61,6 +61,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\about.svg" />
 	  <None Remove="Resources\AppIcon\controls.svg" />
+	  <None Remove="Resources\Images\bdc_logo_960x180.png" />
+	  <None Remove="Resources\Images\bdc_mark_large.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
