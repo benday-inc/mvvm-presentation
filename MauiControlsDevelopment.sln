@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.ControlsAndViewModelSample", "MauiApp1\Benday.ControlsAndViewModelSample.csproj", "{5548DDE0-E05B-4012-BE75-BCD80370D501}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.ControlsAndViewModelSample", "Benday.ControlsAndViewModelSample\Benday.ControlsAndViewModelSample.csproj", "{5548DDE0-E05B-4012-BE75-BCD80370D501}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.Presentation", "Benday.Presentation\Benday.Presentation.csproj", "{979F3939-B522-4EE0-85E6-F6AC27302F5A}"
 EndProject
