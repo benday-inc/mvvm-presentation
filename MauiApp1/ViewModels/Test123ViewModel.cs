@@ -77,7 +77,23 @@ public class Test123ViewModel : MessagingViewModelBase
             return _ShowSummaryCommand;
         }
     }
-    
+
+    private ICommand? _ToggleVisibilityCommand;
+    public ICommand ToggleVisibilityCommand
+    {
+        get
+        {
+            if (_ToggleVisibilityCommand == null)
+            {
+                _ToggleVisibilityCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages, ToggleVisibility);
+            }
+
+            return _ToggleVisibilityCommand;
+        }
+    }
+
     private void ShowSummary()
     {
         var builder = new StringBuilder();
@@ -129,5 +145,14 @@ public class Test123ViewModel : MessagingViewModelBase
         builder.AppendLine(viewModel.IsValid.ToString());
 
         builder.AppendLine();
+    }
+
+    public void ToggleVisibility()
+    {
+        StringField.IsVisible = !StringField.IsVisible;
+        LabelField.IsVisible = !LabelField.IsVisible;
+        IntField.IsVisible = !IntField.IsVisible;
+        SingleSelectField.IsVisible = !SingleSelectField.IsVisible;
+        ListboxSingleSelectField.IsVisible = !ListboxSingleSelectField.IsVisible;
     }
 }

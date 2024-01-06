@@ -32,17 +32,6 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private void ToggleVisibility_Clicked(object sender, EventArgs e)
-    {
-        var vm = ViewModel;
-
-        vm.StringField.IsVisible = !vm.StringField.IsVisible;
-        vm.LabelField.IsVisible = !vm.LabelField.IsVisible;
-        vm.IntField.IsVisible = !vm.IntField.IsVisible;
-        vm.SingleSelectField.IsVisible = !vm.SingleSelectField.IsVisible;
-        vm.ListboxSingleSelectField.IsVisible = !vm.ListboxSingleSelectField.IsVisible;
-    }
-
     private void ToggleEnabled_Clicked(object sender, EventArgs e)
     {
         var vm = ViewModel;

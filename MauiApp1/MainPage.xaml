@@ -26,7 +26,7 @@
                 Command="{Binding ShowSummaryCommand}"></Button>
             <Button
                 Text="Toggle Visibility"
-                Clicked="ToggleVisibility_Clicked"></Button>
+                Command="{Binding ToggleVisibilityCommand}"></Button>
             <Button
                 Text="Toggle Enabled"
                 Clicked="ToggleEnabled_Clicked"></Button>
