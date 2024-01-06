@@ -42,6 +42,9 @@
             <Button
                 Text="Toggle Validation Errors"
                 Clicked="ToggleValidationErrors_Clicked"></Button>
+            <Button
+                Text="Show Message"
+                Command="{Binding ShowMessageCommand}"></Button>
         </VerticalStackLayout>
 
         <VerticalStackLayout

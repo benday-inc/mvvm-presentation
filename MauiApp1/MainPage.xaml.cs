@@ -6,12 +6,13 @@ namespace MauiApp1;
 
 public partial class MainPage : ContentPage
 {
-    
+    private MessageBoxMessageManager _MessageManager = new();
+
     public MainPage()
     {
         InitializeComponent();
 
-        this.BindingContext = new Test123ViewModel();
+        this.BindingContext = new Test123ViewModel(_MessageManager);
     }
 
     private void CounterEntry_Completed(object sender, EventArgs e)

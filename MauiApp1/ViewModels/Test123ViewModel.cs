@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace MauiApp1.ViewModels;
-public class Test123ViewModel : ViewModelBase
+public class Test123ViewModel : MessagingViewModelBase
 {
-    public Test123ViewModel()
+    public Test123ViewModel(IMessageManager messageManager) : base(messageManager)
     {
         StringField = new ViewModelField<string>(String.Empty);
         IntField = new ViewModelField<int>(123);
@@ -37,6 +38,28 @@ public class Test123ViewModel : ViewModelBase
         items.Add(new SelectableItem(false, $"{controlName}: Item 7"));
 
         return items;
+    }
+
+
+    private ICommand _ShowMessageCommand;
+    public ICommand ShowMessageCommand
+    {
+        get
+        {
+            if (_ShowMessageCommand == null)
+            {
+                _ShowMessageCommand = 
+                    new ExceptionHandlingRelayCommand(
+                        Messages, () =>
+                        {
+                            Messages.ShowMessage(
+                                $"Hi. It's {DateTime.Now}.", 
+                                "Current Time");
+                        });
+            }
+
+            return _ShowMessageCommand;
+        }
     }
 
 }
