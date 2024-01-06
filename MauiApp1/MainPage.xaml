@@ -22,8 +22,8 @@
             Padding="30,0"
             Spacing="25">
             <Button
-                Text="Debug"
-                Clicked="Button_Clicked"></Button>
+                Text="Show View Model Summary"
+                Command="{Binding ShowSummaryCommand}"></Button>
             <Button
                 Text="Toggle Visibility"
                 Clicked="ToggleVisibility_Clicked"></Button>

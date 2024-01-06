@@ -41,7 +41,7 @@ public class Test123ViewModel : MessagingViewModelBase
     }
 
 
-    private ICommand _ShowMessageCommand;
+    private ICommand? _ShowMessageCommand;
     public ICommand ShowMessageCommand
     {
         get
@@ -62,4 +62,72 @@ public class Test123ViewModel : MessagingViewModelBase
         }
     }
 
+    private ICommand? _ShowSummaryCommand;
+    public ICommand ShowSummaryCommand
+    {
+        get
+        {
+            if (_ShowSummaryCommand == null)
+            {
+                _ShowSummaryCommand =
+                    new ExceptionHandlingRelayCommand(
+                        Messages, ShowSummary);
+            }
+
+            return _ShowSummaryCommand;
+        }
+    }
+    
+    private void ShowSummary()
+    {
+        var builder = new StringBuilder();
+
+        builder.AppendLine("Button clicked.");
+        builder.Append("String Field: ");
+        builder.AppendLine(StringField.Value);
+        builder.Append("Visible: ");
+        builder.AppendLine(StringField.IsVisible.ToString());
+        builder.Append("Valid: ");
+        builder.AppendLine(StringField.IsValid.ToString());
+
+        builder.Append("Int Field: ");
+        builder.AppendLine(IntField.Value.ToString());
+        builder.Append("Visible: ");
+        builder.AppendLine(IntField.IsVisible.ToString());
+        builder.Append("Valid: ");
+        builder.AppendLine(IntField.IsValid.ToString());
+
+        SummarizeSingleSelect(builder,
+                       SingleSelectField,
+                                  "Combobox Single Select Field");
+
+        SummarizeSingleSelect(builder,
+                       ListboxSingleSelectField,
+                                  "Listbox Single Select Field");
+
+        Messages.ShowMessage(builder.ToString(), "Summary");
+    }
+
+    private static void SummarizeSingleSelect(
+        StringBuilder builder, SingleSelectListViewModel viewModel,
+        string description)
+    {
+        builder.AppendLine("***");
+        builder.Append($"{description}: ");
+        if (viewModel.SelectedItem == null)
+        {
+            builder.AppendLine("(value is null)");
+        }
+        else
+        {
+            builder.AppendLine(viewModel.SelectedItem.Text);
+        }
+
+        builder.Append("Visible: ");
+        builder.AppendLine(viewModel.ToString());
+        builder.Append("Valid: ");
+        builder.AppendLine(viewModel.IsValid.ToString());
+
+        builder.AppendLine();
+    }
 }

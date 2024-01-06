@@ -32,61 +32,6 @@ public partial class MainPage : ContentPage
         }
     }
 
-    private async void Button_Clicked(object sender, EventArgs e)
-    {
-        var builder = new StringBuilder();
-
-        var vm = ViewModel;
-
-        builder.AppendLine("Button clicked.");
-        builder.Append("String Field: ");
-        builder.AppendLine(vm.StringField.Value);
-        builder.Append("Visible: ");
-        builder.AppendLine(vm.StringField.IsVisible.ToString());
-        builder.Append("Valid: ");
-        builder.AppendLine(vm.StringField.IsValid.ToString());
-
-        builder.Append("Int Field: ");
-        builder.AppendLine(vm.IntField.Value.ToString());
-        builder.Append("Visible: ");
-        builder.AppendLine(vm.IntField.IsVisible.ToString());
-        builder.Append("Valid: ");
-        builder.AppendLine(vm.IntField.IsValid.ToString());
-
-        SummarizeSingleSelect(builder, 
-            vm.SingleSelectField, 
-            "Combobox Single Select Field");
-
-        SummarizeSingleSelect(builder,
-            vm.ListboxSingleSelectField,
-            "Listbox Single Select Field");
-
-        await DisplayAlert("Button Clicked", builder.ToString(), "OK");
-    }
-
-    private static void SummarizeSingleSelect(
-        StringBuilder builder, SingleSelectListViewModel viewModel, 
-        string description)
-    {
-        builder.AppendLine("***");
-        builder.Append($"{description}: ");
-        if (viewModel.SelectedItem == null)
-        {
-            builder.AppendLine("(value is null)");
-        }
-        else
-        {
-            builder.AppendLine(viewModel.SelectedItem.Text);
-        }
-
-        builder.Append("Visible: ");
-        builder.AppendLine(viewModel.ToString());
-        builder.Append("Valid: ");
-        builder.AppendLine(viewModel.IsValid.ToString());
-
-        builder.AppendLine();
-    }
-
     private void ToggleVisibility_Clicked(object sender, EventArgs e)
     {
         var vm = ViewModel;
