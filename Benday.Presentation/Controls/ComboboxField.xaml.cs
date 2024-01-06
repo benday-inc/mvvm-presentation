@@ -1,8 +1,8 @@
 namespace Benday.Presentation.Controls;
 
-public partial class ComboBoxField : ContentView, ILabeledField
+public partial class ComboboxField : ContentView, ILabeledField
 {
-	public ComboBoxField()
+	public ComboboxField()
 	{
 		InitializeComponent();
 	}
@@ -37,7 +37,7 @@ public partial class ComboBoxField : ContentView, ILabeledField
         BindableProperty.Create(
             propertyName: nameof(LabelText),
             returnType: typeof(string),
-            declaringType: typeof(ComboBoxField),
+            declaringType: typeof(ComboboxField),
             defaultValue: string.Empty,
             defaultBindingMode: BindingMode.TwoWay,
             propertyChanged: DependencyPropertyUtility.LabelTextPropertyChanged);

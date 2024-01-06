@@ -21,11 +21,8 @@
                 Text="Show View Model Summary"
                 Command="{Binding ShowSummaryCommand}"></Button>
             <Button
-                Text="Toggle Visibility"
-                Command="{Binding ToggleVisibilityCommand}"></Button>
-            <Button
-                Text="Toggle Enabled"
-                Command="{Binding ToggleEnabledCommand}"></Button>
+                Text="Show Message Box"
+                Command="{Binding ShowMessageCommand}"></Button>
             <Button
                 Text="Change Combobox Selection"
                 Command="{Binding ChangeComboboxSelectionCommand}"></Button>
@@ -39,8 +36,12 @@
                 Text="Toggle Validation Errors"
                 Command="{Binding ToggleIsValidCommand}"></Button>
             <Button
-                Text="Show Message"
-                Command="{Binding ShowMessageCommand}"></Button>
+                Text="Toggle Visibility"
+                Command="{Binding ToggleVisibilityCommand}"></Button>
+            <Button
+                Text="Toggle Enabled"
+                Command="{Binding ToggleEnabledCommand}"></Button>
+            
         </VerticalStackLayout>
 
         <VerticalStackLayout
@@ -57,11 +58,11 @@
                 BindingContext="{Binding IntField}">
             </PresentationControls:TextboxField>
 
-            <PresentationControls:ComboBoxField
+            <PresentationControls:ComboboxField
                 LabelText="Combo Field / Single Select"
                 BindingContext="{Binding SingleSelectField}">
 
-            </PresentationControls:ComboBoxField>
+            </PresentationControls:ComboboxField>
 
             <PresentationControls:ListboxField
                 LabelText="Listbox Field / Single Select"
