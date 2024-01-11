@@ -1,17 +1,29 @@
+/* Unmerged change from project 'Benday.Presentation.Controls (net8.0-android)'
+Before:
+namespace Benday.Presentation.Controls.Controls;
+After:
+using Benday;
+using Benday.Presentation;
+using Benday.Presentation.Controls;
+using Benday.Presentation.Controls;
+using Benday.Presentation.Controls.Controls;
+
+namespace Benday.Presentation.Controls;
+*/
 namespace Benday.Presentation.Controls;
 
 public partial class ListboxField : ContentView, ILabeledField
 {
-	public ListboxField()
-	{
-		InitializeComponent();
-	}
+    public ListboxField()
+    {
+        InitializeComponent();
+    }
 
     public string LabelText
     {
         get
         {
-            return (string)this.GetValue(LabelTextProperty);
+            return (string)GetValue(LabelTextProperty);
         }
         set
         {
@@ -23,12 +35,12 @@ public partial class ListboxField : ContentView, ILabeledField
     {
         if (value == null)
         {
-            this.SetValue(LabelTextProperty, String.Empty);
-            _Label.Text = String.Empty;
+            SetValue(LabelTextProperty, string.Empty);
+            _Label.Text = string.Empty;
         }
         else
         {
-            this.SetValue(LabelTextProperty, value);
+            SetValue(LabelTextProperty, value);
             _Label.Text = value;
         }
     }

@@ -1,10 +1,20 @@
+/* Unmerged change from project 'Benday.Presentation.Controls (net8.0-android)'
+Before:
+namespace Benday.Presentation.Controls.Controls;
+After:
+using Benday;
+using Benday.Presentation;
+using Benday.Presentation.Controls;
+using Benday.Presentation.Controls;
+using Benday.Presentation.Controls.Controls;
+*/
 namespace Benday.Presentation.Controls;
 
 public partial class TextboxField : ContentView, ILabeledField
 {
     public TextboxField()
     {
-        InitializeComponent();        
+        InitializeComponent();
     }
 
     private void Entry_Completed(object sender, EventArgs e)
@@ -16,24 +26,24 @@ public partial class TextboxField : ContentView, ILabeledField
     {
         get
         {
-            return (string)this.GetValue(LabelTextProperty);
+            return (string)GetValue(LabelTextProperty);
         }
         set
         {
             SetLabelText(value);
         }
-    }    
+    }
 
     public void SetLabelText(string value)
     {
         if (value == null)
         {
-            this.SetValue(LabelTextProperty, String.Empty);
-            _Label.Text = String.Empty;
+            SetValue(LabelTextProperty, string.Empty);
+            _Label.Text = string.Empty;
         }
         else
         {
-            this.SetValue(LabelTextProperty, value);
+            SetValue(LabelTextProperty, value);
             _Label.Text = value;
         }
     }
@@ -44,7 +54,7 @@ public partial class TextboxField : ContentView, ILabeledField
             returnType: typeof(string),
             declaringType: typeof(TextboxField),
             defaultValue: string.Empty,
-            defaultBindingMode: BindingMode.TwoWay, 
+            defaultBindingMode: BindingMode.TwoWay,
             propertyChanged: DependencyPropertyUtility.LabelTextPropertyChanged);
 
 }
