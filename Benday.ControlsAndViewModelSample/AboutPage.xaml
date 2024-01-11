@@ -68,6 +68,21 @@
                         CommandParameter="mailto:info@benday.com" />
                 </Label.GestureRecognizers>
             </Label>
+
+            <Label
+                Padding="0,10,0,0"
+                Text="Source code? Bugs? Feature Requests? Click here."
+                TextColor="Blue"
+                TextDecorations="Underline">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer
+                        Tapped="TapGestureRecognizer_Tapped"
+                        CommandParameter="https://github.com/benday-inc/maui-research-20231116" />
+                </Label.GestureRecognizers>
+            </Label>
+            
+            
+
         </VerticalStackLayout>
         
     </Grid>

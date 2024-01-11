@@ -43,6 +43,8 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
+
+    <MauiIcon Include="Resources\AppIcon\bdc_mark.svg" />
 		<MauiIcon Include="Resources\AppIcon\about.svg" />
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
 		<MauiIcon Include="Resources\AppIcon\controls.svg" />
@@ -61,18 +63,22 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<!--<ItemGroup>
 	  <None Remove="Resources\AppIcon\about.svg" />
 	  <None Remove="Resources\AppIcon\controls.svg" />
 	  <None Remove="Resources\Images\bdc_logo_960x180.png" />
 	  <None Remove="Resources\Images\bdc_mark_large.jpg" />
-	</ItemGroup>
+	</ItemGroup>-->
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
+
+	<!--<ItemGroup>
+	  <Page Include="Resources\AppIcon\bdc_mark.svg" />
+	</ItemGroup>-->
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
