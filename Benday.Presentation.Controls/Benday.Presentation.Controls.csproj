@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFrameworks>net8.0-android;net8.0-ios;net8.0-maccatalyst</TargetFrameworks>
@@ -16,7 +16,29 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Authors>benday</Authors>
+		<Copyright>2024</Copyright>
+		<PackageProjectUrl>https://github.com/benday-inc/mvvm-presentation</PackageProjectUrl>
+		<PackageIcon>bdc_mark_128_128.png</PackageIcon>
+		<PackageReadmeFile>README-for-nuget-controls.md</PackageReadmeFile>
+		<Description>A collection of reusable controls for displaying and editing data in an model-view-viewmodel application. These controls use the MVVM utilities in Benday.Presentation.</Description>
+		<RepositoryUrl>https://github.com/benday-inc/mvvm-presentation</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\bdc_mark_128_128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README-for-nuget-controls.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
+
+	
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
@@ -25,6 +47,17 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="bdc_mark_128_128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Update="README-for-nuget.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
