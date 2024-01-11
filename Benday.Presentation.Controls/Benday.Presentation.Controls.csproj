@@ -22,7 +22,7 @@
     <PackageProjectUrl>https://github.com/benday-inc/mvvm-presentation</PackageProjectUrl>
     <PackageIcon>bdc_mark_128_128.png</PackageIcon>
     <PackageReadmeFile>README-for-nuget-controls.md</PackageReadmeFile>
-    <Description>A collection of classes and utility methods working with the model-view-viewmodel pattern in MAUI .NET. These classes support the controls in the Benday.Presentation.Controls package.</Description>
+    <Description>A collection of reusable controls for displaying and editing data in an model-view-viewmodel (MVVM) application that uses MAUI .NET. These controls use the MVVM utilities in the Benday.Presentation library.</Description>
     <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Configurations>Debug;Release;Debug-nuget-pkgs</Configurations>

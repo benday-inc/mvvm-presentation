@@ -22,12 +22,12 @@
 	  <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
 	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 	  <Authors>benday</Authors>
-	  <Description>A collection of reusable controls for displaying and editing data in an model-view-viewmodel application. These controls use the MVVM utilities in Benday.Presentation.</Description>
+	  <Description>A collection of classes and utility methods working with the model-view-viewmodel (MVVM) pattern in MAUI .NET. These classes support the controls in the Benday.Presentation.Controls package.</Description>
 	  <Copyright>2024</Copyright>
 	  <PackageProjectUrl>https://github.com/benday-inc/mvvm-presentation</PackageProjectUrl>
 	  <PackageIcon>bdc_mark_128_128.png</PackageIcon>
 	  <PackageReadmeFile>README-for-nuget-presentation.md</PackageReadmeFile>
-	  <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation</RepositoryUrl>
+	  <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation.git</RepositoryUrl>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
 
