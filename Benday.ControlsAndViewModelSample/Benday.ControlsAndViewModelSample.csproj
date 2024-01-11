@@ -35,6 +35,7 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.22621.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.22621.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<Configurations>Debug;Release;Debug-nuget-pkgs;debug-only-nuget</Configurations>
 	</PropertyGroup>
 
 	<PropertyGroup>
@@ -79,12 +80,26 @@
 	<!--<ItemGroup>
 	  <Page Include="Resources\AppIcon\bdc_mark.svg" />
 	</ItemGroup>-->
+  
+  <ItemGroup Condition="'$(Configuration)'=='Debug'">
+    <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
+    <ProjectReference Include="..\Benday.Presentation.Controls\Benday.Presentation.Controls.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='Debug-nuget-pkgs'">
+    <PackageReference Include="Benday.Presentation" Version="1.*" />
+    <!--<PackageReference Include="Benday.Presentation.Controls" Version="1.0.0.0" />-->
+    <ProjectReference Include="..\Benday.Presentation.Controls\Benday.Presentation.Controls.csproj" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(Configuration)'=='debug-only-nuget'">
+    <PackageReference Include="Benday.Presentation">
+      <Version>1.*</Version>
+    </PackageReference>
+    <PackageReference Include="Benday.Presentation.Controls">
+      <Version>1.*</Version>
+    </PackageReference>
+  </ItemGroup>
 
-	<ItemGroup>
-	  <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
+  <ItemGroup>
 	  <MauiXaml Update="AboutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

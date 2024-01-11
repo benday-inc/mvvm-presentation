@@ -7,22 +7,44 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.ControlsAndViewModel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.Presentation", "Benday.Presentation\Benday.Presentation.csproj", "{979F3939-B522-4EE0-85E6-F6AC27302F5A}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.Presentation.Controls", "Benday.Presentation.Controls\Benday.Presentation.Controls.csproj", "{3C077B8B-D474-412C-A789-76DB38C9C3CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug-nuget-pkgs|Any CPU = Debug-nuget-pkgs|Any CPU
+		debug-only-nuget|Any CPU = debug-only-nuget|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Debug-nuget-pkgs|Any CPU.ActiveCfg = Debug-nuget-pkgs|Any CPU
+		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Debug-nuget-pkgs|Any CPU.Build.0 = Debug-nuget-pkgs|Any CPU
+		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Debug-nuget-pkgs|Any CPU.Deploy.0 = Debug-nuget-pkgs|Any CPU
+		{5548DDE0-E05B-4012-BE75-BCD80370D501}.debug-only-nuget|Any CPU.ActiveCfg = debug-only-nuget|Any CPU
+		{5548DDE0-E05B-4012-BE75-BCD80370D501}.debug-only-nuget|Any CPU.Build.0 = debug-only-nuget|Any CPU
+		{5548DDE0-E05B-4012-BE75-BCD80370D501}.debug-only-nuget|Any CPU.Deploy.0 = debug-only-nuget|Any CPU
 		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5548DDE0-E05B-4012-BE75-BCD80370D501}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Debug-nuget-pkgs|Any CPU.ActiveCfg = Debug-nuget-pkgs|Any CPU
+		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Debug-nuget-pkgs|Any CPU.Build.0 = Debug-nuget-pkgs|Any CPU
+		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.debug-only-nuget|Any CPU.ActiveCfg = debug-only-nuget|Any CPU
+		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.debug-only-nuget|Any CPU.Build.0 = debug-only-nuget|Any CPU
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Debug-nuget-pkgs|Any CPU.ActiveCfg = Debug-nuget-pkgs|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Debug-nuget-pkgs|Any CPU.Build.0 = Debug-nuget-pkgs|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.debug-only-nuget|Any CPU.ActiveCfg = debug-only-nuget|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.debug-only-nuget|Any CPU.Build.0 = debug-only-nuget|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

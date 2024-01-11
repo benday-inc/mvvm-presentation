@@ -15,11 +15,32 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
 		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+		<Configurations>Debug;Release;Debug-nuget-pkgs;debug-only-nuget</Configurations>
 	</PropertyGroup>
 
 	<PropertyGroup>
 	  <TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net8.0-windows10.0.19041.0</TargetFrameworks>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Authors>benday</Authors>
+	  <Description>A collection of classes and utility methods working with the model-view-viewmodel (MVVM) pattern in MAUI .NET. These classes support the controls in the Benday.Presentation.Controls package.</Description>
+	  <Copyright>2024</Copyright>
+	  <PackageProjectUrl>https://github.com/benday-inc/mvvm-presentation</PackageProjectUrl>
+	  <PackageIcon>bdc_mark_128_128.png</PackageIcon>
+	  <PackageReadmeFile>README-for-nuget-presentation.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation.git</RepositoryUrl>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Include="..\bdc_mark_128_128.png">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	  <None Include="..\README-for-nuget-presentation.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
@@ -28,24 +49,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Controls\ComboBoxField.xaml.cs">
-	    <DependentUpon>ComboboxField.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="Controls\ComboboxField.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Controls\LabelField.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Controls\ListboxField.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Controls\TextboxField.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	  <MauiXaml Update="Styles\Styles.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
