@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.ControlsAndViewModel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Benday.Presentation", "Benday.Presentation\Benday.Presentation.csproj", "{979F3939-B522-4EE0-85E6-F6AC27302F5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Benday.Presentation.Controls", "Benday.Presentation.Controls\Benday.Presentation.Controls.csproj", "{3C077B8B-D474-412C-A789-76DB38C9C3CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{979F3939-B522-4EE0-85E6-F6AC27302F5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C077B8B-D474-412C-A789-76DB38C9C3CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
