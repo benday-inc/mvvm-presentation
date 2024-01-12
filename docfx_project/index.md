@@ -17,11 +17,13 @@ Let us know by submitting an [issue](https://github.com/benday-inc/mvvm-presenta
 ## Benday.Presentation
 
 [API Documentation for Benday.Presentation](api/Benday.Presentation.html)
+
 [NuGet Package for Benday.Presentation](https://www.nuget.org/packages/Benday.Presentation/)
 
 ## Benday.Presentation.Controls
 
 [API Documentation for Benday.Presentation.Controls](api/Benday.Presentation.Controls.html)
+
 [NuGet Package for Benday.Presentation.Controls](https://www.nuget.org/packages/Benday.Presentation.Controls/)
 
 
