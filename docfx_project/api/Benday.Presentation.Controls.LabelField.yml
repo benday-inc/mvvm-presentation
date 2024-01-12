@@ -295,7 +295,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/LabelField.xaml.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
@@ -324,7 +324,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/LabelField.xaml.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelText
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
@@ -353,7 +353,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/LabelField.xaml.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
@@ -385,7 +385,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/LabelField.xaml.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelTextProperty
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs

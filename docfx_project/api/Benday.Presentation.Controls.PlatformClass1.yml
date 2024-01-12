@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/Platforms/Android/PlatformClass1.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: PlatformClass1
     path: ../Benday.Presentation.Controls/Platforms/Android/PlatformClass1.cs

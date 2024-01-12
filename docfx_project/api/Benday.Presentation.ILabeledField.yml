@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ILabeledField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ILabeledField
     path: ../Benday.Presentation/ILabeledField.cs
@@ -41,7 +41,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ILabeledField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation/ILabeledField.cs

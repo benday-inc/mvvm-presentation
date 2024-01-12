@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventHandler.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxEventHandler
     path: ../Benday.Presentation/MessageBoxEventHandler.cs

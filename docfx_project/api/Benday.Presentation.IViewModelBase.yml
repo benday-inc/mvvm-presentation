@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IViewModelBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IViewModelBase
     path: ../Benday.Presentation/IViewModelBase.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IViewModelBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxRequested
     path: ../Benday.Presentation/IViewModelBase.cs

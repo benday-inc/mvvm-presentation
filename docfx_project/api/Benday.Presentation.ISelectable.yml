@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectable.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ISelectable
     path: ../Benday.Presentation/ISelectable.cs
@@ -43,7 +43,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectable.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsSelected
     path: ../Benday.Presentation/ISelectable.cs

@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ExceptionHandlingRelayCommand.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ExceptionHandlingRelayCommand
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ExceptionHandlingRelayCommand.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ExceptionHandlingRelayCommand.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CanExecuteChanged
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ExceptionHandlingRelayCommand.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CanExecute
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
@@ -163,7 +163,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ExceptionHandlingRelayCommand.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Execute
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
@@ -200,7 +200,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ExceptionHandlingRelayCommand.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: NotifyCanExecuteChanged
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs

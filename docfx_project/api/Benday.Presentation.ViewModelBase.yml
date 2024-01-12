@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ViewModelBase
     path: ../Benday.Presentation/ViewModelBase.cs
@@ -60,7 +60,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RaisePropertyChanged
     path: ../Benday.Presentation/ViewModelBase.cs
@@ -92,7 +92,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: PropertyChanged
     path: ../Benday.Presentation/ViewModelBase.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IProgressBarSampleViewModel
     path: ../Benday.Presentation/IProgressBarSampleViewModel.cs
@@ -50,7 +50,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RunProgressBar
     path: ../Benday.Presentation/IProgressBarSampleViewModel.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RunProgressBarCommand
     path: ../Benday.Presentation/IProgressBarSampleViewModel.cs

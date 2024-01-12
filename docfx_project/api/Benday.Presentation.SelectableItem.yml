@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectableItem
     path: ../Benday.Presentation/SelectableItem.cs
@@ -66,7 +66,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
@@ -133,7 +133,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
@@ -176,7 +176,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsSelected
     path: ../Benday.Presentation/SelectableItem.cs
@@ -244,7 +244,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Text
     path: ../Benday.Presentation/SelectableItem.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/SelectableItem.cs
@@ -308,7 +308,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ToString
     path: ../Benday.Presentation/SelectableItem.cs
@@ -340,7 +340,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Id
     path: ../Benday.Presentation/SelectableItem.cs
@@ -372,7 +372,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: TooltipText
     path: ../Benday.Presentation/SelectableItem.cs

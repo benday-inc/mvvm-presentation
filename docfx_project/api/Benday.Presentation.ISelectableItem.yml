@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ISelectableItem
     path: ../Benday.Presentation/ISelectableItem.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Text
     path: ../Benday.Presentation/ISelectableItem.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/ISelectableItem.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Id
     path: ../Benday.Presentation/ISelectableItem.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ISelectableItem.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: TooltipText
     path: ../Benday.Presentation/ISelectableItem.cs

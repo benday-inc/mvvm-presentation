@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxEventArgs
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
@@ -90,7 +90,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
@@ -128,7 +128,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
@@ -164,7 +164,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Message
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
@@ -193,7 +193,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsUnexpectedException
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
@@ -222,7 +222,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Exception
     path: ../Benday.Presentation/MessageBoxEventArgs.cs

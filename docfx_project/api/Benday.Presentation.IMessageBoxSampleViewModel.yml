@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageBoxSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IMessageBoxSampleViewModel
     path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageBoxSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxCommand
     path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageBoxSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ThrowExceptionCommand
     path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageBoxSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: DoSomethingThatNeedsAMessageBox
     path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageBoxSampleViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: DoSomethingThatThrowsAnException
     path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs

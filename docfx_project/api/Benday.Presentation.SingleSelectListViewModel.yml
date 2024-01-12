@@ -27,7 +27,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SingleSelectListViewModel
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -85,7 +85,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -114,7 +114,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -146,7 +146,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -180,7 +180,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -212,7 +212,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -246,7 +246,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Initialize
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -280,7 +280,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByText
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -312,7 +312,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: GetByValue
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -348,7 +348,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByValue
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -380,7 +380,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByValue
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -412,7 +412,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsVisible
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
@@ -444,7 +444,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ValidationMessage
     path: ../Benday.Presentation/SingleSelectListViewModel.cs

@@ -20,7 +20,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IProgressBarViewModel
     path: ../Benday.Presentation/IProgressBarViewModel.cs
@@ -47,7 +47,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsProgressBarVisible
     path: ../Benday.Presentation/IProgressBarViewModel.cs
@@ -76,7 +76,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ProgressBarMessage
     path: ../Benday.Presentation/IProgressBarViewModel.cs
@@ -105,7 +105,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsCancelable
     path: ../Benday.Presentation/IProgressBarViewModel.cs
@@ -134,7 +134,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CancelOperationCommand
     path: ../Benday.Presentation/IProgressBarViewModel.cs
@@ -163,7 +163,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnCancelRequested
     path: ../Benday.Presentation/IProgressBarViewModel.cs

@@ -21,7 +21,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ProgressBarViewModel
     path: ../Benday.Presentation/ProgressBarViewModel.cs
@@ -62,7 +62,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ProgressBarViewModel.cs
@@ -91,7 +91,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsProgressBarVisible
     path: ../Benday.Presentation/ProgressBarViewModel.cs
@@ -123,7 +123,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ProgressBarMessage
     path: ../Benday.Presentation/ProgressBarViewModel.cs
@@ -155,7 +155,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsCancelable
     path: ../Benday.Presentation/ProgressBarViewModel.cs
@@ -187,7 +187,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CancelOperationCommand
     path: ../Benday.Presentation/ProgressBarViewModel.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ProgressBarViewModel.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnCancelRequested
     path: ../Benday.Presentation/ProgressBarViewModel.cs

@@ -23,7 +23,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: NavigatableList
     path: ../Benday.Presentation/NavigatableList.cs
@@ -124,7 +124,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsAtFirst
     path: ../Benday.Presentation/NavigatableList.cs
@@ -155,7 +155,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsAtLast
     path: ../Benday.Presentation/NavigatableList.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CurrentIndex
     path: ../Benday.Presentation/NavigatableList.cs
@@ -217,7 +217,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/NavigatableList.cs
@@ -248,7 +248,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Next
     path: ../Benday.Presentation/NavigatableList.cs
@@ -276,7 +276,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Previous
     path: ../Benday.Presentation/NavigatableList.cs
@@ -304,7 +304,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MoveToFirst
     path: ../Benday.Presentation/NavigatableList.cs
@@ -332,7 +332,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/NavigatableList.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MoveToLast
     path: ../Benday.Presentation/NavigatableList.cs

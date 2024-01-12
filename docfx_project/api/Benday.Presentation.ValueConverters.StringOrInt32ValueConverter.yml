@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: StringOrInt32ValueConverter
     path: ../Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
@@ -57,7 +57,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
@@ -95,7 +95,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs

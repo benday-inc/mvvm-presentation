@@ -25,7 +25,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ViewModelField
     path: ../Benday.Presentation/ViewModelField.cs
@@ -70,7 +70,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ViewModelField.cs
@@ -99,7 +99,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ViewModelField.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/ViewModelField.cs
@@ -162,7 +162,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnValueChanged
     path: ../Benday.Presentation/ViewModelField.cs
@@ -191,7 +191,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RaiseOnValueChanged
     path: ../Benday.Presentation/ViewModelField.cs
@@ -219,7 +219,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsVisible
     path: ../Benday.Presentation/ViewModelField.cs
@@ -253,7 +253,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsValid
     path: ../Benday.Presentation/ViewModelField.cs
@@ -284,7 +284,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsEnabled
     path: ../Benday.Presentation/ViewModelField.cs
@@ -315,7 +315,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ValidationMessage
     path: ../Benday.Presentation/ViewModelField.cs
@@ -346,7 +346,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ViewModelField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ToString
     path: ../Benday.Presentation/ViewModelField.cs

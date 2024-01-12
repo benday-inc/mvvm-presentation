@@ -19,7 +19,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: BendayValueConverterBase
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
@@ -64,7 +64,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Convert
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
@@ -107,7 +107,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertBack
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
@@ -150,7 +150,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
@@ -186,7 +186,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs

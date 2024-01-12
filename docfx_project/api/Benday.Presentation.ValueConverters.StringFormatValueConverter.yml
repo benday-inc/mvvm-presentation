@@ -18,7 +18,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: StringFormatValueConverter
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
@@ -58,7 +58,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
@@ -93,7 +93,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
@@ -131,7 +131,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs

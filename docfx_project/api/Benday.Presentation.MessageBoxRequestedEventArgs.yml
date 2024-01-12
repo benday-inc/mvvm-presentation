@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxRequestedEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxRequestedEventArgs
     path: ../Benday.Presentation/MessageBoxRequestedEventArgs.cs
@@ -52,7 +52,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxRequestedEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxRequestedEventArgs.cs
@@ -84,7 +84,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/MessageBoxRequestedEventArgs.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Message
     path: ../Benday.Presentation/MessageBoxRequestedEventArgs.cs

@@ -17,7 +17,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageManager.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IMessageManager
     path: ../Benday.Presentation/IMessageManager.cs
@@ -42,7 +42,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageManager.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ShowMessage
     path: ../Benday.Presentation/IMessageManager.cs
@@ -73,7 +73,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IMessageManager.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ShowMessage
     path: ../Benday.Presentation/IMessageManager.cs

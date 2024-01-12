@@ -15,7 +15,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/obj/Release/net8.0-android/__Microsoft.Android.Resource.Designer.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Resource
     path: ../Benday.Presentation.Controls/obj/Release/net8.0-android/__Microsoft.Android.Resource.Designer.cs

@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IVisibleField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IVisibleField
     path: ../Benday.Presentation/IVisibleField.cs
@@ -41,7 +41,7 @@ items:
   source:
     remote:
       path: Benday.Presentation/IVisibleField.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsVisible
     path: ../Benday.Presentation/IVisibleField.cs

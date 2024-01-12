@@ -16,7 +16,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/DependencyPropertyUtility.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: DependencyPropertyUtility
     path: ../Benday.Presentation.Controls/DependencyPropertyUtility.cs
@@ -51,7 +51,7 @@ items:
   source:
     remote:
       path: Benday.Presentation.Controls/DependencyPropertyUtility.cs
-      branch: adding-docfx
+      branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelTextPropertyChanged
     path: ../Benday.Presentation.Controls/DependencyPropertyUtility.cs
