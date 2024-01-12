@@ -80,21 +80,34 @@
 Classes
 </h3>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.BendayValueConverterBase.html">BendayValueConverterBase</a></h4>
-      <section></section>
+      <section><p>Base class for value converters that provides an implementation of IValueConverter.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html">NotVisibilityValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that converts a boolean value to a Visibility value.
+If the value supplied is true, then visibility will be returned as false. If the value supplied is false, then the return value is true.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.ShortDateValueConverter.html">ShortDateValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that converts a DateTime value to a string value using the current culture's short date pattern.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.SmartValueConverter.html">SmartValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that converts between the value returned from the user interface and the value used by the view model.
+This is typically used with ViewModelField.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.StringFormatValueConverter.html">StringFormatValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that calls ToString() using a format string and returns the value.
+This only converts one way, from the source to the target.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html">StringOrInt32ValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that converts a string or int32 value to a string value.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html">ToUpperCaseValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that converts a string value to an upper case string value.
+This is a one-way converter.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ValueConverters.VisibilityValueConverter.html">VisibilityValueConverter</a></h4>
-      <section></section>
+      <section><p>A value converter that converts a boolean value to a Visibility value.
+This might be useless in .NET MAUI since MAUI uses booleans for visibility but I'm leaving it in for now.</p>
+</section>
 
 
 </article>

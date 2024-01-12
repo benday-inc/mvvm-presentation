@@ -75,7 +75,9 @@
 
   <h1 id="Benday_Presentation_SelectableCollectionViewModel_1" data-uid="Benday.Presentation.SelectableCollectionViewModel`1" class="text-break">Class SelectableCollectionViewModel&lt;T&gt;
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>View model class for representing a collection of objects that implements ISelectable. By default it only allows one item to be selected at a time and it will
+manage the IsSelected property of the items in the collection.  If you want to allow multiple selections, set AllowMultipleSelections to true.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -146,7 +148,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__ctor.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L13">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L18">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__ctor" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor">SelectableCollectionViewModel()</h4>
@@ -161,11 +163,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0__.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.%23ctor(System.Collections.ObjectModel.ObservableCollection%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L37">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L53">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0__" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})">SelectableCollectionViewModel(ObservableCollection&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -188,16 +191,32 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0___0_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.%23ctor(System.Collections.ObjectModel.ObservableCollection%7B%600%7D%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L47">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L69">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0___0_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0},`0)">SelectableCollectionViewModel(ObservableCollection&lt;T&gt;, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -221,6 +240,22 @@
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">selectedItem</span></td>
+        <td><p>Item in the values collection that should be selected</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -232,7 +267,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.ItemsPropertyName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L117">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L156">View Source</a>
   </span>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName">ItemsPropertyName</h4>
   <div class="markdown level1 summary"></div>
@@ -261,7 +296,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__Items.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601._Items%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L11">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L16">View Source</a>
   </span>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__Items" data-uid="Benday.Presentation.SelectableCollectionViewModel`1._Items">_Items</h4>
   <div class="markdown level1 summary"></div>
@@ -292,11 +327,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.AllowMultipleSelections%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L314">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L371">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections">AllowMultipleSelections</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether multiple selections are allowed.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -322,11 +358,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Count.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L293">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L346">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_Count_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Count*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Count" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Count">Count</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the number of items in the collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -352,11 +389,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.HasOnItemSelectedSubscriber%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L19">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L27">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber">HasOnItemSelectedSubscriber</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Utility property to determine if the view model has a subscriber to the OnItemSelected event.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -382,11 +420,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.IsEnabled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L346">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L410">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled">IsEnabled</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this view model is enabled.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -412,11 +451,13 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_IsValid.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.IsValid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L330">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L391">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_IsValid_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsValid*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_IsValid" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsValid">IsValid</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether this view model is valid.
+NOTE: this property does not do any validation, it is just a flag that can be used by the view.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -442,11 +483,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Items.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Items%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L119">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L161">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_Items_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Items*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Items" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Items">Items</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the collection of items.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -472,11 +514,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.SelectedItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L226">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L276">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem">SelectedItem</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets or sets the selected item.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -504,11 +547,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Add__0_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Add(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L93">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L127">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_Add_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Add*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Add__0_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)">Add(T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds an item to the collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -531,16 +575,32 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Clear.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L85">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L114">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_Clear_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Clear*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Clear" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Clear">Clear()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Clears the collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -551,11 +611,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.GetSelectedItems%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L215">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L261">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems">GetSelectedItems()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Gets the selected items.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -572,7 +633,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>Selected items in a new instance of List</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -581,11 +643,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Initialize(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L62">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L88">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_Initialize_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Initialize*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})">Initialize(IEnumerable&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Resets the collection to the specified values.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -613,7 +676,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.OnItemPropertyChanged(System.Object%2CSystem.ComponentModel.PropertyChangedEventArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L181">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L223">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">OnItemPropertyChanged(object?, PropertyChangedEventArgs)</h4>
@@ -650,7 +713,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.RefreshSelectedItem(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L69">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L95">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)">RefreshSelectedItem(bool)</h4>
@@ -682,11 +745,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Remove(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L105">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L144">View Source</a>
   </span>
   <a id="Benday_Presentation_SelectableCollectionViewModel_1_Remove_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Remove*"></a>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)">Remove(T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Removes an item from the collection.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -709,6 +773,21 @@
       </tr>
     </tbody>
   </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   <h3 id="events">Events
 </h3>
   <span class="small pull-right mobile-hide">
@@ -716,10 +795,11 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.OnItemSelected%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L27">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L38">View Source</a>
   </span>
   <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected">OnItemSelected</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Event that is raised when an item is selected.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -756,7 +836,7 @@
                     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/SelectableCollectionViewModel.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

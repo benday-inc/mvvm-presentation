@@ -80,55 +80,79 @@
 Classes
 </h3>
       <h4><a class="xref" href="Benday.Presentation.ExceptionHandlingRelayCommand.html">ExceptionHandlingRelayCommand</a></h4>
-      <section></section>
+      <section><p>A relay command that handles exceptions by showing them to the user. This class wraps an existing action and
+executes it when the command is invoked. If the action throws an exception, the exception is caught and is shown via IMessageManager.ShowMessage().</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.MessageBoxEventArgs.html">MessageBoxEventArgs</a></h4>
-      <section></section>
+      <section><p>Event arguments for requesting that a message box to be shown to the user.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.MessageBoxMessageManager.html">MessageBoxMessageManager</a></h4>
-      <section></section>
+      <section><p>Message manager that shows a message box to the user.
+This implementation uses the Shell.Current.CurrentPage.DisplayAlert() method.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.MessageBoxRequestedEventArgs.html">MessageBoxRequestedEventArgs</a></h4>
       <section></section>
       <h4><a class="xref" href="Benday.Presentation.MessagingViewModelBase.html">MessagingViewModelBase</a></h4>
-      <section></section>
+      <section><p>Base class for a view model that might need to show a message box to the user.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.NavigatableList-1.html">NavigatableList&lt;T&gt;</a></h4>
-      <section></section>
+      <section><p>Collection class that allows for navigation forwards or backwards through the collection elements</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ProgressBarViewModel.html">ProgressBarViewModel</a></h4>
-      <section></section>
+      <section><p>View model class that provides properties and methods for showing and updating a progress bar in a long-running operation.
+It also provides functionality for canceling the operation.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.SelectableCollectionViewModel-1.html">SelectableCollectionViewModel&lt;T&gt;</a></h4>
-      <section></section>
+      <section><p>View model class for representing a collection of objects that implements ISelectable. By default it only allows one item to be selected at a time and it will
+manage the IsSelected property of the items in the collection.  If you want to allow multiple selections, set AllowMultipleSelections to true.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.SelectableItem.html">SelectableItem</a></h4>
-      <section></section>
+      <section><p>A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items
+but don't want to use a complex object.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.SingleSelectListViewModel.html">SingleSelectListViewModel</a></h4>
-      <section></section>
+      <section><p>A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ViewModelBase.html">ViewModelBase</a></h4>
-      <section></section>
+      <section><p>Base class for view models that provides an implementation of INotifyPropertyChanged.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ViewModelField-1.html">ViewModelField&lt;T&gt;</a></h4>
-      <section></section>
+      <section><p>View model class that represents a field on a form. For example, &quot;FirstName&quot;, &quot;LastName&quot;, &quot;Age&quot;, or &quot;BirthDate&quot;.
+It provides properties for validation, visibility, and enabled. If you're using Benday.Presentation.Controls,
+those field controls will bind to the properties on this class with a single, simple binding expression.</p>
+</section>
     <h3 id="interfaces">
 Interfaces
 </h3>
       <h4><a class="xref" href="Benday.Presentation.ILabeledField.html">ILabeledField</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Benday.Presentation.IMessageBoxSampleViewModel.html">IMessageBoxSampleViewModel</a></h4>
-      <section></section>
+      <section><p>Interface for a field control that has a label.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.IMessageManager.html">IMessageManager</a></h4>
-      <section></section>
-      <h4><a class="xref" href="Benday.Presentation.IProgressBarSampleViewModel.html">IProgressBarSampleViewModel</a></h4>
-      <section></section>
+      <section><p>Interface for requesting showing messages to the user from inside of a view model.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.IProgressBarViewModel.html">IProgressBarViewModel</a></h4>
-      <section></section>
+      <section><p>Interface for a view model that has performs long-running actions that
+displays progress information using a progress bar.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ISelectable.html">ISelectable</a></h4>
-      <section></section>
+      <section><p>Interface for a view model that can be selected. This is typically used in a list of items where the user can select one or more items.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.ISelectableItem.html">ISelectableItem</a></h4>
-      <section></section>
+      <section><p>Interface for a view model that can be selected. This is typically used in a list of items where the user can select one or more items.
+This interface provides a way to get the text and value of the item when using complex objects in a list.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.IViewModelBase.html">IViewModelBase</a></h4>
-      <section></section>
+      <section><p>Interface for a view model that might need to show a message box to the user.</p>
+</section>
       <h4><a class="xref" href="Benday.Presentation.IVisibleField.html">IVisibleField</a></h4>
-      <section></section>
+      <section><p>Interface for a view model class that will be used by a field control that can be hidden.</p>
+</section>
     <h3 id="delegates">
 Delegates
 </h3>
       <h4><a class="xref" href="Benday.Presentation.MessageBoxEventHandler.html">MessageBoxEventHandler</a></h4>
-      <section></section>
+      <section><p>Delegate for requesting a message box to be shown to the user.</p>
+</section>
 
 
 </article>

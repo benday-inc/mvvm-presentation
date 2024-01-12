@@ -75,7 +75,9 @@
 
   <h1 id="Benday_Presentation_ExceptionHandlingRelayCommand" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand" class="text-break">Class ExceptionHandlingRelayCommand
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A relay command that handles exceptions by showing them to the user. This class wraps an existing action and
+executes it when the command is invoked. If the action throws an exception, the exception is caught and is shown via IMessageManager.ShowMessage().</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -124,11 +126,12 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_ExceptionHandlingRelayCommand__ctor_Benday_Presentation_IMessageManager_System_Action_.md&amp;value=---%0Auid%3A%20Benday.Presentation.ExceptionHandlingRelayCommand.%23ctor(Benday.Presentation.IMessageManager%2CSystem.Action)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L11">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L29">View Source</a>
   </span>
   <a id="Benday_Presentation_ExceptionHandlingRelayCommand__ctor_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.#ctor*"></a>
   <h4 id="Benday_Presentation_ExceptionHandlingRelayCommand__ctor_Benday_Presentation_IMessageManager_System_Action_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.#ctor(Benday.Presentation.IMessageManager,System.Action)">ExceptionHandlingRelayCommand(IMessageManager, Action)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="Benday.Presentation.ExceptionHandlingRelayCommand.html">ExceptionHandlingRelayCommand</a> class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -147,11 +150,28 @@
       <tr>
         <td><a class="xref" href="Benday.Presentation.IMessageManager.html">IMessageManager</a></td>
         <td><span class="parametername">msgManager</span></td>
-        <td></td>
+        <td><p>Instance of IMessageManager to use</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
         <td><span class="parametername">execute</span></td>
+        <td><p>The action to perform</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -163,11 +183,11 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_ExceptionHandlingRelayCommand_CanExecute_System_Object_.md&amp;value=---%0Auid%3A%20Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L21">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L44">View Source</a>
   </span>
   <a id="Benday_Presentation_ExceptionHandlingRelayCommand_CanExecute_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute*"></a>
   <h4 id="Benday_Presentation_ExceptionHandlingRelayCommand_CanExecute_System_Object_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute(System.Object)">CanExecute(object?)</h4>
-  <div class="markdown level1 summary"><p>Defines the method that determines whether the command can execute in its current state.</p>
+  <div class="markdown level1 summary"><p>Returns true if the command can be executed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -187,8 +207,7 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">parameter</span></td>
-        <td><p>Data used by the command.  If the command does not require data to be passed, this object can be set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -203,7 +222,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p><a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this command can be executed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.</p>
+        <td><p>This class always returns true.</p>
 </td>
       </tr>
     </tbody>
@@ -213,11 +232,11 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_ExceptionHandlingRelayCommand_Execute_System_Object_.md&amp;value=---%0Auid%3A%20Benday.Presentation.ExceptionHandlingRelayCommand.Execute(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L26">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L53">View Source</a>
   </span>
   <a id="Benday_Presentation_ExceptionHandlingRelayCommand_Execute_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.Execute*"></a>
   <h4 id="Benday_Presentation_ExceptionHandlingRelayCommand_Execute_System_Object_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.Execute(System.Object)">Execute(object?)</h4>
-  <div class="markdown level1 summary"><p>Defines the method to be called when the command is invoked.</p>
+  <div class="markdown level1 summary"><p>Executes the action and handles any exceptions by showing them to the user.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -237,8 +256,7 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">parameter</span></td>
-        <td><p>Data used by the command.  If the command does not require data to be passed, this object can be set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -247,7 +265,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_ExceptionHandlingRelayCommand_NotifyCanExecuteChanged.md&amp;value=---%0Auid%3A%20Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L38">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L65">View Source</a>
   </span>
   <a id="Benday_Presentation_ExceptionHandlingRelayCommand_NotifyCanExecuteChanged_" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged*"></a>
   <h4 id="Benday_Presentation_ExceptionHandlingRelayCommand_NotifyCanExecuteChanged" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged">NotifyCanExecuteChanged()</h4>
@@ -265,7 +283,7 @@
     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_ExceptionHandlingRelayCommand_CanExecuteChanged.md&amp;value=---%0Auid%3A%20Benday.Presentation.ExceptionHandlingRelayCommand.CanExecuteChanged%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L18">View Source</a>
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L36">View Source</a>
   </span>
   <h4 id="Benday_Presentation_ExceptionHandlingRelayCommand_CanExecuteChanged" data-uid="Benday.Presentation.ExceptionHandlingRelayCommand.CanExecuteChanged">CanExecuteChanged</h4>
   <div class="markdown level1 summary"><p>Occurs when changes occur that affect whether or not the command should execute.</p>
@@ -309,7 +327,7 @@
                     <a href="https://github.com/benday-inc/mvvm-presentation/new/master/apiSpec/new?filename=Benday_Presentation_ExceptionHandlingRelayCommand.md&amp;value=---%0Auid%3A%20Benday.Presentation.ExceptionHandlingRelayCommand%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/benday-inc/mvvm-presentation/blob/master/Benday.Presentation/ExceptionHandlingRelayCommand.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
