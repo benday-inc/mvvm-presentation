@@ -22,10 +22,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: StringFormatValueConverter
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: >-
+    A value converter that calls ToString() using a format string and returns the value.
+
+    This only converts one way, from the source to the target.
+  example: []
   syntax:
     content: 'public class StringFormatValueConverter : BendayValueConverterBase, IValueConverter'
     content.vb: Public Class StringFormatValueConverter Inherits BendayValueConverterBase Implements IValueConverter
@@ -62,7 +67,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -97,7 +102,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -135,7 +140,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/StringFormatValueConverter.cs
-    startLine: 23
+    startLine: 27
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters

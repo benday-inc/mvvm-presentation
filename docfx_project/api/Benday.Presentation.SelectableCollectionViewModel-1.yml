@@ -39,14 +39,20 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectableCollectionViewModel
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 8
+    startLine: 13
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    View model class for representing a collection of objects that implements ISelectable. By default it only allows one item to be selected at a time and it will
+
+    manage the IsSelected property of the items in the collection.  If you want to allow multiple selections, set AllowMultipleSelections to true.
+  example: []
   syntax:
     content: 'public class SelectableCollectionViewModel<T> : ViewModelBase, INotifyPropertyChanged where T : class, ISelectable'
     typeParameters:
     - id: T
+      description: ''
     content.vb: Public Class SelectableCollectionViewModel(Of T As {Class, ISelectable}) Inherits ViewModelBase Implements INotifyPropertyChanged
   inheritance:
   - System.Object
@@ -86,7 +92,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: _Items
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 10
+    startLine: 15
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -115,7 +121,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 12
+    startLine: 17
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -144,10 +150,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: HasOnItemSelectedSubscriber
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 18
+    startLine: 26
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Utility property to determine if the view model has a subscriber to the OnItemSelected event.
+  example: []
   syntax:
     content: public bool HasOnItemSelectedSubscriber { get; }
     parameters: []
@@ -175,10 +183,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnItemSelected
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 26
+    startLine: 37
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Event that is raised when an item is selected.
+  example: []
   syntax:
     content: public event EventHandler? OnItemSelected
     return:
@@ -204,17 +214,24 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 36
+    startLine: 52
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
+  example: []
   syntax:
     content: public SelectableCollectionViewModel(ObservableCollection<T> values)
     parameters:
     - id: values
       type: System.Collections.ObjectModel.ObservableCollection{{T}}
+      description: ''
     content.vb: Public Sub New(values As ObservableCollection(Of T))
   overload: Benday.Presentation.SelectableCollectionViewModel`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
   nameWithType.vb: SelectableCollectionViewModel(Of T).New(ObservableCollection(Of T))
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).New(System.Collections.ObjectModel.ObservableCollection(Of T))
   name.vb: New(ObservableCollection(Of T))
@@ -236,19 +253,27 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 46
+    startLine: 68
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
+  example: []
   syntax:
     content: public SelectableCollectionViewModel(ObservableCollection<T> values, T selectedItem)
     parameters:
     - id: values
       type: System.Collections.ObjectModel.ObservableCollection{{T}}
+      description: ''
     - id: selectedItem
       type: '{T}'
+      description: Item in the values collection that should be selected
     content.vb: Public Sub New(values As ObservableCollection(Of T), selectedItem As T)
   overload: Benday.Presentation.SelectableCollectionViewModel`1.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
   nameWithType.vb: SelectableCollectionViewModel(Of T).New(ObservableCollection(Of T), T)
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).New(System.Collections.ObjectModel.ObservableCollection(Of T), T)
   name.vb: New(ObservableCollection(Of T), T)
@@ -270,15 +295,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Initialize
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 61
+    startLine: 87
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Resets the collection to the specified values.
+  example: []
   syntax:
     content: public virtual void Initialize(IEnumerable<T> values)
     parameters:
     - id: values
       type: System.Collections.Generic.IEnumerable{{T}}
+      description: ''
     content.vb: Public Overridable Sub Initialize(values As IEnumerable(Of T))
   overload: Benday.Presentation.SelectableCollectionViewModel`1.Initialize*
   nameWithType.vb: SelectableCollectionViewModel(Of T).Initialize(IEnumerable(Of T))
@@ -302,7 +330,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RefreshSelectedItem
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 68
+    startLine: 94
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -334,10 +362,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Clear
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 84
+    startLine: 113
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Clears the collection.
+  example: []
   syntax:
     content: public void Clear()
     content.vb: Public Sub Clear()
@@ -362,17 +392,24 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Add
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 92
+    startLine: 126
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Adds an item to the collection.
+  example: []
   syntax:
     content: public void Add(T addThis)
     parameters:
     - id: addThis
       type: '{T}'
+      description: ''
     content.vb: Public Sub Add(addThis As T)
   overload: Benday.Presentation.SelectableCollectionViewModel`1.Add*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
   nameWithType.vb: SelectableCollectionViewModel(Of T).Add(T)
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Add(T)
 - uid: Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
@@ -393,17 +430,24 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Remove
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 104
+    startLine: 143
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Removes an item from the collection.
+  example: []
   syntax:
     content: public void Remove(T removeThis)
     parameters:
     - id: removeThis
       type: '{T}'
+      description: ''
     content.vb: Public Sub Remove(removeThis As T)
   overload: Benday.Presentation.SelectableCollectionViewModel`1.Remove*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: ''
   nameWithType.vb: SelectableCollectionViewModel(Of T).Remove(T)
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Remove(T)
 - uid: Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName
@@ -424,7 +468,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ItemsPropertyName
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 116
+    startLine: 155
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -453,10 +497,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Items
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 118
+    startLine: 160
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the collection of items.
+  example: []
   syntax:
     content: public ObservableCollection<T> Items { get; protected set; }
     parameters: []
@@ -484,7 +530,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnItemPropertyChanged
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 180
+    startLine: 222
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -518,14 +564,17 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: GetSelectedItems
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 214
+    startLine: 260
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets the selected items.
+  example: []
   syntax:
     content: public List<T> GetSelectedItems()
     return:
       type: System.Collections.Generic.List{{T}}
+      description: Selected items in a new instance of List
     content.vb: Public Function GetSelectedItems() As List(Of T)
   overload: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems*
   nameWithType.vb: SelectableCollectionViewModel(Of T).GetSelectedItems()
@@ -548,10 +597,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectedItem
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 225
+    startLine: 275
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the selected item.
+  example: []
   syntax:
     content: public T? SelectedItem { get; set; }
     parameters: []
@@ -579,10 +630,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Count
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 292
+    startLine: 345
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets the number of items in the collection.
+  example: []
   syntax:
     content: public int Count { get; }
     parameters: []
@@ -610,10 +663,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: AllowMultipleSelections
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 313
+    startLine: 370
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets a value indicating whether multiple selections are allowed.
+  example: []
   syntax:
     content: public bool AllowMultipleSelections { get; set; }
     parameters: []
@@ -641,10 +696,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsValid
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 329
+    startLine: 390
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    Gets or sets a value indicating whether this view model is valid. 
+
+    NOTE: this property does not do any validation, it is just a flag that can be used by the view.
+  example: []
   syntax:
     content: public bool IsValid { get; set; }
     parameters: []
@@ -672,10 +732,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsEnabled
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 345
+    startLine: 409
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets a value indicating whether this view model is enabled.
+  example: []
   syntax:
     content: public bool IsEnabled { get; set; }
     parameters: []
@@ -1155,6 +1217,13 @@ references:
   name: EventHandler
   nameWithType: EventHandler
   fullName: System.EventHandler
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: '{T}'
   commentId: '!:T'
   definition: T
@@ -1283,6 +1352,13 @@ references:
   fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Clear
   nameWithType.vb: SelectableCollectionViewModel(Of T).Clear
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Clear
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
 - uid: Benday.Presentation.SelectableCollectionViewModel`1.Add*
   commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Add
   href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_

@@ -21,10 +21,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IMessageManager
     path: ../Benday.Presentation/IMessageManager.cs
-    startLine: 4
+    startLine: 7
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Interface for requesting showing messages to the user from inside of a view model.
+  example: []
   syntax:
     content: public interface IMessageManager
     content.vb: Public Interface IMessageManager
@@ -46,17 +48,21 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ShowMessage
     path: ../Benday.Presentation/IMessageManager.cs
-    startLine: 6
+    startLine: 14
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Show a message to the user for an exception.
+  example: []
   syntax:
     content: Task ShowMessage(Exception ex)
     parameters:
     - id: ex
       type: System.Exception
+      description: ''
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Function ShowMessage(ex As Exception) As Task
   overload: Benday.Presentation.IMessageManager.ShowMessage*
 - uid: Benday.Presentation.IMessageManager.ShowMessage(System.String,System.String)
@@ -77,19 +83,24 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ShowMessage
     path: ../Benday.Presentation/IMessageManager.cs
-    startLine: 7
+    startLine: 22
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Show a message to the user.
+  example: []
   syntax:
     content: Task ShowMessage(string message, string title)
     parameters:
     - id: message
       type: System.String
+      description: The message text to show
     - id: title
       type: System.String
+      description: The title of the message box
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Function ShowMessage(message As String, title As String) As Task
   overload: Benday.Presentation.IMessageManager.ShowMessage*
   nameWithType.vb: IMessageManager.ShowMessage(String, String)

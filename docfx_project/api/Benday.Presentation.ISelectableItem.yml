@@ -23,10 +23,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ISelectableItem
     path: ../Benday.Presentation/ISelectableItem.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    Interface for a view model that can be selected. This is typically used in a list of items where the user can select one or more items.
+
+    This interface provides a way to get the text and value of the item when using complex objects in a list.
+  example: []
   syntax:
     content: 'public interface ISelectableItem : ISelectable, INotifyPropertyChanged'
     content.vb: Public Interface ISelectableItem Inherits ISelectable, INotifyPropertyChanged
@@ -51,10 +56,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Text
     path: ../Benday.Presentation/ISelectableItem.cs
-    startLine: 7
+    startLine: 14
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the text to display to the user.
+  example: []
   syntax:
     content: string Text { get; set; }
     parameters: []
@@ -80,10 +87,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/ISelectableItem.cs
-    startLine: 8
+    startLine: 19
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the value of the item.
+  example: []
   syntax:
     content: string Value { get; set; }
     parameters: []
@@ -109,10 +118,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Id
     path: ../Benday.Presentation/ISelectableItem.cs
-    startLine: 9
+    startLine: 24
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the id of the item.  Typically an integer primary key.
+  example: []
   syntax:
     content: int Id { get; set; }
     parameters: []
@@ -138,10 +149,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: TooltipText
     path: ../Benday.Presentation/ISelectableItem.cs
-    startLine: 10
+    startLine: 29
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the tooltip text.
+  example: []
   syntax:
     content: string TooltipText { get; set; }
     parameters: []

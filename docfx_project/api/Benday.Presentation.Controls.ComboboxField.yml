@@ -23,6 +23,11 @@ items:
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: >-
+    A control that contains a label and a combobox. This typically is bound to an instance of 
+
+    SingleSelectListViewModel or SelectableCollectionViewModel.
+  example: []
   syntax:
     content: >-
       [XamlFilePath("ComboboxField.xaml")]
@@ -300,7 +305,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation.Controls/ComboboxField.xaml.cs
-    startLine: 18
+    startLine: 22
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -329,10 +334,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelText
     path: ../Benday.Presentation.Controls/ComboboxField.xaml.cs
-    startLine: 23
+    startLine: 30
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: Gets or sets the label text for this field
+  example: []
   syntax:
     content: public string LabelText { get; set; }
     parameters: []
@@ -358,16 +365,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation.Controls/ComboboxField.xaml.cs
-    startLine: 35
+    startLine: 46
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: Sets the label text for this field
   example: []
   syntax:
     content: public void SetLabelText(string value)
     parameters:
     - id: value
       type: System.String
+      description: ''
     content.vb: Public Sub SetLabelText(value As String)
   overload: Benday.Presentation.Controls.ComboboxField.SetLabelText*
   implements:
@@ -393,10 +402,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelTextProperty
     path: ../Benday.Presentation.Controls/ComboboxField.xaml.cs
-    startLine: 49
+    startLine: 63
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: Dependency property for the label text
+  example: []
   syntax:
     content: public static readonly BindableProperty LabelTextProperty
     return:

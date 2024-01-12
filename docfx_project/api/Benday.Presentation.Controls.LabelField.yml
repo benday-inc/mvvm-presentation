@@ -23,6 +23,8 @@ items:
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: Control for displaying only a label.
+  example: []
   syntax:
     content: >-
       [XamlFilePath("LabelField.xaml")]
@@ -299,7 +301,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
-    startLine: 16
+    startLine: 19
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -328,7 +330,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelText
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -357,7 +359,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -389,7 +391,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelTextProperty
     path: ../Benday.Presentation.Controls/LabelField.xaml.cs
-    startLine: 47
+    startLine: 50
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls

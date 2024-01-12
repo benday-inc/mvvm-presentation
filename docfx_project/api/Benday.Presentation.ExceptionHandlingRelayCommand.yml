@@ -24,10 +24,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ExceptionHandlingRelayCommand
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
-    startLine: 5
+    startLine: 10
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    A relay command that handles exceptions by showing them to the user. This class wraps an existing action and
+
+    executes it when the command is invoked. If the action throws an exception, the exception is caught and is shown via IMessageManager.ShowMessage().
+  example: []
   syntax:
     content: 'public class ExceptionHandlingRelayCommand : IRelayCommand, ICommand'
     content.vb: Public Class ExceptionHandlingRelayCommand Implements IRelayCommand, ICommand
@@ -62,19 +67,27 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
-    startLine: 10
+    startLine: 28
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Creates a new instance of the <xref href="Benday.Presentation.ExceptionHandlingRelayCommand" data-throw-if-not-resolved="false"></xref> class.
+  example: []
   syntax:
     content: public ExceptionHandlingRelayCommand(IMessageManager msgManager, Action execute)
     parameters:
     - id: msgManager
       type: Benday.Presentation.IMessageManager
+      description: Instance of IMessageManager to use
     - id: execute
       type: System.Action
+      description: The action to perform
     content.vb: Public Sub New(msgManager As IMessageManager, execute As Action)
   overload: Benday.Presentation.ExceptionHandlingRelayCommand.#ctor*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: ''
   nameWithType.vb: ExceptionHandlingRelayCommand.New(IMessageManager, Action)
   fullName.vb: Benday.Presentation.ExceptionHandlingRelayCommand.New(Benday.Presentation.IMessageManager, System.Action)
   name.vb: New(IMessageManager, Action)
@@ -96,7 +109,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CanExecuteChanged
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
-    startLine: 17
+    startLine: 35
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -127,21 +140,21 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CanExecute
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
-    startLine: 20
+    startLine: 43
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
-  summary: Defines the method that determines whether the command can execute in its current state.
+  summary: Returns true if the command can be executed.
   example: []
   syntax:
     content: public bool CanExecute(object? parameter)
     parameters:
     - id: parameter
       type: System.Object
-      description: Data used by the command.  If the command does not require data to be passed, this object can be set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+      description: ''
     return:
       type: System.Boolean
-      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if this command can be executed; otherwise, <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+      description: This class always returns true.
     content.vb: Public Function CanExecute(parameter As Object) As Boolean
   overload: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute*
   implements:
@@ -167,18 +180,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Execute
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
-    startLine: 25
+    startLine: 52
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
-  summary: Defines the method to be called when the command is invoked.
+  summary: Executes the action and handles any exceptions by showing them to the user.
   example: []
   syntax:
     content: public void Execute(object? parameter)
     parameters:
     - id: parameter
       type: System.Object
-      description: Data used by the command.  If the command does not require data to be passed, this object can be set to <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+      description: ''
     content.vb: Public Sub Execute(parameter As Object)
   overload: Benday.Presentation.ExceptionHandlingRelayCommand.Execute*
   implements:
@@ -204,7 +217,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: NotifyCanExecuteChanged
     path: ../Benday.Presentation/ExceptionHandlingRelayCommand.cs
-    startLine: 37
+    startLine: 64
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -566,6 +579,19 @@ references:
     name: Input
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.windows.input
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand
+  commentId: T:Benday.Presentation.ExceptionHandlingRelayCommand
+  href: Benday.Presentation.ExceptionHandlingRelayCommand.html
+  name: ExceptionHandlingRelayCommand
+  nameWithType: ExceptionHandlingRelayCommand
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
 - uid: Benday.Presentation.ExceptionHandlingRelayCommand.#ctor*
   commentId: Overload:Benday.Presentation.ExceptionHandlingRelayCommand.#ctor
   href: Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand__ctor_Benday_Presentation_IMessageManager_System_Action_

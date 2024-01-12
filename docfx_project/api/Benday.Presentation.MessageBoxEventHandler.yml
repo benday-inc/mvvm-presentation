@@ -19,17 +19,21 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxEventHandler
     path: ../Benday.Presentation/MessageBoxEventHandler.cs
-    startLine: 5
+    startLine: 10
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Delegate for requesting a message box to be shown to the user.
+  example: []
   syntax:
     content: public delegate void MessageBoxEventHandler(object sender, MessageBoxEventArgs args)
     parameters:
     - id: sender
       type: System.Object
+      description: ''
     - id: args
       type: Benday.Presentation.MessageBoxEventArgs
+      description: ''
     content.vb: Public Delegate Sub MessageBoxEventHandler(sender As Object, args As MessageBoxEventArgs)
 references:
 - uid: Benday.Presentation

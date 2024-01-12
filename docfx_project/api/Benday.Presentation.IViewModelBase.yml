@@ -20,10 +20,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IViewModelBase
     path: ../Benday.Presentation/IViewModelBase.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Interface for a view model that might need to show a message box to the user.
+  example: []
   syntax:
     content: 'public interface IViewModelBase : INotifyPropertyChanged'
     content.vb: Public Interface IViewModelBase Inherits INotifyPropertyChanged
@@ -47,7 +49,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxRequested
     path: ../Benday.Presentation/IViewModelBase.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation

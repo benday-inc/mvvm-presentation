@@ -21,10 +21,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: NotVisibilityValueConverter
     path: ../Benday.Presentation/ValueConverters/NotVisibilityValueConverter.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: >-
+    A value converter that converts a boolean value to a Visibility value. 
+
+    If the value supplied is true, then visibility will be returned as false. If the value supplied is false, then the return value is true.
+  example: []
   syntax:
     content: 'public class NotVisibilityValueConverter : BendayValueConverterBase, IValueConverter'
     content.vb: Public Class NotVisibilityValueConverter Inherits BendayValueConverterBase Implements IValueConverter
@@ -61,7 +66,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/NotVisibilityValueConverter.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -99,7 +104,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/NotVisibilityValueConverter.cs
-    startLine: 27
+    startLine: 31
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters

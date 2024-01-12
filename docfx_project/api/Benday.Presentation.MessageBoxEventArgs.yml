@@ -25,10 +25,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxEventArgs
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Event arguments for requesting that a message box to be shown to the user.
+  example: []
   syntax:
     content: 'public class MessageBoxEventArgs : EventArgs'
     content.vb: Public Class MessageBoxEventArgs Inherits EventArgs
@@ -62,7 +64,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 7
+    startLine: 10
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -94,7 +96,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 20
+    startLine: 23
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -132,7 +134,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 35
+    startLine: 38
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -168,10 +170,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Message
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 41
+    startLine: 47
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: The message to show to the user.
+  example: []
   syntax:
     content: public string Message { get; }
     parameters: []
@@ -197,10 +201,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsUnexpectedException
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 42
+    startLine: 52
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: True if the exception was unexpected.
+  example: []
   syntax:
     content: public bool IsUnexpectedException { get; }
     parameters: []
@@ -226,10 +232,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Exception
     path: ../Benday.Presentation/MessageBoxEventArgs.cs
-    startLine: 43
+    startLine: 57
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: The exception that was thrown.
+  example: []
   syntax:
     content: public Exception? Exception { get; }
     parameters: []

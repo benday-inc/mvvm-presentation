@@ -23,10 +23,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: BendayValueConverterBase
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: Base class for value converters that provides an implementation of IValueConverter.
+  example: []
   syntax:
     content: 'public abstract class BendayValueConverterBase : IValueConverter'
     content.vb: Public MustInherit Class BendayValueConverterBase Implements IValueConverter
@@ -68,7 +70,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Convert
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -111,7 +113,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertBack
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-    startLine: 13
+    startLine: 16
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -154,7 +156,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-    startLine: 18
+    startLine: 21
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -190,7 +192,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/BendayValueConverterBase.cs
-    startLine: 19
+    startLine: 22
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters

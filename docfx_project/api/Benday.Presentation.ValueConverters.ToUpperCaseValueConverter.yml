@@ -16,15 +16,20 @@ items:
   type: Class
   source:
     remote:
-      path: Benday.Presentation/ValueConverters/ShortDateValueConverter.cs
+      path: Benday.Presentation/ValueConverters/ToUpperCaseValueConverter.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ToUpperCaseValueConverter
-    path: ../Benday.Presentation/ValueConverters/ShortDateValueConverter.cs
-    startLine: 27
+    path: ../Benday.Presentation/ValueConverters/ToUpperCaseValueConverter.cs
+    startLine: 6
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: >-
+    A value converter that converts a string value to an upper case string value.
+
+    This is a one-way converter.
+  example: []
   syntax:
     content: 'public class ToUpperCaseValueConverter : BendayValueConverterBase, IValueConverter'
     content.vb: Public Class ToUpperCaseValueConverter Inherits BendayValueConverterBase Implements IValueConverter
@@ -56,12 +61,12 @@ items:
   type: Method
   source:
     remote:
-      path: Benday.Presentation/ValueConverters/ShortDateValueConverter.cs
+      path: Benday.Presentation/ValueConverters/ToUpperCaseValueConverter.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
-    path: ../Benday.Presentation/ValueConverters/ShortDateValueConverter.cs
-    startLine: 29
+    path: ../Benday.Presentation/ValueConverters/ToUpperCaseValueConverter.cs
+    startLine: 8
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -94,12 +99,12 @@ items:
   type: Method
   source:
     remote:
-      path: Benday.Presentation/ValueConverters/ShortDateValueConverter.cs
+      path: Benday.Presentation/ValueConverters/ToUpperCaseValueConverter.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
-    path: ../Benday.Presentation/ValueConverters/ShortDateValueConverter.cs
-    startLine: 41
+    path: ../Benday.Presentation/ValueConverters/ToUpperCaseValueConverter.cs
+    startLine: 20
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters

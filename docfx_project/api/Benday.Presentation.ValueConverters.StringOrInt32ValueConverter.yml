@@ -21,10 +21,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: StringOrInt32ValueConverter
     path: ../Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
-    startLine: 6
+    startLine: 8
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: A value converter that converts a string or int32 value to a string value.
+  example: []
   syntax:
     content: 'public class StringOrInt32ValueConverter : BendayValueConverterBase, IValueConverter'
     content.vb: Public Class StringOrInt32ValueConverter Inherits BendayValueConverterBase Implements IValueConverter
@@ -61,7 +63,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
-    startLine: 39
+    startLine: 41
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -99,7 +101,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/StringOrInt32ValueConverter.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters

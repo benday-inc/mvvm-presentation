@@ -20,10 +20,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IVisibleField
     path: ../Benday.Presentation/IVisibleField.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Interface for a view model class that will be used by a field control that can be hidden.
+  example: []
   syntax:
     content: public interface IVisibleField
     content.vb: Public Interface IVisibleField
@@ -45,10 +47,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsVisible
     path: ../Benday.Presentation/IVisibleField.cs
-    startLine: 7
+    startLine: 13
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets a value indicating whether the field is visible.
+  example: []
   syntax:
     content: bool IsVisible { get; set; }
     parameters: []

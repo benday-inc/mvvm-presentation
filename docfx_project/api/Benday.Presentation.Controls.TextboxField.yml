@@ -23,6 +23,11 @@ items:
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: >-
+    A control that contains a label and a textbox. This typically is bound to an instance of
+
+    ViewModelField.
+  example: []
   syntax:
     content: >-
       [XamlFilePath("TextboxField.xaml")]
@@ -300,7 +305,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation.Controls/TextboxField.xaml.cs
-    startLine: 14
+    startLine: 18
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -329,7 +334,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelText
     path: ../Benday.Presentation.Controls/TextboxField.xaml.cs
-    startLine: 24
+    startLine: 28
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -358,16 +363,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation.Controls/TextboxField.xaml.cs
-    startLine: 36
+    startLine: 40
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: Sets the label text.
   example: []
   syntax:
     content: public void SetLabelText(string value)
     parameters:
     - id: value
       type: System.String
+      description: ''
     content.vb: Public Sub SetLabelText(value As String)
   overload: Benday.Presentation.Controls.TextboxField.SetLabelText*
   implements:
@@ -393,7 +400,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelTextProperty
     path: ../Benday.Presentation.Controls/TextboxField.xaml.cs
-    startLine: 50
+    startLine: 54
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls

@@ -23,6 +23,11 @@ items:
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: >-
+    A control that contains a label and a listbox. This typically is bound to an instance of 
+
+    SingleSelectListViewModel or SelectableCollectionViewModel.
+  example: []
   syntax:
     content: >-
       [XamlFilePath("ListboxField.xaml")]
@@ -300,7 +305,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation.Controls/ListboxField.xaml.cs
-    startLine: 16
+    startLine: 20
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -329,7 +334,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelText
     path: ../Benday.Presentation.Controls/ListboxField.xaml.cs
-    startLine: 21
+    startLine: 25
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
@@ -358,16 +363,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation.Controls/ListboxField.xaml.cs
-    startLine: 33
+    startLine: 37
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls
+  summary: Sets the label text.
   example: []
   syntax:
     content: public void SetLabelText(string value)
     parameters:
     - id: value
       type: System.String
+      description: ''
     content.vb: Public Sub SetLabelText(value As String)
   overload: Benday.Presentation.Controls.ListboxField.SetLabelText*
   implements:
@@ -393,7 +400,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: LabelTextProperty
     path: ../Benday.Presentation.Controls/ListboxField.xaml.cs
-    startLine: 47
+    startLine: 51
   assemblies:
   - Benday.Presentation.Controls
   namespace: Benday.Presentation.Controls

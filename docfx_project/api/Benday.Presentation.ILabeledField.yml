@@ -20,10 +20,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ILabeledField
     path: ../Benday.Presentation/ILabeledField.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Interface for a field control that has a label.
+  example: []
   syntax:
     content: public interface ILabeledField
     content.vb: Public Interface ILabeledField
@@ -45,15 +47,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SetLabelText
     path: ../Benday.Presentation/ILabeledField.cs
-    startLine: 9
+    startLine: 17
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Sets the label text.
+  example: []
   syntax:
     content: void SetLabelText(string value)
     parameters:
     - id: value
       type: System.String
+      description: ''
     content.vb: Sub SetLabelText(value As String)
   overload: Benday.Presentation.ILabeledField.SetLabelText*
   nameWithType.vb: ILabeledField.SetLabelText(String)

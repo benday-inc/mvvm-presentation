@@ -21,10 +21,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ViewModelBase
     path: ../Benday.Presentation/ViewModelBase.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Base class for view models that provides an implementation of INotifyPropertyChanged.
+  example: []
   syntax:
     content: 'public abstract class ViewModelBase : INotifyPropertyChanged'
     content.vb: Public MustInherit Class ViewModelBase Implements INotifyPropertyChanged
@@ -64,7 +66,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RaisePropertyChanged
     path: ../Benday.Presentation/ViewModelBase.cs
-    startLine: 8
+    startLine: 11
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -96,7 +98,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: PropertyChanged
     path: ../Benday.Presentation/ViewModelBase.cs
-    startLine: 21
+    startLine: 24
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation

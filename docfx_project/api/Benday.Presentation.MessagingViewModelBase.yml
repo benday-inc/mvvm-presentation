@@ -21,10 +21,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessagingViewModelBase
     path: ../Benday.Presentation/MessagingViewModelBase.cs
-    startLine: 5
+    startLine: 8
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Base class for a view model that might need to show a message box to the user.
+  example: []
   syntax:
     content: 'public abstract class MessagingViewModelBase : ViewModelBase, INotifyPropertyChanged'
     content.vb: Public MustInherit Class MessagingViewModelBase Inherits ViewModelBase Implements INotifyPropertyChanged
@@ -61,7 +63,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/MessagingViewModelBase.cs
-    startLine: 9
+    startLine: 12
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -93,10 +95,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Messages
     path: ../Benday.Presentation/MessagingViewModelBase.cs
-    startLine: 14
+    startLine: 20
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: The message manager to use for showing messages to the user.
+  example: []
   syntax:
     content: public IMessageManager Messages { get; }
     parameters: []

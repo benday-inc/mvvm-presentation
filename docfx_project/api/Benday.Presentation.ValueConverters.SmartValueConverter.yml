@@ -22,10 +22,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SmartValueConverter
     path: ../Benday.Presentation/ValueConverters/SmartValueConverter.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: >-
+    A value converter that converts between the value returned from the user interface and the value used by the view model.
+
+    This is typically used with ViewModelField.
+  example: []
   syntax:
     content: 'public class SmartValueConverter : BendayValueConverterBase, IValueConverter'
     content.vb: Public Class SmartValueConverter Inherits BendayValueConverterBase Implements IValueConverter
@@ -62,10 +67,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ZeroIsEmptyString
     path: ../Benday.Presentation/ValueConverters/SmartValueConverter.cs
-    startLine: 10
+    startLine: 17
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
+  summary: If true, then a value of 0 will be converted to an empty string. If false, then 0 will be converted to "0".
+  example: []
   syntax:
     content: public bool ZeroIsEmptyString { get; set; }
     parameters: []
@@ -91,7 +98,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertTo
     path: ../Benday.Presentation/ValueConverters/SmartValueConverter.cs
-    startLine: 96
+    startLine: 103
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters
@@ -129,7 +136,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ConvertFrom
     path: ../Benday.Presentation/ValueConverters/SmartValueConverter.cs
-    startLine: 119
+    startLine: 126
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation.ValueConverters

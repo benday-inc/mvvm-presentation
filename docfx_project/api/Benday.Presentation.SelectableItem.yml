@@ -29,10 +29,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectableItem
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items
+
+    but don't want to use a complex object.
+  example: []
   syntax:
     content: 'public class SelectableItem : ViewModelBase, ISelectableItem, ISelectable, INotifyPropertyChanged'
     content.vb: Public Class SelectableItem Inherits ViewModelBase Implements ISelectableItem, ISelectable, INotifyPropertyChanged
@@ -70,7 +75,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 7
+    startLine: 11
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -99,7 +104,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 17
+    startLine: 21
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -137,7 +142,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 29
+    startLine: 33
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -180,7 +185,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 37
+    startLine: 41
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -216,10 +221,11 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsSelected
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 48
+    startLine: 55
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the IsSelected property. This observable property.
   example: []
   syntax:
     content: public bool IsSelected { get; set; }
@@ -248,10 +254,11 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Text
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 67
+    startLine: 77
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the Text property. This observable property.
   example: []
   syntax:
     content: public string Text { get; set; }
@@ -280,10 +287,11 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 83
+    startLine: 96
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the Value property. This observable property.
   example: []
   syntax:
     content: public string Value { get; set; }
@@ -312,17 +320,17 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ToString
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 96
+    startLine: 113
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
-  summary: Returns a string that represents the current object.
+  summary: Returns the value of the Text property.
   example: []
   syntax:
     content: public override string ToString()
     return:
       type: System.String
-      description: A string that represents the current object.
+      description: ''
     content.vb: Public Overrides Function ToString() As String
   overridden: System.Object.ToString
   overload: Benday.Presentation.SelectableItem.ToString*
@@ -344,10 +352,11 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Id
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 104
+    startLine: 124
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the Id property. This observable property.
   example: []
   syntax:
     content: public int Id { get; set; }
@@ -376,10 +385,11 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: TooltipText
     path: ../Benday.Presentation/SelectableItem.cs
-    startLine: 120
+    startLine: 143
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the TooltipText property. This observable property.
   example: []
   syntax:
     content: public string TooltipText { get; set; }

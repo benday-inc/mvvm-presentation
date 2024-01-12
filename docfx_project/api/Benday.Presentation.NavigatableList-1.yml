@@ -27,14 +27,17 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: NavigatableList
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Collection class that allows for navigation forwards or backwards through the collection elements
+  example: []
   syntax:
     content: 'public class NavigatableList<T> : List<T>, IList<T>, ICollection<T>, IReadOnlyList<T>, IReadOnlyCollection<T>, IEnumerable<T>, IList, ICollection, IEnumerable'
     typeParameters:
     - id: T
+      description: ''
     content.vb: Public Class NavigatableList(Of T) Inherits List(Of T) Implements IList(Of T), ICollection(Of T), IReadOnlyList(Of T), IReadOnlyCollection(Of T), IEnumerable(Of T), IList, ICollection, IEnumerable
   inheritance:
   - System.Object
@@ -128,10 +131,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsAtFirst
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Returns true if the current index is at the first element in the collection.
+  example: []
   syntax:
     content: public bool IsAtFirst { get; }
     parameters: []
@@ -159,10 +164,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsAtLast
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 23
+    startLine: 32
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Returns true if the current index is at the last element in the collection.
+  example: []
   syntax:
     content: public bool IsAtLast { get; }
     parameters: []
@@ -190,10 +197,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CurrentIndex
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 39
+    startLine: 51
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the current index.
+  example: []
   syntax:
     content: public int CurrentIndex { get; }
     parameters: []
@@ -221,10 +230,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Value
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 64
+    startLine: 79
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets the current value.  Returns default(T) if the current index is -1 or out of bounds for the collection.
+  example: []
   syntax:
     content: public T? Value { get; }
     parameters: []
@@ -252,10 +263,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Next
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 79
+    startLine: 97
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Move to the next element in the collection.
+  example: []
   syntax:
     content: public void Next()
     content.vb: Public Sub [Next]()
@@ -280,10 +293,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Previous
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 84
+    startLine: 105
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Move to the previous element in the collection.
+  example: []
   syntax:
     content: public void Previous()
     content.vb: Public Sub Previous()
@@ -308,10 +323,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MoveToFirst
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 92
+    startLine: 116
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Move to the first element in the collection.
+  example: []
   syntax:
     content: public void MoveToFirst()
     content.vb: Public Sub MoveToFirst()
@@ -336,10 +353,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MoveToLast
     path: ../Benday.Presentation/NavigatableList.cs
-    startLine: 97
+    startLine: 124
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Move to the last element in the collection.
+  example: []
   syntax:
     content: public void MoveToLast()
     content.vb: Public Sub MoveToLast()

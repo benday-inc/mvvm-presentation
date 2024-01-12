@@ -24,10 +24,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IProgressBarViewModel
     path: ../Benday.Presentation/IProgressBarViewModel.cs
-    startLine: 9
+    startLine: 11
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    Interface for a view model that has performs long-running actions that 
+
+    displays progress information using a progress bar.
+  example: []
   syntax:
     content: 'public interface IProgressBarViewModel : INotifyPropertyChanged'
     content.vb: Public Interface IProgressBarViewModel Inherits INotifyPropertyChanged
@@ -51,10 +56,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsProgressBarVisible
     path: ../Benday.Presentation/IProgressBarViewModel.cs
-    startLine: 11
+    startLine: 16
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets a value indicating whether the progress bar is visible.
+  example: []
   syntax:
     content: bool IsProgressBarVisible { get; set; }
     parameters: []
@@ -80,10 +87,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ProgressBarMessage
     path: ../Benday.Presentation/IProgressBarViewModel.cs
-    startLine: 12
+    startLine: 21
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the progress bar message.
+  example: []
   syntax:
     content: string ProgressBarMessage { get; set; }
     parameters: []
@@ -109,10 +118,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsCancelable
     path: ../Benday.Presentation/IProgressBarViewModel.cs
-    startLine: 13
+    startLine: 26
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets value indicating if the operation is cancelable.
+  example: []
   syntax:
     content: bool IsCancelable { get; set; }
     parameters: []
@@ -138,10 +149,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: CancelOperationCommand
     path: ../Benday.Presentation/IProgressBarViewModel.cs
-    startLine: 15
+    startLine: 31
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the cancel operation command.
+  example: []
   syntax:
     content: ICommand CancelOperationCommand { get; }
     parameters: []
@@ -167,10 +180,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnCancelRequested
     path: ../Benday.Presentation/IProgressBarViewModel.cs
-    startLine: 17
+    startLine: 36
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Event raised when the cancel operation is requested.
+  example: []
   syntax:
     content: event EventHandler OnCancelRequested
     return:

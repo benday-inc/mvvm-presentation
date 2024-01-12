@@ -20,10 +20,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ISelectable
     path: ../Benday.Presentation/ISelectable.cs
-    startLine: 6
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Interface for a view model that can be selected. This is typically used in a list of items where the user can select one or more items.
+  example: []
   syntax:
     content: 'public interface ISelectable : INotifyPropertyChanged'
     content.vb: Public Interface ISelectable Inherits INotifyPropertyChanged
@@ -47,10 +49,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsSelected
     path: ../Benday.Presentation/ISelectable.cs
-    startLine: 8
+    startLine: 14
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets a value indicating whether the item is selected.
+  example: []
   syntax:
     content: bool IsSelected { get; set; }
     parameters: []

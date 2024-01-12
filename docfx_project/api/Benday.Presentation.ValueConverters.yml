@@ -41,12 +41,6 @@ references:
   name: ShortDateValueConverter
   nameWithType: ShortDateValueConverter
   fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter
-- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
-  commentId: T:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
-  href: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html
-  name: ToUpperCaseValueConverter
-  nameWithType: ToUpperCaseValueConverter
-  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
 - uid: Benday.Presentation.ValueConverters.SmartValueConverter
   commentId: T:Benday.Presentation.ValueConverters.SmartValueConverter
   href: Benday.Presentation.ValueConverters.SmartValueConverter.html
@@ -65,6 +59,12 @@ references:
   name: StringOrInt32ValueConverter
   nameWithType: StringOrInt32ValueConverter
   fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  href: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html
+  name: ToUpperCaseValueConverter
+  nameWithType: ToUpperCaseValueConverter
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
 - uid: Benday.Presentation.ValueConverters.VisibilityValueConverter
   commentId: T:Benday.Presentation.ValueConverters.VisibilityValueConverter
   href: Benday.Presentation.ValueConverters.VisibilityValueConverter.html

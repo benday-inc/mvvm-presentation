@@ -6,9 +6,7 @@ items:
   children:
   - Benday.Presentation.ExceptionHandlingRelayCommand
   - Benday.Presentation.ILabeledField
-  - Benday.Presentation.IMessageBoxSampleViewModel
   - Benday.Presentation.IMessageManager
-  - Benday.Presentation.IProgressBarSampleViewModel
   - Benday.Presentation.IProgressBarViewModel
   - Benday.Presentation.ISelectable
   - Benday.Presentation.ISelectableItem
@@ -49,12 +47,6 @@ references:
   name: ILabeledField
   nameWithType: ILabeledField
   fullName: Benday.Presentation.ILabeledField
-- uid: Benday.Presentation.IMessageBoxSampleViewModel
-  commentId: T:Benday.Presentation.IMessageBoxSampleViewModel
-  href: Benday.Presentation.IMessageBoxSampleViewModel.html
-  name: IMessageBoxSampleViewModel
-  nameWithType: IMessageBoxSampleViewModel
-  fullName: Benday.Presentation.IMessageBoxSampleViewModel
 - uid: Benday.Presentation.IMessageManager
   commentId: T:Benday.Presentation.IMessageManager
   parent: Benday.Presentation
@@ -62,12 +54,6 @@ references:
   name: IMessageManager
   nameWithType: IMessageManager
   fullName: Benday.Presentation.IMessageManager
-- uid: Benday.Presentation.IProgressBarSampleViewModel
-  commentId: T:Benday.Presentation.IProgressBarSampleViewModel
-  href: Benday.Presentation.IProgressBarSampleViewModel.html
-  name: IProgressBarSampleViewModel
-  nameWithType: IProgressBarSampleViewModel
-  fullName: Benday.Presentation.IProgressBarSampleViewModel
 - uid: Benday.Presentation.IProgressBarViewModel
   commentId: T:Benday.Presentation.IProgressBarViewModel
   parent: Benday.Presentation
@@ -91,7 +77,6 @@ references:
   fullName: Benday.Presentation.ISelectableItem
 - uid: Benday.Presentation.IViewModelBase
   commentId: T:Benday.Presentation.IViewModelBase
-  parent: Benday.Presentation
   href: Benday.Presentation.IViewModelBase.html
   name: IViewModelBase
   nameWithType: IViewModelBase

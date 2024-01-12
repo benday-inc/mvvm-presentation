@@ -31,10 +31,12 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SingleSelectListViewModel
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 5
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items.
+  example: []
   syntax:
     content: 'public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectableItem>, INotifyPropertyChanged, IVisibleField'
     content.vb: Public Class SingleSelectListViewModel Inherits SelectableCollectionViewModel(Of ISelectableItem) Implements INotifyPropertyChanged, IVisibleField
@@ -89,7 +91,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 8
+    startLine: 12
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -118,7 +120,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 13
+    startLine: 17
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -150,7 +152,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 22
+    startLine: 26
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -184,7 +186,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 33
+    startLine: 37
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -216,7 +218,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 38
+    startLine: 42
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -250,16 +252,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Initialize
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 44
+    startLine: 52
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Initializes the view model with the specified values. Values are copied into a new ObservableCollection.
   example: []
   syntax:
     content: public override void Initialize(IEnumerable<ISelectableItem> values)
     parameters:
     - id: values
       type: System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem}
+      description: ''
     content.vb: Public Overrides Sub Initialize(values As IEnumerable(Of ISelectableItem))
   overridden: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
   overload: Benday.Presentation.SingleSelectListViewModel.Initialize*
@@ -284,15 +288,21 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByText
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 53
+    startLine: 66
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    Searches the list of items for the specified text and selects the item if found.
+
+    If not found, the selected item is set to null.
+  example: []
   syntax:
     content: public void SelectByText(string text)
     parameters:
     - id: text
       type: System.String
+      description: ''
     content.vb: Public Sub SelectByText(text As String)
   overload: Benday.Presentation.SingleSelectListViewModel.SelectByText*
   nameWithType.vb: SingleSelectListViewModel.SelectByText(String)
@@ -316,7 +326,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: GetByValue
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 67
+    startLine: 80
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -352,15 +362,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByValue
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 76
+    startLine: 93
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Searches the list of items for the specified value and selects the item if found.
+  example: []
   syntax:
     content: public virtual void SelectByValue(string value)
     parameters:
     - id: value
       type: System.String
+      description: ''
     content.vb: Public Overridable Sub SelectByValue(value As String)
   overload: Benday.Presentation.SingleSelectListViewModel.SelectByValue*
   nameWithType.vb: SingleSelectListViewModel.SelectByValue(String)
@@ -384,15 +397,18 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByValue
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 81
+    startLine: 102
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Searches the list of items for the specified value and selects the item if found.
+  example: []
   syntax:
     content: public void SelectByValue(int value)
     parameters:
     - id: value
       type: System.Int32
+      description: ''
     content.vb: Public Sub SelectByValue(value As Integer)
   overload: Benday.Presentation.SingleSelectListViewModel.SelectByValue*
   nameWithType.vb: SingleSelectListViewModel.SelectByValue(Integer)
@@ -416,10 +432,11 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsVisible
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 89
+    startLine: 113
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Gets or sets the IsVisible property. This observable property.
   example: []
   syntax:
     content: public bool IsVisible { get; set; }
@@ -448,10 +465,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ValidationMessage
     path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 105
+    startLine: 133
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    Gets or sets the ValidationMessage property. This observable property.
+
+    NOTE: this class does not do any validation logic on its own.  It is up to the consumer to set this value.
+  example: []
   syntax:
     content: public string ValidationMessage { get; set; }
     parameters: []

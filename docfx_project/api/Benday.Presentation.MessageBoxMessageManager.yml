@@ -21,10 +21,15 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: MessageBoxMessageManager
     path: ../Benday.Presentation/MessageBoxMessageManager.cs
-    startLine: 6
+    startLine: 10
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: >-
+    Message manager that shows a message box to the user.
+
+    This implementation uses the Shell.Current.CurrentPage.DisplayAlert() method.
+  example: []
   syntax:
     content: 'public class MessageBoxMessageManager : IMessageManager'
     content.vb: Public Class MessageBoxMessageManager Implements IMessageManager
@@ -58,18 +63,21 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ShowMessage
     path: ../Benday.Presentation/MessageBoxMessageManager.cs
-    startLine: 8
+    startLine: 17
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Show a message to the user for an exception.
   example: []
   syntax:
     content: public Task ShowMessage(Exception ex)
     parameters:
     - id: ex
       type: System.Exception
+      description: ''
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Public Function ShowMessage(ex As Exception) As Task
   overload: Benday.Presentation.MessageBoxMessageManager.ShowMessage*
   implements:
@@ -92,20 +100,24 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ShowMessage
     path: ../Benday.Presentation/MessageBoxMessageManager.cs
-    startLine: 22
+    startLine: 37
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
+  summary: Show a message to the user.
   example: []
   syntax:
     content: public Task ShowMessage(string message, string title = "Info")
     parameters:
     - id: message
       type: System.String
+      description: ''
     - id: title
       type: System.String
+      description: ''
     return:
       type: System.Threading.Tasks.Task
+      description: ''
     content.vb: Public Function ShowMessage(message As String, title As String = "Info") As Task
   overload: Benday.Presentation.MessageBoxMessageManager.ShowMessage*
   implements:
