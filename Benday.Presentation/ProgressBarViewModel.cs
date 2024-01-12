@@ -4,6 +4,12 @@ using System.Linq;
 using System.Windows.Input;
 
 namespace Benday.Presentation;
+
+
+/// <summary>
+/// View model class that provides properties and methods for showing and updating a progress bar in a long-running operation. 
+/// It also provides functionality for canceling the operation.
+/// </summary>
 public class ProgressBarViewModel : ViewModelBase, IProgressBarViewModel
 {
     public ProgressBarViewModel()

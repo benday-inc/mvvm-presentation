@@ -3,9 +3,15 @@ using System.Linq;
 
 namespace Benday.Presentation;
 
-
+/// <summary>
+/// Collection class that allows for navigation forwards or backwards through the collection elements
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class NavigatableList<T> : List<T>
 {
+    /// <summary>
+    /// Returns true if the current index is at the first element in the collection.
+    /// </summary>
     public bool IsAtFirst
     {
         get
@@ -21,6 +27,9 @@ public class NavigatableList<T> : List<T>
         }
     }
 
+    /// <summary>
+    /// Returns true if the current index is at the last element in the collection.
+    /// </summary>
     public bool IsAtLast
     {
         get
@@ -37,6 +46,9 @@ public class NavigatableList<T> : List<T>
     }
 
     private int _CurrentIndex;
+    /// <summary>
+    /// Gets or sets the current index.
+    /// </summary>
     public int CurrentIndex
     {
         get
@@ -62,6 +74,9 @@ public class NavigatableList<T> : List<T>
         }
     }
 
+    /// <summary>
+    /// Gets the current value.  Returns default(T) if the current index is -1 or out of bounds for the collection.
+    /// </summary>
     public T? Value
     {
         get
@@ -77,11 +92,17 @@ public class NavigatableList<T> : List<T>
         }
     }
 
+    /// <summary>
+    /// Move to the next element in the collection.
+    /// </summary>
     public void Next()
     {
         CurrentIndex++;
     }
 
+    /// <summary>
+    /// Move to the previous element in the collection.
+    /// </summary>
     public void Previous()
     {
         if (CurrentIndex > 0)
@@ -90,11 +111,17 @@ public class NavigatableList<T> : List<T>
         }
     }
 
+    /// <summary>
+    /// Move to the first element in the collection.
+    /// </summary>
     public void MoveToFirst()
     {
         CurrentIndex = 0;
     }
 
+    /// <summary>
+    /// Move to the last element in the collection.
+    /// </summary>
     public void MoveToLast()
     {
         var proposedIndex = Count - 1;

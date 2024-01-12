@@ -6,6 +6,11 @@ using System.Linq;
 
 namespace Benday.Presentation;
 
+/// <summary>
+/// View model class for representing a collection of objects that implements ISelectable. By default it only allows one item to be selected at a time and it will
+/// manage the IsSelected property of the items in the collection.  If you want to allow multiple selections, set AllowMultipleSelections to true.
+/// </summary>
+/// <typeparam name="T"></typeparam>
 public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, ISelectable
 {
     protected ObservableCollection<T>? _Items; // = new ObservableCollection<T>();
@@ -16,6 +21,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         Items = new ObservableCollection<T>();
     }
 
+    /// <summary>
+    /// Utility property to determine if the view model has a subscriber to the OnItemSelected event.
+    /// </summary>
     public bool HasOnItemSelectedSubscriber
     {
         get
@@ -24,6 +32,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
+    /// <summary>
+    /// Event that is raised when an item is selected.
+    /// </summary>
     public event EventHandler? OnItemSelected;
 
     private void RaiseOnItemSelected()
@@ -34,6 +45,11 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
+    /// <summary>
+    /// Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
+    /// </summary>
+    /// <param name="values"></param>
+    /// <exception cref="ArgumentNullException"></exception>
     public SelectableCollectionViewModel(ObservableCollection<T> values)
     {
         if (values == null)
@@ -44,6 +60,12 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         RefreshSelectedItem();
     }
 
+    /// <summary>
+    /// Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
+    /// </summary>
+    /// <param name="values"></param>
+    /// <param name="selectedItem">Item in the values collection that should be selected</param>
+    /// <exception cref="ArgumentNullException"></exception>
     public SelectableCollectionViewModel(ObservableCollection<T> values, T selectedItem)
         : this(values)
     {
@@ -59,6 +81,10 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         RefreshSelectedItem();
     }
 
+    /// <summary>
+    /// Resets the collection to the specified values.
+    /// </summary>
+    /// <param name="values"></param>
     public virtual void Initialize(IEnumerable<T> values)
     {
         Items = new ObservableCollection<T>(values);
@@ -82,6 +108,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
+    /// <summary>
+    /// Clears the collection.
+    /// </summary>
     public void Clear()
     {
         if (Items != null)
@@ -90,6 +119,11 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
+    /// <summary>
+    /// Adds an item to the collection.
+    /// </summary>
+    /// <param name="addThis"></param>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Add(T addThis)
     {
         if (Items == null)
@@ -102,6 +136,11 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
+    /// <summary>
+    /// Removes an item from the collection.
+    /// </summary>
+    /// <param name="removeThis"></param>
+    /// <exception cref="InvalidOperationException"></exception>
     public void Remove(T removeThis)
     {
         if (Items == null)
@@ -116,6 +155,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
     public readonly string ItemsPropertyName = "Items";
 
+    /// <summary>
+    /// Gets or sets the collection of items.
+    /// </summary>
     public ObservableCollection<T> Items
     {
         get
@@ -212,6 +254,10 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         return selected;
     }
 
+    /// <summary>
+    /// Gets the selected items.
+    /// </summary>
+    /// <returns>Selected items in a new instance of List</returns>
     public List<T> GetSelectedItems()
     {
         var selected = (from temp in Items
@@ -223,6 +269,10 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
     private const string SelectedItemPropertyName = "SelectedItem";
     private T? _SelectedItem;
+
+    /// <summary>
+    /// Gets or sets the selected item.
+    /// </summary>
     public T? SelectedItem
     {
         get
@@ -290,6 +340,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
+    /// <summary>
+    /// Gets the number of items in the collection.
+    /// </summary>
     public int Count
     {
         get
@@ -311,6 +364,10 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     private const string AllowMultipleSelectionsPropertyName = "AllowMultipleSelections";
 
     private bool _AllowMultipleSelections;
+    
+    /// <summary>
+    /// Gets or sets a value indicating whether multiple selections are allowed.
+    /// </summary>
     public bool AllowMultipleSelections
     {
         get
@@ -327,6 +384,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     private const string IsValidPropertyName = "IsValid";
 
     private bool _IsValid = true;
+    /// <summary>
+    /// Gets or sets a value indicating whether this view model is valid.
+    /// </summary>
     public bool IsValid
     {
         get
