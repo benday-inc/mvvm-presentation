@@ -12,6 +12,9 @@ namespace Benday.Presentation.Controls;
 */
 namespace Benday.Presentation.Controls;
 
+/// <summary>
+/// Control for displaying only a label.
+/// </summary>
 public partial class LabelField : ContentView
 {
     public LabelField()

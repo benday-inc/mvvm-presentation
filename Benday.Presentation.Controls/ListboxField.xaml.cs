@@ -12,6 +12,10 @@ namespace Benday.Presentation.Controls;
 */
 namespace Benday.Presentation.Controls;
 
+/// <summary>
+/// A control that contains a label and a listbox. This typically is bound to an instance of 
+/// SingleSelectListViewModel or SelectableCollectionViewModel.
+/// </summary>
 public partial class ListboxField : ContentView, ILabeledField
 {
     public ListboxField()

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace Benday.Presentation.ValueConverters;
 /// <summary>
 /// A value converter that converts between the value returned from the user interface and the value used by the view model.
-/// This is typically used with ViewModelField<T>.
+/// This is typically used with ViewModelField.
 /// </summary>
 public class SmartValueConverter : BendayValueConverterBase
 {

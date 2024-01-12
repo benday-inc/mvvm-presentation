@@ -10,6 +10,10 @@ using Benday.Presentation.Controls.Controls;
 */
 namespace Benday.Presentation.Controls;
 
+/// <summary>
+/// A control that contains a label and a textbox. This typically is bound to an instance of
+/// ViewModelField.
+/// </summary>
 public partial class TextboxField : ContentView, ILabeledField
 {
     public TextboxField()

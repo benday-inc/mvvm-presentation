@@ -14,6 +14,10 @@ using Benday.Presentation;
 
 namespace Benday.Presentation.Controls;
 
+/// <summary>
+/// A control that contains a label and a combobox. This typically is bound to an instance of 
+/// SingleSelectListViewModel or SelectableCollectionViewModel.
+/// </summary>
 public partial class ComboboxField : ContentView, ILabeledField
 {
     public ComboboxField()
@@ -21,6 +25,9 @@ public partial class ComboboxField : ContentView, ILabeledField
         InitializeComponent();
     }
 
+    /// <summary>
+    /// Gets or sets the label text for this field
+    /// </summary>
     public string LabelText
     {
         get
@@ -33,6 +40,10 @@ public partial class ComboboxField : ContentView, ILabeledField
         }
     }
 
+    /// <summary>
+    /// Sets the label text for this field
+    /// </summary>
+    /// <param name="value"></param>
     public void SetLabelText(string value)
     {
         if (value == null)
@@ -47,6 +58,9 @@ public partial class ComboboxField : ContentView, ILabeledField
         }
     }
 
+    /// <summary>
+    /// Dependency property for the label text
+    /// </summary>
     public static readonly BindableProperty LabelTextProperty =
         BindableProperty.Create(
             propertyName: nameof(LabelText),
