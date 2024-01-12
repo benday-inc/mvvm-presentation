@@ -6,9 +6,11 @@ info@benday.com
 
 *Got ideas for features you'd like to see? Found a bug? Let us know by submitting an issue https://github.com/benday-inc/mvvm-presentation/issues*. *Want to contribute? Submit a pull request.*
 
+* [Documentation](https://benday-inc.github.io/mvvm-presentation/)
+
 **[Benday.Presentation](https://www.nuget.org/packages/Benday.Presentation/)** is a collection of classes and utility methods working with the model-view-viewmodel (MVVM) pattern in .NET MAUI. These classes support the controls in the Benday.Presentation.Controls package.
 
-More documentation coming soon but here are the classes and interfaces:
+Here are the classes and interfaces:
 
 - ExceptionHandlingRelayCommand
 - ILabeledField
