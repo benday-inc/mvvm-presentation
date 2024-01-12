@@ -14,16 +14,14 @@
 
     <TabBar>
         <Tab
-            Title="Controls Demo"
-            Icon="controls.svg">
+            Title="Controls Demo">
             <ShellContent
                 Title="Maui Controls &amp; ViewModel Sample"
                 ContentTemplate="{DataTemplate local:MainPage}"
                 Route="MainPage" />
         </Tab>
         <Tab
-            Title="About"
-            Icon="about.svg">
+            Title="About">
             <ShellContent
                 ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
