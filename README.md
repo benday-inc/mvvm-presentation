@@ -1,4 +1,11 @@
 # Benday.Presentation.Controls & Benday.Presentation
+Written by Benjamin Day  
+Pluralsight Author | Microsoft MVP | Scrum.org Professional Scrum Trainer (PST)
+https://www.benday.com  
+info@benday.com 
+
+*Got ideas for features you'd like to see? Found a bug? Let us know by submitting an issue https://github.com/benday-inc/mvvm-presentation/issues*. *Want to contribute? Submit a pull request.*
+
 **[Benday.Presentation](https://www.nuget.org/packages/Benday.Presentation/)** is a collection of classes and utility methods working with the model-view-viewmodel (MVVM) pattern in .NET MAUI. These classes support the controls in the Benday.Presentation.Controls package.
 
 More documentation coming soon but here are the classes and interfaces:
@@ -36,11 +43,9 @@ More documentation coming soon but here's a list of controls:
 * ComboboxField
 * LabelField
 
-The **Benday.ControlsAndViewModelSample** project in this repository is a simple sample application that uses the features of the Benday.Presentation and Benday.Presentation.Controls packages. The goal of this sample application is to move as much logic as possible out of the XAML files and into ViewModels and then to rely almost exclusively on data binding and command binding.  
+The **Benday.Presentation.DemoApp** project in this repository is a simple sample application that uses the features of the Benday.Presentation and Benday.Presentation.Controls packages. The goal of this sample application is to move as much logic as possible out of the XAML files and into ViewModels and then to rely almost exclusively on data binding and command binding.  
 
-Written by Benjamin Day  
-Pluralsight Author | Microsoft MVP | Scrum.org Professional Scrum Trainer (PST)
-https://www.benday.com  
-info@benday.com 
+| Sample Application in iPhone Simulator     | Sample Application on MacOS     | Sample Application on Windows     |
+| ---- | ---- | ---- |
+| <img src="/Users/benday/code/benday-inc/mvvm-presentation/assets/images/demo-app-ios.png" alt="demo-app-ios" style="zoom: 50%;" />     | <img src="/Users/benday/code/benday-inc/mvvm-presentation/assets/images/demo-app-macos.png" alt="demo-app-macos" style="zoom:50%;" />     | <img src="/Users/benday/code/benday-inc/mvvm-presentation/assets/images/demo-app-windows.png" alt="demo-app-windows" style="zoom:50%;" />     |
 
-*Got ideas for features you'd like to see? Found a bug? Let us know by submitting an issue https://github.com/benday-inc/mvvm-presentation/issues*. *Want to contribute? Submit a pull request.*
