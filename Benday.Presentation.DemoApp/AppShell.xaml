@@ -5,11 +5,28 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Benday.Presentation.DemoApp"
     Shell.FlyoutBehavior="Disabled"
-    Title="Benday.Presentation.DemoApp">
+    Title="DemoApp">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
+
+    <TabBar>
+        <Tab
+            Title="Controls Demo"
+            Icon="controls.svg">
+            <ShellContent
+                Title="Maui Controls &amp; ViewModel Sample"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+        </Tab>
+        <Tab
+            Title="About"
+            Icon="about.svg">
+            <ShellContent
+                ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+    </TabBar>
 
 </Shell>
