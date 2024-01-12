@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.IMessageBoxSampleViewModel
+  commentId: T:Benday.Presentation.IMessageBoxSampleViewModel
+  id: IMessageBoxSampleViewModel
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  - Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  - Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  - Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  langs:
+  - csharp
+  - vb
+  name: IMessageBoxSampleViewModel
+  nameWithType: IMessageBoxSampleViewModel
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/IMessageBoxSampleViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IMessageBoxSampleViewModel
+    path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public interface IMessageBoxSampleViewModel : IViewModelBase, INotifyPropertyChanged'
+    content.vb: Public Interface IMessageBoxSampleViewModel Inherits IViewModelBase, INotifyPropertyChanged
+  inheritedMembers:
+  - Benday.Presentation.IViewModelBase.MessageBoxRequested
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  commentId: P:Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  id: MessageBoxCommand
+  parent: Benday.Presentation.IMessageBoxSampleViewModel
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxCommand
+  nameWithType: IMessageBoxSampleViewModel.MessageBoxCommand
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IMessageBoxSampleViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: MessageBoxCommand
+    path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: ICommand MessageBoxCommand { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Property MessageBoxCommand As ICommand
+  overload: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand*
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  commentId: P:Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  id: ThrowExceptionCommand
+  parent: Benday.Presentation.IMessageBoxSampleViewModel
+  langs:
+  - csharp
+  - vb
+  name: ThrowExceptionCommand
+  nameWithType: IMessageBoxSampleViewModel.ThrowExceptionCommand
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IMessageBoxSampleViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ThrowExceptionCommand
+    path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
+    startLine: 8
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: ICommand ThrowExceptionCommand { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: Property ThrowExceptionCommand As ICommand
+  overload: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand*
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  commentId: M:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  id: DoSomethingThatNeedsAMessageBox
+  parent: Benday.Presentation.IMessageBoxSampleViewModel
+  langs:
+  - csharp
+  - vb
+  name: DoSomethingThatNeedsAMessageBox()
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox()
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox()
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/IMessageBoxSampleViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: DoSomethingThatNeedsAMessageBox
+    path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
+    startLine: 9
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: void DoSomethingThatNeedsAMessageBox()
+    content.vb: Sub DoSomethingThatNeedsAMessageBox()
+  overload: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox*
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  commentId: M:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  id: DoSomethingThatThrowsAnException
+  parent: Benday.Presentation.IMessageBoxSampleViewModel
+  langs:
+  - csharp
+  - vb
+  name: DoSomethingThatThrowsAnException()
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException()
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException()
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/IMessageBoxSampleViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: DoSomethingThatThrowsAnException
+    path: ../Benday.Presentation/IMessageBoxSampleViewModel.cs
+    startLine: 10
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: void DoSomethingThatThrowsAnException()
+    content.vb: Sub DoSomethingThatThrowsAnException()
+  overload: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException*
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: Benday.Presentation.IViewModelBase.MessageBoxRequested
+  commentId: E:Benday.Presentation.IViewModelBase.MessageBoxRequested
+  parent: Benday.Presentation.IViewModelBase
+  href: Benday.Presentation.IViewModelBase.html#Benday_Presentation_IViewModelBase_MessageBoxRequested
+  name: MessageBoxRequested
+  nameWithType: IViewModelBase.MessageBoxRequested
+  fullName: Benday.Presentation.IViewModelBase.MessageBoxRequested
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.IViewModelBase
+  commentId: T:Benday.Presentation.IViewModelBase
+  parent: Benday.Presentation
+  href: Benday.Presentation.IViewModelBase.html
+  name: IViewModelBase
+  nameWithType: IViewModelBase
+  fullName: Benday.Presentation.IViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand*
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  href: Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_MessageBoxCommand
+  name: MessageBoxCommand
+  nameWithType: IMessageBoxSampleViewModel.MessageBoxCommand
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.icommand
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand*
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  href: Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_ThrowExceptionCommand
+  name: ThrowExceptionCommand
+  nameWithType: IMessageBoxSampleViewModel.ThrowExceptionCommand
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox*
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  href: Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_DoSomethingThatNeedsAMessageBox
+  name: DoSomethingThatNeedsAMessageBox
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException*
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  href: Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_DoSomethingThatThrowsAnException
+  name: DoSomethingThatThrowsAnException
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException

@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.Platforms.iOS
+  commentId: N:Benday.Presentation.Platforms.iOS
+  id: Benday.Presentation.Platforms.iOS
+  children:
+  - Benday.Presentation.Platforms.iOS.PlatformClass1
+  langs:
+  - csharp
+  - vb
+  name: Benday.Presentation.Platforms.iOS
+  nameWithType: Benday.Presentation.Platforms.iOS
+  fullName: Benday.Presentation.Platforms.iOS
+  type: Namespace
+  assemblies:
+  - Benday.Presentation
+references:
+- uid: Benday.Presentation.Platforms.iOS.PlatformClass1
+  commentId: T:Benday.Presentation.Platforms.iOS.PlatformClass1
+  href: Benday.Presentation.Platforms.iOS.PlatformClass1.html
+  name: PlatformClass1
+  nameWithType: PlatformClass1
+  fullName: Benday.Presentation.Platforms.iOS.PlatformClass1

@@ -1,0 +1,108 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.ILabeledField
+  commentId: T:Benday.Presentation.ILabeledField
+  id: ILabeledField
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.ILabeledField.SetLabelText(System.String)
+  langs:
+  - csharp
+  - vb
+  name: ILabeledField
+  nameWithType: ILabeledField
+  fullName: Benday.Presentation.ILabeledField
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/ILabeledField.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ILabeledField
+    path: ../Benday.Presentation/ILabeledField.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public interface ILabeledField
+    content.vb: Public Interface ILabeledField
+- uid: Benday.Presentation.ILabeledField.SetLabelText(System.String)
+  commentId: M:Benday.Presentation.ILabeledField.SetLabelText(System.String)
+  id: SetLabelText(System.String)
+  parent: Benday.Presentation.ILabeledField
+  langs:
+  - csharp
+  - vb
+  name: SetLabelText(string)
+  nameWithType: ILabeledField.SetLabelText(string)
+  fullName: Benday.Presentation.ILabeledField.SetLabelText(string)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/ILabeledField.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: SetLabelText
+    path: ../Benday.Presentation/ILabeledField.cs
+    startLine: 9
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: void SetLabelText(string value)
+    parameters:
+    - id: value
+      type: System.String
+    content.vb: Sub SetLabelText(value As String)
+  overload: Benday.Presentation.ILabeledField.SetLabelText*
+  nameWithType.vb: ILabeledField.SetLabelText(String)
+  fullName.vb: Benday.Presentation.ILabeledField.SetLabelText(String)
+  name.vb: SetLabelText(String)
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: Benday.Presentation.ILabeledField.SetLabelText*
+  commentId: Overload:Benday.Presentation.ILabeledField.SetLabelText
+  href: Benday.Presentation.ILabeledField.html#Benday_Presentation_ILabeledField_SetLabelText_System_String_
+  name: SetLabelText
+  nameWithType: ILabeledField.SetLabelText
+  fullName: Benday.Presentation.ILabeledField.SetLabelText
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

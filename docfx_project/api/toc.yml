@@ -1,0 +1,91 @@
+### YamlMime:TableOfContent
+items:
+- uid: Benday.Presentation
+  name: Benday.Presentation
+  items:
+  - uid: Benday.Presentation.ExceptionHandlingRelayCommand
+    name: ExceptionHandlingRelayCommand
+  - uid: Benday.Presentation.ILabeledField
+    name: ILabeledField
+  - uid: Benday.Presentation.IMessageBoxSampleViewModel
+    name: IMessageBoxSampleViewModel
+  - uid: Benday.Presentation.IMessageManager
+    name: IMessageManager
+  - uid: Benday.Presentation.IProgressBarSampleViewModel
+    name: IProgressBarSampleViewModel
+  - uid: Benday.Presentation.IProgressBarViewModel
+    name: IProgressBarViewModel
+  - uid: Benday.Presentation.ISelectable
+    name: ISelectable
+  - uid: Benday.Presentation.ISelectableItem
+    name: ISelectableItem
+  - uid: Benday.Presentation.IViewModelBase
+    name: IViewModelBase
+  - uid: Benday.Presentation.IVisibleField
+    name: IVisibleField
+  - uid: Benday.Presentation.MessageBoxEventArgs
+    name: MessageBoxEventArgs
+  - uid: Benday.Presentation.MessageBoxEventHandler
+    name: MessageBoxEventHandler
+  - uid: Benday.Presentation.MessageBoxMessageManager
+    name: MessageBoxMessageManager
+  - uid: Benday.Presentation.MessageBoxRequestedEventArgs
+    name: MessageBoxRequestedEventArgs
+  - uid: Benday.Presentation.MessagingViewModelBase
+    name: MessagingViewModelBase
+  - uid: Benday.Presentation.NavigatableList`1
+    name: NavigatableList<T>
+  - uid: Benday.Presentation.ProgressBarViewModel
+    name: ProgressBarViewModel
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1
+    name: SelectableCollectionViewModel<T>
+  - uid: Benday.Presentation.SelectableItem
+    name: SelectableItem
+  - uid: Benday.Presentation.SingleSelectListViewModel
+    name: SingleSelectListViewModel
+  - uid: Benday.Presentation.ViewModelBase
+    name: ViewModelBase
+  - uid: Benday.Presentation.ViewModelField`1
+    name: ViewModelField<T>
+- uid: Benday.Presentation.Controls
+  name: Benday.Presentation.Controls
+  items:
+  - uid: Benday.Presentation.Controls.ComboboxField
+    name: ComboboxField
+  - uid: Benday.Presentation.Controls.DependencyPropertyUtility
+    name: DependencyPropertyUtility
+  - uid: Benday.Presentation.Controls.LabelField
+    name: LabelField
+  - uid: Benday.Presentation.Controls.ListboxField
+    name: ListboxField
+  - uid: Benday.Presentation.Controls.PlatformClass1
+    name: PlatformClass1
+  - uid: Benday.Presentation.Controls.Resource
+    name: Resource
+  - uid: Benday.Presentation.Controls.TextboxField
+    name: TextboxField
+- uid: Benday.Presentation.Platforms.iOS
+  name: Benday.Presentation.Platforms.iOS
+  items:
+  - uid: Benday.Presentation.Platforms.iOS.PlatformClass1
+    name: PlatformClass1
+- uid: Benday.Presentation.ValueConverters
+  name: Benday.Presentation.ValueConverters
+  items:
+  - uid: Benday.Presentation.ValueConverters.BendayValueConverterBase
+    name: BendayValueConverterBase
+  - uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+    name: NotVisibilityValueConverter
+  - uid: Benday.Presentation.ValueConverters.ShortDateValueConverter
+    name: ShortDateValueConverter
+  - uid: Benday.Presentation.ValueConverters.SmartValueConverter
+    name: SmartValueConverter
+  - uid: Benday.Presentation.ValueConverters.StringFormatValueConverter
+    name: StringFormatValueConverter
+  - uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+    name: StringOrInt32ValueConverter
+  - uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+    name: ToUpperCaseValueConverter
+  - uid: Benday.Presentation.ValueConverters.VisibilityValueConverter
+    name: VisibilityValueConverter
+memberLayout: SamePage

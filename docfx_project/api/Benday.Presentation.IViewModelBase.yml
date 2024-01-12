@@ -1,0 +1,131 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.IViewModelBase
+  commentId: T:Benday.Presentation.IViewModelBase
+  id: IViewModelBase
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.IViewModelBase.MessageBoxRequested
+  langs:
+  - csharp
+  - vb
+  name: IViewModelBase
+  nameWithType: IViewModelBase
+  fullName: Benday.Presentation.IViewModelBase
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/IViewModelBase.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IViewModelBase
+    path: ../Benday.Presentation/IViewModelBase.cs
+    startLine: 6
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public interface IViewModelBase : INotifyPropertyChanged'
+    content.vb: Public Interface IViewModelBase Inherits INotifyPropertyChanged
+  inheritedMembers:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.IViewModelBase.MessageBoxRequested
+  commentId: E:Benday.Presentation.IViewModelBase.MessageBoxRequested
+  id: MessageBoxRequested
+  parent: Benday.Presentation.IViewModelBase
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxRequested
+  nameWithType: IViewModelBase.MessageBoxRequested
+  fullName: Benday.Presentation.IViewModelBase.MessageBoxRequested
+  type: Event
+  source:
+    remote:
+      path: Benday.Presentation/IViewModelBase.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: MessageBoxRequested
+    path: ../Benday.Presentation/IViewModelBase.cs
+    startLine: 8
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: event MessageBoxEventHandler MessageBoxRequested
+    return:
+      type: Benday.Presentation.MessageBoxEventHandler
+    content.vb: Event MessageBoxRequested As MessageBoxEventHandler
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.MessageBoxEventHandler
+  commentId: T:Benday.Presentation.MessageBoxEventHandler
+  parent: Benday.Presentation
+  href: Benday.Presentation.MessageBoxEventHandler.html
+  name: MessageBoxEventHandler
+  nameWithType: MessageBoxEventHandler
+  fullName: Benday.Presentation.MessageBoxEventHandler

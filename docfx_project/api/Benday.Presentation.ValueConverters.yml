@@ -1,0 +1,103 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.ValueConverters
+  commentId: N:Benday.Presentation.ValueConverters
+  id: Benday.Presentation.ValueConverters
+  children:
+  - Benday.Presentation.ValueConverters.BendayValueConverterBase
+  - Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+  - Benday.Presentation.ValueConverters.ShortDateValueConverter
+  - Benday.Presentation.ValueConverters.SmartValueConverter
+  - Benday.Presentation.ValueConverters.StringFormatValueConverter
+  - Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+  - Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  - Benday.Presentation.ValueConverters.VisibilityValueConverter
+  langs:
+  - csharp
+  - vb
+  name: Benday.Presentation.ValueConverters
+  nameWithType: Benday.Presentation.ValueConverters
+  fullName: Benday.Presentation.ValueConverters
+  type: Namespace
+  assemblies:
+  - Benday.Presentation
+references:
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase
+  commentId: T:Benday.Presentation.ValueConverters.BendayValueConverterBase
+  parent: Benday.Presentation.ValueConverters
+  href: Benday.Presentation.ValueConverters.BendayValueConverterBase.html
+  name: BendayValueConverterBase
+  nameWithType: BendayValueConverterBase
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase
+- uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+  href: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html
+  name: NotVisibilityValueConverter
+  nameWithType: NotVisibilityValueConverter
+  fullName: Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+- uid: Benday.Presentation.ValueConverters.ShortDateValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.ShortDateValueConverter
+  href: Benday.Presentation.ValueConverters.ShortDateValueConverter.html
+  name: ShortDateValueConverter
+  nameWithType: ShortDateValueConverter
+  fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  href: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html
+  name: ToUpperCaseValueConverter
+  nameWithType: ToUpperCaseValueConverter
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.SmartValueConverter
+  href: Benday.Presentation.ValueConverters.SmartValueConverter.html
+  name: SmartValueConverter
+  nameWithType: SmartValueConverter
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.StringFormatValueConverter
+  href: Benday.Presentation.ValueConverters.StringFormatValueConverter.html
+  name: StringFormatValueConverter
+  nameWithType: StringFormatValueConverter
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter
+- uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+  href: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html
+  name: StringOrInt32ValueConverter
+  nameWithType: StringOrInt32ValueConverter
+  fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+- uid: Benday.Presentation.ValueConverters.VisibilityValueConverter
+  commentId: T:Benday.Presentation.ValueConverters.VisibilityValueConverter
+  href: Benday.Presentation.ValueConverters.VisibilityValueConverter.html
+  name: VisibilityValueConverter
+  nameWithType: VisibilityValueConverter
+  fullName: Benday.Presentation.ValueConverters.VisibilityValueConverter
+- uid: Benday.Presentation.ValueConverters
+  commentId: N:Benday.Presentation.ValueConverters
+  href: Benday.html
+  name: Benday.Presentation.ValueConverters
+  nameWithType: Benday.Presentation.ValueConverters
+  fullName: Benday.Presentation.ValueConverters
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  - name: .
+  - uid: Benday.Presentation.ValueConverters
+    name: ValueConverters
+    href: Benday.Presentation.ValueConverters.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  - name: .
+  - uid: Benday.Presentation.ValueConverters
+    name: ValueConverters
+    href: Benday.Presentation.ValueConverters.html

@@ -1,0 +1,350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.IProgressBarViewModel
+  commentId: T:Benday.Presentation.IProgressBarViewModel
+  id: IProgressBarViewModel
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  - Benday.Presentation.IProgressBarViewModel.IsCancelable
+  - Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  - Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  - Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  langs:
+  - csharp
+  - vb
+  name: IProgressBarViewModel
+  nameWithType: IProgressBarViewModel
+  fullName: Benday.Presentation.IProgressBarViewModel
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/IProgressBarViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IProgressBarViewModel
+    path: ../Benday.Presentation/IProgressBarViewModel.cs
+    startLine: 9
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public interface IProgressBarViewModel : INotifyPropertyChanged'
+    content.vb: Public Interface IProgressBarViewModel Inherits INotifyPropertyChanged
+  inheritedMembers:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  commentId: P:Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  id: IsProgressBarVisible
+  parent: Benday.Presentation.IProgressBarViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsProgressBarVisible
+  nameWithType: IProgressBarViewModel.IsProgressBarVisible
+  fullName: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IProgressBarViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsProgressBarVisible
+    path: ../Benday.Presentation/IProgressBarViewModel.cs
+    startLine: 11
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: bool IsProgressBarVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsProgressBarVisible As Boolean
+  overload: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible*
+- uid: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  commentId: P:Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  id: ProgressBarMessage
+  parent: Benday.Presentation.IProgressBarViewModel
+  langs:
+  - csharp
+  - vb
+  name: ProgressBarMessage
+  nameWithType: IProgressBarViewModel.ProgressBarMessage
+  fullName: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IProgressBarViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ProgressBarMessage
+    path: ../Benday.Presentation/IProgressBarViewModel.cs
+    startLine: 12
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: string ProgressBarMessage { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property ProgressBarMessage As String
+  overload: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage*
+- uid: Benday.Presentation.IProgressBarViewModel.IsCancelable
+  commentId: P:Benday.Presentation.IProgressBarViewModel.IsCancelable
+  id: IsCancelable
+  parent: Benday.Presentation.IProgressBarViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsCancelable
+  nameWithType: IProgressBarViewModel.IsCancelable
+  fullName: Benday.Presentation.IProgressBarViewModel.IsCancelable
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IProgressBarViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsCancelable
+    path: ../Benday.Presentation/IProgressBarViewModel.cs
+    startLine: 13
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: bool IsCancelable { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsCancelable As Boolean
+  overload: Benday.Presentation.IProgressBarViewModel.IsCancelable*
+- uid: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  commentId: P:Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  id: CancelOperationCommand
+  parent: Benday.Presentation.IProgressBarViewModel
+  langs:
+  - csharp
+  - vb
+  name: CancelOperationCommand
+  nameWithType: IProgressBarViewModel.CancelOperationCommand
+  fullName: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IProgressBarViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: CancelOperationCommand
+    path: ../Benday.Presentation/IProgressBarViewModel.cs
+    startLine: 15
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: ICommand CancelOperationCommand { get; }
+    parameters: []
+    return:
+      type: System.Windows.Input.ICommand
+    content.vb: ReadOnly Property CancelOperationCommand As ICommand
+  overload: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand*
+- uid: Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  commentId: E:Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  id: OnCancelRequested
+  parent: Benday.Presentation.IProgressBarViewModel
+  langs:
+  - csharp
+  - vb
+  name: OnCancelRequested
+  nameWithType: IProgressBarViewModel.OnCancelRequested
+  fullName: Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  type: Event
+  source:
+    remote:
+      path: Benday.Presentation/IProgressBarViewModel.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: OnCancelRequested
+    path: ../Benday.Presentation/IProgressBarViewModel.cs
+    startLine: 17
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: event EventHandler OnCancelRequested
+    return:
+      type: System.EventHandler
+    content.vb: Event OnCancelRequested As EventHandler
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible*
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  href: Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_IsProgressBarVisible
+  name: IsProgressBarVisible
+  nameWithType: IProgressBarViewModel.IsProgressBarVisible
+  fullName: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage*
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  href: Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_ProgressBarMessage
+  name: ProgressBarMessage
+  nameWithType: IProgressBarViewModel.ProgressBarMessage
+  fullName: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Benday.Presentation.IProgressBarViewModel.IsCancelable*
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.IsCancelable
+  href: Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_IsCancelable
+  name: IsCancelable
+  nameWithType: IProgressBarViewModel.IsCancelable
+  fullName: Benday.Presentation.IProgressBarViewModel.IsCancelable
+- uid: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand*
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  href: Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_CancelOperationCommand
+  name: CancelOperationCommand
+  nameWithType: IProgressBarViewModel.CancelOperationCommand
+  fullName: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+- uid: System.Windows.Input.ICommand
+  commentId: T:System.Windows.Input.ICommand
+  parent: System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.input.icommand
+  name: ICommand
+  nameWithType: ICommand
+  fullName: System.Windows.Input.ICommand
+- uid: System.Windows.Input
+  commentId: N:System.Windows.Input
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Input
+  nameWithType: System.Windows.Input
+  fullName: System.Windows.Input
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Input
+    name: Input
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.input
+- uid: System.EventHandler
+  commentId: T:System.EventHandler
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler
+  name: EventHandler
+  nameWithType: EventHandler
+  fullName: System.EventHandler
