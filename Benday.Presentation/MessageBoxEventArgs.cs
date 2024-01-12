@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace Benday.Presentation;
 
+/// <summary>
+/// Event arguments for requesting that a message box to be shown to the user.
+/// </summary>
 public class MessageBoxEventArgs : EventArgs
 {
     public MessageBoxEventArgs(string message)
@@ -39,8 +42,19 @@ public class MessageBoxEventArgs : EventArgs
 
     }
 
+    /// <summary>
+    /// The message to show to the user.
+    /// </summary>
     public string Message { get; private set; }
+
+    /// <summary>
+    /// True if the exception was unexpected.
+    /// </summary>
     public bool IsUnexpectedException { get; private set; }
+
+    /// <summary>
+    /// The exception that was thrown.
+    /// </summary>
     public Exception? Exception { get; private set; }
 }
 
