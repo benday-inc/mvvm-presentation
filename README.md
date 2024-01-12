@@ -47,5 +47,5 @@ The **Benday.Presentation.DemoApp** project in this repository is a simple sampl
 
 | Sample Application in iPhone Simulator     | Sample Application on MacOS     | Sample Application on Windows     |
 | ---- | ---- | ---- |
-| <img src="/Users/benday/code/benday-inc/mvvm-presentation/assets/images/demo-app-ios.png" alt="demo-app-ios" style="zoom: 50%;" />     | <img src="/Users/benday/code/benday-inc/mvvm-presentation/assets/images/demo-app-macos.png" alt="demo-app-macos" style="zoom:50%;" />     | <img src="/Users/benday/code/benday-inc/mvvm-presentation/assets/images/demo-app-windows.png" alt="demo-app-windows" style="zoom:50%;" />     |
+| <img src="./assets/images/demo-app-ios.png" alt="demo-app-ios" style="zoom: 50%;" />     | <img src="./assets/images/demo-app-macos.png" alt="demo-app-macos" style="zoom:50%;" />     | <img src="./assets/images/demo-app-windows.png" alt="demo-app-windows" style="zoom:50%;" />     |
 
