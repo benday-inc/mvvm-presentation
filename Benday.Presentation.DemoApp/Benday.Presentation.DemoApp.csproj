@@ -38,12 +38,49 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-maccatalyst|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-android|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-maccatalyst|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-windows10.0.19041.0|AnyCPU'">
+	  <ApplicationId>benday.presentation.demoapp</ApplicationId>
+	  <ApplicationTitle>Presentation Demo App</ApplicationTitle>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\about.svg" />
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-		<MauiIcon Include="Resources\AppIcon\bdc_mark.svg" />
-		<MauiIcon Include="Resources\AppIcon\controls.svg" />
+    <MauiIcon Include="Resources\AppIcon\bdc_mark.svg" />
 
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
@@ -58,13 +95,13 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<!--<ItemGroup>
 	  <None Remove="Resources\AppIcon\about.svg" />
 	  <None Remove="Resources\AppIcon\bdc_mark.svg" />
 	  <None Remove="Resources\AppIcon\controls.svg" />
 	  <None Remove="Resources\Images\bdc_logo_960x180.png" />
 	  <None Remove="Resources\Images\bdc_mark_large.jpg" />
-	</ItemGroup>
+	</ItemGroup>-->
 
 	<ItemGroup>
 		<PackageReference Include="Benday.Presentation.Controls" Version="1.0.0" />
