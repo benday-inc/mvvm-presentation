@@ -385,7 +385,8 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
     private bool _IsValid = true;
     /// <summary>
-    /// Gets or sets a value indicating whether this view model is valid.
+    /// Gets or sets a value indicating whether this view model is valid. 
+    /// NOTE: this property does not do any validation, it is just a flag that can be used by the view.
     /// </summary>
     public bool IsValid
     {
@@ -403,6 +404,9 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     private const string IsEnabledPropertyName = "IsEnabled";
 
     private bool _IsEnabled = true;
+    /// <summary>
+    /// Gets or sets a value indicating whether this view model is enabled.
+    /// </summary>
     public bool IsEnabled
     {
         get

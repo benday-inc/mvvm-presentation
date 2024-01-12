@@ -3,6 +3,10 @@ using System.Collections.ObjectModel;
 using System.Linq;
 
 namespace Benday.Presentation;
+
+/// <summary>
+/// A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items.
+/// </summary>
 public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectableItem>,
     IVisibleField
 {
@@ -42,6 +46,10 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
         IsVisible = true;
     }
 
+    /// <summary>
+    /// Initializes the view model with the specified values. Values are copied into a new ObservableCollection.
+    /// </summary>
+    /// <param name="values"></param>
     public override void Initialize(IEnumerable<ISelectableItem> values)
     {
         Items = new ObservableCollection<ISelectableItem>(values);
@@ -51,6 +59,11 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
         IsVisible = true;
     }
 
+    /// <summary>
+    /// Searches the list of items for the specified text and selects the item if found.
+    /// If not found, the selected item is set to null.
+    /// </summary>
+    /// <param name="text"></param>
     public void SelectByText(string text)
     {
         SelectedItem = GetByText(Items, text);
@@ -74,11 +87,19 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
         return selected;
     }
 
+    /// <summary>
+    /// Searches the list of items for the specified value and selects the item if found.
+    /// </summary>
+    /// <param name="value"></param>
     public virtual void SelectByValue(string value)
     {
         SelectedItem = GetByValue(Items, value);
     }
 
+    /// <summary>
+    /// Searches the list of items for the specified value and selects the item if found.
+    /// </summary>
+    /// <param name="value"></param>
     public void SelectByValue(int value)
     {
         SelectedItem = GetByValue(Items, value.ToString());
@@ -87,6 +108,9 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
     private const string IsVisiblePropertyName = "IsVisible";
 
     private bool _IsVisible;
+    /// <summary>
+    /// Gets or sets the IsVisible property. This observable property.
+    /// </summary>
     public bool IsVisible
     {
         get
@@ -103,6 +127,10 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
     private const string ValidationMessagePropertyName = "ValidationMessage";
 
     private string _ValidationMessage = string.Empty;
+    /// <summary>
+    /// Gets or sets the ValidationMessage property. This observable property.
+    /// NOTE: this class does not do any validation logic on its own.  It is up to the consumer to set this value.
+    /// </summary>
     public string ValidationMessage
     {
         get

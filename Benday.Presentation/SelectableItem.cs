@@ -3,6 +3,10 @@ using System.Linq;
 
 namespace Benday.Presentation;
 
+/// <summary>
+/// A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items
+/// but don't want to use a complex object. 
+/// </summary>
 public class SelectableItem : ViewModelBase, ISelectableItem
 {
     public SelectableItem()
@@ -46,6 +50,9 @@ public class SelectableItem : ViewModelBase, ISelectableItem
     private const string IsSelectedPropertyName = "IsSelected";
 
     private bool _IsSelected;
+    /// <summary>
+    /// Gets or sets the IsSelected property. This observable property.
+    /// </summary>
     public bool IsSelected
     {
         get
@@ -65,6 +72,9 @@ public class SelectableItem : ViewModelBase, ISelectableItem
     private const string TextPropertyName = "Text";
 
     private string _Text = string.Empty;
+    /// <summary>
+    /// Gets or sets the Text property. This observable property.
+    /// </summary>
     public string Text
     {
         get
@@ -81,6 +91,9 @@ public class SelectableItem : ViewModelBase, ISelectableItem
     private const string ValuePropertyName = "Value";
 
     private string _Value = string.Empty;
+    /// <summary>
+    /// Gets or sets the Value property. This observable property.
+    /// </summary>
     public string Value
     {
         get
@@ -94,6 +107,10 @@ public class SelectableItem : ViewModelBase, ISelectableItem
         }
     }
 
+    /// <summary>
+    /// Returns the value of the Text property.
+    /// </summary>
+    /// <returns></returns>
     public override string ToString()
     {
         return Text;
@@ -102,6 +119,9 @@ public class SelectableItem : ViewModelBase, ISelectableItem
     private const string IdPropertyName = "Id";
 
     private int _Id;
+    /// <summary>
+    /// Gets or sets the Id property. This observable property.
+    /// </summary>
     public int Id
     {
         get
@@ -118,6 +138,9 @@ public class SelectableItem : ViewModelBase, ISelectableItem
     private const string TooltipTextPropertyName = "TooltipText";
 
     private string _TooltipText = string.Empty;
+    /// <summary>
+    /// Gets or sets the TooltipText property. This observable property.
+    /// </summary>
     public string TooltipText
     {
         get

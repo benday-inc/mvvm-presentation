@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Benday.Presentation;
 
+/// <summary>
+/// Base class for view models that provides an implementation of INotifyPropertyChanged.
+/// </summary>
 public abstract class ViewModelBase : INotifyPropertyChanged
 {
     public void RaisePropertyChanged(string propertyName)
