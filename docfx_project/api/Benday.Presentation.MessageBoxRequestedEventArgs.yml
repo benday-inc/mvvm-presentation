@@ -1,0 +1,395 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs
+  commentId: T:Benday.Presentation.MessageBoxRequestedEventArgs
+  id: MessageBoxRequestedEventArgs
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.MessageBoxRequestedEventArgs.#ctor(System.Exception)
+  - Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxRequestedEventArgs
+  nameWithType: MessageBoxRequestedEventArgs
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs
+  type: Class
+  source:
+    remote:
+      path: Benday.Presentation/MessageBoxRequestedEventArgs.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: MessageBoxRequestedEventArgs
+    path: ../Benday.Presentation/MessageBoxRequestedEventArgs.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public class MessageBoxRequestedEventArgs
+    content.vb: Public Class MessageBoxRequestedEventArgs
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.#ctor(System.Exception)
+  commentId: M:Benday.Presentation.MessageBoxRequestedEventArgs.#ctor(System.Exception)
+  id: '#ctor(System.Exception)'
+  parent: Benday.Presentation.MessageBoxRequestedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxRequestedEventArgs(Exception)
+  nameWithType: MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs(Exception)
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs(System.Exception)
+  type: Constructor
+  source:
+    remote:
+      path: Benday.Presentation/MessageBoxRequestedEventArgs.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: .ctor
+    path: ../Benday.Presentation/MessageBoxRequestedEventArgs.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public MessageBoxRequestedEventArgs(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    content.vb: Public Sub New(ex As Exception)
+  overload: Benday.Presentation.MessageBoxRequestedEventArgs.#ctor*
+  nameWithType.vb: MessageBoxRequestedEventArgs.New(Exception)
+  fullName.vb: Benday.Presentation.MessageBoxRequestedEventArgs.New(System.Exception)
+  name.vb: New(Exception)
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  commentId: P:Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  id: Message
+  parent: Benday.Presentation.MessageBoxRequestedEventArgs
+  langs:
+  - csharp
+  - vb
+  name: Message
+  nameWithType: MessageBoxRequestedEventArgs.Message
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/MessageBoxRequestedEventArgs.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Message
+    path: ../Benday.Presentation/MessageBoxRequestedEventArgs.cs
+    startLine: 12
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public string Message { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Message As String
+  overload: Benday.Presentation.MessageBoxRequestedEventArgs.Message*
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.#ctor*
+  commentId: Overload:Benday.Presentation.MessageBoxRequestedEventArgs.#ctor
+  href: Benday.Presentation.MessageBoxRequestedEventArgs.html#Benday_Presentation_MessageBoxRequestedEventArgs__ctor_System_Exception_
+  name: MessageBoxRequestedEventArgs
+  nameWithType: MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs
+  nameWithType.vb: MessageBoxRequestedEventArgs.New
+  fullName.vb: Benday.Presentation.MessageBoxRequestedEventArgs.New
+  name.vb: New
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.Message*
+  commentId: Overload:Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  href: Benday.Presentation.MessageBoxRequestedEventArgs.html#Benday_Presentation_MessageBoxRequestedEventArgs_Message
+  name: Message
+  nameWithType: MessageBoxRequestedEventArgs.Message
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.Message
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

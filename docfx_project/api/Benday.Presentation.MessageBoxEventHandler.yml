@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.MessageBoxEventHandler
+  commentId: T:Benday.Presentation.MessageBoxEventHandler
+  id: MessageBoxEventHandler
+  parent: Benday.Presentation
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: MessageBoxEventHandler
+  nameWithType: MessageBoxEventHandler
+  fullName: Benday.Presentation.MessageBoxEventHandler
+  type: Delegate
+  source:
+    remote:
+      path: Benday.Presentation/MessageBoxEventHandler.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: MessageBoxEventHandler
+    path: ../Benday.Presentation/MessageBoxEventHandler.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public delegate void MessageBoxEventHandler(object sender, MessageBoxEventArgs args)
+    parameters:
+    - id: sender
+      type: System.Object
+    - id: args
+      type: Benday.Presentation.MessageBoxEventArgs
+    content.vb: Public Delegate Sub MessageBoxEventHandler(sender As Object, args As MessageBoxEventArgs)
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Benday.Presentation.MessageBoxEventArgs
+  commentId: T:Benday.Presentation.MessageBoxEventArgs
+  parent: Benday.Presentation
+  href: Benday.Presentation.MessageBoxEventArgs.html
+  name: MessageBoxEventArgs
+  nameWithType: MessageBoxEventArgs
+  fullName: Benday.Presentation.MessageBoxEventArgs
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

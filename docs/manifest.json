@@ -1,0 +1,520 @@
+{
+  "source_base_path": "/Users/benday/code/benday-inc/mvvm-presentation/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.ComboboxField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.ComboboxField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.DependencyPropertyUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.DependencyPropertyUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.LabelField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.LabelField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.ListboxField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.ListboxField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.PlatformClass1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.PlatformClass1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.Resource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.Resource.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.TextboxField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.TextboxField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Controls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Controls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ExceptionHandlingRelayCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ExceptionHandlingRelayCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ILabeledField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ILabeledField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.IMessageBoxSampleViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.IMessageBoxSampleViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.IMessageManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.IMessageManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.IProgressBarSampleViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.IProgressBarSampleViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.IProgressBarViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.IProgressBarViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ISelectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ISelectable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ISelectableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ISelectableItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.IViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.IViewModelBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.IVisibleField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.IVisibleField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.MessageBoxEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.MessageBoxEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.MessageBoxEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.MessageBoxEventHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.MessageBoxMessageManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.MessageBoxMessageManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.MessageBoxRequestedEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.MessageBoxRequestedEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.MessagingViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.MessagingViewModelBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.NavigatableList-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.NavigatableList-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Platforms.iOS.PlatformClass1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Platforms.iOS.PlatformClass1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.Platforms.iOS.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.Platforms.iOS.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ProgressBarViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ProgressBarViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.SelectableCollectionViewModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.SelectableCollectionViewModel-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.SelectableItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.SelectableItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.SingleSelectListViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.SingleSelectListViewModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.BendayValueConverterBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.ShortDateValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.ShortDateValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.SmartValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.SmartValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.StringFormatValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.VisibilityValueConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.VisibilityValueConverter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ValueConverters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ValueConverters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ViewModelBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ViewModelBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.ViewModelField-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.ViewModelField-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Benday.Presentation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Benday.Presentation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.png",
+      "output": {
+        "resource": {
+          "relative_path": "logo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

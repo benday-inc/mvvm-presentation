@@ -1,0 +1,859 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.SelectableItem
+  commentId: T:Benday.Presentation.SelectableItem
+  id: SelectableItem
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.SelectableItem.#ctor
+  - Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String)
+  - Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.Int32)
+  - Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.String,System.String)
+  - Benday.Presentation.SelectableItem.Id
+  - Benday.Presentation.SelectableItem.IsSelected
+  - Benday.Presentation.SelectableItem.Text
+  - Benday.Presentation.SelectableItem.ToString
+  - Benday.Presentation.SelectableItem.TooltipText
+  - Benday.Presentation.SelectableItem.Value
+  langs:
+  - csharp
+  - vb
+  name: SelectableItem
+  nameWithType: SelectableItem
+  fullName: Benday.Presentation.SelectableItem
+  type: Class
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: SelectableItem
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public class SelectableItem : ViewModelBase, ISelectableItem, ISelectable, INotifyPropertyChanged'
+    content.vb: Public Class SelectableItem Inherits ViewModelBase Implements ISelectableItem, ISelectable, INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - Benday.Presentation.ViewModelBase
+  implements:
+  - Benday.Presentation.ISelectableItem
+  - Benday.Presentation.ISelectable
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  - Benday.Presentation.ViewModelBase.PropertyChanged
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Benday.Presentation.SelectableItem.#ctor
+  commentId: M:Benday.Presentation.SelectableItem.#ctor
+  id: '#ctor'
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: SelectableItem()
+  nameWithType: SelectableItem.SelectableItem()
+  fullName: Benday.Presentation.SelectableItem.SelectableItem()
+  type: Constructor
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: .ctor
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public SelectableItem()
+    content.vb: Public Sub New()
+  overload: Benday.Presentation.SelectableItem.#ctor*
+  nameWithType.vb: SelectableItem.New()
+  fullName.vb: Benday.Presentation.SelectableItem.New()
+  name.vb: New()
+- uid: Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String)
+  commentId: M:Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String)
+  id: '#ctor(System.Boolean,System.String)'
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: SelectableItem(bool, string)
+  nameWithType: SelectableItem.SelectableItem(bool, string)
+  fullName: Benday.Presentation.SelectableItem.SelectableItem(bool, string)
+  type: Constructor
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: .ctor
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 17
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  summary: Initializes a new instance of the SelectableItem class.
+  example: []
+  syntax:
+    content: public SelectableItem(bool isSelected, string text)
+    parameters:
+    - id: isSelected
+      type: System.Boolean
+      description: ''
+    - id: text
+      type: System.String
+      description: ''
+    content.vb: Public Sub New(isSelected As Boolean, text As String)
+  overload: Benday.Presentation.SelectableItem.#ctor*
+  nameWithType.vb: SelectableItem.New(Boolean, String)
+  fullName.vb: Benday.Presentation.SelectableItem.New(Boolean, String)
+  name.vb: New(Boolean, String)
+- uid: Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.String,System.String)
+  commentId: M:Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.String,System.String)
+  id: '#ctor(System.Boolean,System.String,System.String,System.String)'
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: SelectableItem(bool, string, string, string)
+  nameWithType: SelectableItem.SelectableItem(bool, string, string, string)
+  fullName: Benday.Presentation.SelectableItem.SelectableItem(bool, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: .ctor
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 29
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  summary: Initializes a new instance of the SelectableItemViewModel class.
+  example: []
+  syntax:
+    content: public SelectableItem(bool isSelected, string text, string value, string tooltipText)
+    parameters:
+    - id: isSelected
+      type: System.Boolean
+      description: ''
+    - id: text
+      type: System.String
+      description: ''
+    - id: value
+      type: System.String
+      description: ''
+    - id: tooltipText
+      type: System.String
+    content.vb: Public Sub New(isSelected As Boolean, text As String, value As String, tooltipText As String)
+  overload: Benday.Presentation.SelectableItem.#ctor*
+  nameWithType.vb: SelectableItem.New(Boolean, String, String, String)
+  fullName.vb: Benday.Presentation.SelectableItem.New(Boolean, String, String, String)
+  name.vb: New(Boolean, String, String, String)
+- uid: Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.Int32)
+  commentId: M:Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.Int32)
+  id: '#ctor(System.Boolean,System.String,System.Int32)'
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: SelectableItem(bool, string, int)
+  nameWithType: SelectableItem.SelectableItem(bool, string, int)
+  fullName: Benday.Presentation.SelectableItem.SelectableItem(bool, string, int)
+  type: Constructor
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: .ctor
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 37
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public SelectableItem(bool isSelected, string text, int value)
+    parameters:
+    - id: isSelected
+      type: System.Boolean
+    - id: text
+      type: System.String
+    - id: value
+      type: System.Int32
+    content.vb: Public Sub New(isSelected As Boolean, text As String, value As Integer)
+  overload: Benday.Presentation.SelectableItem.#ctor*
+  nameWithType.vb: SelectableItem.New(Boolean, String, Integer)
+  fullName.vb: Benday.Presentation.SelectableItem.New(Boolean, String, Integer)
+  name.vb: New(Boolean, String, Integer)
+- uid: Benday.Presentation.SelectableItem.IsSelected
+  commentId: P:Benday.Presentation.SelectableItem.IsSelected
+  id: IsSelected
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: IsSelected
+  nameWithType: SelectableItem.IsSelected
+  fullName: Benday.Presentation.SelectableItem.IsSelected
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsSelected
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 48
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  example: []
+  syntax:
+    content: public bool IsSelected { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSelected As Boolean
+  overload: Benday.Presentation.SelectableItem.IsSelected*
+  implements:
+  - Benday.Presentation.ISelectable.IsSelected
+- uid: Benday.Presentation.SelectableItem.Text
+  commentId: P:Benday.Presentation.SelectableItem.Text
+  id: Text
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: SelectableItem.Text
+  fullName: Benday.Presentation.SelectableItem.Text
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Text
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 67
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  example: []
+  syntax:
+    content: public string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Text As String
+  overload: Benday.Presentation.SelectableItem.Text*
+  implements:
+  - Benday.Presentation.ISelectableItem.Text
+- uid: Benday.Presentation.SelectableItem.Value
+  commentId: P:Benday.Presentation.SelectableItem.Value
+  id: Value
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: SelectableItem.Value
+  fullName: Benday.Presentation.SelectableItem.Value
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Value
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 83
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  example: []
+  syntax:
+    content: public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Benday.Presentation.SelectableItem.Value*
+  implements:
+  - Benday.Presentation.ISelectableItem.Value
+- uid: Benday.Presentation.SelectableItem.ToString
+  commentId: M:Benday.Presentation.SelectableItem.ToString
+  id: ToString
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: SelectableItem.ToString()
+  fullName: Benday.Presentation.SelectableItem.ToString()
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ToString
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 96
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Benday.Presentation.SelectableItem.ToString*
+- uid: Benday.Presentation.SelectableItem.Id
+  commentId: P:Benday.Presentation.SelectableItem.Id
+  id: Id
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: SelectableItem.Id
+  fullName: Benday.Presentation.SelectableItem.Id
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Id
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 104
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  example: []
+  syntax:
+    content: public int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Id As Integer
+  overload: Benday.Presentation.SelectableItem.Id*
+  implements:
+  - Benday.Presentation.ISelectableItem.Id
+- uid: Benday.Presentation.SelectableItem.TooltipText
+  commentId: P:Benday.Presentation.SelectableItem.TooltipText
+  id: TooltipText
+  parent: Benday.Presentation.SelectableItem
+  langs:
+  - csharp
+  - vb
+  name: TooltipText
+  nameWithType: SelectableItem.TooltipText
+  fullName: Benday.Presentation.SelectableItem.TooltipText
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/SelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: TooltipText
+    path: ../Benday.Presentation/SelectableItem.cs
+    startLine: 120
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  example: []
+  syntax:
+    content: public string TooltipText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TooltipText As String
+  overload: Benday.Presentation.SelectableItem.TooltipText*
+  implements:
+  - Benday.Presentation.ISelectableItem.TooltipText
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Benday.Presentation.ViewModelBase
+  commentId: T:Benday.Presentation.ViewModelBase
+  parent: Benday.Presentation
+  href: Benday.Presentation.ViewModelBase.html
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: Benday.Presentation.ViewModelBase
+- uid: Benday.Presentation.ISelectableItem
+  commentId: T:Benday.Presentation.ISelectableItem
+  parent: Benday.Presentation
+  href: Benday.Presentation.ISelectableItem.html
+  name: ISelectableItem
+  nameWithType: ISelectableItem
+  fullName: Benday.Presentation.ISelectableItem
+- uid: Benday.Presentation.ISelectable
+  commentId: T:Benday.Presentation.ISelectable
+  parent: Benday.Presentation
+  href: Benday.Presentation.ISelectable.html
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: Benday.Presentation.ISelectable
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  commentId: M:Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  parent: Benday.Presentation.ViewModelBase
+  isExternal: true
+  href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  name: RaisePropertyChanged(string)
+  nameWithType: ViewModelBase.RaisePropertyChanged(string)
+  fullName: Benday.Presentation.ViewModelBase.RaisePropertyChanged(string)
+  nameWithType.vb: ViewModelBase.RaisePropertyChanged(String)
+  fullName.vb: Benday.Presentation.ViewModelBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Benday.Presentation.ViewModelBase.PropertyChanged
+  commentId: E:Benday.Presentation.ViewModelBase.PropertyChanged
+  parent: Benday.Presentation.ViewModelBase
+  href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_PropertyChanged
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: Benday.Presentation.ViewModelBase.PropertyChanged
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.SelectableItem.#ctor*
+  commentId: Overload:Benday.Presentation.SelectableItem.#ctor
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem__ctor
+  name: SelectableItem
+  nameWithType: SelectableItem.SelectableItem
+  fullName: Benday.Presentation.SelectableItem.SelectableItem
+  nameWithType.vb: SelectableItem.New
+  fullName.vb: Benday.Presentation.SelectableItem.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Benday.Presentation.SelectableItem.IsSelected*
+  commentId: Overload:Benday.Presentation.SelectableItem.IsSelected
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_IsSelected
+  name: IsSelected
+  nameWithType: SelectableItem.IsSelected
+  fullName: Benday.Presentation.SelectableItem.IsSelected
+- uid: Benday.Presentation.ISelectable.IsSelected
+  commentId: P:Benday.Presentation.ISelectable.IsSelected
+  parent: Benday.Presentation.ISelectable
+  href: Benday.Presentation.ISelectable.html#Benday_Presentation_ISelectable_IsSelected
+  name: IsSelected
+  nameWithType: ISelectable.IsSelected
+  fullName: Benday.Presentation.ISelectable.IsSelected
+- uid: Benday.Presentation.SelectableItem.Text*
+  commentId: Overload:Benday.Presentation.SelectableItem.Text
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Text
+  name: Text
+  nameWithType: SelectableItem.Text
+  fullName: Benday.Presentation.SelectableItem.Text
+- uid: Benday.Presentation.ISelectableItem.Text
+  commentId: P:Benday.Presentation.ISelectableItem.Text
+  parent: Benday.Presentation.ISelectableItem
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Text
+  name: Text
+  nameWithType: ISelectableItem.Text
+  fullName: Benday.Presentation.ISelectableItem.Text
+- uid: Benday.Presentation.SelectableItem.Value*
+  commentId: Overload:Benday.Presentation.SelectableItem.Value
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Value
+  name: Value
+  nameWithType: SelectableItem.Value
+  fullName: Benday.Presentation.SelectableItem.Value
+- uid: Benday.Presentation.ISelectableItem.Value
+  commentId: P:Benday.Presentation.ISelectableItem.Value
+  parent: Benday.Presentation.ISelectableItem
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Value
+  name: Value
+  nameWithType: ISelectableItem.Value
+  fullName: Benday.Presentation.ISelectableItem.Value
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Benday.Presentation.SelectableItem.ToString*
+  commentId: Overload:Benday.Presentation.SelectableItem.ToString
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_ToString
+  name: ToString
+  nameWithType: SelectableItem.ToString
+  fullName: Benday.Presentation.SelectableItem.ToString
+- uid: Benday.Presentation.SelectableItem.Id*
+  commentId: Overload:Benday.Presentation.SelectableItem.Id
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Id
+  name: Id
+  nameWithType: SelectableItem.Id
+  fullName: Benday.Presentation.SelectableItem.Id
+- uid: Benday.Presentation.ISelectableItem.Id
+  commentId: P:Benday.Presentation.ISelectableItem.Id
+  parent: Benday.Presentation.ISelectableItem
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Id
+  name: Id
+  nameWithType: ISelectableItem.Id
+  fullName: Benday.Presentation.ISelectableItem.Id
+- uid: Benday.Presentation.SelectableItem.TooltipText*
+  commentId: Overload:Benday.Presentation.SelectableItem.TooltipText
+  href: Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_TooltipText
+  name: TooltipText
+  nameWithType: SelectableItem.TooltipText
+  fullName: Benday.Presentation.SelectableItem.TooltipText
+- uid: Benday.Presentation.ISelectableItem.TooltipText
+  commentId: P:Benday.Presentation.ISelectableItem.TooltipText
+  parent: Benday.Presentation.ISelectableItem
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_TooltipText
+  name: TooltipText
+  nameWithType: ISelectableItem.TooltipText
+  fullName: Benday.Presentation.ISelectableItem.TooltipText

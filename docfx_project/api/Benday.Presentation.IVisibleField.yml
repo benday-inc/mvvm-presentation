@@ -1,0 +1,105 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.IVisibleField
+  commentId: T:Benday.Presentation.IVisibleField
+  id: IVisibleField
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.IVisibleField.IsVisible
+  langs:
+  - csharp
+  - vb
+  name: IVisibleField
+  nameWithType: IVisibleField
+  fullName: Benday.Presentation.IVisibleField
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/IVisibleField.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IVisibleField
+    path: ../Benday.Presentation/IVisibleField.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public interface IVisibleField
+    content.vb: Public Interface IVisibleField
+- uid: Benday.Presentation.IVisibleField.IsVisible
+  commentId: P:Benday.Presentation.IVisibleField.IsVisible
+  id: IsVisible
+  parent: Benday.Presentation.IVisibleField
+  langs:
+  - csharp
+  - vb
+  name: IsVisible
+  nameWithType: IVisibleField.IsVisible
+  fullName: Benday.Presentation.IVisibleField.IsVisible
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/IVisibleField.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsVisible
+    path: ../Benday.Presentation/IVisibleField.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: bool IsVisible { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsVisible As Boolean
+  overload: Benday.Presentation.IVisibleField.IsVisible*
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: Benday.Presentation.IVisibleField.IsVisible*
+  commentId: Overload:Benday.Presentation.IVisibleField.IsVisible
+  href: Benday.Presentation.IVisibleField.html#Benday_Presentation_IVisibleField_IsVisible
+  name: IsVisible
+  nameWithType: IVisibleField.IsVisible
+  fullName: Benday.Presentation.IVisibleField.IsVisible
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

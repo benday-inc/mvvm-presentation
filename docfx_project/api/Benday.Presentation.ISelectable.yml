@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.ISelectable
+  commentId: T:Benday.Presentation.ISelectable
+  id: ISelectable
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.ISelectable.IsSelected
+  langs:
+  - csharp
+  - vb
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: Benday.Presentation.ISelectable
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/ISelectable.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ISelectable
+    path: ../Benday.Presentation/ISelectable.cs
+    startLine: 6
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public interface ISelectable : INotifyPropertyChanged'
+    content.vb: Public Interface ISelectable Inherits INotifyPropertyChanged
+  inheritedMembers:
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.ISelectable.IsSelected
+  commentId: P:Benday.Presentation.ISelectable.IsSelected
+  id: IsSelected
+  parent: Benday.Presentation.ISelectable
+  langs:
+  - csharp
+  - vb
+  name: IsSelected
+  nameWithType: ISelectable.IsSelected
+  fullName: Benday.Presentation.ISelectable.IsSelected
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/ISelectable.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsSelected
+    path: ../Benday.Presentation/ISelectable.cs
+    startLine: 8
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: bool IsSelected { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property IsSelected As Boolean
+  overload: Benday.Presentation.ISelectable.IsSelected*
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.ISelectable.IsSelected*
+  commentId: Overload:Benday.Presentation.ISelectable.IsSelected
+  href: Benday.Presentation.ISelectable.html#Benday_Presentation_ISelectable_IsSelected
+  name: IsSelected
+  nameWithType: ISelectable.IsSelected
+  fullName: Benday.Presentation.ISelectable.IsSelected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

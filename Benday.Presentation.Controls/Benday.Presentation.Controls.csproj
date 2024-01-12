@@ -46,13 +46,19 @@
     <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(Configuration)'=='Debug'">
-    <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(Configuration)'=='Debug-nuget-pkgs'">
-    <PackageReference Include="Benday.Presentation" Version="1.0.0.0" />
-  </ItemGroup>  
-
+  <Choose>
+    <When Condition="'$(Configuration)'=='Debug-nuget-pkgs'">
+      <ItemGroup>
+        <PackageReference Include="Benday.Presentation" Version="1.*" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <ProjectReference Include="..\Benday.Presentation\Benday.Presentation.csproj" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+ 
   <ItemGroup>
     <None Update="bdc_mark_128_128.png">
       <Pack>True</Pack>

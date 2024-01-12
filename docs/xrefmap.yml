@@ -1,0 +1,2276 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Benday.Presentation
+  name: Benday.Presentation
+  href: api/Benday.Presentation.html
+  commentId: N:Benday.Presentation
+  fullName: Benday.Presentation
+  nameWithType: Benday.Presentation
+- uid: Benday.Presentation.Controls
+  name: Benday.Presentation.Controls
+  href: api/Benday.Presentation.Controls.html
+  commentId: N:Benday.Presentation.Controls
+  fullName: Benday.Presentation.Controls
+  nameWithType: Benday.Presentation.Controls
+- uid: Benday.Presentation.Controls.ComboboxField
+  name: ComboboxField
+  href: api/Benday.Presentation.Controls.ComboboxField.html
+  commentId: T:Benday.Presentation.Controls.ComboboxField
+  fullName: Benday.Presentation.Controls.ComboboxField
+  nameWithType: ComboboxField
+- uid: Benday.Presentation.Controls.ComboboxField.#ctor
+  name: ComboboxField()
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField__ctor
+  commentId: M:Benday.Presentation.Controls.ComboboxField.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.Controls.ComboboxField.ComboboxField()
+  fullName.vb: Benday.Presentation.Controls.ComboboxField.New()
+  nameWithType: ComboboxField.ComboboxField()
+  nameWithType.vb: ComboboxField.New()
+- uid: Benday.Presentation.Controls.ComboboxField.#ctor*
+  name: ComboboxField
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField__ctor_
+  commentId: Overload:Benday.Presentation.Controls.ComboboxField.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.Controls.ComboboxField.ComboboxField
+  fullName.vb: Benday.Presentation.Controls.ComboboxField.New
+  nameWithType: ComboboxField.ComboboxField
+  nameWithType.vb: ComboboxField.New
+- uid: Benday.Presentation.Controls.ComboboxField.LabelText
+  name: LabelText
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField_LabelText
+  commentId: P:Benday.Presentation.Controls.ComboboxField.LabelText
+  fullName: Benday.Presentation.Controls.ComboboxField.LabelText
+  nameWithType: ComboboxField.LabelText
+- uid: Benday.Presentation.Controls.ComboboxField.LabelText*
+  name: LabelText
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField_LabelText_
+  commentId: Overload:Benday.Presentation.Controls.ComboboxField.LabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.ComboboxField.LabelText
+  nameWithType: ComboboxField.LabelText
+- uid: Benday.Presentation.Controls.ComboboxField.LabelTextProperty
+  name: LabelTextProperty
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField_LabelTextProperty
+  commentId: F:Benday.Presentation.Controls.ComboboxField.LabelTextProperty
+  fullName: Benday.Presentation.Controls.ComboboxField.LabelTextProperty
+  nameWithType: ComboboxField.LabelTextProperty
+- uid: Benday.Presentation.Controls.ComboboxField.SetLabelText(System.String)
+  name: SetLabelText(string)
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField_SetLabelText_System_String_
+  commentId: M:Benday.Presentation.Controls.ComboboxField.SetLabelText(System.String)
+  name.vb: SetLabelText(String)
+  fullName: Benday.Presentation.Controls.ComboboxField.SetLabelText(string)
+  fullName.vb: Benday.Presentation.Controls.ComboboxField.SetLabelText(String)
+  nameWithType: ComboboxField.SetLabelText(string)
+  nameWithType.vb: ComboboxField.SetLabelText(String)
+- uid: Benday.Presentation.Controls.ComboboxField.SetLabelText*
+  name: SetLabelText
+  href: api/Benday.Presentation.Controls.ComboboxField.html#Benday_Presentation_Controls_ComboboxField_SetLabelText_
+  commentId: Overload:Benday.Presentation.Controls.ComboboxField.SetLabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.ComboboxField.SetLabelText
+  nameWithType: ComboboxField.SetLabelText
+- uid: Benday.Presentation.Controls.DependencyPropertyUtility
+  name: DependencyPropertyUtility
+  href: api/Benday.Presentation.Controls.DependencyPropertyUtility.html
+  commentId: T:Benday.Presentation.Controls.DependencyPropertyUtility
+  fullName: Benday.Presentation.Controls.DependencyPropertyUtility
+  nameWithType: DependencyPropertyUtility
+- uid: Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)
+  name: LabelTextPropertyChanged(BindableObject, object, object)
+  href: api/Benday.Presentation.Controls.DependencyPropertyUtility.html#Benday_Presentation_Controls_DependencyPropertyUtility_LabelTextPropertyChanged_Microsoft_Maui_Controls_BindableObject_System_Object_System_Object_
+  commentId: M:Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged(Microsoft.Maui.Controls.BindableObject,System.Object,System.Object)
+  name.vb: LabelTextPropertyChanged(BindableObject, Object, Object)
+  fullName: Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged(Microsoft.Maui.Controls.BindableObject, object, object)
+  fullName.vb: Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged(Microsoft.Maui.Controls.BindableObject, Object, Object)
+  nameWithType: DependencyPropertyUtility.LabelTextPropertyChanged(BindableObject, object, object)
+  nameWithType.vb: DependencyPropertyUtility.LabelTextPropertyChanged(BindableObject, Object, Object)
+- uid: Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged*
+  name: LabelTextPropertyChanged
+  href: api/Benday.Presentation.Controls.DependencyPropertyUtility.html#Benday_Presentation_Controls_DependencyPropertyUtility_LabelTextPropertyChanged_
+  commentId: Overload:Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.DependencyPropertyUtility.LabelTextPropertyChanged
+  nameWithType: DependencyPropertyUtility.LabelTextPropertyChanged
+- uid: Benday.Presentation.Controls.LabelField
+  name: LabelField
+  href: api/Benday.Presentation.Controls.LabelField.html
+  commentId: T:Benday.Presentation.Controls.LabelField
+  fullName: Benday.Presentation.Controls.LabelField
+  nameWithType: LabelField
+- uid: Benday.Presentation.Controls.LabelField.#ctor
+  name: LabelField()
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField__ctor
+  commentId: M:Benday.Presentation.Controls.LabelField.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.Controls.LabelField.LabelField()
+  fullName.vb: Benday.Presentation.Controls.LabelField.New()
+  nameWithType: LabelField.LabelField()
+  nameWithType.vb: LabelField.New()
+- uid: Benday.Presentation.Controls.LabelField.#ctor*
+  name: LabelField
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField__ctor_
+  commentId: Overload:Benday.Presentation.Controls.LabelField.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.Controls.LabelField.LabelField
+  fullName.vb: Benday.Presentation.Controls.LabelField.New
+  nameWithType: LabelField.LabelField
+  nameWithType.vb: LabelField.New
+- uid: Benday.Presentation.Controls.LabelField.LabelText
+  name: LabelText
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField_LabelText
+  commentId: P:Benday.Presentation.Controls.LabelField.LabelText
+  fullName: Benday.Presentation.Controls.LabelField.LabelText
+  nameWithType: LabelField.LabelText
+- uid: Benday.Presentation.Controls.LabelField.LabelText*
+  name: LabelText
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField_LabelText_
+  commentId: Overload:Benday.Presentation.Controls.LabelField.LabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.LabelField.LabelText
+  nameWithType: LabelField.LabelText
+- uid: Benday.Presentation.Controls.LabelField.LabelTextProperty
+  name: LabelTextProperty
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField_LabelTextProperty
+  commentId: F:Benday.Presentation.Controls.LabelField.LabelTextProperty
+  fullName: Benday.Presentation.Controls.LabelField.LabelTextProperty
+  nameWithType: LabelField.LabelTextProperty
+- uid: Benday.Presentation.Controls.LabelField.SetLabelText(System.String)
+  name: SetLabelText(string)
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField_SetLabelText_System_String_
+  commentId: M:Benday.Presentation.Controls.LabelField.SetLabelText(System.String)
+  name.vb: SetLabelText(String)
+  fullName: Benday.Presentation.Controls.LabelField.SetLabelText(string)
+  fullName.vb: Benday.Presentation.Controls.LabelField.SetLabelText(String)
+  nameWithType: LabelField.SetLabelText(string)
+  nameWithType.vb: LabelField.SetLabelText(String)
+- uid: Benday.Presentation.Controls.LabelField.SetLabelText*
+  name: SetLabelText
+  href: api/Benday.Presentation.Controls.LabelField.html#Benday_Presentation_Controls_LabelField_SetLabelText_
+  commentId: Overload:Benday.Presentation.Controls.LabelField.SetLabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.LabelField.SetLabelText
+  nameWithType: LabelField.SetLabelText
+- uid: Benday.Presentation.Controls.ListboxField
+  name: ListboxField
+  href: api/Benday.Presentation.Controls.ListboxField.html
+  commentId: T:Benday.Presentation.Controls.ListboxField
+  fullName: Benday.Presentation.Controls.ListboxField
+  nameWithType: ListboxField
+- uid: Benday.Presentation.Controls.ListboxField.#ctor
+  name: ListboxField()
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField__ctor
+  commentId: M:Benday.Presentation.Controls.ListboxField.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.Controls.ListboxField.ListboxField()
+  fullName.vb: Benday.Presentation.Controls.ListboxField.New()
+  nameWithType: ListboxField.ListboxField()
+  nameWithType.vb: ListboxField.New()
+- uid: Benday.Presentation.Controls.ListboxField.#ctor*
+  name: ListboxField
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField__ctor_
+  commentId: Overload:Benday.Presentation.Controls.ListboxField.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.Controls.ListboxField.ListboxField
+  fullName.vb: Benday.Presentation.Controls.ListboxField.New
+  nameWithType: ListboxField.ListboxField
+  nameWithType.vb: ListboxField.New
+- uid: Benday.Presentation.Controls.ListboxField.LabelText
+  name: LabelText
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField_LabelText
+  commentId: P:Benday.Presentation.Controls.ListboxField.LabelText
+  fullName: Benday.Presentation.Controls.ListboxField.LabelText
+  nameWithType: ListboxField.LabelText
+- uid: Benday.Presentation.Controls.ListboxField.LabelText*
+  name: LabelText
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField_LabelText_
+  commentId: Overload:Benday.Presentation.Controls.ListboxField.LabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.ListboxField.LabelText
+  nameWithType: ListboxField.LabelText
+- uid: Benday.Presentation.Controls.ListboxField.LabelTextProperty
+  name: LabelTextProperty
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField_LabelTextProperty
+  commentId: F:Benday.Presentation.Controls.ListboxField.LabelTextProperty
+  fullName: Benday.Presentation.Controls.ListboxField.LabelTextProperty
+  nameWithType: ListboxField.LabelTextProperty
+- uid: Benday.Presentation.Controls.ListboxField.SetLabelText(System.String)
+  name: SetLabelText(string)
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField_SetLabelText_System_String_
+  commentId: M:Benday.Presentation.Controls.ListboxField.SetLabelText(System.String)
+  name.vb: SetLabelText(String)
+  fullName: Benday.Presentation.Controls.ListboxField.SetLabelText(string)
+  fullName.vb: Benday.Presentation.Controls.ListboxField.SetLabelText(String)
+  nameWithType: ListboxField.SetLabelText(string)
+  nameWithType.vb: ListboxField.SetLabelText(String)
+- uid: Benday.Presentation.Controls.ListboxField.SetLabelText*
+  name: SetLabelText
+  href: api/Benday.Presentation.Controls.ListboxField.html#Benday_Presentation_Controls_ListboxField_SetLabelText_
+  commentId: Overload:Benday.Presentation.Controls.ListboxField.SetLabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.ListboxField.SetLabelText
+  nameWithType: ListboxField.SetLabelText
+- uid: Benday.Presentation.Controls.PlatformClass1
+  name: PlatformClass1
+  href: api/Benday.Presentation.Controls.PlatformClass1.html
+  commentId: T:Benday.Presentation.Controls.PlatformClass1
+  fullName: Benday.Presentation.Controls.PlatformClass1
+  nameWithType: PlatformClass1
+- uid: Benday.Presentation.Controls.Resource
+  name: Resource
+  href: api/Benday.Presentation.Controls.Resource.html
+  commentId: T:Benday.Presentation.Controls.Resource
+  fullName: Benday.Presentation.Controls.Resource
+  nameWithType: Resource
+- uid: Benday.Presentation.Controls.TextboxField
+  name: TextboxField
+  href: api/Benday.Presentation.Controls.TextboxField.html
+  commentId: T:Benday.Presentation.Controls.TextboxField
+  fullName: Benday.Presentation.Controls.TextboxField
+  nameWithType: TextboxField
+- uid: Benday.Presentation.Controls.TextboxField.#ctor
+  name: TextboxField()
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField__ctor
+  commentId: M:Benday.Presentation.Controls.TextboxField.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.Controls.TextboxField.TextboxField()
+  fullName.vb: Benday.Presentation.Controls.TextboxField.New()
+  nameWithType: TextboxField.TextboxField()
+  nameWithType.vb: TextboxField.New()
+- uid: Benday.Presentation.Controls.TextboxField.#ctor*
+  name: TextboxField
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField__ctor_
+  commentId: Overload:Benday.Presentation.Controls.TextboxField.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.Controls.TextboxField.TextboxField
+  fullName.vb: Benday.Presentation.Controls.TextboxField.New
+  nameWithType: TextboxField.TextboxField
+  nameWithType.vb: TextboxField.New
+- uid: Benday.Presentation.Controls.TextboxField.LabelText
+  name: LabelText
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField_LabelText
+  commentId: P:Benday.Presentation.Controls.TextboxField.LabelText
+  fullName: Benday.Presentation.Controls.TextboxField.LabelText
+  nameWithType: TextboxField.LabelText
+- uid: Benday.Presentation.Controls.TextboxField.LabelText*
+  name: LabelText
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField_LabelText_
+  commentId: Overload:Benday.Presentation.Controls.TextboxField.LabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.TextboxField.LabelText
+  nameWithType: TextboxField.LabelText
+- uid: Benday.Presentation.Controls.TextboxField.LabelTextProperty
+  name: LabelTextProperty
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField_LabelTextProperty
+  commentId: F:Benday.Presentation.Controls.TextboxField.LabelTextProperty
+  fullName: Benday.Presentation.Controls.TextboxField.LabelTextProperty
+  nameWithType: TextboxField.LabelTextProperty
+- uid: Benday.Presentation.Controls.TextboxField.SetLabelText(System.String)
+  name: SetLabelText(string)
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField_SetLabelText_System_String_
+  commentId: M:Benday.Presentation.Controls.TextboxField.SetLabelText(System.String)
+  name.vb: SetLabelText(String)
+  fullName: Benday.Presentation.Controls.TextboxField.SetLabelText(string)
+  fullName.vb: Benday.Presentation.Controls.TextboxField.SetLabelText(String)
+  nameWithType: TextboxField.SetLabelText(string)
+  nameWithType.vb: TextboxField.SetLabelText(String)
+- uid: Benday.Presentation.Controls.TextboxField.SetLabelText*
+  name: SetLabelText
+  href: api/Benday.Presentation.Controls.TextboxField.html#Benday_Presentation_Controls_TextboxField_SetLabelText_
+  commentId: Overload:Benday.Presentation.Controls.TextboxField.SetLabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.Controls.TextboxField.SetLabelText
+  nameWithType: TextboxField.SetLabelText
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand
+  name: ExceptionHandlingRelayCommand
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html
+  commentId: T:Benday.Presentation.ExceptionHandlingRelayCommand
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand
+  nameWithType: ExceptionHandlingRelayCommand
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.#ctor(Benday.Presentation.IMessageManager,System.Action)
+  name: ExceptionHandlingRelayCommand(IMessageManager, Action)
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand__ctor_Benday_Presentation_IMessageManager_System_Action_
+  commentId: M:Benday.Presentation.ExceptionHandlingRelayCommand.#ctor(Benday.Presentation.IMessageManager,System.Action)
+  name.vb: New(IMessageManager, Action)
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.ExceptionHandlingRelayCommand(Benday.Presentation.IMessageManager, System.Action)
+  fullName.vb: Benday.Presentation.ExceptionHandlingRelayCommand.New(Benday.Presentation.IMessageManager, System.Action)
+  nameWithType: ExceptionHandlingRelayCommand.ExceptionHandlingRelayCommand(IMessageManager, Action)
+  nameWithType.vb: ExceptionHandlingRelayCommand.New(IMessageManager, Action)
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.#ctor*
+  name: ExceptionHandlingRelayCommand
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand__ctor_
+  commentId: Overload:Benday.Presentation.ExceptionHandlingRelayCommand.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.ExceptionHandlingRelayCommand
+  fullName.vb: Benday.Presentation.ExceptionHandlingRelayCommand.New
+  nameWithType: ExceptionHandlingRelayCommand.ExceptionHandlingRelayCommand
+  nameWithType.vb: ExceptionHandlingRelayCommand.New
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute(System.Object)
+  name: CanExecute(object?)
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_CanExecute_System_Object_
+  commentId: M:Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute(System.Object)
+  name.vb: CanExecute(Object)
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute(object?)
+  fullName.vb: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute(Object)
+  nameWithType: ExceptionHandlingRelayCommand.CanExecute(object?)
+  nameWithType.vb: ExceptionHandlingRelayCommand.CanExecute(Object)
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute*
+  name: CanExecute
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_CanExecute_
+  commentId: Overload:Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute
+  isSpec: "True"
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecute
+  nameWithType: ExceptionHandlingRelayCommand.CanExecute
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecuteChanged
+  name: CanExecuteChanged
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_CanExecuteChanged
+  commentId: E:Benday.Presentation.ExceptionHandlingRelayCommand.CanExecuteChanged
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.CanExecuteChanged
+  nameWithType: ExceptionHandlingRelayCommand.CanExecuteChanged
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.Execute(System.Object)
+  name: Execute(object?)
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_Execute_System_Object_
+  commentId: M:Benday.Presentation.ExceptionHandlingRelayCommand.Execute(System.Object)
+  name.vb: Execute(Object)
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.Execute(object?)
+  fullName.vb: Benday.Presentation.ExceptionHandlingRelayCommand.Execute(Object)
+  nameWithType: ExceptionHandlingRelayCommand.Execute(object?)
+  nameWithType.vb: ExceptionHandlingRelayCommand.Execute(Object)
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.Execute*
+  name: Execute
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_Execute_
+  commentId: Overload:Benday.Presentation.ExceptionHandlingRelayCommand.Execute
+  isSpec: "True"
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.Execute
+  nameWithType: ExceptionHandlingRelayCommand.Execute
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged
+  name: NotifyCanExecuteChanged()
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_NotifyCanExecuteChanged
+  commentId: M:Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged()
+  nameWithType: ExceptionHandlingRelayCommand.NotifyCanExecuteChanged()
+- uid: Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged*
+  name: NotifyCanExecuteChanged
+  href: api/Benday.Presentation.ExceptionHandlingRelayCommand.html#Benday_Presentation_ExceptionHandlingRelayCommand_NotifyCanExecuteChanged_
+  commentId: Overload:Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged
+  isSpec: "True"
+  fullName: Benday.Presentation.ExceptionHandlingRelayCommand.NotifyCanExecuteChanged
+  nameWithType: ExceptionHandlingRelayCommand.NotifyCanExecuteChanged
+- uid: Benday.Presentation.ILabeledField
+  name: ILabeledField
+  href: api/Benday.Presentation.ILabeledField.html
+  commentId: T:Benday.Presentation.ILabeledField
+  fullName: Benday.Presentation.ILabeledField
+  nameWithType: ILabeledField
+- uid: Benday.Presentation.ILabeledField.SetLabelText(System.String)
+  name: SetLabelText(string)
+  href: api/Benday.Presentation.ILabeledField.html#Benday_Presentation_ILabeledField_SetLabelText_System_String_
+  commentId: M:Benday.Presentation.ILabeledField.SetLabelText(System.String)
+  name.vb: SetLabelText(String)
+  fullName: Benday.Presentation.ILabeledField.SetLabelText(string)
+  fullName.vb: Benday.Presentation.ILabeledField.SetLabelText(String)
+  nameWithType: ILabeledField.SetLabelText(string)
+  nameWithType.vb: ILabeledField.SetLabelText(String)
+- uid: Benday.Presentation.ILabeledField.SetLabelText*
+  name: SetLabelText
+  href: api/Benday.Presentation.ILabeledField.html#Benday_Presentation_ILabeledField_SetLabelText_
+  commentId: Overload:Benday.Presentation.ILabeledField.SetLabelText
+  isSpec: "True"
+  fullName: Benday.Presentation.ILabeledField.SetLabelText
+  nameWithType: ILabeledField.SetLabelText
+- uid: Benday.Presentation.IMessageBoxSampleViewModel
+  name: IMessageBoxSampleViewModel
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html
+  commentId: T:Benday.Presentation.IMessageBoxSampleViewModel
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel
+  nameWithType: IMessageBoxSampleViewModel
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  name: DoSomethingThatNeedsAMessageBox()
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_DoSomethingThatNeedsAMessageBox
+  commentId: M:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox()
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox()
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox*
+  name: DoSomethingThatNeedsAMessageBox
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_DoSomethingThatNeedsAMessageBox_
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  isSpec: "True"
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatNeedsAMessageBox
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  name: DoSomethingThatThrowsAnException()
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_DoSomethingThatThrowsAnException
+  commentId: M:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException()
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException()
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException*
+  name: DoSomethingThatThrowsAnException
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_DoSomethingThatThrowsAnException_
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  isSpec: "True"
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+  nameWithType: IMessageBoxSampleViewModel.DoSomethingThatThrowsAnException
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  name: MessageBoxCommand
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_MessageBoxCommand
+  commentId: P:Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  nameWithType: IMessageBoxSampleViewModel.MessageBoxCommand
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand*
+  name: MessageBoxCommand
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_MessageBoxCommand_
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  isSpec: "True"
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.MessageBoxCommand
+  nameWithType: IMessageBoxSampleViewModel.MessageBoxCommand
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  name: ThrowExceptionCommand
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_ThrowExceptionCommand
+  commentId: P:Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  nameWithType: IMessageBoxSampleViewModel.ThrowExceptionCommand
+- uid: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand*
+  name: ThrowExceptionCommand
+  href: api/Benday.Presentation.IMessageBoxSampleViewModel.html#Benday_Presentation_IMessageBoxSampleViewModel_ThrowExceptionCommand_
+  commentId: Overload:Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  isSpec: "True"
+  fullName: Benday.Presentation.IMessageBoxSampleViewModel.ThrowExceptionCommand
+  nameWithType: IMessageBoxSampleViewModel.ThrowExceptionCommand
+- uid: Benday.Presentation.IMessageManager
+  name: IMessageManager
+  href: api/Benday.Presentation.IMessageManager.html
+  commentId: T:Benday.Presentation.IMessageManager
+  fullName: Benday.Presentation.IMessageManager
+  nameWithType: IMessageManager
+- uid: Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  name: ShowMessage(Exception)
+  href: api/Benday.Presentation.IMessageManager.html#Benday_Presentation_IMessageManager_ShowMessage_System_Exception_
+  commentId: M:Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  fullName: Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  nameWithType: IMessageManager.ShowMessage(Exception)
+- uid: Benday.Presentation.IMessageManager.ShowMessage(System.String,System.String)
+  name: ShowMessage(string, string)
+  href: api/Benday.Presentation.IMessageManager.html#Benday_Presentation_IMessageManager_ShowMessage_System_String_System_String_
+  commentId: M:Benday.Presentation.IMessageManager.ShowMessage(System.String,System.String)
+  name.vb: ShowMessage(String, String)
+  fullName: Benday.Presentation.IMessageManager.ShowMessage(string, string)
+  fullName.vb: Benday.Presentation.IMessageManager.ShowMessage(String, String)
+  nameWithType: IMessageManager.ShowMessage(string, string)
+  nameWithType.vb: IMessageManager.ShowMessage(String, String)
+- uid: Benday.Presentation.IMessageManager.ShowMessage*
+  name: ShowMessage
+  href: api/Benday.Presentation.IMessageManager.html#Benday_Presentation_IMessageManager_ShowMessage_
+  commentId: Overload:Benday.Presentation.IMessageManager.ShowMessage
+  isSpec: "True"
+  fullName: Benday.Presentation.IMessageManager.ShowMessage
+  nameWithType: IMessageManager.ShowMessage
+- uid: Benday.Presentation.IProgressBarSampleViewModel
+  name: IProgressBarSampleViewModel
+  href: api/Benday.Presentation.IProgressBarSampleViewModel.html
+  commentId: T:Benday.Presentation.IProgressBarSampleViewModel
+  fullName: Benday.Presentation.IProgressBarSampleViewModel
+  nameWithType: IProgressBarSampleViewModel
+- uid: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBar
+  name: RunProgressBar()
+  href: api/Benday.Presentation.IProgressBarSampleViewModel.html#Benday_Presentation_IProgressBarSampleViewModel_RunProgressBar
+  commentId: M:Benday.Presentation.IProgressBarSampleViewModel.RunProgressBar
+  fullName: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBar()
+  nameWithType: IProgressBarSampleViewModel.RunProgressBar()
+- uid: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBar*
+  name: RunProgressBar
+  href: api/Benday.Presentation.IProgressBarSampleViewModel.html#Benday_Presentation_IProgressBarSampleViewModel_RunProgressBar_
+  commentId: Overload:Benday.Presentation.IProgressBarSampleViewModel.RunProgressBar
+  isSpec: "True"
+  fullName: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBar
+  nameWithType: IProgressBarSampleViewModel.RunProgressBar
+- uid: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBarCommand
+  name: RunProgressBarCommand
+  href: api/Benday.Presentation.IProgressBarSampleViewModel.html#Benday_Presentation_IProgressBarSampleViewModel_RunProgressBarCommand
+  commentId: P:Benday.Presentation.IProgressBarSampleViewModel.RunProgressBarCommand
+  fullName: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBarCommand
+  nameWithType: IProgressBarSampleViewModel.RunProgressBarCommand
+- uid: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBarCommand*
+  name: RunProgressBarCommand
+  href: api/Benday.Presentation.IProgressBarSampleViewModel.html#Benday_Presentation_IProgressBarSampleViewModel_RunProgressBarCommand_
+  commentId: Overload:Benday.Presentation.IProgressBarSampleViewModel.RunProgressBarCommand
+  isSpec: "True"
+  fullName: Benday.Presentation.IProgressBarSampleViewModel.RunProgressBarCommand
+  nameWithType: IProgressBarSampleViewModel.RunProgressBarCommand
+- uid: Benday.Presentation.IProgressBarViewModel
+  name: IProgressBarViewModel
+  href: api/Benday.Presentation.IProgressBarViewModel.html
+  commentId: T:Benday.Presentation.IProgressBarViewModel
+  fullName: Benday.Presentation.IProgressBarViewModel
+  nameWithType: IProgressBarViewModel
+- uid: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  name: CancelOperationCommand
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_CancelOperationCommand
+  commentId: P:Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  fullName: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  nameWithType: IProgressBarViewModel.CancelOperationCommand
+- uid: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand*
+  name: CancelOperationCommand
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_CancelOperationCommand_
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  isSpec: "True"
+  fullName: Benday.Presentation.IProgressBarViewModel.CancelOperationCommand
+  nameWithType: IProgressBarViewModel.CancelOperationCommand
+- uid: Benday.Presentation.IProgressBarViewModel.IsCancelable
+  name: IsCancelable
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_IsCancelable
+  commentId: P:Benday.Presentation.IProgressBarViewModel.IsCancelable
+  fullName: Benday.Presentation.IProgressBarViewModel.IsCancelable
+  nameWithType: IProgressBarViewModel.IsCancelable
+- uid: Benday.Presentation.IProgressBarViewModel.IsCancelable*
+  name: IsCancelable
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_IsCancelable_
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.IsCancelable
+  isSpec: "True"
+  fullName: Benday.Presentation.IProgressBarViewModel.IsCancelable
+  nameWithType: IProgressBarViewModel.IsCancelable
+- uid: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  name: IsProgressBarVisible
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_IsProgressBarVisible
+  commentId: P:Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  fullName: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  nameWithType: IProgressBarViewModel.IsProgressBarVisible
+- uid: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible*
+  name: IsProgressBarVisible
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_IsProgressBarVisible_
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  isSpec: "True"
+  fullName: Benday.Presentation.IProgressBarViewModel.IsProgressBarVisible
+  nameWithType: IProgressBarViewModel.IsProgressBarVisible
+- uid: Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  name: OnCancelRequested
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_OnCancelRequested
+  commentId: E:Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  fullName: Benday.Presentation.IProgressBarViewModel.OnCancelRequested
+  nameWithType: IProgressBarViewModel.OnCancelRequested
+- uid: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  name: ProgressBarMessage
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_ProgressBarMessage
+  commentId: P:Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  fullName: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  nameWithType: IProgressBarViewModel.ProgressBarMessage
+- uid: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage*
+  name: ProgressBarMessage
+  href: api/Benday.Presentation.IProgressBarViewModel.html#Benday_Presentation_IProgressBarViewModel_ProgressBarMessage_
+  commentId: Overload:Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  isSpec: "True"
+  fullName: Benday.Presentation.IProgressBarViewModel.ProgressBarMessage
+  nameWithType: IProgressBarViewModel.ProgressBarMessage
+- uid: Benday.Presentation.ISelectable
+  name: ISelectable
+  href: api/Benday.Presentation.ISelectable.html
+  commentId: T:Benday.Presentation.ISelectable
+  fullName: Benday.Presentation.ISelectable
+  nameWithType: ISelectable
+- uid: Benday.Presentation.ISelectable.IsSelected
+  name: IsSelected
+  href: api/Benday.Presentation.ISelectable.html#Benday_Presentation_ISelectable_IsSelected
+  commentId: P:Benday.Presentation.ISelectable.IsSelected
+  fullName: Benday.Presentation.ISelectable.IsSelected
+  nameWithType: ISelectable.IsSelected
+- uid: Benday.Presentation.ISelectable.IsSelected*
+  name: IsSelected
+  href: api/Benday.Presentation.ISelectable.html#Benday_Presentation_ISelectable_IsSelected_
+  commentId: Overload:Benday.Presentation.ISelectable.IsSelected
+  isSpec: "True"
+  fullName: Benday.Presentation.ISelectable.IsSelected
+  nameWithType: ISelectable.IsSelected
+- uid: Benday.Presentation.ISelectableItem
+  name: ISelectableItem
+  href: api/Benday.Presentation.ISelectableItem.html
+  commentId: T:Benday.Presentation.ISelectableItem
+  fullName: Benday.Presentation.ISelectableItem
+  nameWithType: ISelectableItem
+- uid: Benday.Presentation.ISelectableItem.Id
+  name: Id
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Id
+  commentId: P:Benday.Presentation.ISelectableItem.Id
+  fullName: Benday.Presentation.ISelectableItem.Id
+  nameWithType: ISelectableItem.Id
+- uid: Benday.Presentation.ISelectableItem.Id*
+  name: Id
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Id_
+  commentId: Overload:Benday.Presentation.ISelectableItem.Id
+  isSpec: "True"
+  fullName: Benday.Presentation.ISelectableItem.Id
+  nameWithType: ISelectableItem.Id
+- uid: Benday.Presentation.ISelectableItem.Text
+  name: Text
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Text
+  commentId: P:Benday.Presentation.ISelectableItem.Text
+  fullName: Benday.Presentation.ISelectableItem.Text
+  nameWithType: ISelectableItem.Text
+- uid: Benday.Presentation.ISelectableItem.Text*
+  name: Text
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Text_
+  commentId: Overload:Benday.Presentation.ISelectableItem.Text
+  isSpec: "True"
+  fullName: Benday.Presentation.ISelectableItem.Text
+  nameWithType: ISelectableItem.Text
+- uid: Benday.Presentation.ISelectableItem.TooltipText
+  name: TooltipText
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_TooltipText
+  commentId: P:Benday.Presentation.ISelectableItem.TooltipText
+  fullName: Benday.Presentation.ISelectableItem.TooltipText
+  nameWithType: ISelectableItem.TooltipText
+- uid: Benday.Presentation.ISelectableItem.TooltipText*
+  name: TooltipText
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_TooltipText_
+  commentId: Overload:Benday.Presentation.ISelectableItem.TooltipText
+  isSpec: "True"
+  fullName: Benday.Presentation.ISelectableItem.TooltipText
+  nameWithType: ISelectableItem.TooltipText
+- uid: Benday.Presentation.ISelectableItem.Value
+  name: Value
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Value
+  commentId: P:Benday.Presentation.ISelectableItem.Value
+  fullName: Benday.Presentation.ISelectableItem.Value
+  nameWithType: ISelectableItem.Value
+- uid: Benday.Presentation.ISelectableItem.Value*
+  name: Value
+  href: api/Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Value_
+  commentId: Overload:Benday.Presentation.ISelectableItem.Value
+  isSpec: "True"
+  fullName: Benday.Presentation.ISelectableItem.Value
+  nameWithType: ISelectableItem.Value
+- uid: Benday.Presentation.IViewModelBase
+  name: IViewModelBase
+  href: api/Benday.Presentation.IViewModelBase.html
+  commentId: T:Benday.Presentation.IViewModelBase
+  fullName: Benday.Presentation.IViewModelBase
+  nameWithType: IViewModelBase
+- uid: Benday.Presentation.IViewModelBase.MessageBoxRequested
+  name: MessageBoxRequested
+  href: api/Benday.Presentation.IViewModelBase.html#Benday_Presentation_IViewModelBase_MessageBoxRequested
+  commentId: E:Benday.Presentation.IViewModelBase.MessageBoxRequested
+  fullName: Benday.Presentation.IViewModelBase.MessageBoxRequested
+  nameWithType: IViewModelBase.MessageBoxRequested
+- uid: Benday.Presentation.IVisibleField
+  name: IVisibleField
+  href: api/Benday.Presentation.IVisibleField.html
+  commentId: T:Benday.Presentation.IVisibleField
+  fullName: Benday.Presentation.IVisibleField
+  nameWithType: IVisibleField
+- uid: Benday.Presentation.IVisibleField.IsVisible
+  name: IsVisible
+  href: api/Benday.Presentation.IVisibleField.html#Benday_Presentation_IVisibleField_IsVisible
+  commentId: P:Benday.Presentation.IVisibleField.IsVisible
+  fullName: Benday.Presentation.IVisibleField.IsVisible
+  nameWithType: IVisibleField.IsVisible
+- uid: Benday.Presentation.IVisibleField.IsVisible*
+  name: IsVisible
+  href: api/Benday.Presentation.IVisibleField.html#Benday_Presentation_IVisibleField_IsVisible_
+  commentId: Overload:Benday.Presentation.IVisibleField.IsVisible
+  isSpec: "True"
+  fullName: Benday.Presentation.IVisibleField.IsVisible
+  nameWithType: IVisibleField.IsVisible
+- uid: Benday.Presentation.MessageBoxEventArgs
+  name: MessageBoxEventArgs
+  href: api/Benday.Presentation.MessageBoxEventArgs.html
+  commentId: T:Benday.Presentation.MessageBoxEventArgs
+  fullName: Benday.Presentation.MessageBoxEventArgs
+  nameWithType: MessageBoxEventArgs
+- uid: Benday.Presentation.MessageBoxEventArgs.#ctor(System.String)
+  name: MessageBoxEventArgs(string)
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs__ctor_System_String_
+  commentId: M:Benday.Presentation.MessageBoxEventArgs.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Benday.Presentation.MessageBoxEventArgs.MessageBoxEventArgs(string)
+  fullName.vb: Benday.Presentation.MessageBoxEventArgs.New(String)
+  nameWithType: MessageBoxEventArgs.MessageBoxEventArgs(string)
+  nameWithType.vb: MessageBoxEventArgs.New(String)
+- uid: Benday.Presentation.MessageBoxEventArgs.#ctor(System.String,System.Boolean,System.Exception)
+  name: MessageBoxEventArgs(string, bool, Exception)
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs__ctor_System_String_System_Boolean_System_Exception_
+  commentId: M:Benday.Presentation.MessageBoxEventArgs.#ctor(System.String,System.Boolean,System.Exception)
+  name.vb: New(String, Boolean, Exception)
+  fullName: Benday.Presentation.MessageBoxEventArgs.MessageBoxEventArgs(string, bool, System.Exception)
+  fullName.vb: Benday.Presentation.MessageBoxEventArgs.New(String, Boolean, System.Exception)
+  nameWithType: MessageBoxEventArgs.MessageBoxEventArgs(string, bool, Exception)
+  nameWithType.vb: MessageBoxEventArgs.New(String, Boolean, Exception)
+- uid: Benday.Presentation.MessageBoxEventArgs.#ctor(System.String,System.Exception)
+  name: MessageBoxEventArgs(string, Exception)
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs__ctor_System_String_System_Exception_
+  commentId: M:Benday.Presentation.MessageBoxEventArgs.#ctor(System.String,System.Exception)
+  name.vb: New(String, Exception)
+  fullName: Benday.Presentation.MessageBoxEventArgs.MessageBoxEventArgs(string, System.Exception)
+  fullName.vb: Benday.Presentation.MessageBoxEventArgs.New(String, System.Exception)
+  nameWithType: MessageBoxEventArgs.MessageBoxEventArgs(string, Exception)
+  nameWithType.vb: MessageBoxEventArgs.New(String, Exception)
+- uid: Benday.Presentation.MessageBoxEventArgs.#ctor*
+  name: MessageBoxEventArgs
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs__ctor_
+  commentId: Overload:Benday.Presentation.MessageBoxEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.MessageBoxEventArgs.MessageBoxEventArgs
+  fullName.vb: Benday.Presentation.MessageBoxEventArgs.New
+  nameWithType: MessageBoxEventArgs.MessageBoxEventArgs
+  nameWithType.vb: MessageBoxEventArgs.New
+- uid: Benday.Presentation.MessageBoxEventArgs.Exception
+  name: Exception
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs_Exception
+  commentId: P:Benday.Presentation.MessageBoxEventArgs.Exception
+  fullName: Benday.Presentation.MessageBoxEventArgs.Exception
+  nameWithType: MessageBoxEventArgs.Exception
+- uid: Benday.Presentation.MessageBoxEventArgs.Exception*
+  name: Exception
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs_Exception_
+  commentId: Overload:Benday.Presentation.MessageBoxEventArgs.Exception
+  isSpec: "True"
+  fullName: Benday.Presentation.MessageBoxEventArgs.Exception
+  nameWithType: MessageBoxEventArgs.Exception
+- uid: Benday.Presentation.MessageBoxEventArgs.IsUnexpectedException
+  name: IsUnexpectedException
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs_IsUnexpectedException
+  commentId: P:Benday.Presentation.MessageBoxEventArgs.IsUnexpectedException
+  fullName: Benday.Presentation.MessageBoxEventArgs.IsUnexpectedException
+  nameWithType: MessageBoxEventArgs.IsUnexpectedException
+- uid: Benday.Presentation.MessageBoxEventArgs.IsUnexpectedException*
+  name: IsUnexpectedException
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs_IsUnexpectedException_
+  commentId: Overload:Benday.Presentation.MessageBoxEventArgs.IsUnexpectedException
+  isSpec: "True"
+  fullName: Benday.Presentation.MessageBoxEventArgs.IsUnexpectedException
+  nameWithType: MessageBoxEventArgs.IsUnexpectedException
+- uid: Benday.Presentation.MessageBoxEventArgs.Message
+  name: Message
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs_Message
+  commentId: P:Benday.Presentation.MessageBoxEventArgs.Message
+  fullName: Benday.Presentation.MessageBoxEventArgs.Message
+  nameWithType: MessageBoxEventArgs.Message
+- uid: Benday.Presentation.MessageBoxEventArgs.Message*
+  name: Message
+  href: api/Benday.Presentation.MessageBoxEventArgs.html#Benday_Presentation_MessageBoxEventArgs_Message_
+  commentId: Overload:Benday.Presentation.MessageBoxEventArgs.Message
+  isSpec: "True"
+  fullName: Benday.Presentation.MessageBoxEventArgs.Message
+  nameWithType: MessageBoxEventArgs.Message
+- uid: Benday.Presentation.MessageBoxEventHandler
+  name: MessageBoxEventHandler
+  href: api/Benday.Presentation.MessageBoxEventHandler.html
+  commentId: T:Benday.Presentation.MessageBoxEventHandler
+  fullName: Benday.Presentation.MessageBoxEventHandler
+  nameWithType: MessageBoxEventHandler
+- uid: Benday.Presentation.MessageBoxMessageManager
+  name: MessageBoxMessageManager
+  href: api/Benday.Presentation.MessageBoxMessageManager.html
+  commentId: T:Benday.Presentation.MessageBoxMessageManager
+  fullName: Benday.Presentation.MessageBoxMessageManager
+  nameWithType: MessageBoxMessageManager
+- uid: Benday.Presentation.MessageBoxMessageManager.ShowMessage(System.Exception)
+  name: ShowMessage(Exception)
+  href: api/Benday.Presentation.MessageBoxMessageManager.html#Benday_Presentation_MessageBoxMessageManager_ShowMessage_System_Exception_
+  commentId: M:Benday.Presentation.MessageBoxMessageManager.ShowMessage(System.Exception)
+  fullName: Benday.Presentation.MessageBoxMessageManager.ShowMessage(System.Exception)
+  nameWithType: MessageBoxMessageManager.ShowMessage(Exception)
+- uid: Benday.Presentation.MessageBoxMessageManager.ShowMessage(System.String,System.String)
+  name: ShowMessage(string, string)
+  href: api/Benday.Presentation.MessageBoxMessageManager.html#Benday_Presentation_MessageBoxMessageManager_ShowMessage_System_String_System_String_
+  commentId: M:Benday.Presentation.MessageBoxMessageManager.ShowMessage(System.String,System.String)
+  name.vb: ShowMessage(String, String)
+  fullName: Benday.Presentation.MessageBoxMessageManager.ShowMessage(string, string)
+  fullName.vb: Benday.Presentation.MessageBoxMessageManager.ShowMessage(String, String)
+  nameWithType: MessageBoxMessageManager.ShowMessage(string, string)
+  nameWithType.vb: MessageBoxMessageManager.ShowMessage(String, String)
+- uid: Benday.Presentation.MessageBoxMessageManager.ShowMessage*
+  name: ShowMessage
+  href: api/Benday.Presentation.MessageBoxMessageManager.html#Benday_Presentation_MessageBoxMessageManager_ShowMessage_
+  commentId: Overload:Benday.Presentation.MessageBoxMessageManager.ShowMessage
+  isSpec: "True"
+  fullName: Benday.Presentation.MessageBoxMessageManager.ShowMessage
+  nameWithType: MessageBoxMessageManager.ShowMessage
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs
+  name: MessageBoxRequestedEventArgs
+  href: api/Benday.Presentation.MessageBoxRequestedEventArgs.html
+  commentId: T:Benday.Presentation.MessageBoxRequestedEventArgs
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs
+  nameWithType: MessageBoxRequestedEventArgs
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.#ctor(System.Exception)
+  name: MessageBoxRequestedEventArgs(Exception)
+  href: api/Benday.Presentation.MessageBoxRequestedEventArgs.html#Benday_Presentation_MessageBoxRequestedEventArgs__ctor_System_Exception_
+  commentId: M:Benday.Presentation.MessageBoxRequestedEventArgs.#ctor(System.Exception)
+  name.vb: New(Exception)
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs(System.Exception)
+  fullName.vb: Benday.Presentation.MessageBoxRequestedEventArgs.New(System.Exception)
+  nameWithType: MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs(Exception)
+  nameWithType.vb: MessageBoxRequestedEventArgs.New(Exception)
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.#ctor*
+  name: MessageBoxRequestedEventArgs
+  href: api/Benday.Presentation.MessageBoxRequestedEventArgs.html#Benday_Presentation_MessageBoxRequestedEventArgs__ctor_
+  commentId: Overload:Benday.Presentation.MessageBoxRequestedEventArgs.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs
+  fullName.vb: Benday.Presentation.MessageBoxRequestedEventArgs.New
+  nameWithType: MessageBoxRequestedEventArgs.MessageBoxRequestedEventArgs
+  nameWithType.vb: MessageBoxRequestedEventArgs.New
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  name: Message
+  href: api/Benday.Presentation.MessageBoxRequestedEventArgs.html#Benday_Presentation_MessageBoxRequestedEventArgs_Message
+  commentId: P:Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  nameWithType: MessageBoxRequestedEventArgs.Message
+- uid: Benday.Presentation.MessageBoxRequestedEventArgs.Message*
+  name: Message
+  href: api/Benday.Presentation.MessageBoxRequestedEventArgs.html#Benday_Presentation_MessageBoxRequestedEventArgs_Message_
+  commentId: Overload:Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  isSpec: "True"
+  fullName: Benday.Presentation.MessageBoxRequestedEventArgs.Message
+  nameWithType: MessageBoxRequestedEventArgs.Message
+- uid: Benday.Presentation.MessagingViewModelBase
+  name: MessagingViewModelBase
+  href: api/Benday.Presentation.MessagingViewModelBase.html
+  commentId: T:Benday.Presentation.MessagingViewModelBase
+  fullName: Benday.Presentation.MessagingViewModelBase
+  nameWithType: MessagingViewModelBase
+- uid: Benday.Presentation.MessagingViewModelBase.#ctor(Benday.Presentation.IMessageManager)
+  name: MessagingViewModelBase(IMessageManager)
+  href: api/Benday.Presentation.MessagingViewModelBase.html#Benday_Presentation_MessagingViewModelBase__ctor_Benday_Presentation_IMessageManager_
+  commentId: M:Benday.Presentation.MessagingViewModelBase.#ctor(Benday.Presentation.IMessageManager)
+  name.vb: New(IMessageManager)
+  fullName: Benday.Presentation.MessagingViewModelBase.MessagingViewModelBase(Benday.Presentation.IMessageManager)
+  fullName.vb: Benday.Presentation.MessagingViewModelBase.New(Benday.Presentation.IMessageManager)
+  nameWithType: MessagingViewModelBase.MessagingViewModelBase(IMessageManager)
+  nameWithType.vb: MessagingViewModelBase.New(IMessageManager)
+- uid: Benday.Presentation.MessagingViewModelBase.#ctor*
+  name: MessagingViewModelBase
+  href: api/Benday.Presentation.MessagingViewModelBase.html#Benday_Presentation_MessagingViewModelBase__ctor_
+  commentId: Overload:Benday.Presentation.MessagingViewModelBase.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.MessagingViewModelBase.MessagingViewModelBase
+  fullName.vb: Benday.Presentation.MessagingViewModelBase.New
+  nameWithType: MessagingViewModelBase.MessagingViewModelBase
+  nameWithType.vb: MessagingViewModelBase.New
+- uid: Benday.Presentation.MessagingViewModelBase.Messages
+  name: Messages
+  href: api/Benday.Presentation.MessagingViewModelBase.html#Benday_Presentation_MessagingViewModelBase_Messages
+  commentId: P:Benday.Presentation.MessagingViewModelBase.Messages
+  fullName: Benday.Presentation.MessagingViewModelBase.Messages
+  nameWithType: MessagingViewModelBase.Messages
+- uid: Benday.Presentation.MessagingViewModelBase.Messages*
+  name: Messages
+  href: api/Benday.Presentation.MessagingViewModelBase.html#Benday_Presentation_MessagingViewModelBase_Messages_
+  commentId: Overload:Benday.Presentation.MessagingViewModelBase.Messages
+  isSpec: "True"
+  fullName: Benday.Presentation.MessagingViewModelBase.Messages
+  nameWithType: MessagingViewModelBase.Messages
+- uid: Benday.Presentation.NavigatableList`1
+  name: NavigatableList<T>
+  href: api/Benday.Presentation.NavigatableList-1.html
+  commentId: T:Benday.Presentation.NavigatableList`1
+  name.vb: NavigatableList(Of T)
+  fullName: Benday.Presentation.NavigatableList<T>
+  fullName.vb: Benday.Presentation.NavigatableList(Of T)
+  nameWithType: NavigatableList<T>
+  nameWithType.vb: NavigatableList(Of T)
+- uid: Benday.Presentation.NavigatableList`1.CurrentIndex
+  name: CurrentIndex
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_CurrentIndex
+  commentId: P:Benday.Presentation.NavigatableList`1.CurrentIndex
+  fullName: Benday.Presentation.NavigatableList<T>.CurrentIndex
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).CurrentIndex
+  nameWithType: NavigatableList<T>.CurrentIndex
+  nameWithType.vb: NavigatableList(Of T).CurrentIndex
+- uid: Benday.Presentation.NavigatableList`1.CurrentIndex*
+  name: CurrentIndex
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_CurrentIndex_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.CurrentIndex
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.CurrentIndex
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).CurrentIndex
+  nameWithType: NavigatableList<T>.CurrentIndex
+  nameWithType.vb: NavigatableList(Of T).CurrentIndex
+- uid: Benday.Presentation.NavigatableList`1.IsAtFirst
+  name: IsAtFirst
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_IsAtFirst
+  commentId: P:Benday.Presentation.NavigatableList`1.IsAtFirst
+  fullName: Benday.Presentation.NavigatableList<T>.IsAtFirst
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).IsAtFirst
+  nameWithType: NavigatableList<T>.IsAtFirst
+  nameWithType.vb: NavigatableList(Of T).IsAtFirst
+- uid: Benday.Presentation.NavigatableList`1.IsAtFirst*
+  name: IsAtFirst
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_IsAtFirst_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.IsAtFirst
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.IsAtFirst
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).IsAtFirst
+  nameWithType: NavigatableList<T>.IsAtFirst
+  nameWithType.vb: NavigatableList(Of T).IsAtFirst
+- uid: Benday.Presentation.NavigatableList`1.IsAtLast
+  name: IsAtLast
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_IsAtLast
+  commentId: P:Benday.Presentation.NavigatableList`1.IsAtLast
+  fullName: Benday.Presentation.NavigatableList<T>.IsAtLast
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).IsAtLast
+  nameWithType: NavigatableList<T>.IsAtLast
+  nameWithType.vb: NavigatableList(Of T).IsAtLast
+- uid: Benday.Presentation.NavigatableList`1.IsAtLast*
+  name: IsAtLast
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_IsAtLast_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.IsAtLast
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.IsAtLast
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).IsAtLast
+  nameWithType: NavigatableList<T>.IsAtLast
+  nameWithType.vb: NavigatableList(Of T).IsAtLast
+- uid: Benday.Presentation.NavigatableList`1.MoveToFirst
+  name: MoveToFirst()
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_MoveToFirst
+  commentId: M:Benday.Presentation.NavigatableList`1.MoveToFirst
+  fullName: Benday.Presentation.NavigatableList<T>.MoveToFirst()
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).MoveToFirst()
+  nameWithType: NavigatableList<T>.MoveToFirst()
+  nameWithType.vb: NavigatableList(Of T).MoveToFirst()
+- uid: Benday.Presentation.NavigatableList`1.MoveToFirst*
+  name: MoveToFirst
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_MoveToFirst_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.MoveToFirst
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.MoveToFirst
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).MoveToFirst
+  nameWithType: NavigatableList<T>.MoveToFirst
+  nameWithType.vb: NavigatableList(Of T).MoveToFirst
+- uid: Benday.Presentation.NavigatableList`1.MoveToLast
+  name: MoveToLast()
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_MoveToLast
+  commentId: M:Benday.Presentation.NavigatableList`1.MoveToLast
+  fullName: Benday.Presentation.NavigatableList<T>.MoveToLast()
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).MoveToLast()
+  nameWithType: NavigatableList<T>.MoveToLast()
+  nameWithType.vb: NavigatableList(Of T).MoveToLast()
+- uid: Benday.Presentation.NavigatableList`1.MoveToLast*
+  name: MoveToLast
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_MoveToLast_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.MoveToLast
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.MoveToLast
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).MoveToLast
+  nameWithType: NavigatableList<T>.MoveToLast
+  nameWithType.vb: NavigatableList(Of T).MoveToLast
+- uid: Benday.Presentation.NavigatableList`1.Next
+  name: Next()
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_Next
+  commentId: M:Benday.Presentation.NavigatableList`1.Next
+  fullName: Benday.Presentation.NavigatableList<T>.Next()
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).Next()
+  nameWithType: NavigatableList<T>.Next()
+  nameWithType.vb: NavigatableList(Of T).Next()
+- uid: Benday.Presentation.NavigatableList`1.Next*
+  name: Next
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_Next_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.Next
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.Next
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).Next
+  nameWithType: NavigatableList<T>.Next
+  nameWithType.vb: NavigatableList(Of T).Next
+- uid: Benday.Presentation.NavigatableList`1.Previous
+  name: Previous()
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_Previous
+  commentId: M:Benday.Presentation.NavigatableList`1.Previous
+  fullName: Benday.Presentation.NavigatableList<T>.Previous()
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).Previous()
+  nameWithType: NavigatableList<T>.Previous()
+  nameWithType.vb: NavigatableList(Of T).Previous()
+- uid: Benday.Presentation.NavigatableList`1.Previous*
+  name: Previous
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_Previous_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.Previous
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.Previous
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).Previous
+  nameWithType: NavigatableList<T>.Previous
+  nameWithType.vb: NavigatableList(Of T).Previous
+- uid: Benday.Presentation.NavigatableList`1.Value
+  name: Value
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_Value
+  commentId: P:Benday.Presentation.NavigatableList`1.Value
+  fullName: Benday.Presentation.NavigatableList<T>.Value
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).Value
+  nameWithType: NavigatableList<T>.Value
+  nameWithType.vb: NavigatableList(Of T).Value
+- uid: Benday.Presentation.NavigatableList`1.Value*
+  name: Value
+  href: api/Benday.Presentation.NavigatableList-1.html#Benday_Presentation_NavigatableList_1_Value_
+  commentId: Overload:Benday.Presentation.NavigatableList`1.Value
+  isSpec: "True"
+  fullName: Benday.Presentation.NavigatableList<T>.Value
+  fullName.vb: Benday.Presentation.NavigatableList(Of T).Value
+  nameWithType: NavigatableList<T>.Value
+  nameWithType.vb: NavigatableList(Of T).Value
+- uid: Benday.Presentation.Platforms.iOS
+  name: Benday.Presentation.Platforms.iOS
+  href: api/Benday.Presentation.Platforms.iOS.html
+  commentId: N:Benday.Presentation.Platforms.iOS
+  fullName: Benday.Presentation.Platforms.iOS
+  nameWithType: Benday.Presentation.Platforms.iOS
+- uid: Benday.Presentation.Platforms.iOS.PlatformClass1
+  name: PlatformClass1
+  href: api/Benday.Presentation.Platforms.iOS.PlatformClass1.html
+  commentId: T:Benday.Presentation.Platforms.iOS.PlatformClass1
+  fullName: Benday.Presentation.Platforms.iOS.PlatformClass1
+  nameWithType: PlatformClass1
+- uid: Benday.Presentation.ProgressBarViewModel
+  name: ProgressBarViewModel
+  href: api/Benday.Presentation.ProgressBarViewModel.html
+  commentId: T:Benday.Presentation.ProgressBarViewModel
+  fullName: Benday.Presentation.ProgressBarViewModel
+  nameWithType: ProgressBarViewModel
+- uid: Benday.Presentation.ProgressBarViewModel.#ctor
+  name: ProgressBarViewModel()
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel__ctor
+  commentId: M:Benday.Presentation.ProgressBarViewModel.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.ProgressBarViewModel.ProgressBarViewModel()
+  fullName.vb: Benday.Presentation.ProgressBarViewModel.New()
+  nameWithType: ProgressBarViewModel.ProgressBarViewModel()
+  nameWithType.vb: ProgressBarViewModel.New()
+- uid: Benday.Presentation.ProgressBarViewModel.#ctor*
+  name: ProgressBarViewModel
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel__ctor_
+  commentId: Overload:Benday.Presentation.ProgressBarViewModel.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.ProgressBarViewModel.ProgressBarViewModel
+  fullName.vb: Benday.Presentation.ProgressBarViewModel.New
+  nameWithType: ProgressBarViewModel.ProgressBarViewModel
+  nameWithType.vb: ProgressBarViewModel.New
+- uid: Benday.Presentation.ProgressBarViewModel.CancelOperationCommand
+  name: CancelOperationCommand
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_CancelOperationCommand
+  commentId: P:Benday.Presentation.ProgressBarViewModel.CancelOperationCommand
+  fullName: Benday.Presentation.ProgressBarViewModel.CancelOperationCommand
+  nameWithType: ProgressBarViewModel.CancelOperationCommand
+- uid: Benday.Presentation.ProgressBarViewModel.CancelOperationCommand*
+  name: CancelOperationCommand
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_CancelOperationCommand_
+  commentId: Overload:Benday.Presentation.ProgressBarViewModel.CancelOperationCommand
+  isSpec: "True"
+  fullName: Benday.Presentation.ProgressBarViewModel.CancelOperationCommand
+  nameWithType: ProgressBarViewModel.CancelOperationCommand
+- uid: Benday.Presentation.ProgressBarViewModel.IsCancelable
+  name: IsCancelable
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_IsCancelable
+  commentId: P:Benday.Presentation.ProgressBarViewModel.IsCancelable
+  fullName: Benday.Presentation.ProgressBarViewModel.IsCancelable
+  nameWithType: ProgressBarViewModel.IsCancelable
+- uid: Benday.Presentation.ProgressBarViewModel.IsCancelable*
+  name: IsCancelable
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_IsCancelable_
+  commentId: Overload:Benday.Presentation.ProgressBarViewModel.IsCancelable
+  isSpec: "True"
+  fullName: Benday.Presentation.ProgressBarViewModel.IsCancelable
+  nameWithType: ProgressBarViewModel.IsCancelable
+- uid: Benday.Presentation.ProgressBarViewModel.IsProgressBarVisible
+  name: IsProgressBarVisible
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_IsProgressBarVisible
+  commentId: P:Benday.Presentation.ProgressBarViewModel.IsProgressBarVisible
+  fullName: Benday.Presentation.ProgressBarViewModel.IsProgressBarVisible
+  nameWithType: ProgressBarViewModel.IsProgressBarVisible
+- uid: Benday.Presentation.ProgressBarViewModel.IsProgressBarVisible*
+  name: IsProgressBarVisible
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_IsProgressBarVisible_
+  commentId: Overload:Benday.Presentation.ProgressBarViewModel.IsProgressBarVisible
+  isSpec: "True"
+  fullName: Benday.Presentation.ProgressBarViewModel.IsProgressBarVisible
+  nameWithType: ProgressBarViewModel.IsProgressBarVisible
+- uid: Benday.Presentation.ProgressBarViewModel.OnCancelRequested
+  name: OnCancelRequested
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_OnCancelRequested
+  commentId: E:Benday.Presentation.ProgressBarViewModel.OnCancelRequested
+  fullName: Benday.Presentation.ProgressBarViewModel.OnCancelRequested
+  nameWithType: ProgressBarViewModel.OnCancelRequested
+- uid: Benday.Presentation.ProgressBarViewModel.ProgressBarMessage
+  name: ProgressBarMessage
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_ProgressBarMessage
+  commentId: P:Benday.Presentation.ProgressBarViewModel.ProgressBarMessage
+  fullName: Benday.Presentation.ProgressBarViewModel.ProgressBarMessage
+  nameWithType: ProgressBarViewModel.ProgressBarMessage
+- uid: Benday.Presentation.ProgressBarViewModel.ProgressBarMessage*
+  name: ProgressBarMessage
+  href: api/Benday.Presentation.ProgressBarViewModel.html#Benday_Presentation_ProgressBarViewModel_ProgressBarMessage_
+  commentId: Overload:Benday.Presentation.ProgressBarViewModel.ProgressBarMessage
+  isSpec: "True"
+  fullName: Benday.Presentation.ProgressBarViewModel.ProgressBarMessage
+  nameWithType: ProgressBarViewModel.ProgressBarMessage
+- uid: Benday.Presentation.SelectableCollectionViewModel`1
+  name: SelectableCollectionViewModel<T>
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html
+  commentId: T:Benday.Presentation.SelectableCollectionViewModel`1
+  name.vb: SelectableCollectionViewModel(Of T)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T)
+  nameWithType: SelectableCollectionViewModel<T>
+  nameWithType.vb: SelectableCollectionViewModel(Of T)
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.#ctor
+  name: SelectableCollectionViewModel()
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__ctor
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectableCollectionViewModel()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).New()
+  nameWithType: SelectableCollectionViewModel<T>.SelectableCollectionViewModel()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).New()
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})
+  name: SelectableCollectionViewModel(ObservableCollection<T>)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0__
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})
+  name.vb: New(ObservableCollection(Of T))
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectableCollectionViewModel(System.Collections.ObjectModel.ObservableCollection<T>)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).New(System.Collections.ObjectModel.ObservableCollection(Of T))
+  nameWithType: SelectableCollectionViewModel<T>.SelectableCollectionViewModel(ObservableCollection<T>)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).New(ObservableCollection(Of T))
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0},`0)
+  name: SelectableCollectionViewModel(ObservableCollection<T>, T)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0___0_
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0},`0)
+  name.vb: New(ObservableCollection(Of T), T)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectableCollectionViewModel(System.Collections.ObjectModel.ObservableCollection<T>, T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).New(System.Collections.ObjectModel.ObservableCollection(Of T), T)
+  nameWithType: SelectableCollectionViewModel<T>.SelectableCollectionViewModel(ObservableCollection<T>, T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).New(ObservableCollection(Of T), T)
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.#ctor*
+  name: SelectableCollectionViewModel
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__ctor_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectableCollectionViewModel
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).New
+  nameWithType: SelectableCollectionViewModel<T>.SelectableCollectionViewModel
+  nameWithType.vb: SelectableCollectionViewModel(Of T).New
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+  name: Add(T)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Add(T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Add(T)
+  nameWithType: SelectableCollectionViewModel<T>.Add(T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Add(T)
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Add*
+  name: Add
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Add
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Add
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Add
+  nameWithType: SelectableCollectionViewModel<T>.Add
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Add
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections
+  name: AllowMultipleSelections
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.AllowMultipleSelections
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).AllowMultipleSelections
+  nameWithType: SelectableCollectionViewModel<T>.AllowMultipleSelections
+  nameWithType.vb: SelectableCollectionViewModel(Of T).AllowMultipleSelections
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections*
+  name: AllowMultipleSelections
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.AllowMultipleSelections
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).AllowMultipleSelections
+  nameWithType: SelectableCollectionViewModel<T>.AllowMultipleSelections
+  nameWithType.vb: SelectableCollectionViewModel(Of T).AllowMultipleSelections
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Clear
+  name: Clear()
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Clear
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Clear()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Clear()
+  nameWithType: SelectableCollectionViewModel<T>.Clear()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Clear()
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Clear*
+  name: Clear
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Clear
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Clear
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Clear
+  nameWithType: SelectableCollectionViewModel<T>.Clear
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Clear
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Count
+  name: Count
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Count
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.Count
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Count
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Count
+  nameWithType: SelectableCollectionViewModel<T>.Count
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Count
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Count*
+  name: Count
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Count_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Count
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Count
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Count
+  nameWithType: SelectableCollectionViewModel<T>.Count
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Count
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+  name: GetSelectedItems()
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.GetSelectedItems()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).GetSelectedItems()
+  nameWithType: SelectableCollectionViewModel<T>.GetSelectedItems()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).GetSelectedItems()
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems*
+  name: GetSelectedItems
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.GetSelectedItems
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).GetSelectedItems
+  nameWithType: SelectableCollectionViewModel<T>.GetSelectedItems
+  nameWithType.vb: SelectableCollectionViewModel(Of T).GetSelectedItems
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber
+  name: HasOnItemSelectedSubscriber
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+  nameWithType: SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  nameWithType.vb: SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber*
+  name: HasOnItemSelectedSubscriber
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+  nameWithType: SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  nameWithType.vb: SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  name: Initialize(IEnumerable<T>)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  name.vb: Initialize(IEnumerable(Of T))
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Initialize(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Initialize(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: SelectableCollectionViewModel<T>.Initialize(IEnumerable<T>)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Initialize(IEnumerable(Of T))
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize*
+  name: Initialize
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Initialize
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Initialize
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Initialize
+  nameWithType: SelectableCollectionViewModel<T>.Initialize
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Initialize
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled
+  name: IsEnabled
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsEnabled
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsEnabled
+  nameWithType: SelectableCollectionViewModel<T>.IsEnabled
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsEnabled
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled*
+  name: IsEnabled
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsEnabled
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsEnabled
+  nameWithType: SelectableCollectionViewModel<T>.IsEnabled
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsEnabled
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.IsValid
+  name: IsValid
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsValid
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.IsValid
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsValid
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsValid
+  nameWithType: SelectableCollectionViewModel<T>.IsValid
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsValid
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.IsValid*
+  name: IsValid
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsValid_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.IsValid
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsValid
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsValid
+  nameWithType: SelectableCollectionViewModel<T>.IsValid
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsValid
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Items
+  name: Items
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Items
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.Items
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Items
+  nameWithType: SelectableCollectionViewModel<T>.Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Items
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Items*
+  name: Items
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Items_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Items
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Items
+  nameWithType: SelectableCollectionViewModel<T>.Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Items
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName
+  name: ItemsPropertyName
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName
+  commentId: F:Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.ItemsPropertyName
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).ItemsPropertyName
+  nameWithType: SelectableCollectionViewModel<T>.ItemsPropertyName
+  nameWithType.vb: SelectableCollectionViewModel(Of T).ItemsPropertyName
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  name: OnItemPropertyChanged(object?, PropertyChangedEventArgs)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemPropertyChanged(object?, System.ComponentModel.PropertyChangedEventArgs)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType: SelectableCollectionViewModel<T>.OnItemPropertyChanged(object?, PropertyChangedEventArgs)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged*
+  name: OnItemPropertyChanged
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemPropertyChanged
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemPropertyChanged
+  nameWithType: SelectableCollectionViewModel<T>.OnItemPropertyChanged
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemPropertyChanged
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected
+  name: OnItemSelected
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected
+  commentId: E:Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemSelected
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemSelected
+  nameWithType: SelectableCollectionViewModel<T>.OnItemSelected
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemSelected
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+  name: RefreshSelectedItem(bool)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+  name.vb: RefreshSelectedItem(Boolean)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.RefreshSelectedItem(bool)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).RefreshSelectedItem(Boolean)
+  nameWithType: SelectableCollectionViewModel<T>.RefreshSelectedItem(bool)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).RefreshSelectedItem(Boolean)
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem*
+  name: RefreshSelectedItem
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.RefreshSelectedItem
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).RefreshSelectedItem
+  nameWithType: SelectableCollectionViewModel<T>.RefreshSelectedItem
+  nameWithType.vb: SelectableCollectionViewModel(Of T).RefreshSelectedItem
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+  name: Remove(T)
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Remove(T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Remove(T)
+  nameWithType: SelectableCollectionViewModel<T>.Remove(T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Remove(T)
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Remove*
+  name: Remove
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.Remove
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Remove
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Remove
+  nameWithType: SelectableCollectionViewModel<T>.Remove
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Remove
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem
+  name: SelectedItem
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectedItem
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).SelectedItem
+  nameWithType: SelectableCollectionViewModel<T>.SelectedItem
+  nameWithType.vb: SelectableCollectionViewModel(Of T).SelectedItem
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem*
+  name: SelectedItem
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem_
+  commentId: Overload:Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectedItem
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).SelectedItem
+  nameWithType: SelectableCollectionViewModel<T>.SelectedItem
+  nameWithType.vb: SelectableCollectionViewModel(Of T).SelectedItem
+- uid: Benday.Presentation.SelectableCollectionViewModel`1._Items
+  name: _Items
+  href: api/Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__Items
+  commentId: F:Benday.Presentation.SelectableCollectionViewModel`1._Items
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>._Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T)._Items
+  nameWithType: SelectableCollectionViewModel<T>._Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T)._Items
+- uid: Benday.Presentation.SelectableItem
+  name: SelectableItem
+  href: api/Benday.Presentation.SelectableItem.html
+  commentId: T:Benday.Presentation.SelectableItem
+  fullName: Benday.Presentation.SelectableItem
+  nameWithType: SelectableItem
+- uid: Benday.Presentation.SelectableItem.#ctor
+  name: SelectableItem()
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem__ctor
+  commentId: M:Benday.Presentation.SelectableItem.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.SelectableItem.SelectableItem()
+  fullName.vb: Benday.Presentation.SelectableItem.New()
+  nameWithType: SelectableItem.SelectableItem()
+  nameWithType.vb: SelectableItem.New()
+- uid: Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String)
+  name: SelectableItem(bool, string)
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem__ctor_System_Boolean_System_String_
+  commentId: M:Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String)
+  name.vb: New(Boolean, String)
+  fullName: Benday.Presentation.SelectableItem.SelectableItem(bool, string)
+  fullName.vb: Benday.Presentation.SelectableItem.New(Boolean, String)
+  nameWithType: SelectableItem.SelectableItem(bool, string)
+  nameWithType.vb: SelectableItem.New(Boolean, String)
+- uid: Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.Int32)
+  name: SelectableItem(bool, string, int)
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem__ctor_System_Boolean_System_String_System_Int32_
+  commentId: M:Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.Int32)
+  name.vb: New(Boolean, String, Integer)
+  fullName: Benday.Presentation.SelectableItem.SelectableItem(bool, string, int)
+  fullName.vb: Benday.Presentation.SelectableItem.New(Boolean, String, Integer)
+  nameWithType: SelectableItem.SelectableItem(bool, string, int)
+  nameWithType.vb: SelectableItem.New(Boolean, String, Integer)
+- uid: Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.String,System.String)
+  name: SelectableItem(bool, string, string, string)
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem__ctor_System_Boolean_System_String_System_String_System_String_
+  commentId: M:Benday.Presentation.SelectableItem.#ctor(System.Boolean,System.String,System.String,System.String)
+  name.vb: New(Boolean, String, String, String)
+  fullName: Benday.Presentation.SelectableItem.SelectableItem(bool, string, string, string)
+  fullName.vb: Benday.Presentation.SelectableItem.New(Boolean, String, String, String)
+  nameWithType: SelectableItem.SelectableItem(bool, string, string, string)
+  nameWithType.vb: SelectableItem.New(Boolean, String, String, String)
+- uid: Benday.Presentation.SelectableItem.#ctor*
+  name: SelectableItem
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem__ctor_
+  commentId: Overload:Benday.Presentation.SelectableItem.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.SelectableItem.SelectableItem
+  fullName.vb: Benday.Presentation.SelectableItem.New
+  nameWithType: SelectableItem.SelectableItem
+  nameWithType.vb: SelectableItem.New
+- uid: Benday.Presentation.SelectableItem.Id
+  name: Id
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Id
+  commentId: P:Benday.Presentation.SelectableItem.Id
+  fullName: Benday.Presentation.SelectableItem.Id
+  nameWithType: SelectableItem.Id
+- uid: Benday.Presentation.SelectableItem.Id*
+  name: Id
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Id_
+  commentId: Overload:Benday.Presentation.SelectableItem.Id
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableItem.Id
+  nameWithType: SelectableItem.Id
+- uid: Benday.Presentation.SelectableItem.IsSelected
+  name: IsSelected
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_IsSelected
+  commentId: P:Benday.Presentation.SelectableItem.IsSelected
+  fullName: Benday.Presentation.SelectableItem.IsSelected
+  nameWithType: SelectableItem.IsSelected
+- uid: Benday.Presentation.SelectableItem.IsSelected*
+  name: IsSelected
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_IsSelected_
+  commentId: Overload:Benday.Presentation.SelectableItem.IsSelected
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableItem.IsSelected
+  nameWithType: SelectableItem.IsSelected
+- uid: Benday.Presentation.SelectableItem.Text
+  name: Text
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Text
+  commentId: P:Benday.Presentation.SelectableItem.Text
+  fullName: Benday.Presentation.SelectableItem.Text
+  nameWithType: SelectableItem.Text
+- uid: Benday.Presentation.SelectableItem.Text*
+  name: Text
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Text_
+  commentId: Overload:Benday.Presentation.SelectableItem.Text
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableItem.Text
+  nameWithType: SelectableItem.Text
+- uid: Benday.Presentation.SelectableItem.ToString
+  name: ToString()
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_ToString
+  commentId: M:Benday.Presentation.SelectableItem.ToString
+  fullName: Benday.Presentation.SelectableItem.ToString()
+  nameWithType: SelectableItem.ToString()
+- uid: Benday.Presentation.SelectableItem.ToString*
+  name: ToString
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_ToString_
+  commentId: Overload:Benday.Presentation.SelectableItem.ToString
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableItem.ToString
+  nameWithType: SelectableItem.ToString
+- uid: Benday.Presentation.SelectableItem.TooltipText
+  name: TooltipText
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_TooltipText
+  commentId: P:Benday.Presentation.SelectableItem.TooltipText
+  fullName: Benday.Presentation.SelectableItem.TooltipText
+  nameWithType: SelectableItem.TooltipText
+- uid: Benday.Presentation.SelectableItem.TooltipText*
+  name: TooltipText
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_TooltipText_
+  commentId: Overload:Benday.Presentation.SelectableItem.TooltipText
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableItem.TooltipText
+  nameWithType: SelectableItem.TooltipText
+- uid: Benday.Presentation.SelectableItem.Value
+  name: Value
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Value
+  commentId: P:Benday.Presentation.SelectableItem.Value
+  fullName: Benday.Presentation.SelectableItem.Value
+  nameWithType: SelectableItem.Value
+- uid: Benday.Presentation.SelectableItem.Value*
+  name: Value
+  href: api/Benday.Presentation.SelectableItem.html#Benday_Presentation_SelectableItem_Value_
+  commentId: Overload:Benday.Presentation.SelectableItem.Value
+  isSpec: "True"
+  fullName: Benday.Presentation.SelectableItem.Value
+  nameWithType: SelectableItem.Value
+- uid: Benday.Presentation.SingleSelectListViewModel
+  name: SingleSelectListViewModel
+  href: api/Benday.Presentation.SingleSelectListViewModel.html
+  commentId: T:Benday.Presentation.SingleSelectListViewModel
+  fullName: Benday.Presentation.SingleSelectListViewModel
+  nameWithType: SingleSelectListViewModel
+- uid: Benday.Presentation.SingleSelectListViewModel.#ctor
+  name: SingleSelectListViewModel()
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel()
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New()
+  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel()
+  nameWithType.vb: SingleSelectListViewModel.New()
+- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  name: SingleSelectListViewModel(IEnumerable<ISelectableItem>)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  name.vb: New(IEnumerable(Of ISelectableItem))
+  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem))
+  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(IEnumerable<ISelectableItem>)
+  nameWithType.vb: SingleSelectListViewModel.New(IEnumerable(Of ISelectableItem))
+- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
+  name: SingleSelectListViewModel(IEnumerable<ISelectableItem>, ISelectableItem)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__Benday_Presentation_ISelectableItem_
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
+  name.vb: New(IEnumerable(Of ISelectableItem), ISelectableItem)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>, Benday.Presentation.ISelectableItem)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem), Benday.Presentation.ISelectableItem)
+  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(IEnumerable<ISelectableItem>, ISelectableItem)
+  nameWithType.vb: SingleSelectListViewModel.New(IEnumerable(Of ISelectableItem), ISelectableItem)
+- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem})
+  name: SingleSelectListViewModel(ObservableCollection<ISelectableItem>)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem})
+  name.vb: New(ObservableCollection(Of ISelectableItem))
+  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem))
+  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(ObservableCollection<ISelectableItem>)
+  nameWithType.vb: SingleSelectListViewModel.New(ObservableCollection(Of ISelectableItem))
+- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
+  name: SingleSelectListViewModel(ObservableCollection<ISelectableItem>, ISelectableItem)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__Benday_Presentation_ISelectableItem_
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
+  name.vb: New(ObservableCollection(Of ISelectableItem), ISelectableItem)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>, Benday.Presentation.ISelectableItem)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem), Benday.Presentation.ISelectableItem)
+  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(ObservableCollection<ISelectableItem>, ISelectableItem)
+  nameWithType.vb: SingleSelectListViewModel.New(ObservableCollection(Of ISelectableItem), ISelectableItem)
+- uid: Benday.Presentation.SingleSelectListViewModel.#ctor*
+  name: SingleSelectListViewModel
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New
+  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel
+  nameWithType.vb: SingleSelectListViewModel.New
+- uid: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+  name: GetByValue(ObservableCollection<ISelectableItem>, string)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_GetByValue_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__System_String_
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+  name.vb: GetByValue(ObservableCollection(Of ISelectableItem), String)
+  fullName: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>, string)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem), String)
+  nameWithType: SingleSelectListViewModel.GetByValue(ObservableCollection<ISelectableItem>, string)
+  nameWithType.vb: SingleSelectListViewModel.GetByValue(ObservableCollection(Of ISelectableItem), String)
+- uid: Benday.Presentation.SingleSelectListViewModel.GetByValue*
+  name: GetByValue
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_GetByValue_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.GetByValue
+  isSpec: "True"
+  fullName: Benday.Presentation.SingleSelectListViewModel.GetByValue
+  nameWithType: SingleSelectListViewModel.GetByValue
+- uid: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  name: Initialize(IEnumerable<ISelectableItem>)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_Initialize_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  name.vb: Initialize(IEnumerable(Of ISelectableItem))
+  fullName: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem))
+  nameWithType: SingleSelectListViewModel.Initialize(IEnumerable<ISelectableItem>)
+  nameWithType.vb: SingleSelectListViewModel.Initialize(IEnumerable(Of ISelectableItem))
+- uid: Benday.Presentation.SingleSelectListViewModel.Initialize*
+  name: Initialize
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_Initialize_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.Initialize
+  isSpec: "True"
+  fullName: Benday.Presentation.SingleSelectListViewModel.Initialize
+  nameWithType: SingleSelectListViewModel.Initialize
+- uid: Benday.Presentation.SingleSelectListViewModel.IsVisible
+  name: IsVisible
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_IsVisible
+  commentId: P:Benday.Presentation.SingleSelectListViewModel.IsVisible
+  fullName: Benday.Presentation.SingleSelectListViewModel.IsVisible
+  nameWithType: SingleSelectListViewModel.IsVisible
+- uid: Benday.Presentation.SingleSelectListViewModel.IsVisible*
+  name: IsVisible
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_IsVisible_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.IsVisible
+  isSpec: "True"
+  fullName: Benday.Presentation.SingleSelectListViewModel.IsVisible
+  nameWithType: SingleSelectListViewModel.IsVisible
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+  name: SelectByText(string)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByText_System_String_
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+  name.vb: SelectByText(String)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByText(string)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByText(String)
+  nameWithType: SingleSelectListViewModel.SelectByText(string)
+  nameWithType.vb: SingleSelectListViewModel.SelectByText(String)
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByText*
+  name: SelectByText
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByText_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.SelectByText
+  isSpec: "True"
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByText
+  nameWithType: SingleSelectListViewModel.SelectByText
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+  name: SelectByValue(int)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_Int32_
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+  name.vb: SelectByValue(Integer)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue(int)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByValue(Integer)
+  nameWithType: SingleSelectListViewModel.SelectByValue(int)
+  nameWithType.vb: SingleSelectListViewModel.SelectByValue(Integer)
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+  name: SelectByValue(string)
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_String_
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+  name.vb: SelectByValue(String)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue(string)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByValue(String)
+  nameWithType: SingleSelectListViewModel.SelectByValue(string)
+  nameWithType.vb: SingleSelectListViewModel.SelectByValue(String)
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue*
+  name: SelectByValue
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.SelectByValue
+  isSpec: "True"
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue
+  nameWithType: SingleSelectListViewModel.SelectByValue
+- uid: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  name: ValidationMessage
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_ValidationMessage
+  commentId: P:Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  fullName: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  nameWithType: SingleSelectListViewModel.ValidationMessage
+- uid: Benday.Presentation.SingleSelectListViewModel.ValidationMessage*
+  name: ValidationMessage
+  href: api/Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_ValidationMessage_
+  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  isSpec: "True"
+  fullName: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  nameWithType: SingleSelectListViewModel.ValidationMessage
+- uid: Benday.Presentation.ValueConverters
+  name: Benday.Presentation.ValueConverters
+  href: api/Benday.Presentation.ValueConverters.html
+  commentId: N:Benday.Presentation.ValueConverters
+  fullName: Benday.Presentation.ValueConverters
+  nameWithType: Benday.Presentation.ValueConverters
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase
+  name: BendayValueConverterBase
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html
+  commentId: T:Benday.Presentation.ValueConverters.BendayValueConverterBase
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase
+  nameWithType: BendayValueConverterBase
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
+  name: Convert(object?, Type, object?, CultureInfo)
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_Convert_System_Object_System_Type_System_Object_System_Globalization_CultureInfo_
+  commentId: M:Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
+  name.vb: Convert(Object, Type, Object, CultureInfo)
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert(object?, System.Type, object?, System.Globalization.CultureInfo)
+  fullName.vb: Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert(Object, System.Type, Object, System.Globalization.CultureInfo)
+  nameWithType: BendayValueConverterBase.Convert(object?, Type, object?, CultureInfo)
+  nameWithType.vb: BendayValueConverterBase.Convert(Object, Type, Object, CultureInfo)
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert*
+  name: Convert
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_Convert_
+  commentId: Overload:Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.Convert
+  nameWithType: BendayValueConverterBase.Convert
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
+  name: ConvertBack(object?, Type, object?, CultureInfo)
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_ConvertBack_System_Object_System_Type_System_Object_System_Globalization_CultureInfo_
+  commentId: M:Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)
+  name.vb: ConvertBack(Object, Type, Object, CultureInfo)
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack(object?, System.Type, object?, System.Globalization.CultureInfo)
+  fullName.vb: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack(Object, System.Type, Object, System.Globalization.CultureInfo)
+  nameWithType: BendayValueConverterBase.ConvertBack(object?, Type, object?, CultureInfo)
+  nameWithType.vb: BendayValueConverterBase.ConvertBack(Object, Type, Object, CultureInfo)
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack*
+  name: ConvertBack
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_ConvertBack_
+  commentId: Overload:Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertBack
+  nameWithType: BendayValueConverterBase.ConvertBack
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom(Object, System.Type)
+  nameWithType: BendayValueConverterBase.ConvertFrom(object?, Type)
+  nameWithType.vb: BendayValueConverterBase.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertFrom
+  nameWithType: BendayValueConverterBase.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo(Object, System.Type)
+  nameWithType: BendayValueConverterBase.ConvertTo(object?, Type)
+  nameWithType.vb: BendayValueConverterBase.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.BendayValueConverterBase.html#Benday_Presentation_ValueConverters_BendayValueConverterBase_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.BendayValueConverterBase.ConvertTo
+  nameWithType: BendayValueConverterBase.ConvertTo
+- uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+  name: NotVisibilityValueConverter
+  href: api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+  fullName: Benday.Presentation.ValueConverters.NotVisibilityValueConverter
+  nameWithType: NotVisibilityValueConverter
+- uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html#Benday_Presentation_ValueConverters_NotVisibilityValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: NotVisibilityValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: NotVisibilityValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html#Benday_Presentation_ValueConverters_NotVisibilityValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertFrom
+  nameWithType: NotVisibilityValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html#Benday_Presentation_ValueConverters_NotVisibilityValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: NotVisibilityValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: NotVisibilityValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.NotVisibilityValueConverter.html#Benday_Presentation_ValueConverters_NotVisibilityValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.NotVisibilityValueConverter.ConvertTo
+  nameWithType: NotVisibilityValueConverter.ConvertTo
+- uid: Benday.Presentation.ValueConverters.ShortDateValueConverter
+  name: ShortDateValueConverter
+  href: api/Benday.Presentation.ValueConverters.ShortDateValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.ShortDateValueConverter
+  fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter
+  nameWithType: ShortDateValueConverter
+- uid: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.ShortDateValueConverter.html#Benday_Presentation_ValueConverters_ShortDateValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: ShortDateValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: ShortDateValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.ShortDateValueConverter.html#Benday_Presentation_ValueConverters_ShortDateValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertFrom
+  nameWithType: ShortDateValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.ShortDateValueConverter.html#Benday_Presentation_ValueConverters_ShortDateValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: ShortDateValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: ShortDateValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.ShortDateValueConverter.html#Benday_Presentation_ValueConverters_ShortDateValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.ShortDateValueConverter.ConvertTo
+  nameWithType: ShortDateValueConverter.ConvertTo
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter
+  name: SmartValueConverter
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.SmartValueConverter
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter
+  nameWithType: SmartValueConverter
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html#Benday_Presentation_ValueConverters_SmartValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: SmartValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: SmartValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html#Benday_Presentation_ValueConverters_SmartValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertFrom
+  nameWithType: SmartValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html#Benday_Presentation_ValueConverters_SmartValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: SmartValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: SmartValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html#Benday_Presentation_ValueConverters_SmartValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter.ConvertTo
+  nameWithType: SmartValueConverter.ConvertTo
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter.ZeroIsEmptyString
+  name: ZeroIsEmptyString
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html#Benday_Presentation_ValueConverters_SmartValueConverter_ZeroIsEmptyString
+  commentId: P:Benday.Presentation.ValueConverters.SmartValueConverter.ZeroIsEmptyString
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter.ZeroIsEmptyString
+  nameWithType: SmartValueConverter.ZeroIsEmptyString
+- uid: Benday.Presentation.ValueConverters.SmartValueConverter.ZeroIsEmptyString*
+  name: ZeroIsEmptyString
+  href: api/Benday.Presentation.ValueConverters.SmartValueConverter.html#Benday_Presentation_ValueConverters_SmartValueConverter_ZeroIsEmptyString_
+  commentId: Overload:Benday.Presentation.ValueConverters.SmartValueConverter.ZeroIsEmptyString
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.SmartValueConverter.ZeroIsEmptyString
+  nameWithType: SmartValueConverter.ZeroIsEmptyString
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter
+  name: StringFormatValueConverter
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.StringFormatValueConverter
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter
+  nameWithType: StringFormatValueConverter
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter.#ctor(System.String)
+  name: StringFormatValueConverter(string)
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html#Benday_Presentation_ValueConverters_StringFormatValueConverter__ctor_System_String_
+  commentId: M:Benday.Presentation.ValueConverters.StringFormatValueConverter.#ctor(System.String)
+  name.vb: New(String)
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter.StringFormatValueConverter(string)
+  fullName.vb: Benday.Presentation.ValueConverters.StringFormatValueConverter.New(String)
+  nameWithType: StringFormatValueConverter.StringFormatValueConverter(string)
+  nameWithType.vb: StringFormatValueConverter.New(String)
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter.#ctor*
+  name: StringFormatValueConverter
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html#Benday_Presentation_ValueConverters_StringFormatValueConverter__ctor_
+  commentId: Overload:Benday.Presentation.ValueConverters.StringFormatValueConverter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter.StringFormatValueConverter
+  fullName.vb: Benday.Presentation.ValueConverters.StringFormatValueConverter.New
+  nameWithType: StringFormatValueConverter.StringFormatValueConverter
+  nameWithType.vb: StringFormatValueConverter.New
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html#Benday_Presentation_ValueConverters_StringFormatValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: StringFormatValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: StringFormatValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html#Benday_Presentation_ValueConverters_StringFormatValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertFrom
+  nameWithType: StringFormatValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html#Benday_Presentation_ValueConverters_StringFormatValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: StringFormatValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: StringFormatValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.StringFormatValueConverter.html#Benday_Presentation_ValueConverters_StringFormatValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.StringFormatValueConverter.ConvertTo
+  nameWithType: StringFormatValueConverter.ConvertTo
+- uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+  name: StringOrInt32ValueConverter
+  href: api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+  fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter
+  nameWithType: StringOrInt32ValueConverter
+- uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html#Benday_Presentation_ValueConverters_StringOrInt32ValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: StringOrInt32ValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: StringOrInt32ValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html#Benday_Presentation_ValueConverters_StringOrInt32ValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertFrom
+  nameWithType: StringOrInt32ValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html#Benday_Presentation_ValueConverters_StringOrInt32ValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: StringOrInt32ValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: StringOrInt32ValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.html#Benday_Presentation_ValueConverters_StringOrInt32ValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.StringOrInt32ValueConverter.ConvertTo
+  nameWithType: StringOrInt32ValueConverter.ConvertTo
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  name: ToUpperCaseValueConverter
+  href: api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter
+  nameWithType: ToUpperCaseValueConverter
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html#Benday_Presentation_ValueConverters_ToUpperCaseValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: ToUpperCaseValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: ToUpperCaseValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html#Benday_Presentation_ValueConverters_ToUpperCaseValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertFrom
+  nameWithType: ToUpperCaseValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html#Benday_Presentation_ValueConverters_ToUpperCaseValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: ToUpperCaseValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: ToUpperCaseValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.html#Benday_Presentation_ValueConverters_ToUpperCaseValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.ToUpperCaseValueConverter.ConvertTo
+  nameWithType: ToUpperCaseValueConverter.ConvertTo
+- uid: Benday.Presentation.ValueConverters.VisibilityValueConverter
+  name: VisibilityValueConverter
+  href: api/Benday.Presentation.ValueConverters.VisibilityValueConverter.html
+  commentId: T:Benday.Presentation.ValueConverters.VisibilityValueConverter
+  fullName: Benday.Presentation.ValueConverters.VisibilityValueConverter
+  nameWithType: VisibilityValueConverter
+- uid: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom(System.Object,System.Type)
+  name: ConvertFrom(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.VisibilityValueConverter.html#Benday_Presentation_ValueConverters_VisibilityValueConverter_ConvertFrom_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom(System.Object,System.Type)
+  name.vb: ConvertFrom(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom(Object, System.Type)
+  nameWithType: VisibilityValueConverter.ConvertFrom(object?, Type)
+  nameWithType.vb: VisibilityValueConverter.ConvertFrom(Object, Type)
+- uid: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom*
+  name: ConvertFrom
+  href: api/Benday.Presentation.ValueConverters.VisibilityValueConverter.html#Benday_Presentation_ValueConverters_VisibilityValueConverter_ConvertFrom_
+  commentId: Overload:Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertFrom
+  nameWithType: VisibilityValueConverter.ConvertFrom
+- uid: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo(System.Object,System.Type)
+  name: ConvertTo(object?, Type)
+  href: api/Benday.Presentation.ValueConverters.VisibilityValueConverter.html#Benday_Presentation_ValueConverters_VisibilityValueConverter_ConvertTo_System_Object_System_Type_
+  commentId: M:Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo(System.Object,System.Type)
+  name.vb: ConvertTo(Object, Type)
+  fullName: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo(object?, System.Type)
+  fullName.vb: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo(Object, System.Type)
+  nameWithType: VisibilityValueConverter.ConvertTo(object?, Type)
+  nameWithType.vb: VisibilityValueConverter.ConvertTo(Object, Type)
+- uid: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo*
+  name: ConvertTo
+  href: api/Benday.Presentation.ValueConverters.VisibilityValueConverter.html#Benday_Presentation_ValueConverters_VisibilityValueConverter_ConvertTo_
+  commentId: Overload:Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo
+  isSpec: "True"
+  fullName: Benday.Presentation.ValueConverters.VisibilityValueConverter.ConvertTo
+  nameWithType: VisibilityValueConverter.ConvertTo
+- uid: Benday.Presentation.ViewModelBase
+  name: ViewModelBase
+  href: api/Benday.Presentation.ViewModelBase.html
+  commentId: T:Benday.Presentation.ViewModelBase
+  fullName: Benday.Presentation.ViewModelBase
+  nameWithType: ViewModelBase
+- uid: Benday.Presentation.ViewModelBase.PropertyChanged
+  name: PropertyChanged
+  href: api/Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_PropertyChanged
+  commentId: E:Benday.Presentation.ViewModelBase.PropertyChanged
+  fullName: Benday.Presentation.ViewModelBase.PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+- uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  name: RaisePropertyChanged(string)
+  href: api/Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  commentId: M:Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  name.vb: RaisePropertyChanged(String)
+  fullName: Benday.Presentation.ViewModelBase.RaisePropertyChanged(string)
+  fullName.vb: Benday.Presentation.ViewModelBase.RaisePropertyChanged(String)
+  nameWithType: ViewModelBase.RaisePropertyChanged(string)
+  nameWithType.vb: ViewModelBase.RaisePropertyChanged(String)
+- uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged*
+  name: RaisePropertyChanged
+  href: api/Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_
+  commentId: Overload:Benday.Presentation.ViewModelBase.RaisePropertyChanged
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelBase.RaisePropertyChanged
+  nameWithType: ViewModelBase.RaisePropertyChanged
+- uid: Benday.Presentation.ViewModelField`1
+  name: ViewModelField<T>
+  href: api/Benday.Presentation.ViewModelField-1.html
+  commentId: T:Benday.Presentation.ViewModelField`1
+  name.vb: ViewModelField(Of T)
+  fullName: Benday.Presentation.ViewModelField<T>
+  fullName.vb: Benday.Presentation.ViewModelField(Of T)
+  nameWithType: ViewModelField<T>
+  nameWithType.vb: ViewModelField(Of T)
+- uid: Benday.Presentation.ViewModelField`1.#ctor
+  name: ViewModelField()
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1__ctor
+  commentId: M:Benday.Presentation.ViewModelField`1.#ctor
+  name.vb: New()
+  fullName: Benday.Presentation.ViewModelField<T>.ViewModelField()
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).New()
+  nameWithType: ViewModelField<T>.ViewModelField()
+  nameWithType.vb: ViewModelField(Of T).New()
+- uid: Benday.Presentation.ViewModelField`1.#ctor(`0)
+  name: ViewModelField(T)
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1__ctor__0_
+  commentId: M:Benday.Presentation.ViewModelField`1.#ctor(`0)
+  name.vb: New(T)
+  fullName: Benday.Presentation.ViewModelField<T>.ViewModelField(T)
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).New(T)
+  nameWithType: ViewModelField<T>.ViewModelField(T)
+  nameWithType.vb: ViewModelField(Of T).New(T)
+- uid: Benday.Presentation.ViewModelField`1.#ctor*
+  name: ViewModelField
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1__ctor_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Benday.Presentation.ViewModelField<T>.ViewModelField
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).New
+  nameWithType: ViewModelField<T>.ViewModelField
+  nameWithType.vb: ViewModelField(Of T).New
+- uid: Benday.Presentation.ViewModelField`1.IsEnabled
+  name: IsEnabled
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_IsEnabled
+  commentId: P:Benday.Presentation.ViewModelField`1.IsEnabled
+  fullName: Benday.Presentation.ViewModelField<T>.IsEnabled
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).IsEnabled
+  nameWithType: ViewModelField<T>.IsEnabled
+  nameWithType.vb: ViewModelField(Of T).IsEnabled
+- uid: Benday.Presentation.ViewModelField`1.IsEnabled*
+  name: IsEnabled
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_IsEnabled_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.IsEnabled
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.IsEnabled
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).IsEnabled
+  nameWithType: ViewModelField<T>.IsEnabled
+  nameWithType.vb: ViewModelField(Of T).IsEnabled
+- uid: Benday.Presentation.ViewModelField`1.IsValid
+  name: IsValid
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_IsValid
+  commentId: P:Benday.Presentation.ViewModelField`1.IsValid
+  fullName: Benday.Presentation.ViewModelField<T>.IsValid
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).IsValid
+  nameWithType: ViewModelField<T>.IsValid
+  nameWithType.vb: ViewModelField(Of T).IsValid
+- uid: Benday.Presentation.ViewModelField`1.IsValid*
+  name: IsValid
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_IsValid_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.IsValid
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.IsValid
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).IsValid
+  nameWithType: ViewModelField<T>.IsValid
+  nameWithType.vb: ViewModelField(Of T).IsValid
+- uid: Benday.Presentation.ViewModelField`1.IsVisible
+  name: IsVisible
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_IsVisible
+  commentId: P:Benday.Presentation.ViewModelField`1.IsVisible
+  fullName: Benday.Presentation.ViewModelField<T>.IsVisible
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).IsVisible
+  nameWithType: ViewModelField<T>.IsVisible
+  nameWithType.vb: ViewModelField(Of T).IsVisible
+- uid: Benday.Presentation.ViewModelField`1.IsVisible*
+  name: IsVisible
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_IsVisible_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.IsVisible
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.IsVisible
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).IsVisible
+  nameWithType: ViewModelField<T>.IsVisible
+  nameWithType.vb: ViewModelField(Of T).IsVisible
+- uid: Benday.Presentation.ViewModelField`1.OnValueChanged
+  name: OnValueChanged
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_OnValueChanged
+  commentId: E:Benday.Presentation.ViewModelField`1.OnValueChanged
+  fullName: Benday.Presentation.ViewModelField<T>.OnValueChanged
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).OnValueChanged
+  nameWithType: ViewModelField<T>.OnValueChanged
+  nameWithType.vb: ViewModelField(Of T).OnValueChanged
+- uid: Benday.Presentation.ViewModelField`1.RaiseOnValueChanged
+  name: RaiseOnValueChanged()
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_RaiseOnValueChanged
+  commentId: M:Benday.Presentation.ViewModelField`1.RaiseOnValueChanged
+  fullName: Benday.Presentation.ViewModelField<T>.RaiseOnValueChanged()
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).RaiseOnValueChanged()
+  nameWithType: ViewModelField<T>.RaiseOnValueChanged()
+  nameWithType.vb: ViewModelField(Of T).RaiseOnValueChanged()
+- uid: Benday.Presentation.ViewModelField`1.RaiseOnValueChanged*
+  name: RaiseOnValueChanged
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_RaiseOnValueChanged_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.RaiseOnValueChanged
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.RaiseOnValueChanged
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).RaiseOnValueChanged
+  nameWithType: ViewModelField<T>.RaiseOnValueChanged
+  nameWithType.vb: ViewModelField(Of T).RaiseOnValueChanged
+- uid: Benday.Presentation.ViewModelField`1.ToString
+  name: ToString()
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_ToString
+  commentId: M:Benday.Presentation.ViewModelField`1.ToString
+  fullName: Benday.Presentation.ViewModelField<T>.ToString()
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).ToString()
+  nameWithType: ViewModelField<T>.ToString()
+  nameWithType.vb: ViewModelField(Of T).ToString()
+- uid: Benday.Presentation.ViewModelField`1.ToString*
+  name: ToString
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_ToString_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.ToString
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.ToString
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).ToString
+  nameWithType: ViewModelField<T>.ToString
+  nameWithType.vb: ViewModelField(Of T).ToString
+- uid: Benday.Presentation.ViewModelField`1.ValidationMessage
+  name: ValidationMessage
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_ValidationMessage
+  commentId: P:Benday.Presentation.ViewModelField`1.ValidationMessage
+  fullName: Benday.Presentation.ViewModelField<T>.ValidationMessage
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).ValidationMessage
+  nameWithType: ViewModelField<T>.ValidationMessage
+  nameWithType.vb: ViewModelField(Of T).ValidationMessage
+- uid: Benday.Presentation.ViewModelField`1.ValidationMessage*
+  name: ValidationMessage
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_ValidationMessage_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.ValidationMessage
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.ValidationMessage
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).ValidationMessage
+  nameWithType: ViewModelField<T>.ValidationMessage
+  nameWithType.vb: ViewModelField(Of T).ValidationMessage
+- uid: Benday.Presentation.ViewModelField`1.Value
+  name: Value
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_Value
+  commentId: P:Benday.Presentation.ViewModelField`1.Value
+  fullName: Benday.Presentation.ViewModelField<T>.Value
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).Value
+  nameWithType: ViewModelField<T>.Value
+  nameWithType.vb: ViewModelField(Of T).Value
+- uid: Benday.Presentation.ViewModelField`1.Value*
+  name: Value
+  href: api/Benday.Presentation.ViewModelField-1.html#Benday_Presentation_ViewModelField_1_Value_
+  commentId: Overload:Benday.Presentation.ViewModelField`1.Value
+  isSpec: "True"
+  fullName: Benday.Presentation.ViewModelField<T>.Value
+  fullName.vb: Benday.Presentation.ViewModelField(Of T).Value
+  nameWithType: ViewModelField<T>.Value
+  nameWithType.vb: ViewModelField(Of T).Value

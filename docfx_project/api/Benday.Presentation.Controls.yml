@@ -1,0 +1,65 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.Controls
+  commentId: N:Benday.Presentation.Controls
+  id: Benday.Presentation.Controls
+  children:
+  - Benday.Presentation.Controls.ComboboxField
+  - Benday.Presentation.Controls.DependencyPropertyUtility
+  - Benday.Presentation.Controls.LabelField
+  - Benday.Presentation.Controls.ListboxField
+  - Benday.Presentation.Controls.PlatformClass1
+  - Benday.Presentation.Controls.Resource
+  - Benday.Presentation.Controls.TextboxField
+  langs:
+  - csharp
+  - vb
+  name: Benday.Presentation.Controls
+  nameWithType: Benday.Presentation.Controls
+  fullName: Benday.Presentation.Controls
+  type: Namespace
+  assemblies:
+  - Benday.Presentation.Controls
+references:
+- uid: Benday.Presentation.Controls.ComboboxField
+  commentId: T:Benday.Presentation.Controls.ComboboxField
+  href: Benday.Presentation.Controls.ComboboxField.html
+  name: ComboboxField
+  nameWithType: ComboboxField
+  fullName: Benday.Presentation.Controls.ComboboxField
+- uid: Benday.Presentation.Controls.DependencyPropertyUtility
+  commentId: T:Benday.Presentation.Controls.DependencyPropertyUtility
+  href: Benday.Presentation.Controls.DependencyPropertyUtility.html
+  name: DependencyPropertyUtility
+  nameWithType: DependencyPropertyUtility
+  fullName: Benday.Presentation.Controls.DependencyPropertyUtility
+- uid: Benday.Presentation.Controls.LabelField
+  commentId: T:Benday.Presentation.Controls.LabelField
+  href: Benday.Presentation.Controls.LabelField.html
+  name: LabelField
+  nameWithType: LabelField
+  fullName: Benday.Presentation.Controls.LabelField
+- uid: Benday.Presentation.Controls.ListboxField
+  commentId: T:Benday.Presentation.Controls.ListboxField
+  href: Benday.Presentation.Controls.ListboxField.html
+  name: ListboxField
+  nameWithType: ListboxField
+  fullName: Benday.Presentation.Controls.ListboxField
+- uid: Benday.Presentation.Controls.PlatformClass1
+  commentId: T:Benday.Presentation.Controls.PlatformClass1
+  href: Benday.Presentation.Controls.PlatformClass1.html
+  name: PlatformClass1
+  nameWithType: PlatformClass1
+  fullName: Benday.Presentation.Controls.PlatformClass1
+- uid: Benday.Presentation.Controls.TextboxField
+  commentId: T:Benday.Presentation.Controls.TextboxField
+  href: Benday.Presentation.Controls.TextboxField.html
+  name: TextboxField
+  nameWithType: TextboxField
+  fullName: Benday.Presentation.Controls.TextboxField
+- uid: Benday.Presentation.Controls.Resource
+  commentId: T:Benday.Presentation.Controls.Resource
+  href: Benday.Presentation.Controls.Resource.html
+  name: Resource
+  nameWithType: Resource
+  fullName: Benday.Presentation.Controls.Resource

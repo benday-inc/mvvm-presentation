@@ -1,0 +1,284 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.ISelectableItem
+  commentId: T:Benday.Presentation.ISelectableItem
+  id: ISelectableItem
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.ISelectableItem.Id
+  - Benday.Presentation.ISelectableItem.Text
+  - Benday.Presentation.ISelectableItem.TooltipText
+  - Benday.Presentation.ISelectableItem.Value
+  langs:
+  - csharp
+  - vb
+  name: ISelectableItem
+  nameWithType: ISelectableItem
+  fullName: Benday.Presentation.ISelectableItem
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/ISelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ISelectableItem
+    path: ../Benday.Presentation/ISelectableItem.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public interface ISelectableItem : ISelectable, INotifyPropertyChanged'
+    content.vb: Public Interface ISelectableItem Inherits ISelectable, INotifyPropertyChanged
+  inheritedMembers:
+  - Benday.Presentation.ISelectable.IsSelected
+  - System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.ISelectableItem.Text
+  commentId: P:Benday.Presentation.ISelectableItem.Text
+  id: Text
+  parent: Benday.Presentation.ISelectableItem
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: ISelectableItem.Text
+  fullName: Benday.Presentation.ISelectableItem.Text
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/ISelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Text
+    path: ../Benday.Presentation/ISelectableItem.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: string Text { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Text As String
+  overload: Benday.Presentation.ISelectableItem.Text*
+- uid: Benday.Presentation.ISelectableItem.Value
+  commentId: P:Benday.Presentation.ISelectableItem.Value
+  id: Value
+  parent: Benday.Presentation.ISelectableItem
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: ISelectableItem.Value
+  fullName: Benday.Presentation.ISelectableItem.Value
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/ISelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Value
+    path: ../Benday.Presentation/ISelectableItem.cs
+    startLine: 8
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Value As String
+  overload: Benday.Presentation.ISelectableItem.Value*
+- uid: Benday.Presentation.ISelectableItem.Id
+  commentId: P:Benday.Presentation.ISelectableItem.Id
+  id: Id
+  parent: Benday.Presentation.ISelectableItem
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: ISelectableItem.Id
+  fullName: Benday.Presentation.ISelectableItem.Id
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/ISelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Id
+    path: ../Benday.Presentation/ISelectableItem.cs
+    startLine: 9
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: int Id { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Id As Integer
+  overload: Benday.Presentation.ISelectableItem.Id*
+- uid: Benday.Presentation.ISelectableItem.TooltipText
+  commentId: P:Benday.Presentation.ISelectableItem.TooltipText
+  id: TooltipText
+  parent: Benday.Presentation.ISelectableItem
+  langs:
+  - csharp
+  - vb
+  name: TooltipText
+  nameWithType: ISelectableItem.TooltipText
+  fullName: Benday.Presentation.ISelectableItem.TooltipText
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/ISelectableItem.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: TooltipText
+    path: ../Benday.Presentation/ISelectableItem.cs
+    startLine: 10
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: string TooltipText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property TooltipText As String
+  overload: Benday.Presentation.ISelectableItem.TooltipText*
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: Benday.Presentation.ISelectable.IsSelected
+  commentId: P:Benday.Presentation.ISelectable.IsSelected
+  parent: Benday.Presentation.ISelectable
+  href: Benday.Presentation.ISelectable.html#Benday_Presentation_ISelectable_IsSelected
+  name: IsSelected
+  nameWithType: ISelectable.IsSelected
+  fullName: Benday.Presentation.ISelectable.IsSelected
+- uid: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  commentId: E:System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+  parent: System.ComponentModel.INotifyPropertyChanged
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged.propertychanged
+  name: PropertyChanged
+  nameWithType: INotifyPropertyChanged.PropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged.PropertyChanged
+- uid: Benday.Presentation.ISelectable
+  commentId: T:Benday.Presentation.ISelectable
+  parent: Benday.Presentation
+  href: Benday.Presentation.ISelectable.html
+  name: ISelectable
+  nameWithType: ISelectable
+  fullName: Benday.Presentation.ISelectable
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.ISelectableItem.Text*
+  commentId: Overload:Benday.Presentation.ISelectableItem.Text
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Text
+  name: Text
+  nameWithType: ISelectableItem.Text
+  fullName: Benday.Presentation.ISelectableItem.Text
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Benday.Presentation.ISelectableItem.Value*
+  commentId: Overload:Benday.Presentation.ISelectableItem.Value
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Value
+  name: Value
+  nameWithType: ISelectableItem.Value
+  fullName: Benday.Presentation.ISelectableItem.Value
+- uid: Benday.Presentation.ISelectableItem.Id*
+  commentId: Overload:Benday.Presentation.ISelectableItem.Id
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_Id
+  name: Id
+  nameWithType: ISelectableItem.Id
+  fullName: Benday.Presentation.ISelectableItem.Id
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Benday.Presentation.ISelectableItem.TooltipText*
+  commentId: Overload:Benday.Presentation.ISelectableItem.TooltipText
+  href: Benday.Presentation.ISelectableItem.html#Benday_Presentation_ISelectableItem_TooltipText
+  name: TooltipText
+  nameWithType: ISelectableItem.TooltipText
+  fullName: Benday.Presentation.ISelectableItem.TooltipText

@@ -1,0 +1,197 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.IMessageManager
+  commentId: T:Benday.Presentation.IMessageManager
+  id: IMessageManager
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  - Benday.Presentation.IMessageManager.ShowMessage(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMessageManager
+  nameWithType: IMessageManager
+  fullName: Benday.Presentation.IMessageManager
+  type: Interface
+  source:
+    remote:
+      path: Benday.Presentation/IMessageManager.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IMessageManager
+    path: ../Benday.Presentation/IMessageManager.cs
+    startLine: 4
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public interface IMessageManager
+    content.vb: Public Interface IMessageManager
+- uid: Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  commentId: M:Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  id: ShowMessage(System.Exception)
+  parent: Benday.Presentation.IMessageManager
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(Exception)
+  nameWithType: IMessageManager.ShowMessage(Exception)
+  fullName: Benday.Presentation.IMessageManager.ShowMessage(System.Exception)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/IMessageManager.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ShowMessage
+    path: ../Benday.Presentation/IMessageManager.cs
+    startLine: 6
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: Task ShowMessage(Exception ex)
+    parameters:
+    - id: ex
+      type: System.Exception
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ShowMessage(ex As Exception) As Task
+  overload: Benday.Presentation.IMessageManager.ShowMessage*
+- uid: Benday.Presentation.IMessageManager.ShowMessage(System.String,System.String)
+  commentId: M:Benday.Presentation.IMessageManager.ShowMessage(System.String,System.String)
+  id: ShowMessage(System.String,System.String)
+  parent: Benday.Presentation.IMessageManager
+  langs:
+  - csharp
+  - vb
+  name: ShowMessage(string, string)
+  nameWithType: IMessageManager.ShowMessage(string, string)
+  fullName: Benday.Presentation.IMessageManager.ShowMessage(string, string)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/IMessageManager.cs
+      branch: adding-docfx
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: ShowMessage
+    path: ../Benday.Presentation/IMessageManager.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: Task ShowMessage(string message, string title)
+    parameters:
+    - id: message
+      type: System.String
+    - id: title
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function ShowMessage(message As String, title As String) As Task
+  overload: Benday.Presentation.IMessageManager.ShowMessage*
+  nameWithType.vb: IMessageManager.ShowMessage(String, String)
+  fullName.vb: Benday.Presentation.IMessageManager.ShowMessage(String, String)
+  name.vb: ShowMessage(String, String)
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: Benday.Presentation.IMessageManager.ShowMessage*
+  commentId: Overload:Benday.Presentation.IMessageManager.ShowMessage
+  href: Benday.Presentation.IMessageManager.html#Benday_Presentation_IMessageManager_ShowMessage_System_Exception_
+  name: ShowMessage
+  nameWithType: IMessageManager.ShowMessage
+  fullName: Benday.Presentation.IMessageManager.ShowMessage
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

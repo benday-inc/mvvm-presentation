@@ -1,0 +1,788 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class SelectableCollectionViewModel&lt;T&gt;
+ </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class SelectableCollectionViewModel&lt;T&gt;
+ ">
+    
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-brand">
+                <a href="../">
+                  <img id="logo" src="../logo.png" alt="" alt="asdf" width="50" height="50">
+                </a>
+
+              </div>            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Benday.Presentation.SelectableCollectionViewModel`1">
+
+
+
+  <h1 id="Benday_Presentation_SelectableCollectionViewModel_1" data-uid="Benday.Presentation.SelectableCollectionViewModel`1" class="text-break">Class SelectableCollectionViewModel&lt;T&gt;
+</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+    <div class="level1"><a class="xref" href="Benday.Presentation.ViewModelBase.html">ViewModelBase</a></div>
+    <div class="level2"><span class="xref">SelectableCollectionViewModel&lt;T&gt;</span></div>
+      <div class="level3"><a class="xref" href="Benday.Presentation.SingleSelectListViewModel.html">SingleSelectListViewModel</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_">ViewModelBase.RaisePropertyChanged(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_PropertyChanged">ViewModelBase.PropertyChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Benday.html">Benday</a>.<a class="xref" href="Benday.Presentation.html">Presentation</a></h6>
+  <h6><strong>Assembly</strong>: Benday.Presentation.dll</h6>
+  <h5 id="Benday_Presentation_SelectableCollectionViewModel_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SelectableCollectionViewModel&lt;T&gt; : ViewModelBase, INotifyPropertyChanged where T : class, ISelectable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__ctor.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L13">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__ctor" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor">SelectableCollectionViewModel()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectableCollectionViewModel()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0__.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.%23ctor(System.Collections.ObjectModel.ObservableCollection%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L37">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0__" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0})">SelectableCollectionViewModel(ObservableCollection&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectableCollectionViewModel(ObservableCollection&lt;T&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;T&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0___0_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.%23ctor(System.Collections.ObjectModel.ObservableCollection%7B%600%7D%2C%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L47">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__ctor_System_Collections_ObjectModel_ObservableCollection__0___0_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.#ctor(System.Collections.ObjectModel.ObservableCollection{`0},`0)">SelectableCollectionViewModel(ObservableCollection&lt;T&gt;, T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SelectableCollectionViewModel(ObservableCollection&lt;T&gt; values, T selectedItem)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;T&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">selectedItem</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.ItemsPropertyName%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L117">View Source</a>
+  </span>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName">ItemsPropertyName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public readonly string ItemsPropertyName</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1__Items.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601._Items%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L11">View Source</a>
+  </span>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1__Items" data-uid="Benday.Presentation.SelectableCollectionViewModel`1._Items">_Items</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ObservableCollection&lt;T&gt;? _Items</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.AllowMultipleSelections%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L314">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections">AllowMultipleSelections</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AllowMultipleSelections { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Count.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L293">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_Count_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Count*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Count" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Count">Count</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.HasOnItemSelectedSubscriber%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L19">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber">HasOnItemSelectedSubscriber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasOnItemSelectedSubscriber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.IsEnabled%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L346">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled">IsEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsEnabled { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_IsValid.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.IsValid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L330">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_IsValid_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsValid*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_IsValid" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.IsValid">IsValid</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsValid { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Items.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Items%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L119">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_Items_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Items*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Items" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Items">Items</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCollection&lt;T&gt; Items { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1">ObservableCollection</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.SelectedItem%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L226">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem">SelectedItem</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? SelectedItem { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Add__0_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Add(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L93">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_Add_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Add*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Add__0_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)">Add(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T addThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">addThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Clear.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Clear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L85">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_Clear_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Clear*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Clear" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Clear">Clear()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.GetSelectedItems%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L215">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems">GetSelectedItems()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T&gt; GetSelectedItems()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Initialize(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L62">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_Initialize_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Initialize*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})">Initialize(IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Initialize(IEnumerable&lt;T&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.OnItemPropertyChanged(System.Object%2CSystem.ComponentModel.PropertyChangedEventArgs)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L181">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">OnItemPropertyChanged(object?, PropertyChangedEventArgs)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnItemPropertyChanged(object? sender, PropertyChangedEventArgs e)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
+        <td><span class="parametername">sender</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs">PropertyChangedEventArgs</a></td>
+        <td><span class="parametername">e</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.RefreshSelectedItem(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L69">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)">RefreshSelectedItem(bool)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void RefreshSelectedItem(bool directAssign = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">directAssign</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.Remove(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L105">View Source</a>
+  </span>
+  <a id="Benday_Presentation_SelectableCollectionViewModel_1_Remove_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Remove*"></a>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)">Remove(T)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(T removeThis)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">removeThis</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="events">Events
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601.OnItemSelected%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L27">View Source</a>
+  </span>
+  <h4 id="Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected" data-uid="Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected">OnItemSelected</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event EventHandler? OnItemSelected</code></pre>
+  </div>
+  <h5 class="eventType">Event Type</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.eventhandler">EventHandler</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged">INotifyPropertyChanged</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/benday-inc/mvvm-presentation/new/adding-docfx/apiSpec/new?filename=Benday_Presentation_SelectableCollectionViewModel_1.md&amp;value=---%0Auid%3A%20Benday.Presentation.SelectableCollectionViewModel%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/benday-inc/mvvm-presentation/blob/adding-docfx/Benday.Presentation/SelectableCollectionViewModel.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      Copyright © <a href="https://www.benday.com/">www.benday.com</a> | <a href="mailto:info@benday.com">info@benday.com</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
