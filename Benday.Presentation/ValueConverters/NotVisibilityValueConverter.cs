@@ -4,6 +4,10 @@ using System.Linq;
 
 namespace Benday.Presentation.ValueConverters;
 
+/// <summary>
+/// A value converter that converts a boolean value to a Visibility value. 
+/// If the value supplied is true, then visibility will be returned as false. If the value supplied is false, then the return value is true.
+/// </summary>
 public class NotVisibilityValueConverter : BendayValueConverterBase
 {
     protected override object? ConvertTo(object? value, Type targetType)

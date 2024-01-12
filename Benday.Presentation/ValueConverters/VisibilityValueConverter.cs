@@ -4,6 +4,10 @@ using System.Linq;
 
 namespace Benday.Presentation.ValueConverters;
 
+/// <summary>
+/// A value converter that converts a boolean value to a Visibility value.
+/// This might be useless in .NET MAUI since MAUI uses booleans for visibility but I'm leaving it in for now.
+/// </summary>
 public class VisibilityValueConverter : BendayValueConverterBase
 {
     protected override object? ConvertTo(object? value, Type targetType)

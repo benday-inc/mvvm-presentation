@@ -6,8 +6,15 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Benday.Presentation.ValueConverters;
+/// <summary>
+/// A value converter that converts between the value returned from the user interface and the value used by the view model.
+/// This is typically used with ViewModelField<T>.
+/// </summary>
 public class SmartValueConverter : BendayValueConverterBase
 {
+    /// <summary>
+    /// If true, then a value of 0 will be converted to an empty string. If false, then 0 will be converted to "0".
+    /// </summary>
     public bool ZeroIsEmptyString
     {
         get;

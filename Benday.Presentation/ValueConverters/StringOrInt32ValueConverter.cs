@@ -3,7 +3,9 @@ using System.Linq;
 
 namespace Benday.Presentation.ValueConverters;
 
-
+/// <summary>
+/// A value converter that converts a string or int32 value to a string value.
+/// </summary>
 public class StringOrInt32ValueConverter : BendayValueConverterBase
 {
 

@@ -3,6 +3,10 @@ using System.Linq;
 
 namespace Benday.Presentation.ValueConverters;
 
+/// <summary>
+/// A value converter that calls ToString() using a format string and returns the value.
+/// This only converts one way, from the source to the target.
+/// </summary>
 public class StringFormatValueConverter : BendayValueConverterBase
 {
     private readonly string _FormatString;

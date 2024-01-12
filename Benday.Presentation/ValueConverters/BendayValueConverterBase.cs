@@ -4,6 +4,9 @@ using System.Linq;
 
 namespace Benday.Presentation.ValueConverters;
 
+/// <summary>
+/// Base class for value converters that provides an implementation of IValueConverter.
+/// </summary>
 public abstract class BendayValueConverterBase : IValueConverter
 {
     public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
