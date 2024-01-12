@@ -14,13 +14,13 @@
         </Grid.ColumnDefinitions>
         <VerticalStackLayout
             Grid.Column="0"
-            Padding="30,0"
-            Spacing="25">
+            Padding="10"
+            Spacing="15">
             <Button
-                Text="Show View Model Summary"
+                Text="View Model Summary"
                 Command="{Binding ShowSummaryCommand}"></Button>
             <Button
-                Text="Show Message Box"
+                Text="Message Box"
                 Command="{Binding ShowMessageCommand}"></Button>
             <Button
                 Text="Change Combobox Selection"
@@ -45,8 +45,8 @@
 
         <VerticalStackLayout
             Grid.Column="1"
-            Padding="30,0"
-            Spacing="25">
+            Padding="0,5,5,0"
+            Spacing="15">
 
             <PresentationControls:TextboxField
                 LabelText="String Field"
@@ -58,13 +58,13 @@
             </PresentationControls:TextboxField>
 
             <PresentationControls:ComboboxField
-                LabelText="Combo Field / Single Select"
+                LabelText="Combo Field"
                 BindingContext="{Binding SingleSelectField}">
 
             </PresentationControls:ComboboxField>
 
             <PresentationControls:ListboxField
-                LabelText="Listbox Field / Single Select"
+                LabelText="Listbox Field"
                 BindingContext="{Binding ListboxSingleSelectField}">
 
             </PresentationControls:ListboxField>

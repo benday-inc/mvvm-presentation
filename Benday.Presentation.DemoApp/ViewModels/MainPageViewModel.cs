@@ -12,8 +12,8 @@ internal class MainPageViewModel : MessagingViewModelBase
     {
         StringField = new ViewModelField<string>(String.Empty);
         IntField = new ViewModelField<int>(123);
-        SingleSelectField = new SingleSelectListViewModel(GetSampleItems("Combobox"));
-        ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Single Select Listbox"));
+        SingleSelectField = new SingleSelectListViewModel(GetSampleItems("Combobox", 4));
+        ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Listbox", 3));
         LabelField = new ViewModelField<string>(String.Empty);
     }
 
@@ -24,17 +24,14 @@ internal class MainPageViewModel : MessagingViewModelBase
     public SingleSelectListViewModel ListboxSingleSelectField { get; private set; }
 
     private static IList<ISelectableItem> GetSampleItems(
-        string controlName)
+        string controlName, int itemCount)
     {
         var items = new List<ISelectableItem>();
 
-        items.Add(new SelectableItem(false, $"{controlName}: Item 1"));
-        items.Add(new SelectableItem(true, $"{controlName}: Item 2"));
-        items.Add(new SelectableItem(false, $"{controlName}: Item 3"));
-        items.Add(new SelectableItem(false, $"{controlName}: Item 4"));
-        items.Add(new SelectableItem(false, $"{controlName}: Item 5"));
-        items.Add(new SelectableItem(false, $"{controlName}: Item 6"));
-        items.Add(new SelectableItem(false, $"{controlName}: Item 7"));
+        for (int i = 1; i <= itemCount; i++)
+        {
+            items.Add(new SelectableItem(false, $"{controlName}: Item {i}"));
+        }
 
         return items;
     }
@@ -170,7 +167,8 @@ internal class MainPageViewModel : MessagingViewModelBase
                 _UpdateLabelFieldCommand =
                     new ExceptionHandlingRelayCommand(
                         Messages,
-                    () => {
+                    () =>
+                    {
                         LabelField.Value = $"Label: {DateTime.Now}";
                     });
             }
