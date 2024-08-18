@@ -26,6 +26,12 @@
     <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation</RepositoryUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Configurations>Debug;Release;Debug-nuget-pkgs</Configurations>
+    <Title>MVVM Presentation Controls</Title>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>
+      v1.0 - Initial release
+      v1.1 - Multi select list view model
+    </PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
