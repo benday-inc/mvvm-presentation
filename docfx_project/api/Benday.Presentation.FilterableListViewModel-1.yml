@@ -1,0 +1,1350 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.FilterableListViewModel`1
+  commentId: T:Benday.Presentation.FilterableListViewModel`1
+  id: FilterableListViewModel`1
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.FilterableListViewModel`1.Filter
+  - Benday.Presentation.FilterableListViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  - Benday.Presentation.FilterableListViewModel`1._OriginalItems
+  langs:
+  - csharp
+  - vb
+  name: FilterableListViewModel<T>
+  nameWithType: FilterableListViewModel<T>
+  fullName: Benday.Presentation.FilterableListViewModel<T>
+  type: Class
+  source:
+    remote:
+      path: Benday.Presentation/FilterableListViewModel.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: FilterableListViewModel
+    path: ../Benday.Presentation/FilterableListViewModel.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: 'public class FilterableListViewModel<T> : SelectableCollectionViewModel<T>, INotifyPropertyChanged where T : class, ISelectableItem'
+    typeParameters:
+    - id: T
+    content.vb: Public Class FilterableListViewModel(Of T As {Class, ISelectableItem}) Inherits SelectableCollectionViewModel(Of T) Implements INotifyPropertyChanged
+  inheritance:
+  - System.Object
+  - Benday.Presentation.ViewModelBase
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  inheritedMembers:
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}._Items
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.HasOnItemSelectedSubscriber
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.OnItemSelected
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.RefreshSelectedItem(System.Boolean)
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.Clear
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.Add({T})
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.Remove({T})
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.ItemsPropertyName
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.Items
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.GetSelectedItems
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.SelectedItem
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.Count
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.AllowMultipleSelections
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.IsValid
+  - Benday.Presentation.SelectableCollectionViewModel{{T}}.IsEnabled
+  - Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  - Benday.Presentation.ViewModelBase.PropertyChanged
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: FilterableListViewModel(Of T)
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T)
+  name.vb: FilterableListViewModel(Of T)
+- uid: Benday.Presentation.FilterableListViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Benday.Presentation.FilterableListViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  id: Initialize(System.Collections.Generic.IEnumerable{`0})
+  parent: Benday.Presentation.FilterableListViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Initialize(IEnumerable<T>)
+  nameWithType: FilterableListViewModel<T>.Initialize(IEnumerable<T>)
+  fullName: Benday.Presentation.FilterableListViewModel<T>.Initialize(System.Collections.Generic.IEnumerable<T>)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/FilterableListViewModel.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Initialize
+    path: ../Benday.Presentation/FilterableListViewModel.cs
+    startLine: 9
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  summary: Resets the collection to the specified values.
+  example: []
+  syntax:
+    content: public override void Initialize(IEnumerable<T> values)
+    parameters:
+    - id: values
+      type: System.Collections.Generic.IEnumerable{{T}}
+      description: ''
+    content.vb: Public Overrides Sub Initialize(values As IEnumerable(Of T))
+  overridden: Benday.Presentation.SelectableCollectionViewModel{{T}}.Initialize(System.Collections.Generic.IEnumerable{{T}})
+  overload: Benday.Presentation.FilterableListViewModel`1.Initialize*
+  nameWithType.vb: FilterableListViewModel(Of T).Initialize(IEnumerable(Of T))
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T).Initialize(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Initialize(IEnumerable(Of T))
+- uid: Benday.Presentation.FilterableListViewModel`1.Filter
+  commentId: P:Benday.Presentation.FilterableListViewModel`1.Filter
+  id: Filter
+  parent: Benday.Presentation.FilterableListViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: FilterableListViewModel<T>.Filter
+  fullName: Benday.Presentation.FilterableListViewModel<T>.Filter
+  type: Property
+  source:
+    remote:
+      path: Benday.Presentation/FilterableListViewModel.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: Filter
+    path: ../Benday.Presentation/FilterableListViewModel.cs
+    startLine: 21
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public string Filter { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Filter As String
+  overload: Benday.Presentation.FilterableListViewModel`1.Filter*
+  nameWithType.vb: FilterableListViewModel(Of T).Filter
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T).Filter
+- uid: Benday.Presentation.FilterableListViewModel`1._OriginalItems
+  commentId: F:Benday.Presentation.FilterableListViewModel`1._OriginalItems
+  id: _OriginalItems
+  parent: Benday.Presentation.FilterableListViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: _OriginalItems
+  nameWithType: FilterableListViewModel<T>._OriginalItems
+  fullName: Benday.Presentation.FilterableListViewModel<T>._OriginalItems
+  type: Field
+  source:
+    remote:
+      path: Benday.Presentation/FilterableListViewModel.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: _OriginalItems
+    path: ../Benday.Presentation/FilterableListViewModel.cs
+    startLine: 35
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: protected ObservableCollection<T>? _OriginalItems
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{{T}}
+    content.vb: Protected _OriginalItems As ObservableCollection(Of T)
+  nameWithType.vb: FilterableListViewModel(Of T)._OriginalItems
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T)._OriginalItems
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Benday.Presentation.ViewModelBase
+  commentId: T:Benday.Presentation.ViewModelBase
+  parent: Benday.Presentation
+  href: Benday.Presentation.ViewModelBase.html
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: Benday.Presentation.ViewModelBase
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  commentId: T:Benday.Presentation.SelectableCollectionViewModel{`0}
+  parent: Benday.Presentation
+  definition: Benday.Presentation.SelectableCollectionViewModel`1
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html
+  name: SelectableCollectionViewModel<T>
+  nameWithType: SelectableCollectionViewModel<T>
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>
+  nameWithType.vb: SelectableCollectionViewModel(Of T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T)
+  name.vb: SelectableCollectionViewModel(Of T)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1
+    name: SelectableCollectionViewModel
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1
+    name: SelectableCollectionViewModel
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}._Items
+  commentId: F:Benday.Presentation.SelectableCollectionViewModel{`0}._Items
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1._Items
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__Items
+  name: _Items
+  nameWithType: SelectableCollectionViewModel<T>._Items
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>._Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T)._Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T)._Items
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.HasOnItemSelectedSubscriber
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.HasOnItemSelectedSubscriber
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber
+  name: HasOnItemSelectedSubscriber
+  nameWithType: SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  nameWithType.vb: SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.OnItemSelected
+  commentId: E:Benday.Presentation.SelectableCollectionViewModel{`0}.OnItemSelected
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected
+  name: OnItemSelected
+  nameWithType: SelectableCollectionViewModel<T>.OnItemSelected
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemSelected
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemSelected
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemSelected
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.RefreshSelectedItem(System.Boolean)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.RefreshSelectedItem(System.Boolean)
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  name: RefreshSelectedItem(bool)
+  nameWithType: SelectableCollectionViewModel<T>.RefreshSelectedItem(bool)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.RefreshSelectedItem(bool)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).RefreshSelectedItem(Boolean)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).RefreshSelectedItem(Boolean)
+  name.vb: RefreshSelectedItem(Boolean)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.RefreshSelectedItem(System.Boolean)
+    name: RefreshSelectedItem
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.RefreshSelectedItem(System.Boolean)
+    name: RefreshSelectedItem
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.Clear
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.Clear
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.Clear
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  name: Clear()
+  nameWithType: SelectableCollectionViewModel<T>.Clear()
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Clear()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Clear()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Clear()
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Clear
+    name: Clear
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Clear
+    name: Clear
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  - name: (
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.Add({T})
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.Add(`0)
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  name: Add(T)
+  nameWithType: SelectableCollectionViewModel<T>.Add(T)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Add(T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Add(T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Add(T)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Add(`0)
+    name: Add
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Add(`0)
+    name: Add
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.Remove({T})
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.Remove(`0)
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  name: Remove(T)
+  nameWithType: SelectableCollectionViewModel<T>.Remove(T)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Remove(T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Remove(T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Remove(T)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Remove(`0)
+    name: Remove
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Remove(`0)
+    name: Remove
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.ItemsPropertyName
+  commentId: F:Benday.Presentation.SelectableCollectionViewModel{`0}.ItemsPropertyName
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName
+  name: ItemsPropertyName
+  nameWithType: SelectableCollectionViewModel<T>.ItemsPropertyName
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.ItemsPropertyName
+  nameWithType.vb: SelectableCollectionViewModel(Of T).ItemsPropertyName
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).ItemsPropertyName
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.Items
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.Items
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.Items
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Items
+  name: Items
+  nameWithType: SelectableCollectionViewModel<T>.Items
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Items
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.GetSelectedItems
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.GetSelectedItems
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  name: GetSelectedItems()
+  nameWithType: SelectableCollectionViewModel<T>.GetSelectedItems()
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.GetSelectedItems()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).GetSelectedItems()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).GetSelectedItems()
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.GetSelectedItems
+    name: GetSelectedItems
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.GetSelectedItems
+    name: GetSelectedItems
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  - name: (
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.SelectedItem
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.SelectedItem
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem
+  name: SelectedItem
+  nameWithType: SelectableCollectionViewModel<T>.SelectedItem
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectedItem
+  nameWithType.vb: SelectableCollectionViewModel(Of T).SelectedItem
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).SelectedItem
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.Count
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.Count
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.Count
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Count
+  name: Count
+  nameWithType: SelectableCollectionViewModel<T>.Count
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Count
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Count
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Count
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.AllowMultipleSelections
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.AllowMultipleSelections
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections
+  name: AllowMultipleSelections
+  nameWithType: SelectableCollectionViewModel<T>.AllowMultipleSelections
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.AllowMultipleSelections
+  nameWithType.vb: SelectableCollectionViewModel(Of T).AllowMultipleSelections
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).AllowMultipleSelections
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.IsValid
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.IsValid
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.IsValid
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsValid
+  name: IsValid
+  nameWithType: SelectableCollectionViewModel<T>.IsValid
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsValid
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsValid
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsValid
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.IsEnabled
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel{`0}.IsEnabled
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled
+  name: IsEnabled
+  nameWithType: SelectableCollectionViewModel<T>.IsEnabled
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsEnabled
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsEnabled
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsEnabled
+- uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  commentId: M:Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+  parent: Benday.Presentation.ViewModelBase
+  isExternal: true
+  href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  name: RaisePropertyChanged(string)
+  nameWithType: ViewModelBase.RaisePropertyChanged(string)
+  fullName: Benday.Presentation.ViewModelBase.RaisePropertyChanged(string)
+  nameWithType.vb: ViewModelBase.RaisePropertyChanged(String)
+  fullName.vb: Benday.Presentation.ViewModelBase.RaisePropertyChanged(String)
+  name.vb: RaisePropertyChanged(String)
+  spec.csharp:
+  - uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.ViewModelBase.RaisePropertyChanged(System.String)
+    name: RaisePropertyChanged
+    href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_RaisePropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Benday.Presentation.ViewModelBase.PropertyChanged
+  commentId: E:Benday.Presentation.ViewModelBase.PropertyChanged
+  parent: Benday.Presentation.ViewModelBase
+  href: Benday.Presentation.ViewModelBase.html#Benday_Presentation_ViewModelBase_PropertyChanged
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: Benday.Presentation.ViewModelBase.PropertyChanged
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Benday.Presentation.SelectableCollectionViewModel`1
+  commentId: T:Benday.Presentation.SelectableCollectionViewModel`1
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html
+  name: SelectableCollectionViewModel<T>
+  nameWithType: SelectableCollectionViewModel<T>
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>
+  nameWithType.vb: SelectableCollectionViewModel(Of T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T)
+  name.vb: SelectableCollectionViewModel(Of T)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1
+    name: SelectableCollectionViewModel
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1
+    name: SelectableCollectionViewModel
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: Benday.Presentation.SelectableCollectionViewModel`1._Items
+  commentId: F:Benday.Presentation.SelectableCollectionViewModel`1._Items
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1__Items
+  name: _Items
+  nameWithType: SelectableCollectionViewModel<T>._Items
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>._Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T)._Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T)._Items
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.HasOnItemSelectedSubscriber
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_HasOnItemSelectedSubscriber
+  name: HasOnItemSelectedSubscriber
+  nameWithType: SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.HasOnItemSelectedSubscriber
+  nameWithType.vb: SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).HasOnItemSelectedSubscriber
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected
+  commentId: E:Benday.Presentation.SelectableCollectionViewModel`1.OnItemSelected
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemSelected
+  name: OnItemSelected
+  nameWithType: SelectableCollectionViewModel<T>.OnItemSelected
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemSelected
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemSelected
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemSelected
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+  isExternal: true
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  name: RefreshSelectedItem(bool)
+  nameWithType: SelectableCollectionViewModel<T>.RefreshSelectedItem(bool)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.RefreshSelectedItem(bool)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).RefreshSelectedItem(Boolean)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).RefreshSelectedItem(Boolean)
+  name.vb: RefreshSelectedItem(Boolean)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+    name: RefreshSelectedItem
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.RefreshSelectedItem(System.Boolean)
+    name: RefreshSelectedItem
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_RefreshSelectedItem_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Clear
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Clear
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  name: Clear()
+  nameWithType: SelectableCollectionViewModel<T>.Clear()
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Clear()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Clear()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Clear()
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Clear
+    name: Clear
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Clear
+    name: Clear
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Clear
+  - name: (
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  name: Add(T)
+  nameWithType: SelectableCollectionViewModel<T>.Add(T)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Add(T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Add(T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Add(T)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+    name: Add
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Add(`0)
+    name: Add
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Add__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  name: Remove(T)
+  nameWithType: SelectableCollectionViewModel<T>.Remove(T)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Remove(T)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Remove(T)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Remove(T)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+    name: Remove
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Remove(`0)
+    name: Remove
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Remove__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName
+  commentId: F:Benday.Presentation.SelectableCollectionViewModel`1.ItemsPropertyName
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_ItemsPropertyName
+  name: ItemsPropertyName
+  nameWithType: SelectableCollectionViewModel<T>.ItemsPropertyName
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.ItemsPropertyName
+  nameWithType.vb: SelectableCollectionViewModel(Of T).ItemsPropertyName
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).ItemsPropertyName
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Items
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.Items
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Items
+  name: Items
+  nameWithType: SelectableCollectionViewModel<T>.Items
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Items
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Items
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Items
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  isExternal: true
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  name: GetSelectedItems()
+  nameWithType: SelectableCollectionViewModel<T>.GetSelectedItems()
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.GetSelectedItems()
+  nameWithType.vb: SelectableCollectionViewModel(Of T).GetSelectedItems()
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).GetSelectedItems()
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+    name: GetSelectedItems
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
+    name: GetSelectedItems
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
+  - name: (
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.SelectedItem
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_SelectedItem
+  name: SelectedItem
+  nameWithType: SelectableCollectionViewModel<T>.SelectedItem
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.SelectedItem
+  nameWithType.vb: SelectableCollectionViewModel(Of T).SelectedItem
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).SelectedItem
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Count
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.Count
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Count
+  name: Count
+  nameWithType: SelectableCollectionViewModel<T>.Count
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Count
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Count
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Count
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.AllowMultipleSelections
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_AllowMultipleSelections
+  name: AllowMultipleSelections
+  nameWithType: SelectableCollectionViewModel<T>.AllowMultipleSelections
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.AllowMultipleSelections
+  nameWithType.vb: SelectableCollectionViewModel(Of T).AllowMultipleSelections
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).AllowMultipleSelections
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.IsValid
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.IsValid
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsValid
+  name: IsValid
+  nameWithType: SelectableCollectionViewModel<T>.IsValid
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsValid
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsValid
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsValid
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled
+  commentId: P:Benday.Presentation.SelectableCollectionViewModel`1.IsEnabled
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_IsEnabled
+  name: IsEnabled
+  nameWithType: SelectableCollectionViewModel<T>.IsEnabled
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsEnabled
+  nameWithType.vb: SelectableCollectionViewModel(Of T).IsEnabled
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsEnabled
+- uid: Benday.Presentation.SelectableCollectionViewModel{{T}}.Initialize(System.Collections.Generic.IEnumerable{{T}})
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{`0}.Initialize(System.Collections.Generic.IEnumerable{`0})
+  parent: Benday.Presentation.SelectableCollectionViewModel{{T}}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  name: Initialize(IEnumerable<T>)
+  nameWithType: SelectableCollectionViewModel<T>.Initialize(IEnumerable<T>)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Initialize(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Initialize(IEnumerable(Of T))
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Initialize(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Initialize(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Initialize(System.Collections.Generic.IEnumerable{`0})
+    name: Initialize
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{`0}.Initialize(System.Collections.Generic.IEnumerable{`0})
+    name: Initialize
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Benday.Presentation.FilterableListViewModel`1.Initialize*
+  commentId: Overload:Benday.Presentation.FilterableListViewModel`1.Initialize
+  href: Benday.Presentation.FilterableListViewModel-1.html#Benday_Presentation_FilterableListViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  name: Initialize
+  nameWithType: FilterableListViewModel<T>.Initialize
+  fullName: Benday.Presentation.FilterableListViewModel<T>.Initialize
+  nameWithType.vb: FilterableListViewModel(Of T).Initialize
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T).Initialize
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+  isExternal: true
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  name: Initialize(IEnumerable<T>)
+  nameWithType: SelectableCollectionViewModel<T>.Initialize(IEnumerable<T>)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Initialize(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).Initialize(IEnumerable(Of T))
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Initialize(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: Initialize(IEnumerable(Of T))
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+    name: Initialize
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
+    name: Initialize
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Benday.Presentation.FilterableListViewModel`1.Filter*
+  commentId: Overload:Benday.Presentation.FilterableListViewModel`1.Filter
+  href: Benday.Presentation.FilterableListViewModel-1.html#Benday_Presentation_FilterableListViewModel_1_Filter
+  name: Filter
+  nameWithType: FilterableListViewModel<T>.Filter
+  fullName: Benday.Presentation.FilterableListViewModel<T>.Filter
+  nameWithType.vb: FilterableListViewModel(Of T).Filter
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T).Filter
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.ObjectModel.ObservableCollection{{T}}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{`0}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel

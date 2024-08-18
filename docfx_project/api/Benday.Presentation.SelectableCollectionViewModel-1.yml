@@ -58,6 +58,7 @@ items:
   - System.Object
   - Benday.Presentation.ViewModelBase
   derivedClasses:
+  - Benday.Presentation.FilterableListViewModel`1
   - Benday.Presentation.SingleSelectListViewModel
   implements:
   - System.ComponentModel.INotifyPropertyChanged
@@ -97,7 +98,7 @@ items:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: protected ObservableCollection<T>? _Items
+    content: protected ObservableCollection<T> _Items
     return:
       type: System.Collections.ObjectModel.ObservableCollection{{T}}
     content.vb: Protected _Items As ObservableCollection(Of T)
@@ -150,7 +151,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: HasOnItemSelectedSubscriber
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 26
+    startLine: 25
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -183,7 +184,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnItemSelected
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 37
+    startLine: 36
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -214,7 +215,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 52
+    startLine: 51
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -253,7 +254,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 68
+    startLine: 67
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -295,7 +296,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Initialize
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 87
+    startLine: 86
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -330,7 +331,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: RefreshSelectedItem
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 94
+    startLine: 93
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -362,7 +363,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Clear
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 113
+    startLine: 112
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -392,7 +393,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Add
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 126
+    startLine: 125
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -430,7 +431,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Remove
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 143
+    startLine: 142
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -468,7 +469,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: ItemsPropertyName
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 155
+    startLine: 154
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -497,7 +498,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Items
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 160
+    startLine: 159
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -530,7 +531,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: OnItemPropertyChanged
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 222
+    startLine: 221
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -564,7 +565,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: GetSelectedItems
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 260
+    startLine: 259
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -597,7 +598,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectedItem
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 275
+    startLine: 274
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -630,7 +631,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: Count
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 345
+    startLine: 344
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -663,7 +664,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: AllowMultipleSelections
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 370
+    startLine: 369
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -696,7 +697,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsValid
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 390
+    startLine: 389
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
@@ -732,7 +733,7 @@ items:
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: IsEnabled
     path: ../Benday.Presentation/SelectableCollectionViewModel.cs
-    startLine: 409
+    startLine: 408
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation

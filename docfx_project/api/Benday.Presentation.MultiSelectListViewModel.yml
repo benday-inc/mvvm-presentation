@@ -1,55 +1,55 @@
 ### YamlMime:ManagedReference
 items:
-- uid: Benday.Presentation.SingleSelectListViewModel
-  commentId: T:Benday.Presentation.SingleSelectListViewModel
-  id: SingleSelectListViewModel
+- uid: Benday.Presentation.MultiSelectListViewModel
+  commentId: T:Benday.Presentation.MultiSelectListViewModel
+  id: MultiSelectListViewModel
   parent: Benday.Presentation
   children:
-  - Benday.Presentation.SingleSelectListViewModel.#ctor
-  - Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  - Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
-  - Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem})
-  - Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
-  - Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
-  - Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  - Benday.Presentation.SingleSelectListViewModel.IsVisible
-  - Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
-  - Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
-  - Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
-  - Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  - Benday.Presentation.MultiSelectListViewModel.#ctor
+  - Benday.Presentation.MultiSelectListViewModel.#ctor(System.Collections.Generic.IList{Benday.Presentation.ISelectableItem})
+  - Benday.Presentation.MultiSelectListViewModel.HasSelectedItems
+  - Benday.Presentation.MultiSelectListViewModel.HasSelectedItemsPropertyName
+  - Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  - Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList{System.Int32})
+  - Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList{System.String})
+  - Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.String)
+  - Benday.Presentation.MultiSelectListViewModel.SelectedItems
   langs:
   - csharp
   - vb
-  name: SingleSelectListViewModel
-  nameWithType: SingleSelectListViewModel
-  fullName: Benday.Presentation.SingleSelectListViewModel
+  name: MultiSelectListViewModel
+  nameWithType: MultiSelectListViewModel
+  fullName: Benday.Presentation.MultiSelectListViewModel
   type: Class
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: SingleSelectListViewModel
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 9
+    id: MultiSelectListViewModel
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 7
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
-  summary: A view model that can be selected. This is useful for list boxes and combo boxes when you want to bind to a list of items.
-  example: []
   syntax:
-    content: 'public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectableItem>, INotifyPropertyChanged, IVisibleField'
-    content.vb: Public Class SingleSelectListViewModel Inherits SelectableCollectionViewModel(Of ISelectableItem) Implements INotifyPropertyChanged, IVisibleField
+    content: 'public class MultiSelectListViewModel : SingleSelectListViewModel, INotifyPropertyChanged, IVisibleField'
+    content.vb: Public Class MultiSelectListViewModel Inherits SingleSelectListViewModel Implements INotifyPropertyChanged, IVisibleField
   inheritance:
   - System.Object
   - Benday.Presentation.ViewModelBase
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}
-  derivedClasses:
-  - Benday.Presentation.MultiSelectListViewModel
+  - Benday.Presentation.SingleSelectListViewModel
   implements:
   - System.ComponentModel.INotifyPropertyChanged
   - Benday.Presentation.IVisibleField
   inheritedMembers:
+  - Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  - Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+  - Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+  - Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+  - Benday.Presentation.SingleSelectListViewModel.IsVisible
+  - Benday.Presentation.SingleSelectListViewModel.ValidationMessage
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}._Items
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.HasOnItemSelectedSubscriber
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemSelected
@@ -59,7 +59,6 @@ items:
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Remove(Benday.Presentation.ISelectableItem)
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.ItemsPropertyName
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Items
-  - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.GetSelectedItems
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.SelectedItem
   - Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Count
@@ -75,414 +74,288 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: Benday.Presentation.SingleSelectListViewModel.#ctor
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor
+- uid: Benday.Presentation.MultiSelectListViewModel.#ctor
+  commentId: M:Benday.Presentation.MultiSelectListViewModel.#ctor
   id: '#ctor'
-  parent: Benday.Presentation.SingleSelectListViewModel
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: SingleSelectListViewModel()
-  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel()
-  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel()
+  name: MultiSelectListViewModel()
+  nameWithType: MultiSelectListViewModel.MultiSelectListViewModel()
+  fullName: Benday.Presentation.MultiSelectListViewModel.MultiSelectListViewModel()
   type: Constructor
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 12
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 9
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: protected SingleSelectListViewModel()
+    content: protected MultiSelectListViewModel()
     content.vb: Protected Sub New()
-  overload: Benday.Presentation.SingleSelectListViewModel.#ctor*
-  nameWithType.vb: SingleSelectListViewModel.New()
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New()
+  overload: Benday.Presentation.MultiSelectListViewModel.#ctor*
+  nameWithType.vb: MultiSelectListViewModel.New()
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.New()
   name.vb: New()
-- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  id: '#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})'
-  parent: Benday.Presentation.SingleSelectListViewModel
+- uid: Benday.Presentation.MultiSelectListViewModel.#ctor(System.Collections.Generic.IList{Benday.Presentation.ISelectableItem})
+  commentId: M:Benday.Presentation.MultiSelectListViewModel.#ctor(System.Collections.Generic.IList{Benday.Presentation.ISelectableItem})
+  id: '#ctor(System.Collections.Generic.IList{Benday.Presentation.ISelectableItem})'
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: SingleSelectListViewModel(IEnumerable<ISelectableItem>)
-  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(IEnumerable<ISelectableItem>)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>)
+  name: MultiSelectListViewModel(IList<ISelectableItem>)
+  nameWithType: MultiSelectListViewModel.MultiSelectListViewModel(IList<ISelectableItem>)
+  fullName: Benday.Presentation.MultiSelectListViewModel.MultiSelectListViewModel(System.Collections.Generic.IList<Benday.Presentation.ISelectableItem>)
   type: Constructor
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: .ctor
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 17
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 14
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: public SingleSelectListViewModel(IEnumerable<ISelectableItem> values)
+    content: public MultiSelectListViewModel(IList<ISelectableItem> values)
     parameters:
     - id: values
-      type: System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem}
-    content.vb: Public Sub New(values As IEnumerable(Of ISelectableItem))
-  overload: Benday.Presentation.SingleSelectListViewModel.#ctor*
-  nameWithType.vb: SingleSelectListViewModel.New(IEnumerable(Of ISelectableItem))
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem))
-  name.vb: New(IEnumerable(Of ISelectableItem))
-- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
-  id: '#ctor(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)'
-  parent: Benday.Presentation.SingleSelectListViewModel
+      type: System.Collections.Generic.IList{Benday.Presentation.ISelectableItem}
+    content.vb: Public Sub New(values As IList(Of ISelectableItem))
+  overload: Benday.Presentation.MultiSelectListViewModel.#ctor*
+  nameWithType.vb: MultiSelectListViewModel.New(IList(Of ISelectableItem))
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.New(System.Collections.Generic.IList(Of Benday.Presentation.ISelectableItem))
+  name.vb: New(IList(Of ISelectableItem))
+- uid: Benday.Presentation.MultiSelectListViewModel.SelectedItems
+  commentId: P:Benday.Presentation.MultiSelectListViewModel.SelectedItems
+  id: SelectedItems
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: SingleSelectListViewModel(IEnumerable<ISelectableItem>, ISelectableItem)
-  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(IEnumerable<ISelectableItem>, ISelectableItem)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>, Benday.Presentation.ISelectableItem)
-  type: Constructor
+  name: SelectedItems
+  nameWithType: MultiSelectListViewModel.SelectedItems
+  fullName: Benday.Presentation.MultiSelectListViewModel.SelectedItems
+  type: Property
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: .ctor
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 26
+    id: SelectedItems
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 21
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: public SingleSelectListViewModel(IEnumerable<ISelectableItem> values, ISelectableItem selectedItem)
-    parameters:
-    - id: values
-      type: System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem}
-    - id: selectedItem
-      type: Benday.Presentation.ISelectableItem
-    content.vb: Public Sub New(values As IEnumerable(Of ISelectableItem), selectedItem As ISelectableItem)
-  overload: Benday.Presentation.SingleSelectListViewModel.#ctor*
-  nameWithType.vb: SingleSelectListViewModel.New(IEnumerable(Of ISelectableItem), ISelectableItem)
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem), Benday.Presentation.ISelectableItem)
-  name.vb: New(IEnumerable(Of ISelectableItem), ISelectableItem)
-- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem})
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem})
-  id: '#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem})'
-  parent: Benday.Presentation.SingleSelectListViewModel
+    content: public IList<ISelectableItem> SelectedItems { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{Benday.Presentation.ISelectableItem}
+    content.vb: Public Property SelectedItems As IList(Of ISelectableItem)
+  overload: Benday.Presentation.MultiSelectListViewModel.SelectedItems*
+- uid: Benday.Presentation.MultiSelectListViewModel.HasSelectedItemsPropertyName
+  commentId: F:Benday.Presentation.MultiSelectListViewModel.HasSelectedItemsPropertyName
+  id: HasSelectedItemsPropertyName
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: SingleSelectListViewModel(ObservableCollection<ISelectableItem>)
-  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(ObservableCollection<ISelectableItem>)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>)
-  type: Constructor
+  name: HasSelectedItemsPropertyName
+  nameWithType: MultiSelectListViewModel.HasSelectedItemsPropertyName
+  fullName: Benday.Presentation.MultiSelectListViewModel.HasSelectedItemsPropertyName
+  type: Field
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: .ctor
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
+    id: HasSelectedItemsPropertyName
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
     startLine: 37
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: public SingleSelectListViewModel(ObservableCollection<ISelectableItem> values)
-    parameters:
-    - id: values
-      type: System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem}
-    content.vb: Public Sub New(values As ObservableCollection(Of ISelectableItem))
-  overload: Benday.Presentation.SingleSelectListViewModel.#ctor*
-  nameWithType.vb: SingleSelectListViewModel.New(ObservableCollection(Of ISelectableItem))
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem))
-  name.vb: New(ObservableCollection(Of ISelectableItem))
-- uid: Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)
-  id: '#ctor(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},Benday.Presentation.ISelectableItem)'
-  parent: Benday.Presentation.SingleSelectListViewModel
+    content: protected const string HasSelectedItemsPropertyName = "HasSelectedItems"
+    return:
+      type: System.String
+    content.vb: Protected Const HasSelectedItemsPropertyName As String = "HasSelectedItems"
+- uid: Benday.Presentation.MultiSelectListViewModel.HasSelectedItems
+  commentId: P:Benday.Presentation.MultiSelectListViewModel.HasSelectedItems
+  id: HasSelectedItems
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: SingleSelectListViewModel(ObservableCollection<ISelectableItem>, ISelectableItem)
-  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel(ObservableCollection<ISelectableItem>, ISelectableItem)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>, Benday.Presentation.ISelectableItem)
-  type: Constructor
+  name: HasSelectedItems
+  nameWithType: MultiSelectListViewModel.HasSelectedItems
+  fullName: Benday.Presentation.MultiSelectListViewModel.HasSelectedItems
+  type: Property
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: .ctor
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 42
+    id: HasSelectedItems
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 39
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: public SingleSelectListViewModel(ObservableCollection<ISelectableItem> values, ISelectableItem selectedItem)
-    parameters:
-    - id: values
-      type: System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem}
-    - id: selectedItem
-      type: Benday.Presentation.ISelectableItem
-    content.vb: Public Sub New(values As ObservableCollection(Of ISelectableItem), selectedItem As ISelectableItem)
-  overload: Benday.Presentation.SingleSelectListViewModel.#ctor*
-  nameWithType.vb: SingleSelectListViewModel.New(ObservableCollection(Of ISelectableItem), ISelectableItem)
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem), Benday.Presentation.ISelectableItem)
-  name.vb: New(ObservableCollection(Of ISelectableItem), ISelectableItem)
-- uid: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  id: Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  parent: Benday.Presentation.SingleSelectListViewModel
+    content: public virtual bool HasSelectedItems { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overridable ReadOnly Property HasSelectedItems As Boolean
+  overload: Benday.Presentation.MultiSelectListViewModel.HasSelectedItems*
+- uid: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList{System.Int32})
+  commentId: M:Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList{System.Int32})
+  id: SelectByValue(System.Collections.Generic.IList{System.Int32})
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: Initialize(IEnumerable<ISelectableItem>)
-  nameWithType: SingleSelectListViewModel.Initialize(IEnumerable<ISelectableItem>)
-  fullName: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>)
+  name: SelectByValue(IList<int>)
+  nameWithType: MultiSelectListViewModel.SelectByValue(IList<int>)
+  fullName: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList<int>)
   type: Method
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: Initialize
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 52
-  assemblies:
-  - Benday.Presentation
-  namespace: Benday.Presentation
-  summary: Initializes the view model with the specified values. Values are copied into a new ObservableCollection.
-  example: []
-  syntax:
-    content: public override void Initialize(IEnumerable<ISelectableItem> values)
-    parameters:
-    - id: values
-      type: System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem}
-      description: ''
-    content.vb: Public Overrides Sub Initialize(values As IEnumerable(Of ISelectableItem))
-  overridden: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  overload: Benday.Presentation.SingleSelectListViewModel.Initialize*
-  nameWithType.vb: SingleSelectListViewModel.Initialize(IEnumerable(Of ISelectableItem))
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem))
-  name.vb: Initialize(IEnumerable(Of ISelectableItem))
-- uid: Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
-  id: SelectByText(System.String)
-  parent: Benday.Presentation.SingleSelectListViewModel
-  langs:
-  - csharp
-  - vb
-  name: SelectByText(string)
-  nameWithType: SingleSelectListViewModel.SelectByText(string)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByText(string)
-  type: Method
-  source:
-    remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: master
-      repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: SelectByText
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
+    id: SelectByValue
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
     startLine: 66
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
-  summary: >-
-    Searches the list of items for the specified text and selects the item if found.
-
-    If not found, the selected item is set to null.
-  example: []
   syntax:
-    content: public void SelectByText(string text)
+    content: public void SelectByValue(IList<int> values)
     parameters:
-    - id: text
-      type: System.String
-      description: ''
-    content.vb: Public Sub SelectByText(text As String)
-  overload: Benday.Presentation.SingleSelectListViewModel.SelectByText*
-  nameWithType.vb: SingleSelectListViewModel.SelectByText(String)
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByText(String)
-  name.vb: SelectByText(String)
-- uid: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
-  id: GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
-  parent: Benday.Presentation.SingleSelectListViewModel
+    - id: values
+      type: System.Collections.Generic.IList{System.Int32}
+    content.vb: Public Sub SelectByValue(values As IList(Of Integer))
+  overload: Benday.Presentation.MultiSelectListViewModel.SelectByValue*
+  nameWithType.vb: MultiSelectListViewModel.SelectByValue(IList(Of Integer))
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList(Of Integer))
+  name.vb: SelectByValue(IList(Of Integer))
+- uid: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList{System.String})
+  commentId: M:Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList{System.String})
+  id: SelectByValue(System.Collections.Generic.IList{System.String})
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: GetByValue(ObservableCollection<ISelectableItem>, string)
-  nameWithType: SingleSelectListViewModel.GetByValue(ObservableCollection<ISelectableItem>, string)
-  fullName: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>, string)
+  name: SelectByValue(IList<string>)
+  nameWithType: MultiSelectListViewModel.SelectByValue(IList<string>)
+  fullName: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList<string>)
   type: Method
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: GetByValue
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 80
+    id: SelectByValue
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 78
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   syntax:
-    content: protected ISelectableItem? GetByValue(ObservableCollection<ISelectableItem> values, string value)
+    content: public void SelectByValue(IList<string> values)
     parameters:
     - id: values
-      type: System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem}
-    - id: value
-      type: System.String
-    return:
-      type: Benday.Presentation.ISelectableItem
-    content.vb: Protected Function GetByValue(values As ObservableCollection(Of ISelectableItem), value As String) As ISelectableItem
-  overload: Benday.Presentation.SingleSelectListViewModel.GetByValue*
-  nameWithType.vb: SingleSelectListViewModel.GetByValue(ObservableCollection(Of ISelectableItem), String)
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem), String)
-  name.vb: GetByValue(ObservableCollection(Of ISelectableItem), String)
-- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: Public Sub SelectByValue(values As IList(Of String))
+  overload: Benday.Presentation.MultiSelectListViewModel.SelectByValue*
+  nameWithType.vb: MultiSelectListViewModel.SelectByValue(IList(Of String))
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.Collections.Generic.IList(Of String))
+  name.vb: SelectByValue(IList(Of String))
+- uid: Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.String)
+  commentId: M:Benday.Presentation.MultiSelectListViewModel.SelectByValue(System.String)
   id: SelectByValue(System.String)
-  parent: Benday.Presentation.SingleSelectListViewModel
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
   name: SelectByValue(string)
-  nameWithType: SingleSelectListViewModel.SelectByValue(string)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue(string)
+  nameWithType: MultiSelectListViewModel.SelectByValue(string)
+  fullName: Benday.Presentation.MultiSelectListViewModel.SelectByValue(string)
   type: Method
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
     id: SelectByValue
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 93
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 94
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
   summary: Searches the list of items for the specified value and selects the item if found.
   example: []
   syntax:
-    content: public virtual void SelectByValue(string value)
+    content: public override void SelectByValue(string value)
     parameters:
     - id: value
       type: System.String
       description: ''
-    content.vb: Public Overridable Sub SelectByValue(value As String)
-  overload: Benday.Presentation.SingleSelectListViewModel.SelectByValue*
-  nameWithType.vb: SingleSelectListViewModel.SelectByValue(String)
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByValue(String)
+    content.vb: Public Overrides Sub SelectByValue(value As String)
+  overridden: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+  overload: Benday.Presentation.MultiSelectListViewModel.SelectByValue*
+  nameWithType.vb: MultiSelectListViewModel.SelectByValue(String)
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.SelectByValue(String)
   name.vb: SelectByValue(String)
-- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
-  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
-  id: SelectByValue(System.Int32)
-  parent: Benday.Presentation.SingleSelectListViewModel
+- uid: Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  id: OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: Benday.Presentation.MultiSelectListViewModel
   langs:
   - csharp
   - vb
-  name: SelectByValue(int)
-  nameWithType: SingleSelectListViewModel.SelectByValue(int)
-  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue(int)
+  name: OnItemPropertyChanged(object?, PropertyChangedEventArgs)
+  nameWithType: MultiSelectListViewModel.OnItemPropertyChanged(object?, PropertyChangedEventArgs)
+  fullName: Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged(object?, System.ComponentModel.PropertyChangedEventArgs)
   type: Method
   source:
     remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
+      path: Benday.Presentation/MultiSelectListViewModel.cs
       branch: master
       repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: SelectByValue
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 102
+    id: OnItemPropertyChanged
+    path: ../Benday.Presentation/MultiSelectListViewModel.cs
+    startLine: 104
   assemblies:
   - Benday.Presentation
   namespace: Benday.Presentation
-  summary: Searches the list of items for the specified value and selects the item if found.
   example: []
   syntax:
-    content: public void SelectByValue(int value)
+    content: protected override void OnItemPropertyChanged(object? sender, PropertyChangedEventArgs e)
     parameters:
-    - id: value
-      type: System.Int32
-      description: ''
-    content.vb: Public Sub SelectByValue(value As Integer)
-  overload: Benday.Presentation.SingleSelectListViewModel.SelectByValue*
-  nameWithType.vb: SingleSelectListViewModel.SelectByValue(Integer)
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByValue(Integer)
-  name.vb: SelectByValue(Integer)
-- uid: Benday.Presentation.SingleSelectListViewModel.IsVisible
-  commentId: P:Benday.Presentation.SingleSelectListViewModel.IsVisible
-  id: IsVisible
-  parent: Benday.Presentation.SingleSelectListViewModel
-  langs:
-  - csharp
-  - vb
-  name: IsVisible
-  nameWithType: SingleSelectListViewModel.IsVisible
-  fullName: Benday.Presentation.SingleSelectListViewModel.IsVisible
-  type: Property
-  source:
-    remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: master
-      repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: IsVisible
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 113
-  assemblies:
-  - Benday.Presentation
-  namespace: Benday.Presentation
-  summary: Gets or sets the IsVisible property. This observable property.
-  example: []
-  syntax:
-    content: public bool IsVisible { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: Public Property IsVisible As Boolean
-  overload: Benday.Presentation.SingleSelectListViewModel.IsVisible*
-  implements:
-  - Benday.Presentation.IVisibleField.IsVisible
-- uid: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
-  commentId: P:Benday.Presentation.SingleSelectListViewModel.ValidationMessage
-  id: ValidationMessage
-  parent: Benday.Presentation.SingleSelectListViewModel
-  langs:
-  - csharp
-  - vb
-  name: ValidationMessage
-  nameWithType: SingleSelectListViewModel.ValidationMessage
-  fullName: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
-  type: Property
-  source:
-    remote:
-      path: Benday.Presentation/SingleSelectListViewModel.cs
-      branch: master
-      repo: https://github.com/benday-inc/mvvm-presentation.git
-    id: ValidationMessage
-    path: ../Benday.Presentation/SingleSelectListViewModel.cs
-    startLine: 133
-  assemblies:
-  - Benday.Presentation
-  namespace: Benday.Presentation
-  summary: >-
-    Gets or sets the ValidationMessage property. This observable property.
-
-    NOTE: this class does not do any validation logic on its own.  It is up to the consumer to set this value.
-  example: []
-  syntax:
-    content: public string ValidationMessage { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: Public Property ValidationMessage As String
-  overload: Benday.Presentation.SingleSelectListViewModel.ValidationMessage*
+    - id: sender
+      type: System.Object
+    - id: e
+      type: System.ComponentModel.PropertyChangedEventArgs
+    content.vb: Protected Overrides Sub OnItemPropertyChanged(sender As Object, e As PropertyChangedEventArgs)
+  overridden: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  overload: Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged*
+  nameWithType.vb: MultiSelectListViewModel.OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
 references:
 - uid: Benday.Presentation
   commentId: N:Benday.Presentation
@@ -555,6 +428,13 @@ references:
     name: ISelectableItem
     href: Benday.Presentation.ISelectableItem.html
   - name: )
+- uid: Benday.Presentation.SingleSelectListViewModel
+  commentId: T:Benday.Presentation.SingleSelectListViewModel
+  parent: Benday.Presentation
+  href: Benday.Presentation.SingleSelectListViewModel.html
+  name: SingleSelectListViewModel
+  nameWithType: SingleSelectListViewModel
+  fullName: Benday.Presentation.SingleSelectListViewModel
 - uid: System.ComponentModel.INotifyPropertyChanged
   commentId: T:System.ComponentModel.INotifyPropertyChanged
   parent: System.ComponentModel
@@ -570,6 +450,180 @@ references:
   name: IVisibleField
   nameWithType: IVisibleField
   fullName: Benday.Presentation.IVisibleField
+- uid: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+  parent: Benday.Presentation.SingleSelectListViewModel
+  isExternal: true
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_Initialize_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__
+  name: Initialize(IEnumerable<ISelectableItem>)
+  nameWithType: SingleSelectListViewModel.Initialize(IEnumerable<ISelectableItem>)
+  fullName: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>)
+  nameWithType.vb: SingleSelectListViewModel.Initialize(IEnumerable(Of ISelectableItem))
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem))
+  name.vb: Initialize(IEnumerable(Of ISelectableItem))
+  spec.csharp:
+  - uid: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+    name: Initialize
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_Initialize_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Benday.Presentation.ISelectableItem
+    name: ISelectableItem
+    href: Benday.Presentation.ISelectableItem.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SingleSelectListViewModel.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
+    name: Initialize
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_Initialize_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Benday.Presentation.ISelectableItem
+    name: ISelectableItem
+    href: Benday.Presentation.ISelectableItem.html
+  - name: )
+  - name: )
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+  parent: Benday.Presentation.SingleSelectListViewModel
+  isExternal: true
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByText_System_String_
+  name: SelectByText(string)
+  nameWithType: SingleSelectListViewModel.SelectByText(string)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByText(string)
+  nameWithType.vb: SingleSelectListViewModel.SelectByText(String)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByText(String)
+  name.vb: SelectByText(String)
+  spec.csharp:
+  - uid: Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+    name: SelectByText
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByText_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SingleSelectListViewModel.SelectByText(System.String)
+    name: SelectByText
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByText_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+  parent: Benday.Presentation.SingleSelectListViewModel
+  isExternal: true
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_GetByValue_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__System_String_
+  name: GetByValue(ObservableCollection<ISelectableItem>, string)
+  nameWithType: SingleSelectListViewModel.GetByValue(ObservableCollection<ISelectableItem>, string)
+  fullName: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>, string)
+  nameWithType.vb: SingleSelectListViewModel.GetByValue(ObservableCollection(Of ISelectableItem), String)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem), String)
+  name.vb: GetByValue(ObservableCollection(Of ISelectableItem), String)
+  spec.csharp:
+  - uid: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+    name: GetByValue
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_GetByValue_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__System_String_
+  - name: (
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: Benday.Presentation.ISelectableItem
+    name: ISelectableItem
+    href: Benday.Presentation.ISelectableItem.html
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SingleSelectListViewModel.GetByValue(System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem},System.String)
+    name: GetByValue
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_GetByValue_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__System_String_
+  - name: (
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Benday.Presentation.ISelectableItem
+    name: ISelectableItem
+    href: Benday.Presentation.ISelectableItem.html
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+  parent: Benday.Presentation.SingleSelectListViewModel
+  isExternal: true
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_Int32_
+  name: SelectByValue(int)
+  nameWithType: SingleSelectListViewModel.SelectByValue(int)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue(int)
+  nameWithType.vb: SingleSelectListViewModel.SelectByValue(Integer)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByValue(Integer)
+  name.vb: SelectByValue(Integer)
+  spec.csharp:
+  - uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+    name: SelectByValue
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.Int32)
+    name: SelectByValue
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Benday.Presentation.SingleSelectListViewModel.IsVisible
+  commentId: P:Benday.Presentation.SingleSelectListViewModel.IsVisible
+  parent: Benday.Presentation.SingleSelectListViewModel
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_IsVisible
+  name: IsVisible
+  nameWithType: SingleSelectListViewModel.IsVisible
+  fullName: Benday.Presentation.SingleSelectListViewModel.IsVisible
+- uid: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  commentId: P:Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+  parent: Benday.Presentation.SingleSelectListViewModel
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_ValidationMessage
+  name: ValidationMessage
+  nameWithType: SingleSelectListViewModel.ValidationMessage
+  fullName: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
 - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}._Items
   commentId: F:Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}._Items
   parent: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}
@@ -729,49 +783,6 @@ references:
   fullName: Benday.Presentation.SelectableCollectionViewModel<Benday.Presentation.ISelectableItem>.Items
   nameWithType.vb: SelectableCollectionViewModel(Of ISelectableItem).Items
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of Benday.Presentation.ISelectableItem).Items
-- uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-  commentId: M:Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-  parent: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}
-  definition: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
-  name: OnItemPropertyChanged(object, PropertyChangedEventArgs)
-  nameWithType: SelectableCollectionViewModel<ISelectableItem>.OnItemPropertyChanged(object, PropertyChangedEventArgs)
-  fullName: Benday.Presentation.SelectableCollectionViewModel<Benday.Presentation.ISelectableItem>.OnItemPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
-  nameWithType.vb: SelectableCollectionViewModel(Of ISelectableItem).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
-  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of Benday.Presentation.ISelectableItem).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
-  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
-  spec.csharp:
-  - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-    name: OnItemPropertyChanged
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.ComponentModel.PropertyChangedEventArgs
-    name: PropertyChangedEventArgs
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
-  - name: )
-  spec.vb:
-  - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-    name: OnItemPropertyChanged
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.ComponentModel.PropertyChangedEventArgs
-    name: PropertyChangedEventArgs
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
-  - name: )
 - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.GetSelectedItems
   commentId: M:Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.GetSelectedItems
   parent: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}
@@ -1294,48 +1305,6 @@ references:
   fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Items
   nameWithType.vb: SelectableCollectionViewModel(Of T).Items
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Items
-- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-  isExternal: true
-  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
-  name: OnItemPropertyChanged(object, PropertyChangedEventArgs)
-  nameWithType: SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, PropertyChangedEventArgs)
-  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
-  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
-  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
-  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
-  spec.csharp:
-  - uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-    name: OnItemPropertyChanged
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
-  - name: (
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.ComponentModel.PropertyChangedEventArgs
-    name: PropertyChangedEventArgs
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
-  - name: )
-  spec.vb:
-  - uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
-    name: OnItemPropertyChanged
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
-  - name: (
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
-  - uid: System.ComponentModel.PropertyChangedEventArgs
-    name: PropertyChangedEventArgs
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
-  - name: )
 - uid: Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
   commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.GetSelectedItems
   href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_GetSelectedItems
@@ -1396,41 +1365,41 @@ references:
   fullName: Benday.Presentation.SelectableCollectionViewModel<T>.IsEnabled
   nameWithType.vb: SelectableCollectionViewModel(Of T).IsEnabled
   fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).IsEnabled
-- uid: Benday.Presentation.SingleSelectListViewModel.#ctor*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.#ctor
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel__ctor
-  name: SingleSelectListViewModel
-  nameWithType: SingleSelectListViewModel.SingleSelectListViewModel
-  fullName: Benday.Presentation.SingleSelectListViewModel.SingleSelectListViewModel
-  nameWithType.vb: SingleSelectListViewModel.New
-  fullName.vb: Benday.Presentation.SingleSelectListViewModel.New
+- uid: Benday.Presentation.MultiSelectListViewModel.#ctor*
+  commentId: Overload:Benday.Presentation.MultiSelectListViewModel.#ctor
+  href: Benday.Presentation.MultiSelectListViewModel.html#Benday_Presentation_MultiSelectListViewModel__ctor
+  name: MultiSelectListViewModel
+  nameWithType: MultiSelectListViewModel.MultiSelectListViewModel
+  fullName: Benday.Presentation.MultiSelectListViewModel.MultiSelectListViewModel
+  nameWithType.vb: MultiSelectListViewModel.New
+  fullName.vb: Benday.Presentation.MultiSelectListViewModel.New
   name.vb: New
-- uid: System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem}
-  commentId: T:System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem}
+- uid: System.Collections.Generic.IList{Benday.Presentation.ISelectableItem}
+  commentId: T:System.Collections.Generic.IList{Benday.Presentation.ISelectableItem}
   parent: System.Collections.Generic
-  definition: System.Collections.Generic.IEnumerable`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<ISelectableItem>
-  nameWithType: IEnumerable<ISelectableItem>
-  fullName: System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>
-  nameWithType.vb: IEnumerable(Of ISelectableItem)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem)
-  name.vb: IEnumerable(Of ISelectableItem)
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<ISelectableItem>
+  nameWithType: IList<ISelectableItem>
+  fullName: System.Collections.Generic.IList<Benday.Presentation.ISelectableItem>
+  nameWithType.vb: IList(Of ISelectableItem)
+  fullName.vb: System.Collections.Generic.IList(Of Benday.Presentation.ISelectableItem)
+  name.vb: IList(Of ISelectableItem)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.IList`1
+    name: IList
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
   - name: <
   - uid: Benday.Presentation.ISelectableItem
     name: ISelectableItem
     href: Benday.Presentation.ISelectableItem.html
   - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.IList`1
+    name: IList
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
   - name: (
   - name: Of
   - name: " "
@@ -1438,29 +1407,29 @@ references:
     name: ISelectableItem
     href: Benday.Presentation.ISelectableItem.html
   - name: )
-- uid: System.Collections.Generic.IEnumerable`1
-  commentId: T:System.Collections.Generic.IEnumerable`1
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  name: IEnumerable<T>
-  nameWithType: IEnumerable<T>
-  fullName: System.Collections.Generic.IEnumerable<T>
-  nameWithType.vb: IEnumerable(Of T)
-  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
-  name.vb: IEnumerable(Of T)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
   spec.csharp:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.IList`1
+    name: IList
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
   - name: <
   - name: T
   - name: '>'
   spec.vb:
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
+  - uid: System.Collections.Generic.IList`1
+    name: IList
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
   - name: (
   - name: Of
   - name: " "
@@ -1503,204 +1472,12 @@ references:
     name: Generic
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-- uid: Benday.Presentation.ISelectableItem
-  commentId: T:Benday.Presentation.ISelectableItem
-  parent: Benday.Presentation
-  href: Benday.Presentation.ISelectableItem.html
-  name: ISelectableItem
-  nameWithType: ISelectableItem
-  fullName: Benday.Presentation.ISelectableItem
-- uid: System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem}
-  commentId: T:System.Collections.ObjectModel.ObservableCollection{Benday.Presentation.ISelectableItem}
-  parent: System.Collections.ObjectModel
-  definition: System.Collections.ObjectModel.ObservableCollection`1
-  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  name: ObservableCollection<ISelectableItem>
-  nameWithType: ObservableCollection<ISelectableItem>
-  fullName: System.Collections.ObjectModel.ObservableCollection<Benday.Presentation.ISelectableItem>
-  nameWithType.vb: ObservableCollection(Of ISelectableItem)
-  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of Benday.Presentation.ISelectableItem)
-  name.vb: ObservableCollection(Of ISelectableItem)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  - name: <
-  - uid: Benday.Presentation.ISelectableItem
-    name: ISelectableItem
-    href: Benday.Presentation.ISelectableItem.html
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Benday.Presentation.ISelectableItem
-    name: ISelectableItem
-    href: Benday.Presentation.ISelectableItem.html
-  - name: )
-- uid: System.Collections.ObjectModel.ObservableCollection`1
-  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  name: ObservableCollection<T>
-  nameWithType: ObservableCollection<T>
-  fullName: System.Collections.ObjectModel.ObservableCollection<T>
-  nameWithType.vb: ObservableCollection(Of T)
-  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
-  name.vb: ObservableCollection(Of T)
-  spec.csharp:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.ObjectModel.ObservableCollection`1
-    name: ObservableCollection
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: System.Collections.ObjectModel
-  commentId: N:System.Collections.ObjectModel
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.ObjectModel
-  nameWithType: System.Collections.ObjectModel
-  fullName: System.Collections.ObjectModel
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.ObjectModel
-    name: ObjectModel
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.ObjectModel
-    name: ObjectModel
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
-- uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  commentId: M:Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-  parent: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}
-  definition: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
-  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
-  name: Initialize(IEnumerable<ISelectableItem>)
-  nameWithType: SelectableCollectionViewModel<ISelectableItem>.Initialize(IEnumerable<ISelectableItem>)
-  fullName: Benday.Presentation.SelectableCollectionViewModel<Benday.Presentation.ISelectableItem>.Initialize(System.Collections.Generic.IEnumerable<Benday.Presentation.ISelectableItem>)
-  nameWithType.vb: SelectableCollectionViewModel(Of ISelectableItem).Initialize(IEnumerable(Of ISelectableItem))
-  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of Benday.Presentation.ISelectableItem).Initialize(System.Collections.Generic.IEnumerable(Of Benday.Presentation.ISelectableItem))
-  name.vb: Initialize(IEnumerable(Of ISelectableItem))
-  spec.csharp:
-  - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-    name: Initialize
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
-  - name: (
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - uid: Benday.Presentation.ISelectableItem
-    name: ISelectableItem
-    href: Benday.Presentation.ISelectableItem.html
-  - name: '>'
-  - name: )
-  spec.vb:
-  - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.Initialize(System.Collections.Generic.IEnumerable{Benday.Presentation.ISelectableItem})
-    name: Initialize
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
-  - name: (
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: Benday.Presentation.ISelectableItem
-    name: ISelectableItem
-    href: Benday.Presentation.ISelectableItem.html
-  - name: )
-  - name: )
-- uid: Benday.Presentation.SingleSelectListViewModel.Initialize*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.Initialize
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_Initialize_System_Collections_Generic_IEnumerable_Benday_Presentation_ISelectableItem__
-  name: Initialize
-  nameWithType: SingleSelectListViewModel.Initialize
-  fullName: Benday.Presentation.SingleSelectListViewModel.Initialize
-- uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
-  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
-  isExternal: true
-  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
-  name: Initialize(IEnumerable<T>)
-  nameWithType: SelectableCollectionViewModel<T>.Initialize(IEnumerable<T>)
-  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.Initialize(System.Collections.Generic.IEnumerable<T>)
-  nameWithType.vb: SelectableCollectionViewModel(Of T).Initialize(IEnumerable(Of T))
-  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).Initialize(System.Collections.Generic.IEnumerable(Of T))
-  name.vb: Initialize(IEnumerable(Of T))
-  spec.csharp:
-  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
-    name: Initialize
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
-  - name: (
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: <
-  - name: T
-  - name: '>'
-  - name: )
-  spec.vb:
-  - uid: Benday.Presentation.SelectableCollectionViewModel`1.Initialize(System.Collections.Generic.IEnumerable{`0})
-    name: Initialize
-    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_Initialize_System_Collections_Generic_IEnumerable__0__
-  - name: (
-  - uid: System.Collections.Generic.IEnumerable`1
-    name: IEnumerable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-  - name: )
-- uid: Benday.Presentation.SingleSelectListViewModel.SelectByText*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.SelectByText
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByText_System_String_
-  name: SelectByText
-  nameWithType: SingleSelectListViewModel.SelectByText
-  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByText
+- uid: Benday.Presentation.MultiSelectListViewModel.SelectedItems*
+  commentId: Overload:Benday.Presentation.MultiSelectListViewModel.SelectedItems
+  href: Benday.Presentation.MultiSelectListViewModel.html#Benday_Presentation_MultiSelectListViewModel_SelectedItems
+  name: SelectedItems
+  nameWithType: MultiSelectListViewModel.SelectedItems
+  fullName: Benday.Presentation.MultiSelectListViewModel.SelectedItems
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1712,42 +1489,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: Benday.Presentation.SingleSelectListViewModel.GetByValue*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.GetByValue
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_GetByValue_System_Collections_ObjectModel_ObservableCollection_Benday_Presentation_ISelectableItem__System_String_
-  name: GetByValue
-  nameWithType: SingleSelectListViewModel.GetByValue
-  fullName: Benday.Presentation.SingleSelectListViewModel.GetByValue
-- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.SelectByValue
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_String_
-  name: SelectByValue
-  nameWithType: SingleSelectListViewModel.SelectByValue
-  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
-- uid: Benday.Presentation.SingleSelectListViewModel.IsVisible*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.IsVisible
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_IsVisible
-  name: IsVisible
-  nameWithType: SingleSelectListViewModel.IsVisible
-  fullName: Benday.Presentation.SingleSelectListViewModel.IsVisible
-- uid: Benday.Presentation.IVisibleField.IsVisible
-  commentId: P:Benday.Presentation.IVisibleField.IsVisible
-  parent: Benday.Presentation.IVisibleField
-  href: Benday.Presentation.IVisibleField.html#Benday_Presentation_IVisibleField_IsVisible
-  name: IsVisible
-  nameWithType: IVisibleField.IsVisible
-  fullName: Benday.Presentation.IVisibleField.IsVisible
+- uid: Benday.Presentation.MultiSelectListViewModel.HasSelectedItems*
+  commentId: Overload:Benday.Presentation.MultiSelectListViewModel.HasSelectedItems
+  href: Benday.Presentation.MultiSelectListViewModel.html#Benday_Presentation_MultiSelectListViewModel_HasSelectedItems
+  name: HasSelectedItems
+  nameWithType: MultiSelectListViewModel.HasSelectedItems
+  fullName: Benday.Presentation.MultiSelectListViewModel.HasSelectedItems
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1759,9 +1506,209 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: Benday.Presentation.SingleSelectListViewModel.ValidationMessage*
-  commentId: Overload:Benday.Presentation.SingleSelectListViewModel.ValidationMessage
-  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_ValidationMessage
-  name: ValidationMessage
-  nameWithType: SingleSelectListViewModel.ValidationMessage
-  fullName: Benday.Presentation.SingleSelectListViewModel.ValidationMessage
+- uid: Benday.Presentation.MultiSelectListViewModel.SelectByValue*
+  commentId: Overload:Benday.Presentation.MultiSelectListViewModel.SelectByValue
+  href: Benday.Presentation.MultiSelectListViewModel.html#Benday_Presentation_MultiSelectListViewModel_SelectByValue_System_Collections_Generic_IList_System_Int32__
+  name: SelectByValue
+  nameWithType: MultiSelectListViewModel.SelectByValue
+  fullName: Benday.Presentation.MultiSelectListViewModel.SelectByValue
+- uid: System.Collections.Generic.IList{System.Int32}
+  commentId: T:System.Collections.Generic.IList{System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<int>
+  nameWithType: IList<int>
+  fullName: System.Collections.Generic.IList<int>
+  nameWithType.vb: IList(Of Integer)
+  fullName.vb: System.Collections.Generic.IList(Of Integer)
+  name.vb: IList(Of Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+  commentId: M:Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+  parent: Benday.Presentation.SingleSelectListViewModel
+  isExternal: true
+  href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_String_
+  name: SelectByValue(string)
+  nameWithType: SingleSelectListViewModel.SelectByValue(string)
+  fullName: Benday.Presentation.SingleSelectListViewModel.SelectByValue(string)
+  nameWithType.vb: SingleSelectListViewModel.SelectByValue(String)
+  fullName.vb: Benday.Presentation.SingleSelectListViewModel.SelectByValue(String)
+  name.vb: SelectByValue(String)
+  spec.csharp:
+  - uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+    name: SelectByValue
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SingleSelectListViewModel.SelectByValue(System.String)
+    name: SelectByValue
+    href: Benday.Presentation.SingleSelectListViewModel.html#Benday_Presentation_SingleSelectListViewModel_SelectByValue_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  parent: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}
+  definition: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: SelectableCollectionViewModel<ISelectableItem>.OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<Benday.Presentation.ISelectableItem>.OnItemPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: SelectableCollectionViewModel(Of ISelectableItem).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of Benday.Presentation.ISelectableItem).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel{Benday.Presentation.ISelectableItem}.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+- uid: Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged*
+  commentId: Overload:Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged
+  href: Benday.Presentation.MultiSelectListViewModel.html#Benday_Presentation_MultiSelectListViewModel_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: OnItemPropertyChanged
+  nameWithType: MultiSelectListViewModel.OnItemPropertyChanged
+  fullName: Benday.Presentation.MultiSelectListViewModel.OnItemPropertyChanged
+- uid: System.ComponentModel.PropertyChangedEventArgs
+  commentId: T:System.ComponentModel.PropertyChangedEventArgs
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  name: PropertyChangedEventArgs
+  nameWithType: PropertyChangedEventArgs
+  fullName: System.ComponentModel.PropertyChangedEventArgs
+- uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  commentId: M:Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+  isExternal: true
+  href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  name: OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  nameWithType: SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, PropertyChangedEventArgs)
+  fullName: Benday.Presentation.SelectableCollectionViewModel<T>.OnItemPropertyChanged(object, System.ComponentModel.PropertyChangedEventArgs)
+  nameWithType.vb: SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  fullName.vb: Benday.Presentation.SelectableCollectionViewModel(Of T).OnItemPropertyChanged(Object, System.ComponentModel.PropertyChangedEventArgs)
+  name.vb: OnItemPropertyChanged(Object, PropertyChangedEventArgs)
+  spec.csharp:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )
+  spec.vb:
+  - uid: Benday.Presentation.SelectableCollectionViewModel`1.OnItemPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)
+    name: OnItemPropertyChanged
+    href: Benday.Presentation.SelectableCollectionViewModel-1.html#Benday_Presentation_SelectableCollectionViewModel_1_OnItemPropertyChanged_System_Object_System_ComponentModel_PropertyChangedEventArgs_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.ComponentModel.PropertyChangedEventArgs
+    name: PropertyChangedEventArgs
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.propertychangedeventargs
+  - name: )

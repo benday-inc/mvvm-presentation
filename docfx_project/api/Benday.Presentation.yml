@@ -5,6 +5,7 @@ items:
   id: Benday.Presentation
   children:
   - Benday.Presentation.ExceptionHandlingRelayCommand
+  - Benday.Presentation.FilterableListViewModel`1
   - Benday.Presentation.ILabeledField
   - Benday.Presentation.IMessageManager
   - Benday.Presentation.IProgressBarViewModel
@@ -17,7 +18,9 @@ items:
   - Benday.Presentation.MessageBoxMessageManager
   - Benday.Presentation.MessageBoxRequestedEventArgs
   - Benday.Presentation.MessagingViewModelBase
+  - Benday.Presentation.MultiSelectListViewModel
   - Benday.Presentation.NavigatableList`1
+  - Benday.Presentation.PresentationExtensionMethods
   - Benday.Presentation.ProgressBarViewModel
   - Benday.Presentation.SelectableCollectionViewModel`1
   - Benday.Presentation.SelectableItem
@@ -40,6 +43,31 @@ references:
   name: ExceptionHandlingRelayCommand
   nameWithType: ExceptionHandlingRelayCommand
   fullName: Benday.Presentation.ExceptionHandlingRelayCommand
+- uid: Benday.Presentation.FilterableListViewModel`1
+  commentId: T:Benday.Presentation.FilterableListViewModel`1
+  href: Benday.Presentation.FilterableListViewModel-1.html
+  name: FilterableListViewModel<T>
+  nameWithType: FilterableListViewModel<T>
+  fullName: Benday.Presentation.FilterableListViewModel<T>
+  nameWithType.vb: FilterableListViewModel(Of T)
+  fullName.vb: Benday.Presentation.FilterableListViewModel(Of T)
+  name.vb: FilterableListViewModel(Of T)
+  spec.csharp:
+  - uid: Benday.Presentation.FilterableListViewModel`1
+    name: FilterableListViewModel
+    href: Benday.Presentation.FilterableListViewModel-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Benday.Presentation.FilterableListViewModel`1
+    name: FilterableListViewModel
+    href: Benday.Presentation.FilterableListViewModel-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: Benday.Presentation.ILabeledField
   commentId: T:Benday.Presentation.ILabeledField
   parent: Benday.Presentation
@@ -120,6 +148,12 @@ references:
   name: MessagingViewModelBase
   nameWithType: MessagingViewModelBase
   fullName: Benday.Presentation.MessagingViewModelBase
+- uid: Benday.Presentation.MultiSelectListViewModel
+  commentId: T:Benday.Presentation.MultiSelectListViewModel
+  href: Benday.Presentation.MultiSelectListViewModel.html
+  name: MultiSelectListViewModel
+  nameWithType: MultiSelectListViewModel
+  fullName: Benday.Presentation.MultiSelectListViewModel
 - uid: Benday.Presentation.NavigatableList`1
   commentId: T:Benday.Presentation.NavigatableList`1
   href: Benday.Presentation.NavigatableList-1.html
@@ -145,6 +179,12 @@ references:
   - name: " "
   - name: T
   - name: )
+- uid: Benday.Presentation.PresentationExtensionMethods
+  commentId: T:Benday.Presentation.PresentationExtensionMethods
+  href: Benday.Presentation.PresentationExtensionMethods.html
+  name: PresentationExtensionMethods
+  nameWithType: PresentationExtensionMethods
+  fullName: Benday.Presentation.PresentationExtensionMethods
 - uid: Benday.Presentation.ProgressBarViewModel
   commentId: T:Benday.Presentation.ProgressBarViewModel
   href: Benday.Presentation.ProgressBarViewModel.html
@@ -184,6 +224,7 @@ references:
   fullName: Benday.Presentation.SelectableItem
 - uid: Benday.Presentation.SingleSelectListViewModel
   commentId: T:Benday.Presentation.SingleSelectListViewModel
+  parent: Benday.Presentation
   href: Benday.Presentation.SingleSelectListViewModel.html
   name: SingleSelectListViewModel
   nameWithType: SingleSelectListViewModel

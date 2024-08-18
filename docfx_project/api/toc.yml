@@ -5,6 +5,8 @@ items:
   items:
   - uid: Benday.Presentation.ExceptionHandlingRelayCommand
     name: ExceptionHandlingRelayCommand
+  - uid: Benday.Presentation.FilterableListViewModel`1
+    name: FilterableListViewModel<T>
   - uid: Benday.Presentation.ILabeledField
     name: ILabeledField
   - uid: Benday.Presentation.IMessageManager
@@ -29,8 +31,12 @@ items:
     name: MessageBoxRequestedEventArgs
   - uid: Benday.Presentation.MessagingViewModelBase
     name: MessagingViewModelBase
+  - uid: Benday.Presentation.MultiSelectListViewModel
+    name: MultiSelectListViewModel
   - uid: Benday.Presentation.NavigatableList`1
     name: NavigatableList<T>
+  - uid: Benday.Presentation.PresentationExtensionMethods
+    name: PresentationExtensionMethods
   - uid: Benday.Presentation.ProgressBarViewModel
     name: ProgressBarViewModel
   - uid: Benday.Presentation.SelectableCollectionViewModel`1
@@ -60,11 +66,6 @@ items:
     name: Resource
   - uid: Benday.Presentation.Controls.TextboxField
     name: TextboxField
-- uid: Benday.Presentation.Platforms.iOS
-  name: Benday.Presentation.Platforms.iOS
-  items:
-  - uid: Benday.Presentation.Platforms.iOS.PlatformClass1
-    name: PlatformClass1
 - uid: Benday.Presentation.ValueConverters
   name: Benday.Presentation.ValueConverters
   items:

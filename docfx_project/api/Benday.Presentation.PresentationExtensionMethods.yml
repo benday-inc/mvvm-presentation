@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: Benday.Presentation.PresentationExtensionMethods
+  commentId: T:Benday.Presentation.PresentationExtensionMethods
+  id: PresentationExtensionMethods
+  parent: Benday.Presentation
+  children:
+  - Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains(System.String,System.String,System.StringComparison)
+  - Benday.Presentation.PresentationExtensionMethods.IsNull(System.String)
+  - Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace(System.String)
+  langs:
+  - csharp
+  - vb
+  name: PresentationExtensionMethods
+  nameWithType: PresentationExtensionMethods
+  fullName: Benday.Presentation.PresentationExtensionMethods
+  type: Class
+  source:
+    remote:
+      path: Benday.Presentation/PresentationExtensionMethods.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: PresentationExtensionMethods
+    path: ../Benday.Presentation/PresentationExtensionMethods.cs
+    startLine: 5
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public static class PresentationExtensionMethods
+    content.vb: Public Module PresentationExtensionMethods
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains(System.String,System.String,System.StringComparison)
+  commentId: M:Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains(System.String,System.String,System.StringComparison)
+  id: CaseInsensitiveContains(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Benday.Presentation.PresentationExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: CaseInsensitiveContains(string, string, StringComparison)
+  nameWithType: PresentationExtensionMethods.CaseInsensitiveContains(string, string, StringComparison)
+  fullName: Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains(string, string, System.StringComparison)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/PresentationExtensionMethods.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: CaseInsensitiveContains
+    path: ../Benday.Presentation/PresentationExtensionMethods.cs
+    startLine: 7
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public static bool CaseInsensitiveContains(this string text, string value, StringComparison stringComparison = StringComparison.CurrentCultureIgnoreCase)
+    parameters:
+    - id: text
+      type: System.String
+    - id: value
+      type: System.String
+    - id: stringComparison
+      type: System.StringComparison
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CaseInsensitiveContains(text As String, value As String, stringComparison As StringComparison = StringComparison.CurrentCultureIgnoreCase) As Boolean
+  overload: Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains*
+  nameWithType.vb: PresentationExtensionMethods.CaseInsensitiveContains(String, String, StringComparison)
+  fullName.vb: Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains(String, String, System.StringComparison)
+  name.vb: CaseInsensitiveContains(String, String, StringComparison)
+- uid: Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace(System.String)
+  commentId: M:Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace(System.String)
+  id: IsNullOrWhitespace(System.String)
+  isExtensionMethod: true
+  parent: Benday.Presentation.PresentationExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrWhitespace(string)
+  nameWithType: PresentationExtensionMethods.IsNullOrWhitespace(string)
+  fullName: Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace(string)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/PresentationExtensionMethods.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsNullOrWhitespace
+    path: ../Benday.Presentation/PresentationExtensionMethods.cs
+    startLine: 13
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public static bool IsNullOrWhitespace(this string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNullOrWhitespace(text As String) As Boolean
+  overload: Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace*
+  nameWithType.vb: PresentationExtensionMethods.IsNullOrWhitespace(String)
+  fullName.vb: Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace(String)
+  name.vb: IsNullOrWhitespace(String)
+- uid: Benday.Presentation.PresentationExtensionMethods.IsNull(System.String)
+  commentId: M:Benday.Presentation.PresentationExtensionMethods.IsNull(System.String)
+  id: IsNull(System.String)
+  isExtensionMethod: true
+  parent: Benday.Presentation.PresentationExtensionMethods
+  langs:
+  - csharp
+  - vb
+  name: IsNull(string)
+  nameWithType: PresentationExtensionMethods.IsNull(string)
+  fullName: Benday.Presentation.PresentationExtensionMethods.IsNull(string)
+  type: Method
+  source:
+    remote:
+      path: Benday.Presentation/PresentationExtensionMethods.cs
+      branch: master
+      repo: https://github.com/benday-inc/mvvm-presentation.git
+    id: IsNull
+    path: ../Benday.Presentation/PresentationExtensionMethods.cs
+    startLine: 18
+  assemblies:
+  - Benday.Presentation
+  namespace: Benday.Presentation
+  syntax:
+    content: public static bool IsNull(this string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsNull(text As String) As Boolean
+  overload: Benday.Presentation.PresentationExtensionMethods.IsNull*
+  nameWithType.vb: PresentationExtensionMethods.IsNull(String)
+  fullName.vb: Benday.Presentation.PresentationExtensionMethods.IsNull(String)
+  name.vb: IsNull(String)
+references:
+- uid: Benday.Presentation
+  commentId: N:Benday.Presentation
+  href: Benday.html
+  name: Benday.Presentation
+  nameWithType: Benday.Presentation
+  fullName: Benday.Presentation
+  spec.csharp:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+  spec.vb:
+  - uid: Benday
+    name: Benday
+    href: Benday.html
+  - name: .
+  - uid: Benday.Presentation
+    name: Presentation
+    href: Benday.Presentation.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains*
+  commentId: Overload:Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains
+  href: Benday.Presentation.PresentationExtensionMethods.html#Benday_Presentation_PresentationExtensionMethods_CaseInsensitiveContains_System_String_System_String_System_StringComparison_
+  name: CaseInsensitiveContains
+  nameWithType: PresentationExtensionMethods.CaseInsensitiveContains
+  fullName: Benday.Presentation.PresentationExtensionMethods.CaseInsensitiveContains
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparison
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace*
+  commentId: Overload:Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace
+  href: Benday.Presentation.PresentationExtensionMethods.html#Benday_Presentation_PresentationExtensionMethods_IsNullOrWhitespace_System_String_
+  name: IsNullOrWhitespace
+  nameWithType: PresentationExtensionMethods.IsNullOrWhitespace
+  fullName: Benday.Presentation.PresentationExtensionMethods.IsNullOrWhitespace
+- uid: Benday.Presentation.PresentationExtensionMethods.IsNull*
+  commentId: Overload:Benday.Presentation.PresentationExtensionMethods.IsNull
+  href: Benday.Presentation.PresentationExtensionMethods.html#Benday_Presentation_PresentationExtensionMethods_IsNull_System_String_
+  name: IsNull
+  nameWithType: PresentationExtensionMethods.IsNull
+  fullName: Benday.Presentation.PresentationExtensionMethods.IsNull
