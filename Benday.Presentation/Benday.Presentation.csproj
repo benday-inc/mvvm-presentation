@@ -30,6 +30,9 @@
 	  <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation.git</RepositoryUrl>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <Title>MVVM Presentation Utilities</Title>
+	  <Version>1.1.0</Version>
+	  <PackageReleaseNotes>v1.0 - Initial release
+v1.1 - Multi select list view model</PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
