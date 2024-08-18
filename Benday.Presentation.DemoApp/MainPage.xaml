@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Benday.Presentation.DemoApp.MainPage"
     xmlns:PresentationControls="clr-namespace:Benday.Presentation.Controls;assembly=Benday.Presentation.Controls"
-    xmlns:ViewModels="clr-namespace:Benday.Presentation.DemoApp.ViewModels">
+    xmlns:ViewModels="clr-namespace:Benday.Presentation.DemoApp.Api.ViewModels">
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -22,6 +22,9 @@
             <Button
                 Text="Message Box"
                 Command="{Binding ShowMessageCommand}"></Button>
+            <Button
+                Text="Error Message Box"
+                Command="{Binding ShowErrorMessageCommand}"></Button>
             <Button
                 Text="Change Combobox Selection"
                 Command="{Binding ChangeComboboxSelectionCommand}"></Button>

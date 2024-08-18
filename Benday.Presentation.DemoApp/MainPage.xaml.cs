@@ -1,4 +1,5 @@
-﻿using Benday.Presentation.DemoApp.ViewModels;
+﻿
+using Benday.Presentation.DemoApp.Api.ViewModels;
 
 namespace Benday.Presentation.DemoApp;
 

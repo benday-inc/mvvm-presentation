@@ -13,12 +13,11 @@ namespace Benday.Presentation;
 /// <typeparam name="T"></typeparam>
 public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, ISelectable
 {
-    protected ObservableCollection<T>? _Items; // = new ObservableCollection<T>();
+    protected ObservableCollection<T> _Items = new ObservableCollection<T>();
 
     public SelectableCollectionViewModel()
     {
         AllowMultipleSelections = false;
-        Items = new ObservableCollection<T>();
     }
 
     /// <summary>
