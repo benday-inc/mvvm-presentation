@@ -16,6 +16,8 @@ public class MainPageViewModel : MessagingViewModelBase
         SingleSelectField = new SingleSelectListViewModel(GetSampleItems("Combobox"));
         ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Single Select Listbox"));
         LabelField = new ViewModelField<string>(String.Empty);
+        MiscellaneousItems = new SelectableCollectionViewModel<MiscellaneousItem>();
+        MiscellaneousItems.Initialize(GetSampleItemsThatAreISelectable("Miscellaneous"));
     }
 
     public ViewModelField<string> StringField { get; private set; }
@@ -39,6 +41,24 @@ public class MainPageViewModel : MessagingViewModelBase
 
         return items;
     }
+
+    private static IList<MiscellaneousItem> GetSampleItemsThatAreISelectable(
+    string controlName)
+    {
+        var items = new List<MiscellaneousItem>();
+
+        items.Add(new MiscellaneousItem() { Description = "A thing" });
+        items.Add(new MiscellaneousItem() { Description = "Another thing" });
+        items.Add(new MiscellaneousItem() { Description = "Yet another thing" });
+        items.Add(new MiscellaneousItem() { Description = "One more thing" });
+        items.Add(new MiscellaneousItem() { Description = "Stuff" });
+        items.Add(new MiscellaneousItem() { Description = "More stuff" });
+        items.Add(new MiscellaneousItem() { Description = "Even more stuff" });
+
+        return items;
+    }
+
+    public SelectableCollectionViewModel<MiscellaneousItem> MiscellaneousItems { get; private set; }
 
 
     private ICommand? _ShowMessageCommand;

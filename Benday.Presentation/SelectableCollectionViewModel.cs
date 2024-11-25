@@ -55,8 +55,6 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
             throw new ArgumentNullException("values", "values is null.");
 
         Items = values;
-
-        RefreshSelectedItem();
     }
 
     /// <summary>
@@ -75,9 +73,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
         Items = values;
 
-        selectedItem.IsSelected = true;
-
-        RefreshSelectedItem();
+        selectedItem.IsSelected = true;        
     }
 
     /// <summary>
@@ -87,24 +83,6 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     public virtual void Initialize(IEnumerable<T> values)
     {
         Items = new ObservableCollection<T>(values);
-
-        RefreshSelectedItem();
-    }
-
-    protected void RefreshSelectedItem(bool directAssign = false)
-    {
-        if (Items == null)
-        {
-            // do nothing
-        }
-        else
-        {
-            var selected = (from temp in Items
-                            where temp.IsSelected == true
-                            select temp).FirstOrDefault();
-
-            SelectedItem = selected;
-        }
     }
 
     /// <summary>
@@ -220,25 +198,25 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
     protected virtual void OnItemPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (sender is T && e.PropertyName == "IsSelected")
+        if (e.PropertyName == nameof(ISelectable.IsSelected) && 
+            sender is T senderAsTyped)
         {
-            var senderAsISelectable = sender as T;
-
-            if (senderAsISelectable != null && senderAsISelectable.IsSelected == true)
+            if (senderAsTyped.IsSelected == true)
             {
                 if (AllowMultipleSelections == false)
                 {
-                    foreach (var item in Items)
+                    foreach (var item in Items.Where(
+                        x => x.IsSelected == true && 
+                        x != senderAsTyped))
                     {
-                        if (item != senderAsISelectable &&
-                            item.IsSelected == true)
-                        {
-                            item.IsSelected = false;
-                        }
+                        item.IsSelected = false;
                     }
                 }
 
-                SelectedItem = GetFirstSelectedItem(Items);
+                if (_SelectedItem != senderAsTyped)
+                {
+                    SelectedItem = GetFirstSelectedItem(Items);
+                }
             }
         }
     }
@@ -275,7 +253,10 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     {
         get
         {
-            _SelectedItem = GetFirstSelectedItem(Items);
+            if (_SelectedItem == null || _SelectedItem.IsSelected == false)
+            {
+                _SelectedItem = GetFirstSelectedItem(Items);
+            }
 
             return _SelectedItem;
         }
@@ -283,17 +264,20 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         {
             if (_SelectedItem == null && value == null)
             {
-                Console.WriteLine("SelectedItem is already null.");
+                // no change
             }
             else if (_SelectedItem == null && value != null)
             {
-                Console.WriteLine("SelectedItem is null, setting to {0}.", value.ToString());
+                Console.WriteLine($"SelectedItem is null, setting to {value.ToString()}.");
 
-                value.IsSelected = true;
+                if (value.IsSelected == false)
+                {
+                    value.IsSelected = true;
+                }
+
                 _SelectedItem = value;
 
                 RaiseOnItemSelected();
-
                 RaisePropertyChanged(SelectedItemPropertyName);
             }
             else if (_SelectedItem != null && value == null)
@@ -313,7 +297,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
             }
             else if (_SelectedItem != null && _SelectedItem != value)
             {
-                Console.WriteLine("SelectedItem is {0}, setting to {1}.", _SelectedItem.ToString(), value.ToString());
+                Console.WriteLine($"SelectedItem is {_SelectedItem.ToString()}, setting to {value}.");
 
                 if (AllowMultipleSelections == false)
                 {
@@ -333,7 +317,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
             }
             else
             {
-                Console.WriteLine("SelectedItem is already {0}.", value?.ToString());
+                Console.WriteLine($"No change. SelectedItem is already {value}.");
             }
         }
     }

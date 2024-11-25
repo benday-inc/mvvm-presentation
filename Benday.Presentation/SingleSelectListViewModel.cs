@@ -54,8 +54,6 @@ public class SingleSelectListViewModel : SelectableCollectionViewModel<ISelectab
     {
         Items = new ObservableCollection<ISelectableItem>(values);
 
-        RefreshSelectedItem();
-
         IsVisible = true;
     }
 

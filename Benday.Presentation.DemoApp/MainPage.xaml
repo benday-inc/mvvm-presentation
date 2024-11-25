@@ -77,6 +77,13 @@
                 BindingContext="{Binding LabelField}">
 
             </PresentationControls:LabelField>
+
+            
+            <PresentationControls:ListboxField
+                LabelText="Listbox Field of ISelectable Objects"
+                BindingContext="{Binding MiscellaneousItems}">
+
+            </PresentationControls:ListboxField>
         </VerticalStackLayout>
 
     </Grid>

@@ -1,5 +1,6 @@
 using Benday.Presentation;
 using Benday.Presentation.DemoApp.Api.ViewModels;
+using FluentAssertions;
 
 namespace Benday.ControlsAndViewModelSample.UnitTests;
 
@@ -78,6 +79,53 @@ public class MainPageViewModelTests
         Assert.NotEqual(originalSingleSelectFieldIsVisible, viewModel.SingleSelectField.IsVisible);
         Assert.NotEqual(originalListboxSingleSelectFieldIsVisible,
             viewModel.ListboxSingleSelectField.IsVisible);
+    }
+
+    [Fact]
+    public void MiscellaneousItems_Select_IsSelected_Assignment()
+    {
+        // Arrange
+        var viewModel = new MainPageViewModel(_MessageManager);
+
+        viewModel.MiscellaneousItems.Items.Count.Should().NotBe(0);
+
+        var itemCount = viewModel.MiscellaneousItems.Items.Count;
+
+        // Act & assert
+
+        for (int i = 0; i < itemCount; i++)
+        {
+            var item = viewModel.MiscellaneousItems.Items[i];
+            item.IsSelected.Should().BeFalse();
+
+            item.IsSelected = true;
+
+            item.IsSelected.Should().BeTrue();
+        }
+    }
+
+
+    [Fact]
+    public void MiscellaneousItems_Select_SelectedItem_Assignment()
+    {
+        // Arrange
+        var viewModel = new MainPageViewModel(_MessageManager);
+
+        viewModel.MiscellaneousItems.Items.Count.Should().NotBe(0);
+
+        var itemCount = viewModel.MiscellaneousItems.Items.Count;
+
+        // Act & assert
+
+        for (int i = 0; i < itemCount; i++)
+        {
+            var item = viewModel.MiscellaneousItems.Items[i];
+            item.IsSelected.Should().BeFalse();
+
+            viewModel.MiscellaneousItems.SelectedItem = item;
+
+            item.IsSelected.Should().BeTrue();
+        }
     }
 
     [Fact]
