@@ -27,8 +27,9 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <Configurations>Debug;Release;Debug-nuget-pkgs</Configurations>
     <Title>MVVM Presentation Controls</Title>
-    <Version>1.2.1</Version>
+    <Version>1.2.3</Version>
     <PackageReleaseNotes>
+      v1.2.3 - Fixed bug where SelectableCollection was setting the wrong selected item if an item was already selected
       v1.2.1 - Fixed stack overflow exception in SelectableCollectionViewModel
       v1.2 - Fixed a nasty bug in SelectableCollectionViewModel where the wrong interface was being checked for IsSelected value changes
       v1.1 - Multi select list view model
@@ -55,7 +56,7 @@
   <Choose>
     <When Condition="'$(Configuration)'=='Debug-nuget-pkgs'">
       <ItemGroup>
-        <PackageReference Include="Benday.Presentation" Version="1.2.*" />
+        <PackageReference Include="Benday.Presentation" Version="1.2.3" />
       </ItemGroup>
     </When>
     <Otherwise>
