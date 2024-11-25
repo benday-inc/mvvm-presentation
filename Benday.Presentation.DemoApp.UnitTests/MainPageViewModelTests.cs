@@ -104,7 +104,6 @@ public class MainPageViewModelTests
         }
     }
 
-
     [Fact]
     public void MiscellaneousItems_Select_SelectedItem_Assignment()
     {

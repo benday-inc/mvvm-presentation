@@ -17,7 +17,13 @@ public class MainPageViewModel : MessagingViewModelBase
         ListboxSingleSelectField = new SingleSelectListViewModel(GetSampleItems("Single Select Listbox"));
         LabelField = new ViewModelField<string>(String.Empty);
         MiscellaneousItems = new SelectableCollectionViewModel<MiscellaneousItem>();
-        MiscellaneousItems.Initialize(GetSampleItemsThatAreISelectable("Miscellaneous"));
+
+        var items = GetSampleItemsThatAreISelectable("Miscellaneous");
+
+        foreach (var item in items)
+        {
+            MiscellaneousItems.Items.Add(item);
+        }
     }
 
     public ViewModelField<string> StringField { get; private set; }

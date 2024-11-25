@@ -1,4 +1,6 @@
 
+using FluentAssertions;
+
 namespace Benday.Presentation.UnitTests;
 
 public class SelectableCollectionViewModelWithISelectableFixture
@@ -25,6 +27,7 @@ public class SelectableCollectionViewModelWithISelectableFixture
             return _SystemUnderTest;
         }
     }
+        
 
     private List<ClassThatImplementsISelectable> CreateValues()
     {
@@ -300,6 +303,159 @@ public class SelectableCollectionViewModelWithISelectableFixture
     }
 
     [Fact]
+    public void OnItemSelected_TriggeredIfNewSelectedItem_UsingItemsAdd()
+    {
+        // arrange
+        SystemUnderTest.AllowMultipleSelections = false;
+
+        var values = CreateValues();
+
+        foreach (var item in values)
+        {
+            SystemUnderTest.Items.Add(item);
+        }
+
+        var item0 = SystemUnderTest.Items[0];
+        var item1 = SystemUnderTest.Items[1];
+
+        SystemUnderTest.OnItemSelected += SystemUnderTest_OnItemSelected;
+
+        Assert.True(SystemUnderTest.HasOnItemSelectedSubscriber);
+
+        Assert.Null(SystemUnderTest.SelectedItem);
+
+        Assert.Equal(0, OnSelectedItemEventHandlerCallCount);
+
+        // act
+        SystemUnderTest.SelectedItem = item0;
+
+        // assert
+        Assert.NotEqual(0, OnSelectedItemEventHandlerCallCount);
+    }
+
+    [Fact]
+    public void ItemAddedViaInitializeRespondToIsSelectedAssignment()
+    {
+        // arrange
+        SystemUnderTest.AllowMultipleSelections = false;
+
+        var values = CreateValues();
+        SystemUnderTest.Initialize(values);
+
+        var item0 = SystemUnderTest.Items[0];
+        var item1 = SystemUnderTest.Items[1];
+        var item2 = SystemUnderTest.Items[2];
+
+        Assert.False(item1.IsSelected);
+
+        item1.IsSelected = true;
+
+        // act
+        
+        // assert
+
+        foreach (var item in SystemUnderTest.Items)
+        {
+            Assert.True(item.HasPropertyChangedSubscriber);
+        }
+
+        Assert.True(item1.IsSelected);
+
+        // assert all other items are not selected
+        var otherItems = SystemUnderTest.Items.Where(i => i != item1);
+
+        Assert.Equal(0, otherItems.Count(i => i.IsSelected));
+
+        SystemUnderTest.SelectedItem.Should().NotBeNull();
+        SystemUnderTest.SelectedItem?.Should().BeSameAs(item1);
+    }
+
+    [Fact]
+    public void ItemAddedViaInsertRespondToIsSelectedAssignment()
+    {
+        // arrange
+        SystemUnderTest.AllowMultipleSelections = false;
+
+        var values = CreateValues();
+
+        foreach (var item in values)
+        {
+            SystemUnderTest.Items.Add(item);
+        }
+
+        var item0 = SystemUnderTest.Items[0];
+        var item1 = SystemUnderTest.Items[1];
+        var item2 = SystemUnderTest.Items[2];
+
+        var newItem = new ClassThatImplementsISelectable();
+
+        Assert.False(newItem.IsSelected);
+
+        item1.IsSelected = true;
+
+        // act
+        SystemUnderTest.Items.Insert(0, newItem);
+        Assert.False(newItem.IsSelected);
+
+        newItem.IsSelected = true;
+
+        // assert
+
+        foreach (var item in SystemUnderTest.Items)
+        {
+            Assert.True(item.HasPropertyChangedSubscriber);
+        }
+
+        Assert.True(newItem.IsSelected);
+
+        // assert all other items are not selected
+        var otherItems = SystemUnderTest.Items.Where(i => i != newItem);
+
+        Assert.Equal(0, otherItems.Count(i => i.IsSelected));
+
+        SystemUnderTest.SelectedItem.Should().NotBeNull();
+        SystemUnderTest.SelectedItem?.Should().BeSameAs(newItem);
+    }
+
+    [Fact]
+    public void ItemAddedViaAddRespondToIsSelectedAssignment()
+    {
+        // arrange
+        SystemUnderTest.AllowMultipleSelections = false;
+
+        var values = CreateValues();
+
+        foreach (var item in values)
+        {
+            SystemUnderTest.Items.Add(item);
+        }
+
+        var item0 = SystemUnderTest.Items[0];
+        var item1 = SystemUnderTest.Items[1];
+        var item2 = SystemUnderTest.Items[2];
+
+        // act
+        item1.IsSelected = true;
+
+        // assert
+        Assert.True(item1.IsSelected);
+
+        // assert all other items are not selected
+        var otherItems = SystemUnderTest.Items.Where(i => i != item1);
+
+        Assert.Equal(0, otherItems.Count(i => i.IsSelected));
+
+        SystemUnderTest.SelectedItem.Should().NotBeNull();
+        SystemUnderTest.SelectedItem?.Should().BeSameAs(item1);
+
+        foreach (var item in SystemUnderTest.Items)
+        {
+            Assert.True(item.HasPropertyChangedSubscriber);
+        }
+    }
+
+
+    [Fact]
     public void OnItemSelected_NotTriggeredIfSameItemIsSelectedAgain()
     {
         // arrange
@@ -363,4 +519,5 @@ public class SelectableCollectionViewModelWithISelectableFixture
     }
 
     private void SystemUnderTest_OnItemSelected(object? sender, EventArgs e) { OnSelectedItemEventHandlerCallCount++; }
+  
 }

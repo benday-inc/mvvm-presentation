@@ -13,11 +13,47 @@ namespace Benday.Presentation;
 /// <typeparam name="T"></typeparam>
 public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, ISelectable
 {
-    protected ObservableCollection<T> _Items = new ObservableCollection<T>();
+    protected ObservableCollection<T> _Items;
 
     public SelectableCollectionViewModel()
     {
         AllowMultipleSelections = false;
+        _Items = new ObservableCollection<T>();
+        VerifyEventSubscriptionsForCollection();
+    }
+    
+    /// <summary>
+    /// Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
+    /// </summary>
+    /// <param name="values"></param>
+    /// <exception cref="ArgumentNullException"></exception>
+    public SelectableCollectionViewModel(ObservableCollection<T> values)
+    {
+        if (values == null)
+            throw new ArgumentNullException("values", "values is null.");
+
+        _Items = values;
+        VerifyEventSubscriptionsForCollection();
+    }
+
+    /// <summary>
+    /// Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
+    /// </summary>
+    /// <param name="values"></param>
+    /// <param name="selectedItem">Item in the values collection that should be selected</param>
+    /// <exception cref="ArgumentNullException"></exception>
+    public SelectableCollectionViewModel(ObservableCollection<T> values, T selectedItem)
+        : this(values)
+    {
+        if (selectedItem == null)
+        {
+            throw new ArgumentNullException("selectedItem", "selectedItem is null.");
+        }
+
+        _Items = values;
+        VerifyEventSubscriptionsForCollection();
+
+        selectedItem.IsSelected = true;
     }
 
     /// <summary>
@@ -44,37 +80,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         }
     }
 
-    /// <summary>
-    /// Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
-    /// </summary>
-    /// <param name="values"></param>
-    /// <exception cref="ArgumentNullException"></exception>
-    public SelectableCollectionViewModel(ObservableCollection<T> values)
-    {
-        if (values == null)
-            throw new ArgumentNullException("values", "values is null.");
-
-        Items = values;
-    }
-
-    /// <summary>
-    /// Initializes a new instance of the SelectableCollectionViewModel class with existing items or an existing ObservableCollection instance.
-    /// </summary>
-    /// <param name="values"></param>
-    /// <param name="selectedItem">Item in the values collection that should be selected</param>
-    /// <exception cref="ArgumentNullException"></exception>
-    public SelectableCollectionViewModel(ObservableCollection<T> values, T selectedItem)
-        : this(values)
-    {
-        if (selectedItem == null)
-        {
-            throw new ArgumentNullException("selectedItem", "selectedItem is null.");
-        }
-
-        Items = values;
-
-        selectedItem.IsSelected = true;        
-    }
+    
 
     /// <summary>
     /// Resets the collection to the specified values.
@@ -150,13 +156,18 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         {
             _Items = value;
 
-            SubscribeToINotifyPropertyChanged(_Items);
-
-            _Items.CollectionChanged +=
-                new NotifyCollectionChangedEventHandler(_items_CollectionChanged);
+            VerifyEventSubscriptionsForCollection();
 
             RaisePropertyChanged(ItemsPropertyName);
         }
+    }
+
+    private void VerifyEventSubscriptionsForCollection()
+    {
+        SubscribeToINotifyPropertyChanged(_Items);
+
+        _Items.CollectionChanged +=
+            new NotifyCollectionChangedEventHandler(_items_CollectionChanged);
     }
 
     void _items_CollectionChanged(object? sender, NotifyCollectionChangedEventArgs e)

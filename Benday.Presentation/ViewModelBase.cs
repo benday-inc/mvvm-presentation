@@ -23,6 +23,14 @@ public abstract class ViewModelBase : INotifyPropertyChanged
     }
 
     public event PropertyChangedEventHandler? PropertyChanged;
+
+    public bool HasPropertyChangedSubscriber
+    {
+        get
+        {
+            return PropertyChanged != null;
+        }
+    }
 }
 
 
