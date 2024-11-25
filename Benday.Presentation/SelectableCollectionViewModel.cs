@@ -198,20 +198,19 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         else
         {
             foreach (var item in items)
-            {
-                if (item is ISelectableItem)
+            {                
+                if (item is ISelectable temp)
                 {
-                    var temp = item as ISelectableItem;
-
-                    if (temp != null)
-                    {
-                        SubscribeToINotifyPropertyChanged(temp);
-                    }
+                    SubscribeToINotifyPropertyChanged(temp);
+                }
+                else
+                {
+                    throw new InvalidOperationException("Item does not implement ISelectable.");
                 }
             }
         }
     }
-    private void SubscribeToINotifyPropertyChanged(ISelectableItem item)
+    private void SubscribeToINotifyPropertyChanged(ISelectable item)
     {
         if (item != null)
         {
@@ -223,15 +222,15 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
     {
         if (sender is T && e.PropertyName == "IsSelected")
         {
-            var senderAsISelectableItem = sender as T;
+            var senderAsISelectable = sender as T;
 
-            if (senderAsISelectableItem != null && senderAsISelectableItem.IsSelected == true)
+            if (senderAsISelectable != null && senderAsISelectable.IsSelected == true)
             {
                 if (AllowMultipleSelections == false)
                 {
                     foreach (var item in Items)
                     {
-                        if (item != senderAsISelectableItem &&
+                        if (item != senderAsISelectable &&
                             item.IsSelected == true)
                         {
                             item.IsSelected = false;

@@ -30,9 +30,12 @@
 	  <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation.git</RepositoryUrl>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <Title>MVVM Presentation Utilities</Title>
-	  <Version>1.1.0</Version>
-	  <PackageReleaseNotes>v1.0 - Initial release
-v1.1 - Multi select list view model</PackageReleaseNotes>
+	  <Version>1.2.0</Version>
+	  <PackageReleaseNotes>
+      v1.2 - Fixed a nasty bug in SelectableCollectionViewModel where the wrong interface was being checked for IsSelected value changes
+      v1.1 - Multi select list view model
+      v1.0 - Initial release
+    </PackageReleaseNotes>
 	</PropertyGroup>
 
 	<ItemGroup>
