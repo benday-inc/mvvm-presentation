@@ -102,6 +102,70 @@ public class SelectableCollectionViewModelFixture
     }
 
     [Fact]
+    public void SingleSelectMode_OnlyOneSelectedItem_IsSelected_Assignment()
+    {
+        // arrange
+        var values = CreateValues();
+        SystemUnderTest.Initialize(values);
+        var itemCount = values.Count;
+
+        // act & assert
+
+        Assert.True(itemCount > 0);
+
+        for (int i = 0; i < itemCount; i++)
+        {
+            var item = SystemUnderTest.Items[i];
+
+            item.IsSelected = true;
+
+            Assert.True(item.IsSelected);
+
+            for (int j = 0; j < itemCount; j++)
+            {
+                if (j == i)
+                {
+                    continue;
+                }
+                var otherItem = SystemUnderTest.Items[j];
+                Assert.False(otherItem.IsSelected);
+            }
+        }
+    }
+
+    [Fact]
+    public void SingleSelectMode_OnlyOneSelectedItem_SelectedItem_Assignment()
+    {
+        // arrange
+        var values = CreateValues();
+        SystemUnderTest.Initialize(values);
+        var itemCount = values.Count;
+
+        // act & assert
+
+        Assert.True(itemCount > 0);
+
+        for (int i = 0; i < itemCount; i++)
+        {
+            var item = SystemUnderTest.Items[i];
+
+            SystemUnderTest.SelectedItem = item;
+
+            Assert.True(item.IsSelected);
+
+            for (int j = 0; j < itemCount; j++)
+            {
+                if (j == i)
+                {
+                    continue;
+                }
+                var otherItem = SystemUnderTest.Items[j];
+                Assert.False(otherItem.IsSelected);
+            }
+        }
+    }
+
+    [Fact]
     public void WhenInMultiSelectModeSelectedItemIsSetViaAssignmentThenIsSelectedShouldBeSetToTrueOnItem()
     {
         SystemUnderTest.AllowMultipleSelections = true;
