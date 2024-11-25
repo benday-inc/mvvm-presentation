@@ -226,7 +226,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
                 if (_SelectedItem != senderAsTyped)
                 {
-                    SelectedItem = GetFirstSelectedItem(Items);
+                    SelectedItem = senderAsTyped;
                 }
             }
         }
@@ -289,7 +289,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
                 _SelectedItem = value;
 
                 RaiseOnItemSelected();
-                RaisePropertyChanged(SelectedItemPropertyName);
+                RaisePropertyChanged(nameof(SelectedItem));
             }
             else if (_SelectedItem != null && value == null)
             {
@@ -297,14 +297,14 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
                 if (AllowMultipleSelections == false)
                 {
-                    DeselectCurrentItem();
+                    _SelectedItem.IsSelected = false;
                 }
 
                 _SelectedItem = value;
 
                 RaiseOnItemSelected();
 
-                RaisePropertyChanged(SelectedItemPropertyName);
+                RaisePropertyChanged(nameof(SelectedItem));
             }
             else if (_SelectedItem != null && _SelectedItem != value)
             {
@@ -312,7 +312,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
                 if (AllowMultipleSelections == false)
                 {
-                    DeselectCurrentItem();
+                    _SelectedItem.IsSelected = false;
                 }
 
                 _SelectedItem = value;
@@ -324,7 +324,7 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
 
                 RaiseOnItemSelected();
 
-                RaisePropertyChanged(SelectedItemPropertyName);
+                RaisePropertyChanged(nameof(SelectedItem));
             }
             else
             {
@@ -341,16 +341,6 @@ public class SelectableCollectionViewModel<T> : ViewModelBase where T : class, I
         get
         {
             return Items.Count;
-        }
-    }
-
-    private void DeselectCurrentItem()
-    {
-        var currentSelected = GetFirstSelectedItem(Items);
-
-        if (currentSelected != null)
-        {
-            currentSelected.IsSelected = false;
         }
     }
 

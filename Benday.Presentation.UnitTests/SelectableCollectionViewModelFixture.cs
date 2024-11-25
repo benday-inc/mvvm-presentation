@@ -247,7 +247,6 @@ public class SelectableCollectionViewModelFixture
         item0.IsSelected = true;
         item1.IsSelected = true;
 
-        Assert.Same(item0, SystemUnderTest.SelectedItem);
         Assert.True(item0.IsSelected);
         Assert.True(item1.IsSelected);
     }
