@@ -30,8 +30,9 @@
 	  <RepositoryUrl>https://github.com/benday-inc/mvvm-presentation.git</RepositoryUrl>
 	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
 	  <Title>MVVM Presentation Utilities</Title>
-	  <Version>1.2.1</Version>
+	  <Version>1.2.2</Version>
 	  <PackageReleaseNotes>
+      v1.2.2 - Fixed bug where SelectableCollection wasn't always subscribing to events on ObservableCollection
       v1.2.1 - Fixed stack overflow exception in SelectableCollectionViewModel
       v1.2 - Fixed a nasty bug in SelectableCollectionViewModel where the wrong interface was being checked for IsSelected value changes
       v1.1 - Multi select list view model
